@@ -168,6 +168,7 @@ window.Oracle = window.Oracle || {};
 
   function choose(s, picked, btn) {
     const q = s.questions[s.index];
+    const main = document.getElementById('app');
     const correct = q.type === 'tf' ? (picked === 0) === !!q.answer : picked === q.answer;
     // q.answer: tf → boolean; mc → index of correct option
 
