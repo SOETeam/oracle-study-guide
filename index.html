@@ -66,6 +66,44 @@
       .print-block { break-inside: avoid; border-color: #ccc !important; background: #fff !important; color: #111 !important; box-shadow: none !important; }
       .print-block *, .print-block { color: #111 !important; }
     }
+
+    /* Private study area — passphrase modal shake */
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      20% { transform: translateX(-8px); }
+      40% { transform: translateX(8px); }
+      60% { transform: translateX(-5px); }
+      80% { transform: translateX(5px); }
+    }
+    .shake { animation: shake .35s ease; }
+
+    /* Private print sheet: hidden on screen, one-page reference on print */
+    #print-sheet { display: none; }
+    @media print {
+      body.print-sheet-only main,
+      body.print-sheet-only header,
+      body.print-sheet-only footer,
+      body.print-sheet-only .no-print { display: none !important; }
+      body.print-sheet-only #private-area > *:not(#print-sheet) { display: none !important; }
+      body.print-sheet-only #print-sheet { display: block !important; }
+      #print-sheet {
+        font-family: Inter, system-ui, sans-serif;
+        color: #111 !important;
+        background: #fff !important;
+        font-size: 9.5px;
+        line-height: 1.35;
+      }
+      #print-sheet * { color: #111 !important; box-shadow: none !important; text-shadow: none !important; }
+      #print-sheet .ps-header { border-bottom: 2px solid #111; padding-bottom: 5px; margin-bottom: 7px; }
+      #print-sheet h1 { font-size: 15px; margin: 0 0 3px; letter-spacing: .01em; }
+      #print-sheet .ps-header p { margin: 2px 0; }
+      #print-sheet .ps-case { font-size: 9px; }
+      #print-sheet h2 { font-size: 9.5px; text-transform: uppercase; letter-spacing: .07em; margin: 0 0 3px; border-bottom: 1px solid #999; padding-bottom: 2px; }
+      #print-sheet ul, #print-sheet ol { margin: 0 0 9px 13px; padding: 0; }
+      #print-sheet li { margin: 1.5px 0; }
+      #print-sheet .ps-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; margin-top: 7px; }
+      #print-sheet .ps-foot { margin-top: 8px; padding-top: 4px; border-top: 1px solid #999; font-size: 7.5px; color: #444 !important; }
+    }
   </style>
 </head>
 
@@ -136,10 +174,40 @@
     </div>
   </footer>
 
+  <!-- ══════════ PRIVATE STUDY AREA (hidden unless unlocked) ══════════ -->
+  <div id="private-area" class="hidden flex-1 w-full max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12"></div>
+
+  <!-- ══════════ SECRET ENTRANCE — "Sophi" (very subtle, after footer) ══════════ -->
+  <div class="no-print text-center pb-3 -mt-3">
+    <button id="sophi-trigger" type="button" aria-label="Sophi"
+      class="text-slate-600/50 hover:text-cyan-400 text-xs tracking-widest uppercase transition-colors duration-300 cursor-pointer select-none">
+      Sophi
+    </button>
+  </div>
+
+  <!-- ══════════ PASSPHRASE MODAL (secret entrance) ══════════ -->
+  <div id="pass-modal" class="hidden fixed inset-0 z-[100] items-center justify-center p-4 bg-black/70 backdrop-blur-sm">
+    <div id="pass-card" class="w-full max-w-sm rounded-3xl border border-teal/20 bg-navy-3 shadow-card p-8 text-center relative">
+      <button id="pass-close" type="button" aria-label="Close"
+        class="absolute top-3.5 right-4 text-slate-500 hover:text-white transition text-xl leading-none">&times;</button>
+      <div class="text-4xl mb-3">🔐</div>
+      <h2 class="font-display text-xl font-700 text-white mb-1.5">Restricted area</h2>
+      <p class="text-slate-400 text-sm mb-6">Enter the passphrase to continue.</p>
+      <input id="pass-input" type="password" autocomplete="off" spellcheck="false" placeholder="Passphrase"
+        class="w-full rounded-xl border border-white/15 bg-navy-2 px-4 py-3 text-slate-100 placeholder-slate-500 outline-none focus:border-teal/60 focus:ring-2 focus:ring-teal/20 transition text-center tracking-widest" />
+      <p id="pass-error" class="hidden mt-3 text-sm font-semibold text-danger" aria-live="polite">Access denied</p>
+      <button id="pass-submit" type="button"
+        class="mt-5 w-full px-6 py-3 rounded-xl bg-teal text-navy font-bold text-sm shadow-glow hover:bg-teal/90 transition">
+        Unlock
+      </button>
+    </div>
+  </div>
+
   <!-- ══════════ APP SCRIPTS (load order matters) ══════════ -->
   <script src="js/progress.js"></script>
   <script src="js/quiz.js"></script>
   <script src="js/guide.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/private.js"></script>
 </body>
 </html>

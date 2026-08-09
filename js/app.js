@@ -8,6 +8,7 @@
  *   #guide/<id>/<level>  → level-matched study guide
  *   #progress            → progress dashboard
  *   #about               → about page
+ *   #private/<module>    → passphrase-protected study module (js/private.js)
  * ============================================================ */
 window.Oracle = window.Oracle || {};
 
@@ -85,6 +86,9 @@ window.Oracle = window.Oracle || {};
     window.scrollTo({ top: 0 });
     document.getElementById('mobile-nav').classList.add('hidden');
 
+    // Leaving the private study area → restore the public shell
+    if (page !== 'private' && Oracle.private) Oracle.private.exitPrivateMode();
+
     try {
       // Topic list is needed for names/breadcrumbs on every page — cached after first load
       await loadTopicsIfNeeded();
@@ -105,6 +109,11 @@ window.Oracle = window.Oracle || {};
         case 'progress':
           await loadTopicsIfNeeded();
           Oracle.renderProgress(main);
+          break;
+        case 'private':
+          if (!args[0]) { location.hash = '#home'; return; }
+          if (Oracle.private) await Oracle.private.handleRoute(main, args);
+          else location.hash = '#home';
           break;
         case 'about':
           renderAbout(main);
