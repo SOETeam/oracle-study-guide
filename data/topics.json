@@ -1,0 +1,39 @@
+{
+  "topics": [
+    {
+      "id": "law",
+      "name": "Law & Legal",
+      "icon": "⚖️",
+      "description": "Legal fundamentals, court procedures, rights",
+      "subtopics": ["Traffic Law", "Small Claims", "Tenant Rights", "Employment Law"]
+    },
+    {
+      "id": "business",
+      "name": "Business & Entrepreneurship",
+      "icon": "💼",
+      "description": "Starting and running a business",
+      "subtopics": ["Business Plan", "Marketing", "Finance", "Operations"]
+    },
+    {
+      "id": "tech",
+      "name": "Technology & AI",
+      "icon": "💻",
+      "description": "Modern technology and artificial intelligence",
+      "subtopics": ["Web Development", "AI Basics", "Cybersecurity", "Cloud Computing"]
+    },
+    {
+      "id": "health",
+      "name": "Health & Wellness",
+      "icon": "🏥",
+      "description": "Personal health, nutrition, and wellness",
+      "subtopics": ["Nutrition", "Exercise", "Mental Health", "Sleep"]
+    },
+    {
+      "id": "finance",
+      "name": "Finance & Money",
+      "icon": "💰",
+      "description": "Personal finance and money management",
+      "subtopics": ["Budgeting", "Saving", "Investing", "Credit"]
+    }
+  ]
+}

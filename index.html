@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oracle Study Guide — Learn anything, free</title>
+  <meta name="description" content="Oracle Study Guide is a free interactive learning platform. Pick a topic, take a quiz, and get a study guide matched to your level." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>" />
+
+  <!-- Google Fonts: Inter + Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy:   '#0b132b',
+            'navy-2': '#101a38',
+            'navy-3': '#1c2541',
+            'navy-4': '#273254',
+            teal:   '#00f7ff',
+            gold:   '#f4c16c',
+            danger: '#ff6b6b'
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            display: ['"Space Grotesk"', 'Inter', 'ui-sans-serif', 'sans-serif']
+          },
+          boxShadow: {
+            glow: '0 0 24px rgba(0, 247, 255, 0.18)',
+            card: '0 8px 30px rgba(0, 0, 0, 0.35)'
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background-color: #0b132b; }
+    ::selection { background: rgba(0, 247, 255, 0.25); color: #fff; }
+    ::-webkit-scrollbar { width: 10px; }
+    ::-webkit-scrollbar-track { background: #0b132b; }
+    ::-webkit-scrollbar-thumb { background: #1c2541; border-radius: 8px; }
+    ::-webkit-scrollbar-thumb:hover { background: #273254; }
+
+    .font-display { font-family: 'Space Grotesk', Inter, ui-sans-serif, system-ui, sans-serif; }
+    .text-glow { text-shadow: 0 0 30px rgba(0, 247, 255, 0.35); }
+    .card-hover { transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
+    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 14px 40px rgba(0,0,0,.45), 0 0 18px rgba(0,247,255,.12); border-color: rgba(0,247,255,.45); }
+    .fade-in { animation: fadeIn .28s ease both; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+    .quiz-option { transition: all .15s ease; }
+    .quiz-option:not(:disabled):hover { border-color: rgba(0,247,255,.55); background: rgba(0,247,255,.06); transform: translateX(3px); }
+
+    /* Print-friendly study guides */
+    @media print {
+      body { background: #fff !important; color: #111 !important; }
+      header, footer, .no-print, .tabbar, button { display: none !important; }
+      main { padding: 0 !important; max-width: 100% !important; }
+      .print-block { break-inside: avoid; border-color: #ccc !important; background: #fff !important; color: #111 !important; box-shadow: none !important; }
+      .print-block *, .print-block { color: #111 !important; }
+    }
+  </style>
+</head>
+
+<body class="bg-navy text-slate-200 font-sans antialiased min-h-screen flex flex-col">
+
+  <!-- ══════════ HEADER ══════════ -->
+  <header class="sticky top-0 z-50 border-b border-white/5 bg-navy/85 backdrop-blur-md no-print">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="#home" class="flex items-center gap-2.5 group">
+          <span class="grid place-items-center w-9 h-9 rounded-xl bg-gradient-to-br from-teal/20 to-gold/20 border border-teal/30 text-lg group-hover:shadow-glow transition-shadow">📚</span>
+          <span class="font-display font-700 text-lg tracking-tight">
+            <span class="text-white">Oracle</span> <span class="text-teal">Study Guide</span>
+          </span>
+        </a>
+
+        <!-- Desktop nav -->
+        <nav class="hidden md:flex items-center gap-1 text-sm font-medium" id="desktop-nav">
+          <a href="#home" data-nav="home" class="px-4 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 transition">Home</a>
+          <a href="#home" data-nav="home" data-scroll="topics" class="px-4 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 transition">Topics</a>
+          <a href="#progress" data-nav="progress" class="px-4 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 transition">My Progress</a>
+          <a href="#about" data-nav="about" class="px-4 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 transition">About</a>
+        </nav>
+
+        <a href="#home" data-scroll="topics"
+           class="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-teal/10 border border-teal/40 text-teal text-sm font-semibold hover:bg-teal/20 transition">
+          Start Learning →
+        </a>
+
+        <!-- Mobile hamburger -->
+        <button id="nav-toggle" aria-label="Toggle menu" class="md:hidden grid place-items-center w-10 h-10 rounded-lg border border-white/10 text-slate-300 hover:bg-white/5">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+
+      <!-- Mobile nav -->
+      <nav id="mobile-nav" class="hidden md:hidden border-t border-white/5 pb-3 pt-2 flex flex-col text-sm font-medium">
+        <a href="#home" data-nav="home" class="px-4 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/5">Home</a>
+        <a href="#home" data-nav="home" data-scroll="topics" class="px-4 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/5">Topics</a>
+        <a href="#progress" data-nav="progress" class="px-4 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/5">My Progress</a>
+        <a href="#about" data-nav="about" class="px-4 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/5">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ══════════ MAIN APP MOUNT ══════════ -->
+  <main id="app" class="flex-1 w-full max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12"></main>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="border-t border-white/5 bg-navy-2/60 no-print">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-8">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 text-sm text-slate-400">
+        <div class="flex items-center gap-2">
+          <span class="text-lg">📚</span>
+          <span class="font-display text-slate-300">Oracle Study Guide</span>
+          <span class="text-slate-500">· free forever · no sign-up</span>
+        </div>
+        <p class="max-w-md text-xs leading-relaxed text-slate-500">
+          Educational content only — not legal, financial, or medical advice. All data stays in your browser.
+        </p>
+      </div>
+      <div class="mt-6 pt-4 border-t border-white/5 text-xs text-slate-600 flex flex-wrap gap-x-6 gap-y-2">
+        <span>© <span id="year"></span> SOETech</span>
+        <a href="#about" class="hover:text-slate-400 transition">About</a>
+        <a href="#progress" class="hover:text-slate-400 transition">My Progress</a>
+        <span>Built with plain HTML · Tailwind · vanilla JS</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════ APP SCRIPTS (load order matters) ══════════ -->
+  <script src="js/progress.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/guide.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

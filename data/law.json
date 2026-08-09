@@ -1,0 +1,347 @@
+{
+  "topic": {
+    "id": "law",
+    "title": "Michigan Traffic Law",
+    "description": "The rules of the road in Michigan — speed limits, right-of-way, distracted driving, DUIs, no-fault insurance, and what to actually do in a traffic stop.",
+    "icon": "⚖️",
+    "focus": "Michigan Vehicle Code — MCL Chapter 257",
+    "subtopics": ["Traffic Law", "Small Claims", "Tenant Rights", "Employment Law"],
+    "levels": {
+      "beginner": {
+        "label": "Beginner",
+        "tagline": "New to driving laws? Start here — the essentials in plain English.",
+        "goals": [
+          "Know the default speed limits in Michigan",
+          "Understand the basics of the hands-free driving law",
+          "Know when you must stop for a school bus",
+          "Understand what no-fault insurance means",
+          "Know the basics of a traffic stop"
+        ],
+        "concepts": [
+          { "title": "Default speed limits (MCL 257.627)", "text": "If no sign says otherwise, Michigan's default limits are 25 mph in business and residential districts, 55 mph on other highways, and 65 mph on freeways. Higher limits (70–75 mph) only exist where posted." },
+          { "title": "Hands-free driving (MCL 257.602b)", "text": "Since June 30, 2023, holding or using a cell phone while driving is a primary offense — police can pull you over for it alone. Calls must be hands-free (Bluetooth, car kit, voice commands). Texting while driving is always illegal." },
+          { "title": "Seat belts (MCL 257.710e)", "text": "Michigan has primary enforcement: an officer can stop you just for not buckling up. Every front-seat occupant must wear a seat belt. Children under 8 must be in a car seat or booster seat (with exceptions based on height)." },
+          { "title": "No-fault insurance (MCL 500.3101)", "text": "Michigan is a no-fault state. Your own insurance company pays your medical bills after a crash — regardless of who caused it — through Personal Injury Protection (PIP) coverage. Fault still matters for vehicle damage and some claims, but not for your medical coverage." },
+          { "title": "School bus rules (MCL 257.682)", "text": "When a school bus stops with its red lights flashing, traffic in BOTH directions must stop — unless you're on the other side of a divided highway. Passing a stopped school bus is dangerous and carries heavy fines." },
+          { "title": "Right turn on red", "text": "Michigan allows a right turn on a red light after a full stop, unless a sign says otherwise. Yield to pedestrians and traffic with the green. The same is true for left turn on red from a one-way street onto another one-way street." },
+          { "title": "Emergency vehicles (MCL 257.653)", "text": "When an emergency vehicle approaches with lights and siren, pull over to the right edge of the road and stop until it passes. Never follow within 500 feet of a fire truck responding to a call." },
+          { "title": "Traffic stops — the basics", "text": "When pulled over: signal, pull safely to the right, turn off the engine, keep hands visible on the wheel, and stay in the vehicle unless asked to step out. Be polite — officers notice cooperation." }
+        ],
+        "examples": [
+          { "title": "The unmarked 25 mph road", "scenario": "You're driving down a residential side street with no speed limit signs, and the street has houses on both sides.", "outcome": "The default limit is 25 mph. Even without a sign, it is illegal to go 40 mph here. Police can cite you for speeding based on the statutory default." },
+          { "title": "The red-light phone check", "scenario": "You're stopped at a red light and pick up your phone to quickly read a text, planning to reply later.", "outcome": "Still illegal. Michigan's hands-free law applies while operating a vehicle, including while stopped in traffic. Wait until you're parked to touch your phone." },
+          { "title": "The two-way school bus", "scenario": "A school bus with flashing red lights stops on a two-lane road heading the opposite direction from you.", "outcome": "You must stop too. On a road without a physical divider, traffic in both directions stops until the bus turns off its red lights." }
+        ],
+        "pitfalls": [
+          "Believing 'no sign means no limit' — defaults like 25 mph in residential districts still apply.",
+          "Thinking it's fine to use your phone at a red light or in a drive-thru — it isn't, as long as you're operating the vehicle.",
+          "Assuming the at-fault driver pays your medical bills — under no-fault, your own PIP coverage pays first.",
+          "Not stopping for a school bus on a two-lane road from the opposite direction — both directions must stop.",
+          "Forgetting that seat belt enforcement is primary — you can be pulled over for the belt alone."
+        ],
+        "exercises": [
+          "Write down the 4 default speed limits in Michigan and when each applies.",
+          "Explain to a friend what 'no-fault' insurance means for medical bills after a crash.",
+          "List the 5 steps you would take during a traffic stop, in order."
+        ]
+      },
+      "intermediate": {
+        "label": "Intermediate",
+        "tagline": "You know the basics — now let's go deeper into real scenarios and finer details.",
+        "goals": [
+          "Understand the left-lane law and work-zone fines",
+          "Know the Move Over law requirements",
+          "Understand child restraint rules and seat belt details",
+          "Know how points and license sanctions work",
+          "Understand zero-tolerance laws for young drivers"
+        ],
+        "concepts": [
+          { "title": "Left-lane law (MCL 257.634)", "text": "On a highway with 2 or more lanes in the same direction, you must drive in the right lane except when passing, turning left, or avoiding a hazard. 'Camping' in the left lane can earn you a ticket even if you aren't speeding." },
+          { "title": "Work-zone fines (MCL 257.601b)", "text": "Fines for traffic violations in an active work zone are doubled when workers are present and signs are posted. That includes speeding, careless driving, and following too closely." },
+          { "title": "Move Over law (MCL 257.653a)", "text": "When approaching a stopped emergency vehicle, tow truck, or road service vehicle with flashing lights, you must move over one lane if possible. If you can't safely move over, slow down to at least 10 mph below the posted speed limit." },
+          { "title": "Child restraint details (MCL 257.710d)", "text": "Children under 4 must ride in a car seat. Children 4–7 (or under 4'9\") must use a car seat or booster seat. A child can graduate to an adult seat belt once they are 8 or older AND at least 4'9\" tall. The safest practice: keep a child in a booster until the belt fits correctly." },
+          { "title": "Points & license sanctions", "text": "Michigan assigns points for violations — speeding adds 1–4 points, more serious offenses more. Accumulate 12 points and your license may be suspended. The Secretary of State tracks points, and they affect your insurance rates." },
+          { "title": "Zero tolerance for under-21 (MCL 257.625)", "text": "If you're under 21, driving with a blood alcohol content of 0.02% or more results in license sanctions — even though you're far below the 0.08% adult limit. One drink can put a young driver over 0.02%." },
+          { "title": "Right-of-way at intersections", "text": "At an uncontrolled intersection, yield to the vehicle on the right. When turning left, yield to oncoming traffic. Always yield to pedestrians in crosswalks — both marked and unmarked." },
+          { "title": "Crashes — your duties (MCL 257.618)", "text": "After any crash: stop, check for injuries, call 911 if anyone is hurt, exchange information (name, license, insurance), and notify police. Leaving the scene is a separate, serious offense — hit-and-run penalties are worse than the underlying crash." }
+        ],
+        "examples": [
+          { "title": "The left-lane cruiser", "scenario": "On I-96, you're going 72 mph in the left lane, matching the right-lane traffic beside you, with cars stacking up behind you.", "outcome": "You're violating Michigan's left-lane law. Even 'keeping up with traffic,' you must move right unless you're actively passing. Officers can cite you regardless of speed." },
+          { "title": "The stranded motorist", "scenario": "A police car with flashing lights is stopped on the shoulder of a two-lane highway. Traffic beside you is heavy, so you can't move over.", "outcome": "You must slow to at least 10 mph below the posted speed limit as you pass. Both actions — move over OR slow down — satisfy the Move Over law when moving over isn't possible." },
+          { "title": "The open-container house party", "scenario": "An 18-year-old driver has two beers at a party and drives home. A breath test shows 0.03% BAC.", "outcome": "Under Michigan's zero-tolerance law, the 0.03% is an automatic violation for an under-21 driver — no 'impairment' argument needed — and triggers Secretary of State sanctions, even though 0.03% is far below the 0.08% adult limit." }
+        ],
+        "pitfalls": [
+          "Thinking 'I can stay in the left lane if I'm going the speed limit' — Michigan law requires the right lane except when passing.",
+          "Not knowing work-zone fines double — a small speed bump becomes a big citation when workers are present.",
+          "Moving a child to a seat belt too early — height (4'9\") matters as much as age (8).",
+          "Assuming young drivers can have 'a drink or two' — 0.02% zero tolerance is very low.",
+          "Leaving a crash scene over a minor fender-bender — hit-and-run is often worse than the crash itself."
+        ],
+        "exercises": [
+          "Map out the points assigned to 3 common violations and how many points trigger a suspension.",
+          "Describe the exact Move Over procedure for a highway with and without an open lane.",
+          "Calculate what a doubled work-zone speeding fine would cost for a 15 mph-over ticket."
+        ]
+      },
+      "advanced": {
+        "label": "Advanced",
+        "tagline": "Edge cases, legal nuance, and the fine print.",
+        "goals": [
+          "Understand what counts as 'operating' a vehicle",
+          "Know implied consent and chemical test refusals",
+          "Understand marijuana and OWI case law",
+          "Know the mini-tort and no-fault reform details",
+          "Understand civil vs. criminal traffic offenses"
+        ],
+        "concepts": [
+          { "title": "'Operating' vs. 'driving' — MCL 257.35a", "text": "Michigan defines 'operating' broadly: you can be charged with OWI while sitting in a parked car with the engine running — even if the vehicle never moves. Courts have held that being in 'actual physical control' of a running vehicle is enough. The key factors: engine running, keys in ignition, and you in the driver's seat." },
+          { "title": "Implied consent (MCL 257.625c)", "text": "By driving in Michigan, you automatically consent to chemical tests (breath, blood, urine). Refusing a test is a civil violation with its own penalties: 6 points on your license and a 1-year suspension for a first refusal. Refusing doesn't prevent prosecution — officers can obtain a warrant." },
+          { "title": "High-BAC enhanced penalties", "text": "A BAC of 0.17% or higher — more than double the legal limit — triggers enhanced penalties: longer license restrictions, mandatory community service, and possible ignition interlock requirements. The legal limit is 0.08% for adults and 0.04% for commercial drivers." },
+          { "title": "Marijuana & OWI — People v. Koon (2020)", "text": "Michigan's OWI marijuana statute makes it illegal to drive with 'any amount' of a Schedule 1 substance. But the Michigan Supreme Court ruled in People v. Koon that a positive THC test alone isn't enough to convict — the prosecutor must prove actual impairment. A medical marijuana card is not a defense if you're impaired." },
+          { "title": "Mini-tort & no-fault reform (MCL 500.3101a, 500.3135)", "text": "Michigan's 2019 no-fault reform lets drivers choose PIP medical coverage levels (unlimited, $500K, $250K, or $50K with exclusions). Vehicle damage stays limited: the 'mini-tort' lets you recover up to $3,000 from the at-fault driver's insurer for your vehicle repairs if you have collision coverage." },
+          { "title": "Civil vs. criminal traffic offenses", "text": "Most moving violations (speeding, careless driving) are civil infractions — fines and points, no jail. Some become criminal: repeated reckless driving, OWI, driving while suspended, and leaving the scene with injury are misdemeanors or felonies. Criminal means a record and possible jail time." },
+          { "title": "Leaving the scene (MCL 257.617–618)", "text": "Property-damage-only hit-and-run is a civil infraction with 4 points. Injury hit-and-run is a felony carrying up to 5 years in prison. Always stop — the penalty for leaving is always worse than the crash." },
+          { "title": "The divided highway exception", "text": "The school-bus stop requirement has one major exception: on a divided highway (with a physical median or barrier), only traffic on the SAME side as the bus must stop. Oncoming traffic may continue — but slow down for safety. The same exception applies to the Move Over law's lane-change requirement in some situations." }
+        ],
+        "examples": [
+          { "title": "The sleeping driver", "scenario": "An officer finds a driver asleep in the driver's seat of a car parked on the shoulder, engine running, at 2 a.m. The driver was never seen driving.", "outcome": "Michigan courts have upheld OWI charges here — 'operating' includes being in actual physical control of a running vehicle. The engine running and driver's-seat position are enough; the car need not move (see People v. Wood)." },
+          { "title": "The refusal", "scenario": "A driver is stopped on suspicion of OWI and refuses the breath test, thinking 'no test = no conviction.'", "outcome": "Refusal triggers 6 points and a 1-year license suspension under implied consent — on top of the OWI charge, which prosecutors can still pursue. Officers can get a warrant for a blood draw. Refusing rarely helps and always makes things worse." },
+          { "title": "The medical-marijuana patient", "scenario": "A registered medical marijuana patient is pulled over for weaving. A blood test shows THC but no other signs are documented beyond the weaving.", "outcome": "Under People v. Koon, the positive test alone is insufficient — the state must show impairment. But weaving + officer observations are exactly the kind of evidence that proves impairment, so a conviction is still very possible." }
+        ],
+        "pitfalls": [
+          "Assuming a parked car is automatically safe — engine running + driver's seat = 'operating' under Michigan law.",
+          "Thinking refusing a chemical test 'beats' the system — it adds 6 points and a 1-year suspension.",
+          "Believing a medical marijuana card is a blanket defense — impairment is still illegal.",
+          "Confusing crash responsibility with insurance responsibility — no-fault doesn't mean 'nobody's at fault.'",
+          "Not knowing that leaving a property-damage crash is still a separate violation with 4 points."
+        ],
+        "exercises": [
+          "Explain the People v. Koon standard in your own words and why a positive THC test alone isn't enough.",
+          "Describe the exact consequences of a first chemical-test refusal under implied consent.",
+          "Compare the penalties for hit-and-run with property damage vs. injury — and explain why 'always stop' is the right rule."
+        ]
+      }
+    },
+    "glossary": [
+      { "term": "BAC (Blood Alcohol Content)", "definition": "The percentage of alcohol in your blood. Michigan's legal driving limit is 0.08% for adults, 0.04% for commercial drivers, and 0.02% for drivers under 21." },
+      { "term": "Civil infraction", "definition": "A traffic violation like speeding — punishable by a fine and driver points, but not jail time. Not a criminal record." },
+      { "term": "Misdemeanor vs. felony", "definition": "Criminal offenses — misdemeanors (up to ~1 year in local jail) and felonies (state prison, 1+ years). OWI, driving while suspended, and injury hit-and-run are criminal offenses." },
+      { "term": "MCL", "definition": "Michigan Compiled Laws — the official body of Michigan statutes. Traffic law lives in Chapter 257 (the Michigan Vehicle Code)." },
+      { "term": "Move Over law", "definition": "Requirement to move over one lane, or slow to 10 mph below the limit, when passing stopped emergency or road-service vehicles with flashing lights." },
+      { "term": "No-fault insurance", "definition": "Michigan's auto insurance system where your own PIP coverage pays your medical bills regardless of who caused the crash, in exchange for limited rights to sue." },
+      { "term": "OWI / OUIL", "definition": "Operating While Intoxicated / Operating Under the Influence of Liquor — Michigan's name for drunk driving offenses. 'Operating' is broader than 'driving.'" },
+      { "term": "PIP (Personal Injury Protection)", "definition": "The no-fault medical coverage that pays crash-related medical costs for you and passengers, regardless of fault." },
+      { "term": "Primary enforcement", "definition": "A violation (like seat belts or handheld phone use) that lets police stop a vehicle on its own — no other offense needed." },
+      { "term": "Implied consent", "definition": "The legal rule that driving in Michigan means you automatically agree to chemical testing for alcohol/drugs; refusal carries separate penalties." },
+      { "term": "Zero tolerance", "definition": "The law for drivers under 21: any BAC of 0.02% or more is a violation, far below the adult 0.08% limit." },
+      { "term": "Mini-tort", "definition": "The limited claim (up to $3,000) you can make against an at-fault driver's insurer for your vehicle damage when you have collision coverage." },
+      { "term": "Points", "definition": "A driver-responsibility system: violations add points (speeding: 1–4) to your record; 12 points triggers license suspension." }
+    ],
+    "quiz": {
+      "beginner": [
+        {
+          "q": "What is Michigan's default speed limit in a residential district with no posted sign?",
+          "type": "mc",
+          "options": ["25 mph", "35 mph", "45 mph", "55 mph"],
+          "answer": 0,
+          "explain": "MCL 257.627 sets 25 mph in business and residential districts unless a higher limit is posted. No sign doesn't mean no limit!"
+        },
+        {
+          "q": "Texting while driving is illegal in Michigan only if you are moving faster than 25 mph.",
+          "type": "tf",
+          "answer": false,
+          "explain": "False — handheld phone use while operating a vehicle is illegal at any speed, including stopped at a red light. Wait until parked."
+        },
+        {
+          "q": "Michigan is a ______ insurance state, meaning your own coverage pays your medical bills after a crash regardless of fault.",
+          "type": "mc",
+          "options": ["at-fault", "no-fault", "liability-only", "comparative"],
+          "answer": 1,
+          "explain": "Michigan is a no-fault state (MCL 500.3101). Your PIP coverage pays medical bills regardless of who caused the crash."
+        },
+        {
+          "q": "You are driving toward a school bus with its red lights flashing on a two-lane road. You must stop.",
+          "type": "tf",
+          "answer": true,
+          "explain": "True — on a road without a physical divider, traffic in both directions must stop for a school bus with flashing red lights (MCL 257.682)."
+        },
+        {
+          "q": "What is Michigan's legal blood alcohol limit for drivers 21 and over?",
+          "type": "mc",
+          "options": ["0.02%", "0.05%", "0.08%", "0.10%"],
+          "answer": 2,
+          "explain": "0.08% is the legal limit for adult drivers (MCL 257.625). Commercial drivers face 0.04%, and drivers under 21 face zero tolerance at 0.02%."
+        },
+        {
+          "q": "You may turn right on a red light in Michigan after coming to a full stop, unless a sign prohibits it.",
+          "type": "tf",
+          "answer": true,
+          "explain": "True — right turn on red is allowed after a full stop, yielding to pedestrians and traffic, unless posted otherwise."
+        },
+        {
+          "q": "Under Michigan's hands-free law, which of these is legal while driving?",
+          "type": "mc",
+          "options": ["Holding your phone to read a map", "Talking on a hands-free Bluetooth system", "Texting at a red light", "Holding a phone in the drive-thru line"],
+          "answer": 1,
+          "explain": "Hands-free systems (Bluetooth, car kit, voice commands) are legal. Holding or using a phone — even at a red light or in a drive-thru — is not."
+        },
+        {
+          "q": "In Michigan, police can pull you over for not wearing a seat belt, even if you commit no other violation.",
+          "type": "tf",
+          "answer": true,
+          "explain": "True — seat belt enforcement is PRIMARY in Michigan (MCL 257.710e). Front-seat occupants must buckle up, and officers may stop a vehicle for the belt alone."
+        },
+        {
+          "q": "A child under 8 years old must ride in a car seat or booster seat. When can they use an adult seat belt instead?",
+          "type": "mc",
+          "options": ["When they turn 7", "When they are at least 4'9\" tall", "When they weigh 60 pounds", "When their parent says so"],
+          "answer": 1,
+          "explain": "A child can graduate to an adult seat belt at age 8 OR when they are at least 4'9\" tall (MCL 257.710d). Height matters as much as age."
+        },
+        {
+          "q": "An emergency vehicle with flashing lights and siren approaches from behind. What should you do?",
+          "type": "mc",
+          "options": ["Speed up to get out of the way", "Stop in your lane", "Pull over to the right edge and stop", "Turn right at the next intersection"],
+          "answer": 2,
+          "explain": "Pull to the right edge of the road and stop until the emergency vehicle passes (MCL 257.653). Never stop in the middle of the road."
+        }
+      ],
+      "intermediate": [
+        {
+          "q": "Under Michigan's left-lane law, you must drive in the right lane on a multi-lane highway except when...",
+          "type": "mc",
+          "options": ["You're in a hurry", "Passing, turning left, or avoiding a hazard", "Traffic is light", "You're driving the speed limit"],
+          "answer": 1,
+          "explain": "MCL 257.634 requires the right lane except when passing, turning left, or avoiding a hazard. 'Camping' in the left lane is a ticket even at the speed limit."
+        },
+        {
+          "q": "Traffic fines are doubled in active work zones when workers are present and signs are posted.",
+          "type": "tf",
+          "answer": true,
+          "explain": "True — MCL 257.601b doubles fines for violations in active work zones, including speeding, careless driving, and following too closely."
+        },
+        {
+          "q": "A police car with flashing lights is stopped on the shoulder and you cannot safely move over a lane. What must you do?",
+          "type": "mc",
+          "options": ["Maintain your speed", "Slow to at least 10 mph below the speed limit", "Speed up past quickly", "Stop on the shoulder behind it"],
+          "answer": 1,
+          "explain": "The Move Over law (MCL 257.653a) requires moving over when possible; if not, slow to at least 10 mph below the posted limit."
+        },
+        {
+          "q": "Michigan's zero-tolerance law means a driver under 21 can face consequences at a BAC of just 0.02%.",
+          "type": "tf",
+          "answer": true,
+          "explain": "True — 0.02% or more for under-21 drivers triggers license sanctions. One drink can put a young driver over the line."
+        },
+        {
+          "q": "An 8-year-old child who is 4'10\" tall is riding in your car. Legally, they...",
+          "type": "mc",
+          "options": ["Must still be in a booster seat", "May use an adult seat belt", "Must ride in a car seat", "Must sit in the front seat"],
+          "answer": 1,
+          "explain": "At 8+ years AND 4'9\"+ tall, a child may legally use an adult seat belt. Under either threshold, a booster is still required."
+        },
+        {
+          "q": "Michigan assigns driver responsibility points for violations. How many points trigger a possible license suspension?",
+          "type": "mc",
+          "options": ["6 points", "9 points", "12 points", "15 points"],
+          "answer": 2,
+          "explain": "12 points within a period can result in license suspension. Speeding alone adds 1–4 points, so it adds up fast."
+        },
+        {
+          "q": "You are in the left lane going 72 mph, matching the car beside you, with traffic stacking up behind. This is legal since you're not speeding.",
+          "type": "tf",
+          "answer": false,
+          "explain": "False — Michigan's left-lane law requires the right lane unless actively passing. Matching adjacent traffic while blocking the lane is a violation."
+        },
+        {
+          "q": "After a crash with no injuries, which of these is NOT required of you?",
+          "type": "mc",
+          "options": ["Stop at the scene", "Exchange insurance information", "Move vehicles immediately even before documenting", "Notify police if required by the law"],
+          "answer": 2,
+          "explain": "You must stop, exchange information, and call police when required. Moving vehicles before documenting (photos, positions) can hurt your claim — unless a police officer directs it."
+        },
+        {
+          "q": "Under Michigan law, a driver may wear headphones in both ears while driving.",
+          "type": "tf",
+          "answer": false,
+          "explain": "False — MCL 257.706c prohibits wearing headphones or earplugs in BOTH ears while driving because they block emergency sounds. One ear is the maximum."
+        },
+        {
+          "q": "Which of these situations does the school-bus stop requirement still apply to?",
+          "type": "mc",
+          "options": ["Traffic behind the bus on a divided highway", "Oncoming traffic on a divided highway with a median", "Traffic on the same side of a divided highway", "A bus parked with hazard lights but no flashing reds"],
+          "answer": 2,
+          "explain": "On a divided highway, only same-side traffic must stop. Oncoming traffic on the other side of a median may continue (MCL 257.682). No flashing reds = no stop required."
+        }
+      ],
+      "advanced": [
+        {
+          "q": "Under Michigan law, a person asleep in the driver's seat of a parked car with the engine running can be charged with OWI even though the car never moved.",
+          "type": "tf",
+          "answer": true,
+          "explain": "True — 'operating' (MCL 257.35a) includes being in actual physical control of a running vehicle. Courts (e.g., People v. Wood) have upheld charges in exactly this scenario."
+        },
+        {
+          "q": "A driver refuses a chemical test after an OWI stop. Under Michigan's implied consent law, what happens?",
+          "type": "mc",
+          "options": ["Nothing — no test, no case", "6 points and a 1-year license suspension", "A mandatory jail sentence", "Automatic license revocation for life"],
+          "answer": 1,
+          "explain": "Refusal adds 6 points and a 1-year suspension (MCL 257.625c) — ON TOP of the OWI charge, which can still proceed. Officers can also get a warrant for a blood draw."
+        },
+        {
+          "q": "A BAC of 0.17% or higher in Michigan triggers enhanced penalties beyond the standard 0.08% OWI.",
+          "type": "tf",
+          "answer": true,
+          "explain": "True — the 'high BAC' threshold of 0.17% adds enhanced penalties: longer restrictions, mandatory community service, and possible ignition interlock requirements."
+        },
+        {
+          "q": "Under People v. Koon (2020), what does the prosecution need to convict a driver for marijuana-related OWI in Michigan?",
+          "type": "mc",
+          "options": ["Only a positive THC blood test", "Proof of actual impairment beyond the test result", "A witnessed traffic violation", "The driver's admission of use"],
+          "answer": 1,
+          "explain": "Koon held that a positive THC test alone is insufficient — the state must prove impairment. But objective signs like weaving still prove it."
+        },
+        {
+          "q": "A registered medical marijuana patient who is impaired while driving has a complete legal defense in Michigan.",
+          "type": "tf",
+          "answer": false,
+          "explain": "False — a medical marijuana card is not a defense to driving while impaired. Koon requires proof of impairment, but impairment itself is still illegal regardless of the card."
+        },
+        {
+          "q": "Under Michigan's no-fault system, the 'mini-tort' lets you recover up to how much for vehicle damage from the at-fault driver's insurer?",
+          "type": "mc",
+          "options": ["$500", "$3,000", "$10,000", "$50,000"],
+          "answer": 1,
+          "explain": "The mini-tort (MCL 500.3135) allows up to $3,000 for vehicle damage if you have collision coverage. The 2019 reform also lets drivers choose PIP medical coverage levels."
+        },
+        {
+          "q": "Leaving the scene of a crash that caused only property damage is a criminal misdemeanor in Michigan.",
+          "type": "tf",
+          "answer": false,
+          "explain": "False — property-damage-only hit-and-run is a civil infraction with 4 points (MCL 257.618). Injury hit-and-run, however, is a felony with up to 5 years in prison."
+        },
+        {
+          "q": "On a divided highway, a school bus with flashing red lights stops in the opposite direction. Which traffic must stop?",
+          "type": "mc",
+          "options": ["All traffic in both directions", "Only traffic on the same side as the bus", "Only oncoming traffic", "No one — buses never require stops on divided highways"],
+          "answer": 1,
+          "explain": "On a divided highway with a physical median, only same-side traffic must stop (MCL 257.682). Oncoming traffic may continue."
+        },
+        {
+          "q": "Michigan's 2019 no-fault insurance reform allows drivers to...",
+          "type": "mc",
+          "options": ["Drop all insurance requirements", "Choose their PIP medical coverage level", "Sue without any limits", "Skip the mini-tort entirely"],
+          "answer": 1,
+          "explain": "Drivers can now choose PIP levels (unlimited, $500K, $250K, or $50K with exclusions). Unlimited medical PIP is still the default choice unless another is selected."
+        },
+        {
+          "q": "Which of the following is a criminal offense in Michigan rather than a civil infraction?",
+          "type": "mc",
+          "options": ["Going 10 mph over the limit", "Careless driving with a crash", "Refusing a chemical test", "Second-offense OWI"],
+          "answer": 3,
+          "explain": "OWI is criminal — a misdemeanor on first offense and more serious on repeat. Speeding and careless driving are typically civil infractions; a test refusal is a civil violation too."
+        }
+      ]
+    }
+  }
+}
