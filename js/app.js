@@ -86,6 +86,8 @@ window.Oracle = window.Oracle || {};
     document.getElementById('mobile-nav').classList.add('hidden');
 
     try {
+      // Topic list is needed for names/breadcrumbs on every page — cached after first load
+      await loadTopicsIfNeeded();
       switch (page) {
         case 'topic':
           if (!args[0]) return route();
