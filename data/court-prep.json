@@ -101,6 +101,82 @@
       "options": ["$1,000", "$3,000", "$5,000", "$7,000"],
       "correct": 1,
       "explanation": "The mini-tort cap is $3,000 for accidents after July 1, 2020 (MCL 500.3135(3)(e)). This is an amount defense that reduces recovery, NOT a jurisdictional ceiling that prevents the lawsuit."
+    },
+    {
+      "question": "What is the case number?",
+      "type": "multiple-choice",
+      "options": ["26-4144-SC", "26-4144-DC", "26-4144-SD", "24-4144-SC"],
+      "correct": 0,
+      "explanation": "The case number is 26-4144-SC in the 74th District Court, Bay City. 'SC' stands for small claims."
+    },
+    {
+      "question": "Who is the plaintiff?",
+      "type": "multiple-choice",
+      "options": ["Jolene D. Wilcox", "Magistrate Perry", "Officer Jacob Kirsch", "The State of Michigan"],
+      "correct": 0,
+      "explanation": "Jolene D. Wilcox is the plaintiff. Magistrate Perry presides over the hearing, and Officer Jacob Kirsch wrote the police report (UD-10)."
+    },
+    {
+      "question": "What does the police report say about your vehicle?",
+      "type": "multiple-choice",
+      "options": ["It failed to stop at a stop sign", "It exceeded the speed limit", "It ran a red light", "It was parked illegally"],
+      "correct": 0,
+      "explanation": "The UD-10 report (Officer Jacob Kirsch) states Unit 1 — your vehicle — failed to stop at the stop sign and caused the collision. This is documented evidence, so be prepared to respond without admitting fault."
+    },
+    {
+      "question": "What is the mini-tort cap for accidents after July 1, 2020?",
+      "type": "multiple-choice",
+      "options": ["$1,000", "$3,000", "$5,000", "$7,000"],
+      "correct": 1,
+      "explanation": "The mini-tort cap is $3,000 for accidents after July 1, 2020 (MCL 500.3135(3)(e)). It limits recovery for vehicle damage to the extent not covered by insurance — an amount defense that reduces exposure, NOT a dismissal."
+    },
+    {
+      "question": "Can you file a counterclaim in small claims?",
+      "type": "multiple-choice",
+      "options": [
+        "Yes, but it must have an independent legal basis and provable damages",
+        "No — counterclaims are not allowed in small claims",
+        "Only if the plaintiff agrees",
+        "Only for amounts over $3,000"
+      ],
+      "correct": 0,
+      "explanation": "You may file a counterclaim (MCL 600.8405) if it has an independent legal basis and provable damages. It should be filed with your written response, before trial."
+    },
+    {
+      "question": "What happens if there's no court reporter?",
+      "type": "multiple-choice",
+      "options": [
+        "The hearing is postponed",
+        "A transcript is ordered from the court",
+        "Your notes are the only record of what happened",
+        "The magistrate's spoken summary is the official record"
+      ],
+      "correct": 2,
+      "explanation": "There is no court reporter and no verbatim record in Michigan small claims (MCL 600.8411(2)). Take detailed notes — they are the only record of what happened at the hearing."
+    },
+    {
+      "question": "The claim includes medical damages.",
+      "type": "true-false",
+      "correct": false,
+      "explanation": "False. The claim seeks only vehicle damage, towing, and storage — no medical damages are pleaded. However, the plaintiff's ER records ARE in the packet — do not imply she has no medical evidence."
+    },
+    {
+      "question": "You can request a district judge instead of a magistrate.",
+      "type": "true-false",
+      "correct": true,
+      "explanation": "True. Either party may demand removal of a small claims case to the general civil division (MCL 600.8405), where a district judge hears it instead of the magistrate. Note that removal also lifts the no-attorney restriction."
+    },
+    {
+      "question": "The statute of limitations has expired.",
+      "type": "true-false",
+      "correct": false,
+      "explanation": "False. The incident was June 7, 2026 — about two months before the hearing. Michigan's tort statute of limitations is 3 years (MCL 600.5805(2)), so the claim is well within the limit."
+    },
+    {
+      "question": "Attorneys are barred from Michigan small claims court.",
+      "type": "true-false",
+      "correct": true,
+      "explanation": "True. No attorney may appear in small claims (MCL 600.8408(1)). If you want a lawyer, the case must be removed to the general civil division before trial."
     }
   ]
 }

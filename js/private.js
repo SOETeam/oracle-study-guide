@@ -196,13 +196,13 @@ window.Oracle = window.Oracle || {};
       .join('');
   }
 
-  function progressBarHtml(progress, total) {
+  function progressBarHtml(progress, total, quizTotal) {
     const reviewed = Math.min(progress.sections.length, total);
     const pct = total ? Math.round((reviewed / total) * 100) : 0;
     return `
       <div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
         <span class="text-slate-300">📖 <span class="font-bold text-white">${reviewed}/${total}</span> sections reviewed</span>
-        <span class="text-slate-300">🎯 Best quiz: <span class="font-bold text-gold">${progress.quizBest}/10</span></span>
+        <span class="text-slate-300">🎯 Best quiz: <span class="font-bold text-gold">${progress.quizBest}/${quizTotal}</span></span>
         <button id="reset-private-progress" class="text-xs text-slate-500 hover:text-danger transition">Reset progress</button>
       </div>
       <div class="mt-3 h-2 rounded-full bg-white/5 overflow-hidden">
@@ -214,6 +214,7 @@ window.Oracle = window.Oracle || {};
   function renderModule(area, data) {
     document.title = (data.title || 'Private Study') + ' — Oracle Study Guide';
     const progress = loadProgress();
+    const quizTotal = (data.quiz || []).length;
 
     const sectionsHtml = (data.sections || []).map((s, i) => `
       <details data-section="${i}" class="group rounded-2xl border border-white/10 bg-navy-2/70 overflow-hidden">
@@ -259,7 +260,7 @@ window.Oracle = window.Oracle || {};
         <!-- Progress -->
         <section id="private-progress" class="rounded-2xl border border-white/10 bg-navy-2/60 p-5 sm:p-6">
           <h2 class="font-display text-lg font-600 text-white mb-3">Your preparation</h2>
-          ${progressBarHtml(progress, (data.sections || []).length)}
+          ${progressBarHtml(progress, (data.sections || []).length, quizTotal)}
         </section>
 
         <!-- Sections -->
@@ -274,11 +275,11 @@ window.Oracle = window.Oracle || {};
           <div id="private-quiz">
             <div class="rounded-2xl border border-white/10 bg-navy-2/70 p-6 sm:p-8 text-center">
               <div class="text-4xl mb-3">🎯</div>
-              <h3 class="font-display text-lg font-600 text-white mb-2">10 questions — no pressure</h3>
+              <h3 class="font-display text-lg font-600 text-white mb-2">${quizTotal} questions — no pressure</h3>
               <p class="text-sm text-slate-400 max-w-md mx-auto leading-relaxed mb-5">
                 Multiple choice &amp; true/false on your hearing: dates, facts, procedure, and what to say.
-                Instant feedback with a short explanation after every answer.
-                ${progress.quizBest ? `<br /><span class="text-gold font-semibold">Your best so far: ${progress.quizBest}/10</span>` : ''}
+                The order changes every time — instant feedback with a short explanation after every answer.
+                ${progress.quizBest ? `<br /><span class="text-gold font-semibold">Your best so far: ${progress.quizBest}/${quizTotal}</span>` : ''}
               </p>
               <button id="start-p-quiz" class="px-7 py-3 rounded-xl bg-teal text-navy font-bold text-sm shadow-glow hover:bg-teal/90 transition">Start the quiz</button>
             </div>
@@ -308,7 +309,7 @@ window.Oracle = window.Oracle || {};
       if (el) {
         el.innerHTML = `
           <h2 class="font-display text-lg font-600 text-white mb-3">Your preparation</h2>
-          ${progressBarHtml(loadProgress(), total)}`;
+          ${progressBarHtml(loadProgress(), total, quizTotal)}`;
         const resetBtn = el.querySelector('#reset-private-progress');
         if (resetBtn) resetBtn.addEventListener('click', onResetProgress);
       }
@@ -331,8 +332,18 @@ window.Oracle = window.Oracle || {};
   }
 
   /* ── Prep quiz (same look & feel as the main quiz engine) ─ */
+  /** Fisher-Yates shuffle — returns a new array, original untouched. */
+  function shuffle(arr) {
+    const a = arr.slice();
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
   function startQuiz(area, data) {
-    const qs = (data.quiz || []).slice(0, 10);
+    const qs = shuffle(data.quiz || []);
     const s = { questions: qs, index: 0, score: 0, answers: [] };
     renderQuestion(area, data, s);
   }
@@ -427,11 +438,13 @@ window.Oracle = window.Oracle || {};
     // Persist best score
     Oracle.private.recordQuiz(s.score);
 
-    const band = s.score >= 8
-      ? { emoji: '🎯', title: 'Ready', msg: `You know your case — ${s.score}/10. Walk in calm and confident. Review the quick reference card once more before bed.` }
-      : s.score >= 5
-        ? { emoji: '📖', title: 'Almost there', msg: `${s.score}/10 — solid, but a few gaps. Re-read the sections you missed, then retake.` }
-        : { emoji: '🌱', title: 'Keep studying', msg: `${s.score}/10 — take your time with the sections above and try again. You've got this.` };
+    const total = s.answers.length;
+    // Bands scaled to quiz length: 80%+ ready, 50%+ almost there
+    const band = s.score >= total * 0.8
+      ? { emoji: '🎯', title: 'Ready', msg: `You know your case — ${s.score}/${total}. Walk in calm and confident. Review the quick reference card once more before bed.` }
+      : s.score >= total * 0.5
+        ? { emoji: '📖', title: 'Almost there', msg: `${s.score}/${total} — solid, but a few gaps. Re-read the sections you missed, then retake.` }
+        : { emoji: '🌱', title: 'Keep studying', msg: `${s.score}/${total} — take your time with the sections above and try again. You've got this.` };
 
     let review = '';
     s.answers.forEach((a, i) => {
