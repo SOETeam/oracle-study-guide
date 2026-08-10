@@ -214,7 +214,7 @@ window.Oracle = window.Oracle || {};
   function renderModule(area, data) {
     document.title = (data.title || 'Private Study') + ' — Oracle Study Guide';
     const progress = loadProgress();
-    const quizTotal = (data.quiz || []).length;
+    const quizTotal = Math.min(38, (data.quiz || []).length);
 
     const sectionsHtml = (data.sections || []).map((s, i) => `
       <details data-section="${i}" class="group rounded-2xl border border-white/10 bg-navy-2/70 overflow-hidden">
@@ -343,7 +343,8 @@ window.Oracle = window.Oracle || {};
   }
 
   function startQuiz(area, data) {
-    const qs = shuffle(data.quiz || []);
+    const allQs = shuffle(data.quiz || []);
+    const qs = allQs.slice(0, 38);
     const s = { questions: qs, index: 0, score: 0, answers: [] };
     renderQuestion(area, data, s);
   }
