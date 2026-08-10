@@ -1,71 +1,55 @@
 {
   "id": "court-prep",
-  "title": "Court Case Preparation \u2014 August 10, 2026",
+  "title": "Court Case Preparation — August 10, 2026",
   "description": "Complete study module for your 74th District Court hearing",
   "sections": [
     {
       "title": "Your Case Overview",
-      "content": "Case: 74th District Court, Bay City. Case Number: 26-4144-SC. Date: Monday, August 10, 2026, 9:30 AM. Magistrate: Perry. Plaintiff: Jolene D. Wilcox. Incident: June 7, 2026 vehicle collision. Amount claimed: $5,664.68 (vehicle damage, towing, storage). Key fact: The mini-tort cap limits recovery to $3,000 for vehicle damage. The claim exceeds this cap. Towing and storage may be separately recoverable but must be proven reasonable. Both parties show GEICO on the UD-10 crash report, but the plaintiff has not provided proof of active insurance with her filing."
-    },
-    {
-      "title": "Michigan Law Fundamentals",
-      "content": "Small claims jurisdiction: MCL 600.8401. Jurisdictional ceiling: $7,000 since January 1, 2024 (MCL 600.8401(e)). Statute of limitations: 3 years for tort claims (MCL 600.5805(2)). Burden of proof: plaintiff must prove damages by preponderance of evidence. Mini-tort (MCL 500.3135): Capped at $3,000 for accidents after July 1, 2020 (MCL 500.3135(3)(e)). This is an AMOUNT DEFENSE \u2014 it limits recovery, not a dismissal. The plaintiff must prove: (1) she was 50% or less at fault, (2) her vehicle had no-fault insurance on June 7, 2026, (3) the damages were not covered by her own insurance. If she cannot prove active insurance, the mini-tort claim may be barred under MCL 500.3135(4)(e). The UD-10 crash report shows GEICO for both parties, but this is police-reported information \u2014 the plaintiff should produce proof of coverage (declarations page, policy document, or insurance card)."
+      "content": "Case: 74th District Court, Bay City. Case Number: 26-4144-SC. Date: Monday, August 10, 2026, 9:30 AM. Magistrate: Perry. Plaintiff: Jolene D. Wilcox. Incident: June 7, 2026 vehicle collision. Amount claimed: $5,664.68 (vehicle damage, towing, storage). Key fact: The mini-tort cap limits recovery to $3,000 for vehicle damage. The claim exceeds this cap. Towing and storage are likely NOT covered by the mini-tort (which covers damage to the vehicle only). Even if included, total mini-tort recovery is still capped at $3,000. The mini-tort is the EXCLUSIVE remedy for vehicle damage — the plaintiff cannot pursue a separate 'general tort' for the car. Both parties show GEICO on the UD-10 crash report, but the plaintiff has not provided proof of active insurance with her filing."
     },
     {
       "title": "Your Rights as Defendant",
-      "content": "Right to present evidence (bring all documents, photos, witnesses). Right to cross-examine witnesses (within informal hearing format). Right to request adjournment (NOT guaranteed \u2014 judge decides). NO ATTORNEY MAY APPEAR in small claims (MCL 600.8408(1)) \u2014 if you want a lawyer, case must be removed to general civil division before trial. Right to file counterclaim (must have independent legal basis and provable damages). Right to appeal magistrate decision to district judge within 7 days. Right to request the plaintiff produce proof of insurance. The UD-10 crash report is NOT conclusive proof of active coverage \u2014 officers only record what's on the card, they don't verify with the insurance company. Direct verification (declarations page, letter of coverage, claim check) is required to prove the policy was active on the date of the accident."
+      "content": "Right to present evidence (bring all documents, photos, witnesses). Right to cross-examine witnesses (within informal hearing format). Right to request adjournment (NOT guaranteed — judge decides). NO ATTORNEY MAY APPEAR in small claims (MCL 600.8408(1)) — if you want a lawyer, case must be removed to general civil division before trial. Right to file counterclaim (must have independent legal basis and provable damages). Right to appeal magistrate decision to district judge within 7 days. Right to request the plaintiff produce proof of insurance. The UD-10 crash report is NOT conclusive proof of active coverage — officers only record what's on the card, they don't verify with the insurance company. Direct verification (declarations page, letter of coverage, claim check) is required to prove the policy was active on the date of the accident. Because the mini-tort is the EXCLUSIVE remedy for vehicle damage (MCL 500.3135(3)), the plaintiff cannot 'elect' a higher general-tort claim for the car. You can raise this: the cap and the exclusive-remedy rule govern."
     },
     {
-      "title": "What to Say",
-      "content": "SAFE: 'I'm here to respond to the claim.' 'The mini-tort cap limits recovery to $3,000 for vehicle damage. The claim exceeds this amount.' 'The plaintiff's claim is for mini-tort damages under MCL 500.3135. The mini-tort cap limits recovery to $3,000 for vehicle damage. The UD-10 crash report only shows what was on the insurance card \u2014 it does not verify the policy was active. I request direct verification from GEICO.' 'Your Honor, the UD-10 crash report only shows what the officer recorded from the insurance card. It does not verify the policy was active on June 7, 2026. I request that the plaintiff produce direct verification from GEICO \u2014 a declarations page, letter of coverage, or claim check.' 'Your Honor, if the plaintiff cannot produce direct proof that her policy was active on June 7, 2026, the mini-tort claim should be barred under MCL 500.3135(4)(e).' 'I applied my brakes at the stop sign.' 'I have documentation of my own damages.'"
+      "title": "Michigan Law & the Mini-Tort",
+      "content": "SMALL CLAIMS: Jurisdiction MCL 600.8401. Jurisdictional ceiling: $7,000 since January 1, 2024 (MCL 600.8401(e)). Statute of limitations: 3 years for tort claims (MCL 600.5805(2)). Burden of proof: preponderance of the evidence. MINI-TORT (MCL 500.3135): Capped at $3,000 for accidents after July 1, 2020 (MCL 500.3135(3)(e)). This is an AMOUNT DEFENSE — it limits recovery, not a dismissal. THE MINI-TORT IS EXCLUSIVE (VERIFIED): MCL 500.3135(3) abolishes tort liability for vehicle damage where the required security (MCL 500.3101(1)) was in effect. The only surviving vehicle-damage remedy is the mini-tort exception (3)(e). The plaintiff CANNOT elect a general tort for the car. NO $5,000 GENERAL-TORT CEILING (VERIFIED): $5,000 was the small-claims ceiling ONLY 9/1/2012–12/31/2014. Current small-claims ceiling is $7,000 (MCL 600.8401(e)). For vehicle damage, the operative limit is the $3,000 mini-tort cap. $3,000 CAP APPLIES REGARDLESS OF CLAIM AMOUNT (VERIFIED): it is an amount/damages cap, not a jurisdictional dismissal bar. The $5,664.68 claim proceeds (under the $7,000 court ceiling) but vehicle-damage recovery is capped at $3,000. TOWING/STORAGE (INTERPRETATION): likely NOT within 'damages ... to a motor vehicle'; even if included, total is still capped at $3,000. CORRECT CITATION (VERIFIED): property damage / 'property protection' (PPI) = MCL 500.3121. MCL 500.3105 is PIP (bodily injury), NOT property — do not cite 3105 for property. PLAINTIFF MUST PROVE: (1) she was 50% or less at fault, (2) her vehicle had no-fault insurance on June 7, 2026, (3) the damages were not covered by her own insurance. If she cannot prove active insurance, the mini-tort claim may be barred under MCL 500.3135(4)(e). The UD-10 crash report shows GEICO for both parties, but it is police-reported information — the plaintiff should produce proof of coverage (declarations page, policy document, or insurance card). The UD-10 is NOT proof of active coverage: a policy could have been canceled before the accident. STRATEGY: State the mini-tort cap ($3,000 max), request direct proof of insurance from GEICO, challenge towing/storage as not covered by the mini-tort, present your own documentation of damages."
     },
     {
-      "title": "What NOT to Say",
-      "content": "DO NOT: Admit fault (the police report shows your vehicle failed to stop at a stop sign). Rely on the '$3,000 means I can't be sued' theory \u2014 this is WRONG. The $3,000 is a mini-tort cap on recovery, NOT a jurisdictional ceiling. Make emotional statements. Discuss legal theories you can't support. Say anything about insurance without careful thought. Argue the plaintiff was uninsured \u2014 only argue she hasn't proven her policy was active. The UD-10 shows GEICO was listed, but that's not the same as proof the policy was in force."
-    },
-    {
-      "title": "Court Procedure",
-      "content": "IMPORTANT: Both in-person AND Zoom are checked on your packet. Call the court (989-895-4232 or 989-895-4203) to CONFIRM before Monday. If in-person: arrive by 9:00 AM, check in with clerk, wait for case to be called. If Zoom: Meeting ID 946-661-3202, do NOT join early or late. Stand when speaking (if in-person). Address magistrate as 'Your Honor' or 'Magistrate Perry'. Present your response clearly. TAKE NOTES \u2014 there is NO court reporter and NO verbatim record (MCL 600.8411(2)). Your notes are the only record of what happened."
-    },
-    {
-      "title": "Risk Assessment",
-      "content": "CRITICAL: The police report (UD-10, Officer Jacob Kirsch) states Unit 1 (your vehicle) failed to stop at the stop sign and caused the collision. This is documented evidence. The claim amount ($5,664.68) exceeds the mini-tort cap ($3,000). A finding against you on the mini-tort limits your exposure to $3,000 for vehicle damage. The claim also includes towing and storage which may be separately recoverable. Be prepared to respond to the stop-sign evidence without admitting fault."
-    },
-    {
-      "title": "Mini-Tort Strategy",
-      "content": "The mini-tort claim is capped at $3,000 (MCL 500.3135(3)(e)). The plaintiff claims $5,664.68, which exceeds the cap. Under the law: (1) You are only liable for up to $3,000 in vehicle damage under the mini-tort. (2) Towing and storage may be separately recoverable but must be proven reasonable and necessary. (3) The plaintiff must prove she had active no-fault insurance on June 7, 2026. (4) The UD-10 crash report is NOT proof of active coverage \u2014 it only shows the officer recorded what was on the insurance card. Officers do not call the insurance company to verify the policy was active. A policy could have been canceled before the accident. (5) The plaintiff must produce DIRECT VERIFICATION from GEICO (declarations page, letter of coverage, or claim check) to prove her policy was active on June 7, 2026. (6) If she cannot produce direct verification, the mini-tort claim may be barred entirely under MCL 500.3135(4)(e). Your strategy: State the mini-tort cap ($3,000 max), request direct proof of insurance from GEICO, challenge unreasonable towing/storage costs, present your own documentation of damages."
-    },
-    {
-      "title": "Documents to Bring",
-      "content": "CRITICAL DOCUMENTS FOR COURT: (1) The 11-page filing/packet from plaintiff. (2) Case number: 26-4144-SC (write on sticky note). (3) Your insurance documents/policy. (4) Photos of vehicle damage (both cars if available). (5) Police/citation records from June 7 incident. (6) Your own repair estimates or receipts. (7) Any correspondence with insurance companies. (8) Notepad and pen \u2014 THERE IS NO COURT REPORTER. (9) This study guide \u2014 print the Quick Reference card. (10) arrive with organized folder, not loose papers."
-    },
-    {
-      "title": "Courtroom Procedure",
-      "content": "SMALL CLAIMS PROCEDURE \u2014 WHAT HAPPENS WHEN: (1) Check-in: Arrive 30 minutes early, check in at clerk's window. Phone off, notes ready. (2) Call & Identification: Magistrate calls case number, both parties state names, both sworn in. Stand when speaking. (3) Plaintiff's Case: Plaintiff speaks FIRST for 5-8 minutes. She presents documents, calls witnesses. DO NOT INTERRUPT. Take notes. (4) Your Case: Magistrate turns to you. Give your planned response. You may ask the plaintiff questions. (5) Magistrate Questions: Magistrate probes both sides. Answer honestly, don't argue. (6) Closing: Short statements from both sides. Ask: 'Your Honor, may I make a brief closing statement?' (7) Decision: Magistrate rules immediately or takes under advisement (decision mailed). Either way, write down the result. 7-day appeal window. EXPECT 20-30 MINUTES TOTAL."
+      "title": "What to Say & Argument Order",
+      "content": "SAFE PHRASES: 'I'm here to respond to the claim.' 'The mini-tort cap limits recovery to $3,000 for vehicle damage. The claim exceeds this amount.' 'I applied my brakes at the stop sign.' 'I have documentation of my own damages.' INSURANCE / UD-10 SCRIPT: 'Your Honor, the UD-10 crash report only shows what the officer recorded from the insurance card. It does not verify the policy was active on June 7, 2026. I request that the plaintiff produce direct verification from GEICO — a declarations page, letter of coverage, or claim check.' If she cannot produce direct proof, add: 'Your Honor, if the plaintiff cannot produce direct proof that her policy was active on June 7, 2026, the mini-tort claim should be barred under MCL 500.3135(4)(e).' LEGAL ARGUMENT (add this line): 'Vehicle damage is governed by the exclusive mini-tort remedy, capped at $3,000 (MCL 500.3135). There is no separate general tort the plaintiff can pursue for the car, and towing/storage are not vehicle damage covered by the mini-tort.' ORDER OF ARGUMENTS — PSYCHOLOGY OF PERSUASION: (1) CONCEDE WHAT YOU CAN'T WIN: 'I don't deny the collision happened, and I don't deny Ms. Wilcox's car was damaged.' This buys maximum credibility. (2) PRESENT YOUR ACCOUNT: 'I applied my brakes at the stop sign. The absence of skid marks suggests the brakes may not have responded as expected. The police report captures one perspective — I'd like to present my account.' (3) CITE THE LAW: 'Under MCL 500.3135, any recovery for vehicle damage is capped at $3,000, reduced by comparative fault, and only to the extent not covered by insurance. The claim exceeds this cap.' (4) REQUEST SPECIFIC RELIEF: 'I ask that any recovery be reduced by the plaintiff's share of fault, capped at the $3,000 statutory limit, and only to the extent the damages are not covered by insurance.' Plant seeds of doubt through QUESTIONS, not accusations: 'I ask the court to weigh...' not 'She's wrong.'"
     },
     {
       "title": "How to Open",
-      "content": "YOUR OPENING \u2014 EXACT SCRIPT: 'Good morning, Your Honor. I'm Sophia Saitta, the defendant in this matter. I'm here to respond to the claim, and I'd like to give my account of what happened.' THAT'S IT. Name + purpose + readiness. Do NOT make a speech about yourself. Do NOT say what you do for a living unless it's relevant. The magistrate has 20 cases today. Competence and calm win, not credentials. If you want to mention your work, use it as a grounding line: 'I run a technology company, Your Honor, so I'm used to being organized \u2014 I want to assure you I've come prepared to be straightforward about what happened.'"
-    },
-    {
-      "title": "When You Speak \u2014 Argument Order",
-      "content": "ORDER OF ARGUMENTS \u2014 PSYCHOLOGY OF PERSUASION: (1) CONCEDE WHAT YOU CAN'T WIN: 'I don't deny the collision happened, and I don't deny Ms. Wilcox's car was damaged.' This buys maximum credibility. (2) PRESENT YOUR ACCOUNT: 'I applied my brakes at the stop sign. The absence of skid marks suggests the brakes may not have responded as expected. The police report captures one perspective \u2014 I'd like to present my account.' (3) CITE THE LAW: 'Under MCL 500.3135, any recovery for vehicle damage is capped at $3,000, reduced by comparative fault, and only to the extent not covered by insurance. The claim exceeds this cap.' (4) REQUEST SPECIFIC RELIEF: 'I ask that any recovery be reduced by the plaintiff's share of fault, capped at the $3,000 statutory limit, and only to the extent the damages are not covered by insurance.' Plant seeds of doubt through QUESTIONS, not accusations: 'I ask the court to weigh...' not 'She's wrong.'"
+      "content": "YOUR OPENING — EXACT SCRIPT: 'Good morning, Your Honor. I'm Sophia Saitta, the defendant in this matter. I'm here to respond to the claim, and I'd like to give my account of what happened.' THAT'S IT. Name + purpose + readiness. Do NOT make a speech about yourself. Do NOT say what you do for a living unless it's relevant. The magistrate has 20 cases today. Competence and calm win, not credentials. If you want to mention your work, use it as a grounding line: 'I run a technology company, Your Honor, so I'm used to being organized — I want to assure you I've come prepared to be straightforward about what happened.'"
     },
     {
       "title": "Your Closing Statement",
-      "content": "YOUR CLOSING \u2014 MEMORIZE THIS: 'Your Honor, I came here to be straightforward. I don't deny the collision happened, and I don't deny Ms. Wilcox's car was damaged. But I ask that you weigh the ambiguity in the physical scene against the report, that any recovery reflect that this was not solely my responsibility, that it be capped at the $3,000 statutory limit for vehicle damage, and that the towing and storage be supported by receipts and only to the extent not covered by insurance. Whatever you decide, I appreciate your time and consideration.' WHY THIS WORKS: It concedes what you can't win (buys credibility), restates your three winning points (comparative fault, cap, documented damages), and ends with grace and respect. End with thanks, not threats."
+      "content": "YOUR CLOSING — MEMORIZE THIS: 'Your Honor, I came here to be straightforward. I don't deny the collision happened, and I don't deny Ms. Wilcox's car was damaged. But I ask that you weigh the ambiguity in the physical scene against the report, that any recovery reflect that this was not solely my responsibility, that it be capped at the $3,000 statutory limit for vehicle damage, and that the towing and storage be supported by receipts and only to the extent not covered by insurance. Whatever you decide, I appreciate your time and consideration.' WHY THIS WORKS: It concedes what you can't win (buys credibility), restates your three winning points (comparative fault, cap, documented damages), and ends with grace and respect. End with thanks, not threats."
+    },
+    {
+      "title": "What NOT to Say / Forbidden Moves",
+      "content": "WHAT NOT TO SAY — DO NOT: Admit fault (the police report shows your vehicle failed to stop at a stop sign). Rely on the '$3,000 means I can't be sued' theory — this is WRONG. The $3,000 is a mini-tort cap on recovery, NOT a jurisdictional ceiling. Make emotional statements. Discuss legal theories you can't support. Say anything about insurance without careful thought. Argue the plaintiff was uninsured — only argue she hasn't proven her policy was active. The UD-10 shows GEICO was listed, but that's not the same as proof the policy was in force. FORBIDDEN MOVES — READ BEFORE ENTERING: ❌ Interrupting anyone. ❌ Arguing with the magistrate. ❌ Admitting fault ('I ran the sign'). ❌ 'The brakes failed' — sounds like a vehicle maintenance admission. ❌ 'She didn't brake' — speculation without evidence. ❌ 'She's lying' — inflammatory and unprofessional. ❌ 'She has no insurance' — UD-10 shows GEICO; say 'hasn't proven her policy was active.' ❌ 'I owe nothing' — loses credibility; you're conceding the collision happened. ❌ Reacting visibly to plaintiff's testimony. ❌ Rambling — you have ~3-5 minutes of speaking time. Be brief, be specific, be done. ADDITIONAL WRONG ARGUMENTS: ❌ 'There's a $5,000 ceiling so I only owe $5,000' — WRONG; no such $5,000 general-tort ceiling exists (mini-tort $3,000 is the cap). ❌ 'She can pursue a general tort instead' — WRONG; the mini-tort is the exclusive remedy for vehicle damage."
+    },
+    {
+      "title": "Courtroom Procedure",
+      "content": "IMPORTANT: Both in-person AND Zoom are checked on your packet. Call the court (989-895-4232 or 989-895-4203) to CONFIRM before Monday. If in-person: arrive by 9:00 AM (30 minutes early) and check in with the clerk. If Zoom: Meeting ID 946-661-3202, do NOT join early or late. SMALL CLAIMS PROCEDURE — WHAT HAPPENS WHEN: (1) Check-in: arrive 30 minutes early, check in at clerk's window. Phone off, notes ready. (2) Call & Identification: Magistrate calls the case number, both parties state names, both sworn in. Stand when speaking (if in-person). (3) Plaintiff's Case: Plaintiff speaks FIRST for 5-8 minutes. She presents documents, calls witnesses. DO NOT INTERRUPT. Take notes. (4) Your Case: Magistrate turns to you. Give your planned response. You may ask the plaintiff questions. (5) Magistrate Questions: Magistrate probes both sides. Answer honestly, don't argue. (6) Closing: Short statements from both sides. Ask: 'Your Honor, may I make a brief closing statement?' (7) Decision: Magistrate rules immediately or takes under advisement (decision mailed). Either way, write down the result. 7-day appeal window. TAKE NOTES — there is NO court reporter and NO verbatim record (MCL 600.8411(2)). Your notes are the only record of what happened. EXPECT 20-30 MINUTES TOTAL."
+    },
+    {
+      "title": "Risk Assessment",
+      "content": "CRITICAL: The police report (UD-10, Officer Jacob Kirsch) states Unit 1 (your vehicle) failed to stop at the stop sign and caused the collision. This is documented evidence. The claim amount ($5,664.68) exceeds the mini-tort cap ($3,000). A finding against you on the mini-tort limits your exposure to $3,000 for vehicle damage — this cap applies regardless of the claim amount. Towing/storage are likely NOT covered by the mini-tort; at most they are included within the $3,000 cap, not added on top. Because the mini-tort is the exclusive remedy, the plaintiff cannot turn to a separate general tort for the car (MCL 500.3135(3)). Be prepared to respond to the stop-sign evidence without admitting fault."
+    },
+    {
+      "title": "Documents to Bring",
+      "content": "CRITICAL DOCUMENTS FOR COURT: (1) The 11-page filing/packet from plaintiff. (2) Case number: 26-4144-SC (write on sticky note). (3) Your insurance documents/policy. (4) Photos of vehicle damage (both cars if available). (5) Police/citation records from June 7 incident. (6) Your own repair estimates or receipts. (7) Any correspondence with insurance companies. (8) Notepad and pen — THERE IS NO COURT REPORTER. (9) This study guide — print the Quick Reference card. (10) A list of what direct verification from GEICO looks like (declarations page, letter of coverage, claim check) so you can recognize it. (11) Arrive with an organized folder, not loose papers."
     },
     {
       "title": "Staying Calm Under Pressure",
-      "content": "NAVY SEAL CALM \u2014 HOW TO STAY CENTERED: (1) Box Breathing: In 4 counts, hold 4, out 4, hold 4. Repeat 5 times before entering. (2) Posture: Feet flat, back straight, hands still. Open, grounded posture projects confidence. Do NOT cross arms or fidget. (3) Eye Contact: Look at the magistrate when speaking and when they speak. Steady, not a stare-down. Strongest credibility signal. (4) Slow Down: Before answering, take one small breath and a half-second pause. You are never in a hurry. (5) Notepad: Write things down. It anchors you. (6) Mantra: 'I'm the calmest, most reasonable adult here.' (7) Reframe: This is capped at $3,000 \u2014 not life or death. You cannot lose your freedom. The downside is bounded. If you blank: 'Your Honor, I'd like a moment to check my notes.'"
+      "content": "NAVY SEAL CALM — HOW TO STAY CENTERED: (1) Box Breathing: In 4 counts, hold 4, out 4, hold 4. Repeat 5 times before entering. (2) Posture: Feet flat, back straight, hands still. Open, grounded posture projects confidence. Do NOT cross arms or fidget. (3) Eye Contact: Look at the magistrate when speaking and when they speak. Steady, not a stare-down. Strongest credibility signal. (4) Slow Down: Before answering, take one small breath and a half-second pause. You are never in a hurry. (5) Notepad: Write things down. It anchors you. (6) Mantra: 'I'm the calmest, most reasonable adult here.' (7) Reframe: This is capped at $3,000 — not life or death. You cannot lose your freedom. The downside is bounded. If you blank: 'Your Honor, I'd like a moment to check my notes.'"
     },
     {
       "title": "Psychology of the Courtroom",
-      "content": "THE PSYCHOLOGY OF WINNING \u2014 FROM PSYCHE (Psychological Artisan): THE MAGISTRATE'S TRIFECTA: (1) Credibility \u2014 strategic concession + no over-claiming + calm correction + steady eyes. (2) Preparation \u2014 arrive early, organized documents, cite statute once precisely, take notes, have police report ready to hand up. (3) Reasonableness \u2014 frame every doubt as evidence, not accusation; concede the accident; treat plaintiff with courtesy; yield to court's authority. NEUTRALIZE THE VICTIM SCHEMA: You cannot beat 'I was hit' head-on \u2014 she IS the injured party. Do not try to make her the villain. Instead, win the AMOUNT and COMPARATIVE FAULT. Redirect from 'who's at fault' to 'what's fair and provable.' The victim schema wins sympathy; the cap and evidence win the number. BUILD YOUR 'HONEST, REASONABLE' SCHEMA: Concede something real early ('I don't dispute the accident happened') \u2014 the magistrate's brain files you as honest. Every subsequent denial is assimilated into that honest frame. The gratitude frame (thanking the court) activates reciprocity \u2014 the magistrate unconsciously wants to give the courteous party the benefit of the doubt. UNCONSCIOUS TRUST LEVERS (ranked): (1) Calm \u2014 edges out everything; a calm party is presumed honest. (2) Strategic concession \u2014 honesty signal. (3) Specificity \u2014 dates, dollar figures, details you recall. Vague people are suspicious; specific people are believed. (4) No weasel words \u2014 no 'maybe,' 'I guess,' 'possibly not.' State what you know firmly; mark what you don't know honestly. (5) Courtesy to the plaintiff \u2014 treated well, she does the work of making you look decent. (6) Respect for the bench \u2014 yield to magistrate's control, never argue. THE ONE MOVE THAT WINS: Make the magistrate's job easy. Give her a clean story, a clean number, and a reason to side with you she can defend. When a magistrate can rule for you AND point to the statute, she rules for you. Your job is to hand her that statute and that number without making it feel like a fight."
-    },
-    {
-      "title": "Forbidden Moves \u2014 DO NOT DO THESE",
-      "content": "FORBIDDEN MOVES \u2014 READ BEFORE ENTERING: \u274c Interrupting anyone. \u274c Arguing with the magistrate. \u274c Admitting fault ('I ran the sign'). \u274c 'The brakes failed' \u2014 sounds like vehicle maintenance admission. \u274c 'She didn't brake' \u2014 speculation without evidence. \u274c 'She's lying' \u2014 inflammatory and unprofessional. \u274c 'She has no insurance' \u2014 UD-10 shows GEICO; say 'hasn't proven her policy was active.' \u274c 'I owe nothing' \u2014 loses credibility; you're conceding the collision happened. \u274c Reacting visibly to plaintiff's testimony. \u274c Rambling \u2014 you have ~3-5 minutes of speaking time. Be brief, be specific, be done."
+      "content": "THE PSYCHOLOGY OF WINNING — FROM PSYCHE (Psychological Artisan): THE MAGISTRATE'S TRIFECTA: (1) Credibility — strategic concession + no over-claiming + calm correction + steady eyes. (2) Preparation — arrive early, organized documents, cite statute once precisely, take notes, have police report ready to hand up. (3) Reasonableness — frame every doubt as evidence, not accusation; concede the accident; treat plaintiff with courtesy; yield to court's authority. NEUTRALIZE THE VICTIM SCHEMA: You cannot beat 'I was hit' head-on — she IS the injured party. Do not try to make her the villain. Instead, win the AMOUNT and COMPARATIVE FAULT. Redirect from 'who's at fault' to 'what's fair and provable.' The victim schema wins sympathy; the cap and evidence win the number. BUILD YOUR 'HONEST, REASONABLE' SCHEMA: Concede something real early ('I don't dispute the accident happened') — the magistrate's brain files you as honest. Every subsequent denial is assimilated into that honest frame. The gratitude frame (thanking the court) activates reciprocity — the magistrate unconsciously wants to give the courteous party the benefit of the doubt. UNCONSCIOUS TRUST LEVERS (ranked): (1) Calm — edges out everything; a calm party is presumed honest. (2) Strategic concession — honesty signal. (3) Specificity — dates, dollar figures, details you recall. Vague people are suspicious; specific people are believed. (4) No weasel words — no 'maybe,' 'I guess,' 'possibly not.' State what you know firmly; mark what you don't know honestly. (5) Courtesy to the plaintiff — treated well, she does the work of making you look decent. (6) Respect for the bench — yield to magistrate's control, never argue. THE ONE MOVE THAT WINS: Make the magistrate's job easy. Give her a clean story, a clean number, and a reason to side with you she can defend. When a magistrate can rule for you AND point to the statute, she rules for you. Your job is to hand her that statute and that number without making it feel like a fight."
     }
   ],
   "quiz": [
@@ -91,7 +75,7 @@
         "The police report supports you"
       ],
       "correct": 1,
-      "explanation": "The KEY fact: the mini-tort cap (MCL 500.3135(3)(e)) limits her recovery to $3,000 for vehicle damage. The claim of $5,664.68 exceeds this cap \u2014 it is an amount defense that reduces exposure, not a dismissal. Towing and storage may be separately recoverable but must be proven reasonable. The plaintiff has not provided proof of active insurance with her filing."
+      "explanation": "The KEY fact: the mini-tort cap (MCL 500.3135(3)(e)) limits her recovery to $3,000 for vehicle damage. The claim of $5,664.68 exceeds this cap — it is an amount defense that reduces exposure, not a dismissal. Towing/storage are likely NOT covered by the mini-tort; and even if included, total recovery is still capped at $3,000. The plaintiff has not provided proof of active insurance with her filing."
     },
     {
       "question": "What should you say when you arrive?",
@@ -115,7 +99,7 @@
         "5 years"
       ],
       "correct": 2,
-      "explanation": "Michigan has a 3-year statute of limitations for tort claims (MCL 600.5805(2)). Your incident was June 7, 2026 \u2014 well within the limit."
+      "explanation": "Michigan has a 3-year statute of limitations for tort claims (MCL 600.5805(2)). Your incident was June 7, 2026 — well within the limit."
     },
     {
       "question": "What is the current small claims jurisdictional ceiling in Michigan?",
@@ -127,7 +111,7 @@
         "$7,000"
       ],
       "correct": 3,
-      "explanation": "The ceiling is $7,000 since January 1, 2024 (MCL 600.8401(e)). Previously $6,500 (2021-2023)."
+      "explanation": "The ceiling is $7,000 since January 1, 2024 (MCL 600.8401(e)). Previously $6,500 (2021-2023). Note: $5,000 was the ceiling only 9/1/2012–12/31/2014."
     },
     {
       "question": "Can an attorney represent you in Michigan small claims court?",
@@ -135,7 +119,7 @@
       "options": [
         "Yes, always",
         "Only if the judge allows it",
-        "No \u2014 attorneys are barred from small claims (MCL 600.8408(1))",
+        "No — attorneys are barred from small claims (MCL 600.8408(1))",
         "Only for cases over $5,000"
       ],
       "correct": 2,
@@ -151,7 +135,7 @@
         "8:30 AM"
       ],
       "correct": 2,
-      "explanation": "Arrive at 9:00 AM \u2014 30 minutes early to find parking, go through security, and locate the courtroom. But FIRST confirm whether the hearing is in-person or Zoom by calling the court."
+      "explanation": "Arrive at 9:00 AM — 30 minutes early to find parking, go through security, and locate the courtroom. But FIRST confirm whether the hearing is in-person or Zoom by calling the court."
     },
     {
       "question": "Should you admit fault if asked?",
@@ -165,7 +149,7 @@
       "options": [
         "Yes, all hearings are recorded",
         "Only for cases over $5,000",
-        "No \u2014 there is no verbatim record (MCL 600.8411(2))",
+        "No — there is no verbatim record (MCL 600.8411(2))",
         "Only if you request one"
       ],
       "correct": 2,
@@ -217,7 +201,7 @@
         "It was parked illegally"
       ],
       "correct": 0,
-      "explanation": "The UD-10 report (Officer Jacob Kirsch) states Unit 1 \u2014 your vehicle \u2014 failed to stop at the stop sign and caused the collision. This is documented evidence, so be prepared to respond without admitting fault."
+      "explanation": "The UD-10 report (Officer Jacob Kirsch) states Unit 1 — your vehicle — failed to stop at the stop sign and caused the collision. This is documented evidence, so be prepared to respond without admitting fault."
     },
     {
       "question": "What is the mini-tort cap for accidents after July 1, 2020?",
@@ -229,14 +213,14 @@
         "$7,000"
       ],
       "correct": 1,
-      "explanation": "The mini-tort cap is $3,000 for accidents after July 1, 2020 (MCL 500.3135(3)(e)). It limits recovery for vehicle damage to the extent not covered by insurance \u2014 an amount defense that reduces exposure, NOT a dismissal."
+      "explanation": "The mini-tort cap is $3,000 for accidents after July 1, 2020 (MCL 500.3135(3)(e)). It limits recovery for vehicle damage to the extent not covered by insurance — an amount defense that reduces exposure, NOT a dismissal."
     },
     {
       "question": "Can you file a counterclaim in small claims?",
       "type": "multiple-choice",
       "options": [
         "Yes, but it must have an independent legal basis and provable damages",
-        "No \u2014 counterclaims are not allowed in small claims",
+        "No — counterclaims are not allowed in small claims",
         "Only if the plaintiff agrees",
         "Only for amounts over $3,000"
       ],
@@ -253,13 +237,13 @@
         "The magistrate's spoken summary is the official record"
       ],
       "correct": 2,
-      "explanation": "There is no court reporter and no verbatim record in Michigan small claims (MCL 600.8411(2)). Take detailed notes \u2014 they are the only record of what happened at the hearing."
+      "explanation": "There is no court reporter and no verbatim record in Michigan small claims (MCL 600.8411(2)). Take detailed notes — they are the only record of what happened at the hearing."
     },
     {
       "question": "The claim includes medical damages.",
       "type": "true-false",
       "correct": false,
-      "explanation": "False. The claim seeks only vehicle damage, towing, and storage \u2014 no medical damages are pleaded. However, the plaintiff's ER records ARE in the packet \u2014 do not imply she has no medical evidence."
+      "explanation": "False. The claim seeks only vehicle damage, towing, and storage — no medical damages are pleaded. However, the plaintiff's ER records ARE in the packet — do not imply she has no medical evidence."
     },
     {
       "question": "You can request a district judge instead of a magistrate.",
@@ -271,7 +255,7 @@
       "question": "The statute of limitations has expired.",
       "type": "true-false",
       "correct": false,
-      "explanation": "False. The incident was June 7, 2026 \u2014 about two months before the hearing. Michigan's tort statute of limitations is 3 years (MCL 600.5805(2)), so the claim is well within the limit."
+      "explanation": "False. The incident was June 7, 2026 — about two months before the hearing. Michigan's tort statute of limitations is 3 years (MCL 600.5805(2)), so the claim is well within the limit."
     },
     {
       "question": "Attorneys are barred from Michigan small claims court.",
@@ -283,7 +267,7 @@
       "question": "The $3,000 mini-tort cap means you cannot be sued in small claims court.",
       "type": "true-false",
       "correct": false,
-      "explanation": "False. The $3,000 mini-tort cap (MCL 500.3135(3)(e)) is an AMOUNT DEFENSE \u2014 it limits recovery to $3,000, it does NOT prevent the lawsuit. The small claims jurisdictional ceiling is $7,000, so the plaintiff's $5,664.68 claim may proceed but recovery is capped."
+      "explanation": "False. The $3,000 mini-tort cap (MCL 500.3135(3)(e)) is an AMOUNT DEFENSE — it limits recovery to $3,000, it does NOT prevent the lawsuit. The small claims jurisdictional ceiling is $7,000, so the plaintiff's $5,664.68 claim may proceed but recovery is capped."
     },
     {
       "question": "What must the plaintiff prove to recover mini-tort damages?",
@@ -319,7 +303,7 @@
         "$7,000"
       ],
       "correct": 1,
-      "explanation": "Under the mini-tort you are only liable for up to $3,000 in vehicle damage (MCL 500.3135(3)(e)). Towing and storage may be separately recoverable but must be proven reasonable and necessary."
+      "explanation": "Under the mini-tort you are only liable for up to $3,000 in vehicle damage (MCL 500.3135(3)(e)). This cap applies regardless of the claim amount. Towing/storage are likely NOT covered by the mini-tort; even if included, the total is capped at $3,000."
     },
     {
       "question": "What should you bring to court besides documents?",
@@ -331,7 +315,7 @@
         "Nothing"
       ],
       "correct": 1,
-      "explanation": "Bring a notepad and pen \u2014 there is NO court reporter and NO verbatim record in Michigan small claims (MCL 600.8411(2)). Your notes are the only record of what happened."
+      "explanation": "Bring a notepad and pen — there is NO court reporter and NO verbatim record in Michigan small claims (MCL 600.8411(2)). Your notes are the only record of what happened."
     },
     {
       "question": "The UD-10 crash report proves the plaintiff had active insurance.",
@@ -361,7 +345,7 @@
         "It depends on the case"
       ],
       "correct": 1,
-      "explanation": "The plaintiff speaks first for 5-8 minutes, presenting documents and calling witnesses. Do NOT interrupt \u2014 take notes."
+      "explanation": "The plaintiff speaks first for 5-8 minutes, presenting documents and calling witnesses. Do NOT interrupt — take notes."
     },
     {
       "question": "What is the FIRST thing you should say in your opening?",
@@ -373,7 +357,7 @@
         "I'm here to fight this"
       ],
       "correct": 2,
-      "explanation": "Open with 'Good morning, Your Honor. I'm Sophia Saitta, the defendant in this matter...' \u2014 name, purpose, and readiness. No speech about yourself."
+      "explanation": "Open with 'Good morning, Your Honor. I'm Sophia Saitta, the defendant in this matter...' — name, purpose, and readiness. No speech about yourself."
     },
     {
       "question": "What is the psychology of conceding what you can't win?",
@@ -397,7 +381,7 @@
         "Rapid breathing"
       ],
       "correct": 1,
-      "explanation": "Box breathing \u2014 in 4 counts, hold 4, out 4, hold 4 \u2014 repeated 5 times before entering. Navy SEAL calm technique."
+      "explanation": "Box breathing — in 4 counts, hold 4, out 4, hold 4 — repeated 5 times before entering. Navy SEAL calm technique."
     },
     {
       "question": "What is the 'magistrate's trifecta' that wins cases?",
@@ -406,7 +390,7 @@
         "Aggression, volume, intimidation",
         "Credibility, preparation, reasonableness",
         "Emotion, tears, victimhood",
-        "Legal knowledge,\u5f8b\u5e08, expensive suit"
+        "Legal knowledge, lawyer, expensive suit"
       ],
       "correct": 1,
       "explanation": "Credibility (strategic concession, calm), Preparation (organized documents, statute citations), Reasonableness (frame doubts as evidence, not accusations)."
@@ -416,7 +400,7 @@
       "type": "multiple-choice",
       "options": [
         "Attack the plaintiff's character",
-        "Make the magistrate's job easy \u2014 give her a clean story and statute to cite",
+        "Make the magistrate's job easy — give her a clean story and statute to cite",
         "Demand the case be dismissed",
         "Show emotion to gain sympathy"
       ],
@@ -428,7 +412,7 @@
       "type": "multiple-choice",
       "options": [
         "It weakens your case",
-        "The magistrate's brain files you as honest \u2014 every subsequent denial is assimilated into that honest frame",
+        "The magistrate's brain files you as honest — every subsequent denial is assimilated into that honest frame",
         "The law requires it",
         "The plaintiff will be nicer"
       ],
@@ -445,19 +429,37 @@
         "Preparation"
       ],
       "correct": 2,
-      "explanation": "Calm edges out everything \u2014 a calm party is presumed honest. It's the #1 unconscious trust lever."
+      "explanation": "Calm edges out everything — a calm party is presumed honest. It's the #1 unconscious trust lever."
     },
     {
       "question": "How should you handle the plaintiff's victim narrative?",
       "type": "multiple-choice",
       "options": [
         "Try to make her the villain",
-        "Don't try to beat it head-on \u2014 win the AMOUNT and COMPARATIVE FAULT instead",
+        "Don't try to beat it head-on — win the AMOUNT and COMPARATIVE FAULT instead",
         "Agree she's the victim and pay everything",
         "Ignore it completely"
       ],
       "correct": 1,
-      "explanation": "You cannot beat 'I was hit' head-on \u2014 she IS the injured party. Win the amount and comparative fault. Redirect from 'who's at fault' to 'what's fair and provable.'"
+      "explanation": "You cannot beat 'I was hit' head-on — she IS the injured party. Win the amount and comparative fault. Redirect from 'who's at fault' to 'what's fair and provable.'"
+    },
+    {
+      "question": "For vehicle damage in a Michigan no-fault accident, which is true?",
+      "type": "multiple-choice",
+      "options": [
+        "The mini-tort is the exclusive remedy; the plaintiff cannot elect a general tort (MCL 500.3135(3))",
+        "The plaintiff can elect a general tort instead of the mini-tort whenever she prefers",
+        "A $5,000 general-tort ceiling applies on top of any mini-tort recovery",
+        "Towing and storage are always recoverable on top of the $3,000 cap"
+      ],
+      "correct": 0,
+      "explanation": "True: MCL 500.3135(3) abolishes general tort liability for vehicle damage where required security was in effect — the mini-tort (3)(e) is the EXCLUSIVE remedy and the plaintiff cannot elect a general tort. There is no $5,000 general-tort ceiling, and towing/storage are likely not covered at all."
+    },
+    {
+      "question": "There is a $5,000 general-tort ceiling for vehicle damage in Michigan.",
+      "type": "true-false",
+      "correct": false,
+      "explanation": "FALSE. There is NO $5,000 general-tort ceiling. $5,000 was the small-claims ceiling only 9/1/2012–12/31/2014. The current small-claims ceiling is $7,000 (MCL 600.8401(e)); the operative vehicle-damage cap is the $3,000 mini-tort (MCL 500.3135(3)(e))."
     }
   ]
 }
