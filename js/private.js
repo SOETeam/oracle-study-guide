@@ -556,11 +556,10 @@ window.Oracle = window.Oracle || {};
           <ul>
             <li>Mini-tort EXCLUSIVE: MCL 500.3135(3)</li>
             <li>$3,000 cap: MCL 500.3135(3)(e)</li>
-            <li>Tort statute of limitations: 3 years (MCL 600.5807)</li>
             <li>Comparative fault: MCL 500.3135(4)(a)</li>
             <li>No-security bar: MCL 500.3135(4)(e)</li>
             <li>Small claims ceiling: $7,000 (600.8401(e))</li>
-            
+            <li>SOL: 3 years (600.5805(2))</li>
           </ul>
           <h2>🎒 Bring</h2>
           <ul>
