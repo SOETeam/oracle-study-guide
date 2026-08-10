@@ -464,6 +464,474 @@
       "type": "true-false",
       "correct": false,
       "explanation": "FALSE. There is NO $5,000 general-tort ceiling. $5,000 was the small-claims ceiling only 9/1/2012\u201312/31/2014. The current small-claims ceiling is $7,000 (MCL 600.8401(e)); the operative vehicle-damage cap is the $3,000 mini-tort (MCL 500.3135(3)(e))."
+    },
+    {
+      "question": "What is the plaintiff's name?",
+      "type": "multiple-choice",
+      "options": [
+        "Magistrate Perry",
+        "Jolene D. Wilcox",
+        "Officer Jacob Kirsch",
+        "Sophia Saitta"
+      ],
+      "correct": 1,
+      "explanation": "The plaintiff is Jolene D. Wilcox. Magistrate Perry presides, and Officer Jacob Kirsch wrote the UD-10 police report."
+    },
+    {
+      "question": "What type of vehicle did the plaintiff drive?",
+      "type": "multiple-choice",
+      "options": [
+        "2018 Honda Accord",
+        "2015 Ford Focus",
+        "2007 Impala",
+        "2010 Chevrolet Malibu"
+      ],
+      "correct": 2,
+      "explanation": "The plaintiff was driving a 2007 Impala at the time of the June 7, 2026 collision."
+    },
+    {
+      "question": "What is the claim amount?",
+      "type": "multiple-choice",
+      "options": [
+        "$5,664.68",
+        "$3,000",
+        "$7,000",
+        "$6,500"
+      ],
+      "correct": 0,
+      "explanation": "The claim is $5,664.68 (item 8 on the DC 84 form) \u2014 vehicle damage, towing, and storage."
+    },
+    {
+      "question": "What does the claim cover?",
+      "type": "multiple-choice",
+      "options": [
+        "Vehicle damage, towing, storage",
+        "Property damage and pain and suffering",
+        "Medical bills, lost wages",
+        "Vehicle damage only"
+      ],
+      "correct": 0,
+      "explanation": "The claim seeks vehicle damage, towing, and storage. No medical damages are pleaded. Towing/storage are likely NOT covered by the mini-tort."
+    },
+    {
+      "question": "What date did the incident occur?",
+      "type": "multiple-choice",
+      "options": [
+        "June 21, 2026",
+        "August 10, 2026",
+        "June 7, 2026",
+        "July 7, 2026"
+      ],
+      "correct": 2,
+      "explanation": "The collision occurred June 7, 2026. Your hearing is Monday, August 10, 2026 at 9:30 AM."
+    },
+    {
+      "question": "Who is the magistrate?",
+      "type": "multiple-choice",
+      "options": [
+        "Saitta",
+        "Perry",
+        "Wilcox",
+        "Kirsch"
+      ],
+      "correct": 1,
+      "explanation": "Magistrate Perry presides. Officer Jacob Kirsch wrote the UD-10 report; Jolene D. Wilcox is the plaintiff; you are the defendant."
+    },
+    {
+      "question": "What court is this?",
+      "type": "multiple-choice",
+      "options": [
+        "Michigan Court of Appeals",
+        "74th District Court, Bay City",
+        "Bay County Circuit Court",
+        "73rd District Court, Saginaw"
+      ],
+      "correct": 1,
+      "explanation": "The hearing is in the 74th District Court, Bay City, case 26-4144-SC."
+    },
+    {
+      "question": "What does MCL 500.3135(3) do?",
+      "type": "multiple-choice",
+      "options": [
+        "Establishes PIP benefits",
+        "Abolishes tort liability for vehicle damage",
+        "Sets the small claims ceiling",
+        "Creates the no-fault security requirement"
+      ],
+      "correct": 1,
+      "explanation": "MCL 500.3135(3) abolishes general tort liability for vehicle damage where required security was in effect \u2014 the mini-tort is the EXCLUSIVE remedy."
+    },
+    {
+      "question": "What is the mini-tort cap?",
+      "type": "multiple-choice",
+      "options": [
+        "$7,000",
+        "$3,000",
+        "$1,000",
+        "$5,000"
+      ],
+      "correct": 1,
+      "explanation": "The mini-tort cap is $3,000 for accidents after July 1, 2020 (MCL 500.3135(3)(e))."
+    },
+    {
+      "question": "When did the $3,000 cap take effect?",
+      "type": "multiple-choice",
+      "options": [
+        "July 1, 2020",
+        "January 1, 2024",
+        "September 1, 2012",
+        "June 7, 2026"
+      ],
+      "correct": 0,
+      "explanation": "The $3,000 mini-tort cap applies to accidents after July 1, 2020 (MCL 500.3135(3)(e))."
+    },
+    {
+      "question": "What does MCL 500.3101(1) require?",
+      "type": "multiple-choice",
+      "options": [
+        "Property protection insurance",
+        "A minimum vehicle value",
+        "A police report",
+        "No-fault security"
+      ],
+      "correct": 3,
+      "explanation": "MCL 500.3101(1) requires an owner to maintain no-fault security. This is the 'required security' that triggers the mini-tort as the exclusive remedy."
+    },
+    {
+      "question": "What is MCL 500.3121?",
+      "type": "multiple-choice",
+      "options": [
+        "The small claims ceiling",
+        "Property protection insurance",
+        "The statute of limitations",
+        "PIP bodily injury coverage"
+      ],
+      "correct": 1,
+      "explanation": "MCL 500.3121 is property protection insurance (PPI). It's property damage \u2014 NOT 500.3105 which is PIP/bodily injury. Do not cite 3105 for property."
+    },
+    {
+      "question": "What is the small claims ceiling?",
+      "type": "multiple-choice",
+      "options": [
+        "$3,000",
+        "$6,500",
+        "$5,000",
+        "$7,000"
+      ],
+      "correct": 3,
+      "explanation": "The small claims jurisdictional ceiling is $7,000 since January 1, 2024 (MCL 600.8401(e))."
+    },
+    {
+      "question": "When did the $7,000 ceiling take effect?",
+      "type": "multiple-choice",
+      "options": [
+        "January 1, 2024",
+        "July 1, 2020",
+        "June 7, 2026",
+        "September 1, 2012"
+      ],
+      "correct": 0,
+      "explanation": "The $7,000 small claims ceiling took effect January 1, 2024 (MCL 600.8401(e))."
+    },
+    {
+      "question": "What is the statute of limitations?",
+      "type": "multiple-choice",
+      "options": [
+        "2 years",
+        "3 years",
+        "1 year",
+        "5 years"
+      ],
+      "correct": 1,
+      "explanation": "Michigan's tort statute of limitations is 3 years (MCL 600.5805(2)). Your incident was June 7, 2026 \u2014 well within the limit."
+    },
+    {
+      "question": "How long is the hearing?",
+      "type": "multiple-choice",
+      "options": [
+        "20-30 minutes",
+        "60-90 minutes",
+        "5-8 minutes",
+        "Under 10 minutes"
+      ],
+      "correct": 0,
+      "explanation": "Expect the whole hearing to last roughly 20-30 minutes total."
+    },
+    {
+      "question": "Who speaks first?",
+      "type": "multiple-choice",
+      "options": [
+        "The plaintiff",
+        "The magistrate",
+        "The defendant",
+        "The clerk"
+      ],
+      "correct": 0,
+      "explanation": "The plaintiff speaks first for 5-8 minutes, presenting documents and witnesses. Listen and take notes; don't interrupt."
+    },
+    {
+      "question": "How long does each party speak?",
+      "type": "multiple-choice",
+      "options": [
+        "30 seconds",
+        "15-20 minutes",
+        "1-2 minutes",
+        "5-8 minutes"
+      ],
+      "correct": 3,
+      "explanation": "Each party gets about 5-8 minutes to present their case. Be brief, be specific, be done."
+    },
+    {
+      "question": "What should you do while the plaintiff speaks?",
+      "type": "multiple-choice",
+      "options": [
+        "Interrupt when you disagree",
+        "Stare at the magistrate",
+        "Prepare your rebuttal loudly",
+        "Take notes, don't interrupt"
+      ],
+      "correct": 3,
+      "explanation": "There is no court reporter, so take detailed notes. Do NOT interrupt the plaintiff while she presents her case."
+    },
+    {
+      "question": "Can you ask the plaintiff questions?",
+      "type": "multiple-choice",
+      "options": [
+        "Only with a lawyer present",
+        "No, never",
+        "Only in writing",
+        "Yes"
+      ],
+      "correct": 3,
+      "explanation": "Yes \u2014 when it's your turn, you may ask the plaintiff questions. Plant seeds of doubt through questions, not accusations."
+    },
+    {
+      "question": "What should you say when asked if you're ready?",
+      "type": "multiple-choice",
+      "options": [
+        "\"I think so\"",
+        "\"Yes, Your Honor\"",
+        "\"Maybe\"",
+        "\"I guess\""
+      ],
+      "correct": 1,
+      "explanation": "Answer with confidence: 'Yes, Your Honor.' Avoid weasel words like 'I guess' \u2014 they undermine credibility."
+    },
+    {
+      "question": "What happens if the magistrate needs more time?",
+      "type": "multiple-choice",
+      "options": [
+        "Delays the case six months",
+        "Calls the police",
+        "Automatically rules for the plaintiff",
+        "Takes it under advisement"
+      ],
+      "correct": 3,
+      "explanation": "The magistrate either rules immediately or takes the case under advisement, mailing the decision later. Either way, write down the result."
+    },
+    {
+      "question": "How do you ask for a closing statement?",
+      "type": "multiple-choice",
+      "options": [
+        "\"I demand to speak again\"",
+        "\"Can I talk more?\"",
+        "\"Your Honor, may I make a brief closing statement?\"",
+        "Just keep talking past your time"
+      ],
+      "correct": 2,
+      "explanation": "Ask politely: 'Your Honor, may I make a brief closing statement?' \u2014 courtesy to the bench counts."
+    },
+    {
+      "question": "What is PSYCHE's trifecta?",
+      "type": "multiple-choice",
+      "options": [
+        "Legal citations, lawyer, expensive suit",
+        "Emotion, tears, victimhood",
+        "Aggression, volume, intimidation",
+        "Credibility, preparation, reasonableness"
+      ],
+      "correct": 3,
+      "explanation": "The magistrate's trifecta: Credibility (strategic concession + calm), Preparation (organized documents + precise citations), Reasonableness (frame doubt as evidence, not accusation)."
+    },
+    {
+      "question": "What is the #1 unconscious trust lever?",
+      "type": "multiple-choice",
+      "options": [
+        "Calm",
+        "Preparation",
+        "Courtesy",
+        "Specificity"
+      ],
+      "correct": 0,
+      "explanation": "Calm edges out everything \u2014 a calm party is presumed honest. It's the #1 unconscious trust lever."
+    },
+    {
+      "question": "What should you concede early?",
+      "type": "multiple-choice",
+      "options": [
+        "The collision happened",
+        "That the full amount is owed",
+        "That you were at fault",
+        "That you ran the stop sign"
+      ],
+      "correct": 0,
+      "explanation": "Concede the collision happened ('I don't deny the accident occurred') \u2014 never concede fault or the full amount."
+    },
+    {
+      "question": "What is the psychology of strategic concession?",
+      "type": "multiple-choice",
+      "options": [
+        "It annoys the magistrate",
+        "It triggers the consistency principle",
+        "It makes you look weak",
+        "It is required by law"
+      ],
+      "correct": 1,
+      "explanation": "Strategic concession triggers the consistency principle: concede something real and the magistrate's brain files you as honest."
+    },
+    {
+      "question": "What should you never do during the plaintiff's testimony?",
+      "type": "multiple-choice",
+      "options": [
+        "Take notes",
+        "Maintain steady eye contact",
+        "React visibly",
+        "Stay calm"
+      ],
+      "correct": 2,
+      "explanation": "Never react visibly to the plaintiff's testimony \u2014 no eye-rolling, sighing, or head-shaking. Stay calm and composed."
+    },
+    {
+      "question": "What is the forbidden move regarding the magistrate?",
+      "type": "multiple-choice",
+      "options": [
+        "Ask them questions",
+        "Never argue with them",
+        "Thank them",
+        "Always concede to them"
+      ],
+      "correct": 1,
+      "explanation": "Never argue with the magistrate. Yield to the bench's control \u2014 respect the court's authority."
+    },
+    {
+      "question": "What should you say if you blank on a legal point?",
+      "type": "multiple-choice",
+      "options": [
+        "\"Your Honor, I'd like a moment to check my notes\"",
+        "\"Let me guess\"",
+        "\"I forgot, never mind\"",
+        "Stay silent and panic"
+      ],
+      "correct": 0,
+      "explanation": "If you blank, say: 'Your Honor, I'd like a moment to check my notes.' It's composed and takes the pressure off."
+    },
+    {
+      "question": "What is the mantra for staying calm?",
+      "type": "multiple-choice",
+      "options": [
+        "\"This is unfair\"",
+        "\"I have to win no matter what\"",
+        "\"I'm innocent\"",
+        "\"I'm the calmest, most reasonable adult here\""
+      ],
+      "correct": 3,
+      "explanation": "Repeat the mantra: 'I'm the calmest, most reasonable adult here.' Reframe: the downside is bounded at $3,000."
+    },
+    {
+      "question": "What does the UD-10 show for both parties?",
+      "type": "multiple-choice",
+      "options": [
+        "Allstate",
+        "Progressive",
+        "GEICO",
+        "State Farm"
+      ],
+      "correct": 2,
+      "explanation": "The UD-10 crash report lists GEICO for both parties \u2014 but that is not proof the policy was active."
+    },
+    {
+      "question": "Why is the UD-10 not proof of active coverage?",
+      "type": "multiple-choice",
+      "options": [
+        "Officer only records what's on the card",
+        "The UD-10 is always accurate",
+        "It lists medical claims",
+        "Officers verify with the insurer"
+      ],
+      "correct": 0,
+      "explanation": "Police only record what's on the insurance card. They don't call the insurer to verify the policy was active on the date of the accident."
+    },
+    {
+      "question": "What is direct verification?",
+      "type": "multiple-choice",
+      "options": [
+        "A verbal promise",
+        "A text message",
+        "Declarations page, letter of coverage, claim check",
+        "The UD-10 crash report"
+      ],
+      "correct": 2,
+      "explanation": "Direct verification means a declarations page, letter of coverage, or claim check from GEICO \u2014 not the police report."
+    },
+    {
+      "question": "What should you ask the plaintiff about insurance?",
+      "type": "multiple-choice",
+      "options": [
+        "\"Can you produce direct verification?\"",
+        "\"Do you have a lawyer?\"",
+        "\"Are you insured?\"",
+        "\"Was your car totaled?\""
+      ],
+      "correct": 0,
+      "explanation": "Ask: 'Can you produce direct verification?' \u2014 a declarations page, letter of coverage, or claim check showing active coverage on June 7, 2026."
+    },
+    {
+      "question": "What happens if plaintiff can't prove insurance?",
+      "type": "multiple-choice",
+      "options": [
+        "Mini-tort claim may be barred",
+        "The plaintiff wins automatically",
+        "The case is dismissed immediately",
+        "You pay double"
+      ],
+      "correct": 0,
+      "explanation": "If the plaintiff cannot prove active insurance, the mini-tort claim may be barred under MCL 500.3135(4)(e)."
+    },
+    {
+      "question": "What is MCL 500.3135(4)(e)?",
+      "type": "multiple-choice",
+      "options": [
+        "The mini-tort cap",
+        "The attorney bar",
+        "The exclusive remedy rule",
+        "No-security bar"
+      ],
+      "correct": 3,
+      "explanation": "MCL 500.3135(4)(e) bars damages if the vehicle lacked the required security at the time of the accident \u2014 the no-security bar."
+    },
+    {
+      "question": "Can you say 'she was uninsured'?",
+      "type": "multiple-choice",
+      "options": [
+        "No, say \"hasn't proven her policy was active\"",
+        "Only in writing",
+        "Only to the plaintiff directly",
+        "Yes, it's the strongest argument"
+      ],
+      "correct": 0,
+      "explanation": "Never assert 'she was uninsured.' The UD-10 shows GEICO. Say she 'hasn't proven her policy was active.' This is the safe, accurate framing."
+    },
+    {
+      "question": "What is the safest way to raise insurance?",
+      "type": "multiple-choice",
+      "options": [
+        "Ask for direct verification, don't assert",
+        "\"She lied on the report\"",
+        "\"She has no insurance\"",
+        "\"GEICO is fake\""
+      ],
+      "correct": 0,
+      "explanation": "Raise insurance by asking for direct verification \u2014 don't assert she lacks coverage. Assertions backfire; a request for proof is credible."
     }
   ]
 }
