@@ -192,7 +192,7 @@ window.Oracle = window.Oracle || {};
     if (title === 'What to Say') { mark = '✓'; markClass = 'text-emerald-400'; }
     if (title === 'What NOT to Say') { mark = '✗'; markClass = 'text-danger'; }
     return toBullets(content)
-      .map(s => `<li class="flex gap-2.5 leading-relaxed"><span class="${markClass} font-bold shrink-0 mt-0.5">${mark}</span><span class="${title === 'What NOT to Say' ? 'text-red-200/90' : (title === 'What to Say' ? 'text-emerald-100/90' : 'text-slate-200')}">${esc(s)}</span></li>`)
+      .map(s => `<li class="flex gap-2.5 leading-relaxed"><span class="${markClass} font-bold shrink-0 mt-0.5">${mark}</span><span class="${title === 'What NOT to Say' ? 'text-red-200/90' : (title === 'What to Say' ? 'text-emerald-100/90' : 'text-slate-200')}">${Oracle.markdownLinks ? Oracle.markdownLinks(esc(s)) : esc(s)}</span></li>`)
       .join('');
   }
 

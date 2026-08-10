@@ -17,6 +17,40 @@ window.Oracle = window.Oracle || {};
     advanced: 'Advanced 🚀'
   };
 
+  /* ── Markdown link rendering ──────────────────────────────
+   * Converts table-of-contents style links inside JSON content
+   * into real, clickable anchors (styled to match the site).
+   * Handles:
+   *   [text](url)                         → <a href="url" ...>text</a>
+   *   bare http:// or https:// URL        → <a href="url" ...>url</a>
+   * Runs AFTER content has been HTML-escaped so the generated
+   * anchor markup is never escaped away.
+   */
+  Oracle.markdownLinks = function (html) {
+    const LINK_CLASS = 'text-cyan-400 underline';
+    const placeholders = [];
+    const stash = (a) => {
+      placeholders.push(a);
+      return '\u0001' + (placeholders.length - 1) + '\u0001';
+    };
+    const anchor = (url, label) =>
+      `<a href="${url}" target="_blank" rel="noopener" class="${LINK_CLASS}">${label}</a>`;
+    let out = String(html == null ? '' : html);
+
+    // 1) [text](url) — stashed so the URL pass below can't re-wrap it
+    out = out.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,
+      (m, label, url) => stash(anchor(url, label)));
+
+    // 2) bare http(s):// URLs not already an href value
+    out = out.replace(/(?<!["=])https?:\/\/[^\s<]+/g, (m) => {
+      const url = m.replace(/[.,;:!?\])]+$/, '');
+      return stash(anchor(url, url));
+    });
+
+    // 3) restore stashed anchors (markdown links first)
+    return out.replace(/\u0001(\d+)\u0001/g, (m, i) => placeholders[Number(i)]);
+  };
+
   function sectionTitle(emoji, title, sub) {
     return `
       <div class="flex items-center gap-3 mb-4">
@@ -57,7 +91,7 @@ window.Oracle = window.Oracle || {};
       concepts += `
         <div class="print-block rounded-xl border border-white/10 bg-navy-2/60 p-5">
           <h3 class="font-display font-600 text-teal mb-2">${Oracle.esc(c.title)}</h3>
-          <p class="text-sm text-slate-300 leading-relaxed">${Oracle.esc(c.text)}</p>
+          <p class="text-sm text-slate-300 leading-relaxed">${Oracle.markdownLinks(Oracle.esc(c.text))}</p>
         </div>`;
     }
 
@@ -67,8 +101,8 @@ window.Oracle = window.Oracle || {};
       examples += `
         <div class="print-block rounded-xl border border-gold/30 bg-gold/[.06] p-5">
           <h3 class="font-display font-600 text-gold mb-2">💡 ${Oracle.esc(ex.title)}</h3>
-          <p class="text-sm text-slate-300 leading-relaxed mb-2"><span class="text-slate-400 font-semibold">Scenario:</span> ${Oracle.esc(ex.scenario)}</p>
-          <p class="text-sm text-slate-300 leading-relaxed"><span class="text-teal font-semibold">What it means:</span> ${Oracle.esc(ex.outcome)}</p>
+          <p class="text-sm text-slate-300 leading-relaxed mb-2"><span class="text-slate-400 font-semibold">Scenario:</span> ${Oracle.markdownLinks(Oracle.esc(ex.scenario))}</p>
+          <p class="text-sm text-slate-300 leading-relaxed"><span class="text-teal font-semibold">What it means:</span> ${Oracle.markdownLinks(Oracle.esc(ex.outcome))}</p>
         </div>`;
     }
 
@@ -78,7 +112,7 @@ window.Oracle = window.Oracle || {};
       pitfalls += `
         <div class="print-block flex items-start gap-3 rounded-xl border border-danger/25 bg-danger/[.06] p-4">
           <span class="shrink-0 mt-0.5">⚠️</span>
-          <p class="text-sm text-slate-300 leading-relaxed">${Oracle.esc(p)}</p>
+          <p class="text-sm text-slate-300 leading-relaxed">${Oracle.markdownLinks(Oracle.esc(p))}</p>
         </div>`;
     }
 
@@ -88,7 +122,7 @@ window.Oracle = window.Oracle || {};
       exercises += `
         <div class="print-block flex items-start gap-3 rounded-xl border border-white/10 bg-navy-2/60 p-4">
           <span class="grid place-items-center w-7 h-7 rounded-lg bg-teal/10 border border-teal/30 text-teal text-xs font-bold shrink-0">${i + 1}</span>
-          <p class="text-sm text-slate-300 leading-relaxed">${Oracle.esc(ex)}</p>
+          <p class="text-sm text-slate-300 leading-relaxed">${Oracle.markdownLinks(Oracle.esc(ex))}</p>
         </div>`;
     });
 
@@ -98,7 +132,7 @@ window.Oracle = window.Oracle || {};
       glossary += `
         <div class="print-block grid sm:grid-cols-[220px_1fr] gap-1 sm:gap-4 rounded-lg border border-white/5 bg-white/[.02] px-4 py-3">
           <dt class="text-teal font-semibold text-sm">${Oracle.esc(g.term)}</dt>
-          <dd class="text-sm text-slate-300 leading-relaxed">${Oracle.esc(g.definition)}</dd>
+          <dd class="text-sm text-slate-300 leading-relaxed">${Oracle.markdownLinks(Oracle.esc(g.definition))}</dd>
         </div>`;
     }
 
