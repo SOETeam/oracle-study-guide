@@ -78,14 +78,14 @@
     .shake { animation: shake .35s ease; }
 
     /* Private print sheet: hidden on screen, one-page reference on print */
-    #print-sheet { display: none; }
+    #print-sheet { visibility: hidden; height: 0; overflow: hidden; }
     @media print {
       body.print-sheet-only main,
       body.print-sheet-only header,
       body.print-sheet-only footer,
       body.print-sheet-only .no-print { display: none !important; }
       body.print-sheet-only #private-area > *:not(#print-sheet) { display: none !important; }
-      body.print-sheet-only #print-sheet { display: block !important; }
+      body.print-sheet-only #print-sheet { display: block !important; visibility: visible !important; height: auto !important; overflow: visible !important; }
       #print-sheet {
         font-family: Inter, system-ui, sans-serif;
         color: #111 !important;
