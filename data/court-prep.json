@@ -5,11 +5,11 @@
   "sections": [
     {
       "title": "Your Case Overview",
-      "content": "Case: 74th District Court, Bay City. Case Number: 26-4144-SC. Date: Monday, August 10, 2026, 9:30 AM. Magistrate: Perry. Incident: June 7, 2026 vehicle collision. Plaintiff: Jolene D. Wilcox. Amount claimed: $5,664.68 (vehicle damage, towing, storage). Key fact: The claim seeks only vehicle damage, towing, and storage — it does NOT include medical damages. However, the plaintiff's ER records (chest-wall contusion) ARE in the packet. Do NOT imply she has no medical evidence."
+      "content": "Case: 74th District Court, Bay City. Case Number: 26-4144-SC. Date: Monday, August 10, 2026, 9:30 AM. Magistrate: Perry. Plaintiff: Jolene D. Wilcox. Incident: June 7, 2026 vehicle collision. Amount claimed: $5,664.68 (vehicle damage, towing, storage). Key fact: The mini-tort cap limits recovery to $3,000 for vehicle damage. The claim exceeds this cap. Towing and storage may be separately recoverable but must be proven reasonable. Both parties show GEICO on the UD-10 crash report, but the plaintiff has not provided proof of active insurance with her filing."
     },
     {
       "title": "Michigan Law Fundamentals",
-      "content": "Small claims jurisdiction: MCL 600.8401. Jurisdictional ceiling: $7,000 since January 1, 2024 (MCL 600.8401(e)). Statute of limitations: 3 years for tort claims (MCL 600.5805(2)). Burden of proof: plaintiff must prove damages by preponderance of evidence. Mini-tort (MCL 500.3135): capped at $3,000 for vehicle damage claims after July 1, 2020, to the extent not covered by insurance. This is an AMOUNT DEFENSE (reduces exposure), NOT a dismissal. Important: if the plaintiff's vehicle lacked no-fault insurance, mini-tort may be barred entirely (MCL 500.3135(4)(e))."
+      "content": "Small claims jurisdiction: MCL 600.8401. Jurisdictional ceiling: $7,000 since January 1, 2024 (MCL 600.8401(e)). Statute of limitations: 3 years for tort claims (MCL 600.5805(2)). Burden of proof: plaintiff must prove damages by preponderance of evidence. Mini-tort (MCL 500.3135): Capped at $3,000 for accidents after July 1, 2020 (MCL 500.3135(3)(e)). This is an AMOUNT DEFENSE — it limits recovery, not a dismissal. The plaintiff must prove: (1) she was 50% or less at fault, (2) her vehicle had no-fault insurance on June 7, 2026, (3) the damages were not covered by her own insurance. If she cannot prove active insurance, the mini-tort claim may be barred under MCL 500.3135(4)(e). The UD-10 crash report shows GEICO for both parties, but this is police-reported information — the plaintiff should produce proof of coverage (declarations page, policy document, or insurance card)."
     },
     {
       "title": "Your Rights as Defendant",
@@ -17,11 +17,11 @@
     },
     {
       "title": "What to Say",
-      "content": "SAFE: 'I'm here to respond to the claim.' 'I'd like to see proof of service.' 'The claim seeks only vehicle damage, towing, and storage — it does not include medical damages.' 'I'd like more time to prepare.' 'I have documentation of my own damages.'"
+      "content": "SAFE: 'I'm here to respond to the claim.' 'I'd like to see proof of service.' 'The claim seeks only vehicle damage, towing, and storage — it does not include medical damages.' 'I'd like more time to prepare.' 'I have documentation of my own damages.' 'Your Honor, the plaintiff's claim is for mini-tort damages under MCL 500.3135. The mini-tort cap limits recovery to $3,000 for vehicle damage. The claim exceeds this amount.' 'Your Honor, I request that the plaintiff produce proof of active no-fault insurance on June 7, 2026, as required under MCL 500.3135(4)(e).' 'Your Honor, if the plaintiff cannot provide proof of insurance, I request this hearing be deferred to allow her to obtain that proof.'"
     },
     {
       "title": "What NOT to Say",
-      "content": "DO NOT: Admit fault (the police report shows your vehicle failed to stop at a stop sign). Rely on the '$3,000 means I can't be sued' theory — this is WRONG. The $3,000 is a mini-tort cap on recovery, NOT a jurisdictional ceiling. Make emotional statements. Discuss legal theories you can't support. Say anything about insurance without careful thought."
+      "content": "DO NOT: Admit fault (the police report shows your vehicle failed to stop at a stop sign). Argue the plaintiff was uninsured — the UD-10 shows GEICO for both parties. Agree to pay more than the $3,000 mini-tort cap without legal basis. Rely on the '$3,000 means I can't be sued' theory — this is WRONG. The $3,000 is a mini-tort cap on recovery, NOT a jurisdictional ceiling. Make emotional statements. Discuss legal theories you can't support. Say anything about insurance without careful thought."
     },
     {
       "title": "Court Procedure",
@@ -30,6 +30,14 @@
     {
       "title": "Risk Assessment",
       "content": "CRITICAL: The police report (UD-10, Officer Jacob Kirsch) states Unit 1 (your vehicle) failed to stop at the stop sign and caused the collision. This is documented evidence. The claim amount ($5,664.68) exceeds the mini-tort cap ($3,000). A finding against you on the mini-tort limits your exposure to $3,000 for vehicle damage. The claim also includes towing and storage which may be separately recoverable. Be prepared to respond to the stop-sign evidence without admitting fault."
+    },
+    {
+      "title": "Mini-Tort Strategy",
+      "content": "The mini-tort claim is capped at $3,000 (MCL 500.3135(3)(e)). The plaintiff claims $5,664.68, which exceeds the cap. Under the law: (1) You are only liable for up to $3,000 in vehicle damage under the mini-tort. (2) Towing and storage may be separately recoverable but must be proven reasonable and necessary. (3) The plaintiff must prove she had active no-fault insurance on June 7, 2026. (4) If she cannot prove insurance, the mini-tort claim may be barred entirely. Your strategy: Acknowledge the mini-tort cap applies ($3,000 max), request proof of insurance, challenge unreasonable towing/storage costs, present your own documentation of damages."
+    },
+    {
+      "title": "Documents to Bring",
+      "content": "CRITICAL DOCUMENTS FOR COURT: (1) The 11-page filing/packet from plaintiff. (2) Case number: 26-4144-SC (write on sticky note). (3) Your insurance documents/policy. (4) Photos of vehicle damage (both cars if available). (5) Police/citation records from June 7 incident. (6) Your own repair estimates or receipts. (7) Any correspondence with insurance companies. (8) Notepad and pen — THERE IS NO COURT REPORTER. (9) This study guide — print the Quick Reference card. (10) arrive with organized folder, not loose papers."
     }
   ],
   "quiz": [
@@ -43,16 +51,16 @@
     {
       "question": "What is the KEY fact about the claim?",
       "type": "multiple-choice",
-      "options": ["The accident wasn't your fault", "The claim seeks only vehicle damage — no medical damages are pleaded", "They filed too late", "The police report supports you"],
+      "options": ["The accident wasn't your fault", "The mini-tort cap limits her recovery to $3,000 for vehicle damage. The claim exceeds this amount", "They filed too late", "The police report supports you"],
       "correct": 1,
-      "explanation": "The claim seeks only vehicle damage, towing, and storage. No medical damages are in the claim. However, the plaintiff's ER records ARE in the packet — do not imply she has no medical evidence."
+      "explanation": "The KEY fact: the mini-tort cap (MCL 500.3135(3)(e)) limits her recovery to $3,000 for vehicle damage. The claim of $5,664.68 exceeds this cap — it is an amount defense that reduces exposure, not a dismissal. Towing and storage may be separately recoverable but must be proven reasonable. The plaintiff has not provided proof of active insurance with her filing."
     },
     {
       "question": "What should you say when you arrive?",
       "type": "multiple-choice",
       "options": ["'I'm innocent'", "'I'm here to respond to the claim'", "'This is unfair'", "'I need a lawyer'"],
       "correct": 1,
-      "explanation": "Start with 'I'm here to respond to the claim.' Be calm and professional."
+      "explanation": "Start with 'I'm here to respond to the claim.' Be calm and professional. If the plaintiff cannot prove active insurance, add: 'Your Honor, I request that the plaintiff produce proof of active no-fault insurance on June 7, 2026, as required under MCL 500.3135(4)(e).'"
     },
     {
       "question": "What is Michigan's statute of limitations for tort claims?",
@@ -177,6 +185,40 @@
       "type": "true-false",
       "correct": true,
       "explanation": "True. No attorney may appear in small claims (MCL 600.8408(1)). If you want a lawyer, the case must be removed to the general civil division before trial."
+    },
+    {
+      "question": "The $3,000 mini-tort cap means you cannot be sued in small claims court.",
+      "type": "true-false",
+      "correct": false,
+      "explanation": "False. The $3,000 mini-tort cap (MCL 500.3135(3)(e)) is an AMOUNT DEFENSE — it limits recovery to $3,000, it does NOT prevent the lawsuit. The small claims jurisdictional ceiling is $7,000, so the plaintiff's $5,664.68 claim may proceed but recovery is capped."
+    },
+    {
+      "question": "What must the plaintiff prove to recover mini-tort damages?",
+      "type": "multiple-choice",
+      "options": ["That the accident happened", "She was 50% or less at fault AND had active no-fault insurance on June 7, 2026", "That you had insurance", "That her car was damaged"],
+      "correct": 1,
+      "explanation": "The plaintiff must prove (1) she was 50% or less at fault, (2) her vehicle had no-fault insurance on June 7, 2026, and (3) the damages were not covered by her own insurance. If she cannot prove active insurance, the mini-tort claim may be barred under MCL 500.3135(4)(e)."
+    },
+    {
+      "question": "What should you ask the plaintiff at the hearing?",
+      "type": "multiple-choice",
+      "options": ["For payment today", "To produce proof of active insurance on June 7, 2026", "For her lawyer's contact", "For her medical records"],
+      "correct": 1,
+      "explanation": "Request that the plaintiff produce proof of active no-fault insurance on June 7, 2026, as required under MCL 500.3135(4)(e). A declarations page, policy document, or insurance card."
+    },
+    {
+      "question": "What is the maximum you can owe under the mini-tort?",
+      "type": "multiple-choice",
+      "options": ["$1,000", "$3,000", "$5,664.68", "$7,000"],
+      "correct": 1,
+      "explanation": "Under the mini-tort you are only liable for up to $3,000 in vehicle damage (MCL 500.3135(3)(e)). Towing and storage may be separately recoverable but must be proven reasonable and necessary."
+    },
+    {
+      "question": "What should you bring to court besides documents?",
+      "type": "multiple-choice",
+      "options": ["Your attorney", "A notepad and pen (there is no court reporter)", "A voice recorder", "Nothing"],
+      "correct": 1,
+      "explanation": "Bring a notepad and pen — there is NO court reporter and NO verbatim record in Michigan small claims (MCL 600.8411(2)). Your notes are the only record of what happened."
     }
   ]
 }
