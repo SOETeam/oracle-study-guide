@@ -286,8 +286,10 @@ window.Oracle = window.Oracle || {};
           </div>
         </section>
 
-        <!-- Print sheet (rendered on demand, hidden on screen) -->
-        <div id="print-sheet"></div>
+        <!-- NOTE: the print sheet is NOT rendered here. It lives as a single
+             unique <div id="print-sheet"> direct child of <body> in index.html,
+             so printSheet() can reliably target it and the @media print rule
+             shows it while this module wrapper is hidden. -->
       </div>`;
 
     // Wire up: sections → progress tracking
