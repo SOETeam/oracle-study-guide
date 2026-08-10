@@ -501,7 +501,7 @@ window.Oracle = window.Oracle || {};
     };
     window.addEventListener('afterprint', cleanup);
     setTimeout(cleanup, 3000);   // safety net for browsers without afterprint
-    window.print();
+    setTimeout(() => window.print(), 150);
   }
 
   function buildPrintSheetHtml(data) {
