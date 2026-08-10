@@ -509,25 +509,27 @@ window.Oracle = window.Oracle || {};
       <div class="ps-header">
         <h1>⚖️ Court Preparation — Quick Reference</h1>
         <p><strong>74th District Court · Bay City, MI</strong> — Monday, August 10, 2026 · 9:30 AM (arrive 9:00)</p>
-        <p class="ps-case"><strong>CASE:</strong> Vehicle collision, June 7, 2026 — other party claims ~$6,000. <strong>KEY FACT:</strong> your medical damages were NOT listed in their claim.</p>
+        <p class="ps-case"><strong>CASE:</strong> Vehicle collision, June 7, 2026 — Plaintiff claims $5,664.68 for vehicle damage, towing, storage. <strong>MINI-TORT CAP: $3,000</strong> (MCL 500.3135(3)(e)). Mini-tort is EXCLUSIVE remedy — no general tort.</p>
       </div>
       <div class="ps-grid">
         <div class="ps-col">
           <h2>✅ Say this</h2>
           <ul>
+            <li>“Good morning, Your Honor. I’m Sophia Saitta.”</li>
             <li>“I’m here to respond to the claim.”</li>
-            <li>“I’d like to see proof of service.”</li>
-            <li>“My medical damages were not included in their claim.”</li>
-            <li>“I’d like more time to prepare.”</li>
-            <li>“I have documentation of my own damages.”</li>
+            <li>“I applied my brakes at the stop sign.”</li>
+            <li>“The mini-tort cap limits recovery to $3,000.”</li>
+            <li>“I request direct verification of insurance.”</li>
+            <li>“I ask the court to weigh the ambiguity.”</li>
           </ul>
           <h2>🚫 Never say</h2>
           <ul>
-            <li>Do NOT admit fault — let the plaintiff prove their case.</li>
-            <li>Do NOT rely on the $3,000 threshold theory (UNVERIFIED).</li>
-            <li>Do NOT make emotional statements.</li>
-            <li>Do NOT discuss legal theories you can’t support.</li>
-            <li>Do NOT discuss your insurance without consulting an attorney.</li>
+            <li>Do NOT admit fault — “I ran the sign”</li>
+            <li>Do NOT say “brakes failed” — maintenance issue</li>
+            <li>Do NOT say “she was uninsured” — say “hasn’t proven policy active”</li>
+            <li>Do NOT say “she didn’t brake” — speculation</li>
+            <li>Do NOT say “I owe nothing” — concede the collision</li>
+            <li>Do NOT argue with the magistrate</li>
           </ul>
         </div>
         <div class="ps-col">
@@ -552,20 +554,22 @@ window.Oracle = window.Oracle || {};
         <div class="ps-col">
           <h2>📚 Key law</h2>
           <ul>
-            <li>Small claims: MCL 600.8355–8359</li>
-            <li>Jurisdictional ceiling: ~$6,500</li>
+            <li>Mini-tort EXCLUSIVE: MCL 500.3135(3)</li>
+            <li>$3,000 cap: MCL 500.3135(3)(e)</li>
             <li>Tort statute of limitations: 3 years (MCL 600.5807)</li>
-            <li>Burden of proof: plaintiff must prove damages</li>
-            <li>Mini-tort (MCL 500.3135): $3,000 cap — vehicle damage only</li>
+            <li>Comparative fault: MCL 500.3135(4)(a)</li>
+            <li>No-security bar: MCL 500.3135(4)(e)</li>
+            <li>Small claims ceiling: $7,000 (600.8401(e))</li>
+            
           </ul>
           <h2>🎒 Bring</h2>
           <ul>
-            <li>The 11-page filing</li>
-            <li>Insurance documents</li>
-            <li>Police records</li>
-            <li>Photos of damage</li>
-            <li>Medical records (your damages)</li>
-            <li>Notepad &amp; pen</li>
+            <li>The 11-page filing/packet</li>
+            <li>Your insurance documents</li>
+            <li>Photos of vehicle damage</li>
+            <li>Police/citation records</li>
+            <li>Notepad &amp; pen (NO COURT REPORTER)</li>
+            <li>Quick Reference card (this printout)</li>
           </ul>
         </div>
       </div>
