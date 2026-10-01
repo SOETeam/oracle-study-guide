@@ -58,6 +58,46 @@
     .quiz-option { transition: all .15s ease; }
     .quiz-option:not(:disabled):hover { border-color: rgba(0,247,255,.55); background: rgba(0,247,255,.06); transform: translateX(3px); }
 
+    /* ── Rich study-guide typography (typography pass) ─────────────
+       Paragraph rhythm, bold underlined lead-ins, citation chips,
+       figure tables, warning callouts. Content is never altered. */
+    .rich { max-width: 70ch; }
+    .rich > .rich-block { margin-top: 1em; }
+    .rich > .rich-block:first-child { margin-top: 0; }
+    .rich p { margin: 0; }
+    .rich .rich-lead {
+      display: block; margin: 0 0 .5em;
+      font-weight: 700; font-size: .95em; letter-spacing: .02em; color: #7df3ff;
+      text-decoration: underline; text-decoration-thickness: 2px;
+      text-decoration-color: rgba(0,247,255,.45); text-underline-offset: 5px;
+    }
+    .rich ul { margin: 0; padding-left: 1.2em; }
+    .rich li { margin: .38em 0; }
+    .rich li::marker { color: rgba(0,247,255,.85); }
+    .rich .term { color: #fff; font-weight: 700; }
+    .rich .prog { color: #7df3ff; font-weight: 700; letter-spacing: .02em; }
+    .rich .myth-tag { color: #f4c16c; font-weight: 800; letter-spacing: .04em; }
+    .rich .boundary-tag { color: #ff6b6b; font-weight: 800; letter-spacing: .03em; }
+    .cite {
+      font-size: .8em; font-weight: 600; color: #8be9ff;
+      background: rgba(0,247,255,.07); border: 1px solid rgba(0,247,255,.3);
+      border-radius: 5px; padding: .08em .34em; margin: 0 .08em; white-space: nowrap;
+      -webkit-box-decoration-break: clone; box-decoration-break: clone;
+    }
+    .rich-warn {
+      border: 1px solid rgba(244,193,108,.4); border-left-width: 4px; border-left-color: #f4c16c;
+      background: rgba(244,193,108,.06); border-radius: .75rem; padding: .9rem 1rem;
+    }
+    .rich-table-wrap { overflow-x: auto; margin: .55em 0 .25em; }
+    .rich-table { border-collapse: collapse; font-size: .9em; min-width: 430px; }
+    .rich-table th, .rich-table td { border: 1px solid rgba(0,247,255,.18); padding: .3em .6em; text-align: left; vertical-align: top; }
+    .rich-table thead th { color: #7df3ff; font-weight: 700; background: rgba(0,247,255,.06); white-space: nowrap; }
+    .rich-table td:first-child { font-weight: 600; color: #dbe9ff; white-space: nowrap; }
+    @media (max-width: 640px) {
+      .rich-table { font-size: .8em; min-width: 400px; }
+      .rich-table th, .rich-table td { padding: .25em .45em; }
+    }
+
     /* Print-friendly study guides */
     @media print {
       body { background: #fff !important; color: #111 !important; }
@@ -65,6 +105,9 @@
       main { padding: 0 !important; max-width: 100% !important; }
       .print-block { break-inside: avoid; border-color: #ccc !important; background: #fff !important; color: #111 !important; box-shadow: none !important; }
       .print-block *, .print-block { color: #111 !important; }
+      .print-block .rich-table th, .print-block .rich-table td { border-color: #bbb !important; }
+      .print-block .cite { border-color: #999 !important; background: #fff !important; }
+      .print-block .rich-lead { text-decoration-color: #999 !important; }
     }
 
     /* Private study area — passphrase modal shake */
