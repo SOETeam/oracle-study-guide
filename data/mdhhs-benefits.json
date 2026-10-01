@@ -1,0 +1,419 @@
+{
+  "topic": {
+    "id": "mdhhs-benefits",
+    "title": "Michigan MDHHS Benefits",
+    "description": "Michigan Medicaid, food assistance (FAP/EBT), FIP cash, and emergency relief (SER) \u2014 and the four different answers to \"who is in my household?\"",
+    "icon": "\ud83c\udfdb\ufe0f",
+    "focus": "BEM 210, 211, 212, 220, 554 \u00b7 ERM 103, 205, 208, 301, 303 \u00b7 42 CFR 435.603 \u00b7 7 CFR 273.1 \u00b7 RFT 210, 250, 255",
+    "subtopics": [
+      "Program Map",
+      "Medicaid MAGI Households",
+      "FAP Food/EBT",
+      "FIP Cash",
+      "SER Emergency Relief",
+      "Household Composition",
+      "Applying & Documents",
+      "Sources & Currency"
+    ],
+    "levels": {
+      "beginner": {
+        "label": "Beginner \ud83c\udf31",
+        "tagline": "Plain language first, then the rule with its source and effective date \u2014 built from the MDHHS manuals and federal rules as published and verified 10-1-2026.",
+        "goals": [
+          "Know which program pays for what: Medicaid health coverage, FAP food on the Bridge Card, FIP cash for families, SER crisis payments",
+          "Answer \"who is in my household?\" four different ways \u2014 food (FAP), sleep and legal ties (FIP), tax plan (Medicaid), whole household (SER)",
+          "Know the mandatory combinations: married spouses and parents with children under 22 are one FAP group even with separate food",
+          "Gather the right documents and know the decision clocks \u2014 FAP 7/30 days, SER crisis 48/18 hours, Medicaid ~45 days",
+          "Read a manual header \u2014 the BPB, ERB, or RFB letter plus effective date \u2014 and know when to recheck before quoting"
+        ],
+        "concepts": [
+          {
+            "title": "Module 1 \u2014 Program map: one system, five doors",
+            "text": "Michigan public assistance runs through the Bridges system, and one application can open several programs at once: the paper MDHHS-1171 Assistance Application or a MI Bridges online application, including one that requests a SER service (ERM 103, verified 10-1-2026). Medicaid (MA) is health coverage \u2014 it is not EBT; eligible people get a mihealth card. Group composition: BEM 211. FAP (Food Assistance Program) is Michigan's SNAP: monthly food benefits issued on the Michigan Bridge Card. Group composition: BEM 212. FIP (Family Independence Program) is Michigan's TANF: a monthly cash grant for families with a dependent child. Group composition: BEM 210; grant standards: RFT 210. SDA (State Disability Assistance) is state cash for disabled or special situations (group composition: BEM 214). SER (State Emergency Relief) pays one-time crisis help \u2014 energy, water and sewer, relocation, home ownership, home repairs, and burial \u2014 and it is paid to the vendor (the utility company, landlord, or funeral director) rather than handed to the applicant, consistent with the SER manual structure (ERM 103, 205, 208, 301, 303). MI Bridges ([newmibridges.michigan.gov](https://newmibridges.michigan.gov)) is the online door: apply, upload verification documents, renew, report changes, and read notices. Manual map, current as of the BEM 000 table of contents (BPB 2026-024, effective 8-1-2026): BEM 205 CDC group composition; BEM 210 FIP; BEM 211 Medicaid; BEM 212 SNAP; BEM 214 SDA group composition; BEM 220 residence; BEM 221 identity; BEM 222 concurrent receipt; BEM 223 SSNs; BEM 225 citizenship and non-citizens."
+          },
+          {
+            "title": "Module 2 \u2014 Medicaid MAGI households: tax plans, not living rooms",
+            "text": "For MAGI-related Medicaid, your household follows your tax filing plan \u2014 not who shares food, rent, or a kitchen ([42 CFR 435.603(f) via eCFR](https://www.ecfr.gov/current/title-42/section-435.603); BEM 211, BPB 2026-013, effective 5-1-2026). The three postures: (1) Tax filer \u2014 household = you plus everyone you expect to claim as a tax dependent for the eligibility tax year (435.603(f)(1)). (2) Tax dependent \u2014 household = the household of the taxpayer claiming you, except three exceptions that flip you to non-filer rules: a dependent of someone who is not your spouse or parent; a child under 19 (or 21 if a full-time student) living with both parents who do not expect to file jointly; a child under 19 (or 21) claimed by a non-custodial parent (435.603(f)(2)). (3) Non-filer \u2014 household = you, plus your spouse if you live together, plus your children under 19 \u2014 or under 21 if a full-time student (Michigan applies the federal state option at 435.603(f)(3)(iv)(B), and BEM 211 states it as \"under the age of 19 or under the age of 21 if a full-time student\") \u2014 and if you are a child, your parents and minor siblings join too. Married spouses living together: each spouse is in the other's household regardless of whether they expect to file a joint tax return (435.603(f)(4)). Pregnancy: count a pregnant woman as at least two members; if multiples are expected, count three, and so on (435.603(b); BEM 211: \"Count a pregnant woman as at least two members. If multiples are expected count the woman as three, etc.\"). BEM 211's worked example (a manual example): a grandmother claims her 20-year-old full-time-student daughter and the daughter's 2-year-old as tax dependents \u2014 the grandmother's group is 3, the daughter's group is 3, and the toddler's group is 2 (the toddler plus the daughter). Tax status \u2014 not the lease or the kitchen \u2014 builds the Medicaid household. Definitions in BEM 211: a child is an unmarried person under 18; an adult is married or age 18 or older. Non-MAGI groups (SSI-related Medicaid, people 65+, blind or disabled determinations, long-term-care requests, Medicare Savings) do not use MAGI; they follow SSI-style group and deeming rules (435.603(j); BEM 211). Income standards BEM 211 states: children 0\u20131 at 195% of the federal poverty level (FPL); children 1\u201319 at 160% FPL; pregnant women 195% FPL; parent and caretaker relatives 54% FPL; Healthy Michigan Plan 133% FPL."
+          },
+          {
+            "title": "Module 3 \u2014 FAP food assistance (EBT): the food-based group",
+            "text": "FAP is Michigan's SNAP \u2014 monthly food benefits on the Bridge Card ([Michigan Legal Help overview](https://michiganlegalhelp.org/resources/public-assistance/overview-of-food-assistance-program-fap)). A person must not participate in more than one SNAP group in a month (BEM 212; concurrent-receipt item BEM 222). MANDATORY COMBINATIONS \u2014 these must be ONE group even if the food is separate (BEM 212, BPB 2026-025, effective 10-1-2026, implementing 7 CFR 273.1(b)(1)): \"Spouses who are legally married and live together must be in the same group.\" \"Parents and their children under 22 years of age who live together must be in the same group regardless of whether the child(ren) have their own spouse or child who lives with the group.\" A child not yet 22 who strikes out on their own can be potentially eligible for their own case the month after turning 22. A child under 18 who is under the parental control of a non-parent household member is in that member's group \u2014 parental control is the test, not kinship: BEM 212's example is a 17-year-old niece paying room rent, buying her own food, and living unsupervised = separate groups, while a grandson receiving care and housing from grandma = same group. THE PURCHASE-AND-PREPARE TEST: \"purchase and prepare together\" means people who usually share food in common \u2014 each contributes to food purchases; or they share preparation regardless of who paid; or they eat from the same food supply regardless of who paid. Sharing food temporarily does not merge groups that normally buy and fix food separately. Roommates who merely share rent are still separate groups if they shop and cook separately. Roomers (people paying for lodging without meals) may apply as a separate group; live-in attendants may be a separate household; boarders are only covered if the providing group includes them \u2014 an excluded boarder cannot get SNAP separately \u2014 and spouses, parents and their children, and children under parental control are never boarders no matter what they pay each other. Foster children and foster adults: the group chooses to include or exclude; if excluded, the foster child is not eligible as a separate group. Senior/impaired separate-group option: a person 60 or older who cannot purchase and prepare meals because of an SSA-permanent or non-disease-related severe permanent disability may be a separate group even if they share food with the others, as long as everyone else's countable income is at or below 165% of poverty (BEM 212; 7 CFR 273.1(b)(2)). EXPENSES (BEM 554, verified 10-1-2026): excess shelter (capped per RFT 255 unless the group has a disabled-veteran member), dependent care, court-ordered child support, and medical costs over $35 for senior, disabled, or disabled-veteran members. The verbatim responsibility rule: \"Responsibility to pay means the expense is in the name of a person in the FAP group. Exception: If the expense is in someone else's name, allow the expense if the FAP group claims the expense and the service address on the bill is where they live.\" Heat and utility standards are never prorated. INCOME LIMITS \u2014 RFT 250 (RFB 2025-006, effective 10-1-2025), monthly gross by group size 1\u20136: 130% FPL $1,696 / $2,292 / $2,888 / $3,483 / $4,079 / $4,675; 100% FPL $1,305 / $1,763 / $2,221 / $2,680 / $3,138 / $3,596; 165% FPL $2,152 / $2,909 / $3,665 / $4,421 / $5,177 / $5,934; 200% FPL (categorical test) $2,610 / $3,526 / $4,442 / $5,360 / $6,276 / $7,192. Standards in RFT 255 (same RFB): excess-shelter cap $744; heat/utility standard $682; non-heat electric $181; water/sewer $119; phone $31; cooking fuel $33; trash $30; standard deduction $209 (groups 1\u20133), $223 (4), $261 (5), $299 (6+). \u26a0 Currency: a new-FY RFB effective 10-1-2026 may have posted \u2014 recheck the table header before quoting any figure. Processing: expedited FAP benefits by the 7th calendar day when the criteria are met (gross income $150 or less with cash under $100; or gross income plus cash less than monthly rent plus utilities; or a migrant or seasonal worker between jobs with under $100; or homeless) and regular FAP by the 30th day (BAM 115; Michigan Legal Help). Report changes within 10 days."
+          },
+          {
+            "title": "Module 4 \u2014 FIP cash assistance: the sleep-based group",
+            "text": "FIP is Michigan's TANF block-grant program (TANF State Plan, revised 8-1-2024): a monthly cash grant for families with a dependent child. A dependent child is an unemancipated child who lives with a caretaker and is (a) under 18, or (b) 18 and a full-time high school student \u2014 FIP's child-age rule is NOT the SNAP under-22 rule (BEM 210, BPB 2026-002, effective 1-1-2026). \"Living together\" in FIP means sharing a home where family members usually sleep, except temporary absences \u2014 a sleep-and-legal-relationship test, not a food test. MANDATORY ASSISTANCE-GROUP (EDG) MEMBERS when cash is requested for a dependent child: the dependent child; the child's legal parents; legal siblings who meet the dependent-child definition; the legal parents of those siblings; the legal stepparent; stepsiblings who meet the definition; and the child's own child. If any mandatory member refuses to provide needed information, the entire EDG can be ruled ineligible (listed exceptions apply). THE CARETAKER RULE: a non-parent is the caretaker only when no legal parent or stepparent lives in the home \u2014 BEM 210: \"a legal parent or stepparent living in the home, or when no legal parent or stepparent lives in the home, another adult...\" A non-parent caretaker must be a qualifying relative (grandparent, aunt or uncle, sibling, stepsibling, nephew or niece, first cousin, and certain spouses of these), a legal guardian, an adult 21+ with a pending guardianship petition, or a court-ordered unrelated caregiver. So while a legal parent lives in the home, grandparents are not mandatory EDG members. Marriage exemption: a new spouse may be excluded from the certified group for up to 18 months after the month of marriage. Temporary absence up to 30 days (location known, definite plan to return) still counts as in the home, with longer exceptions for hospital care, residential substance-abuse treatment, school or training, active military service, and a child living apart because their parent is in a domestic-violence shelter; a caretaker must report a child's absence of 30 or more days within 5 days or face a one-month disqualification. Time limit: the group cannot include an adult who has used more than 60 TANF-funded months (BEM 234). Emancipated means ever validly married, emancipated by court order, or on active military duty. GRANT STANDARDS \u2014 RFT 210 (RFB 2025-001, effective 12-2024), monthly payment by group size, shown as eligible grantee / ineligible grantee: 1 \u2014 $363 / $187; 2 \u2014 $478 / $325; 3 \u2014 $583 / $498; 4 \u2014 $707 / $660; 5 \u2014 $822; 6 \u2014 $981; 7 \u2014 $1,072; 8 or more \u2014 add $95 per person. \u26a0 Currency: recheck the RFT header before quoting \u2014 a new-FY RFB may post. BEM 210's worked example (a manual example): an 18-year-old full-time high-school student parent, her 1-year-old, her mother, and her 13-year-old brother \u2014 when she requests cash for the baby, everyone in that home is a mandatory EDG member, because she is both a parent and herself still a dependent child."
+          },
+          {
+            "title": "Module 5 \u2014 SER: State Emergency Relief, the household-based program",
+            "text": "SER pays one-time crisis help and pays it to the vendor \u2014 the utility company, landlord, or funeral director \u2014 rather than to the applicant, consistent with the SER manual structure (ERM 103, 205, 208, 301, 303). THE GROUP RULE (ERM 301, ERB 2026-004, effective 10-1-2026), verbatim: \"All household members are included in the SER group. Income of all household members is budgeted.\" There is no \"purchase and prepare food separately\" option inside SER \u2014 the household-based group is the controlling structure. ASSETS (ERM 205, verified 10-1-2026): the cash (liquid) asset limit is $15,000 and the non-cash asset limit is $15,000; a request at or over the limit is denied for every service except burial; the homestead (home plus adjoining land and buildings) is excluded; and groups made up solely of FIP, SDA, SSI, Medicaid, or FAP recipients get automatic non-cash eligibility. ENERGY (ERM 301): one heat payment and one non-heat electricity payment per fiscal year, not to exceed the SER cap \u2014 caps attach to the individual and \"follow the individual even if they move from one household to another.\" An energy crisis is a past-due account or shut-off notice on an energy bill for the household; a fuel tank at or below 25% (or locked despite more); a stated need for deliverable or nontraditional fuel; a prepay account below $100; or an inoperable furnace per a licensed provider. THE CRISIS CLOCKS: MDHHS must provide some form of assistance within 48 hours of a crisis application, and within 18 hours for a life-threatening crisis (when disconnection has already happened, restoration is medically necessary, no temporary housing alternative exists, and the Winter Protection Plan does not already protect the home). ERM 301 also states: \"There is no income copayment for energy-related services.\" APPLYING (ERM 103, verified 10-1-2026): file the DHS-1514 SER application ([DHS-1514](https://www.michigan.gov/mdhhs/-/media/Project/Websites/mdhhs/Folder1/Folder101/Application_for_State_Emergency_Relief_DHS_1514_419862_7.pdf)), the MDHHS-1171 with its MDHHS-1171-SER supplement, or through MI Bridges; an application may be filed in ANY Michigan county; it is registered within one day; there is no minimum age (unemancipated minors are referred to children's services without delaying the application); and the application accepts an address or a statement of homelessness. HOUSING AND RELOCATION (ERM 303, verified 10-1-2026): SER covers moving expenses, security deposits, first month's rent, and rent arrearage; the SER group chooses how to use its authorized relocation amount; and the paperwork trap \u2014 a demand for possession or notice to quit is NOT acceptable; a court summons, order, or judgment stating the exact amount is required. \u26a0 Verify at MDHHS before relying on: the reported roughly-10-business-day decision standard; ERM 303's affordability test (reported as new housing costs at or below 75% of net income); whether a shut-off notice must name the account holder (ERM 301's crisis definition ties the crisis to \"an energy bill for his or her household\" \u2014 no account-holder requirement appears in the item text, and staff record \"Name on account\" when calling the provider); and the SER Income Need Standards dollar figures (ERM 208 exhibit tables), which this guide deliberately does not publish."
+          },
+          {
+            "title": "Module 6 \u2014 Household composition: the heart of it all",
+            "text": "THE SAME ADDRESS CAN HOLD FOUR DIFFERENT HOUSEHOLDS AT ONCE \u2014 each program answers \"who is in the group?\" differently, and mixing the definitions is the single most common mistake people make: FAP/SNAP: live together PLUS purchase and prepare food together, EXCEPT the mandatory combinations (married spouses; parents with children under 22; a child under 18 under a non-parent's parental control) (BEM 212, BPB 2026-025, effective 10-1-2026; [7 CFR 273.1](https://www.ecfr.gov/current/title-7/subtitle-B/chapter-II/subchapter-C/part-273/subpart-A/section-273.1)). FIP: sleep-based \"living together\" plus legal-relationship mandatory members (BEM 210, BPB 2026-002, effective 1-1-2026). Medicaid (MAGI): your tax filing plan \u2014 filer, dependent, or non-filer (42 CFR 435.603(f) via [eCFR](https://www.ecfr.gov/current/title-42/section-435.603); BEM 211, BPB 2026-013, effective 5-1-2026). SER: household-based \u2014 all household members are in the SER group for energy services (ERM 301, ERB 2026-004, effective 10-1-2026). QUICK REFERENCE \u2014 who may be a SEPARATE FAP group at the same address (BEM 212): married spouses \u2014 no, never while living together. Parent and child under 22 \u2014 no, one group regardless of food. Parent and child 22 or older \u2014 yes, if they purchase and prepare food separately. Unrelated adults and roommates \u2014 yes, if they purchase and prepare separately. Non-parent caretaker and a child under 18 under parental control \u2014 no, one group (unless there is no parental control, like the manual's renting niece). Roomer \u2014 yes. Boarder \u2014 only if the providing group includes them; otherwise they cannot apply separately. Foster child or adult \u2014 the group chooses; excluded means not eligible as a separate group. A person 60+ with a severe permanent disability plus their spouse \u2014 yes, even while sharing food, if everyone else's countable income is at or below 165% of poverty. Spouses who live apart are not automatically one group \u2014 the standard purchase-and-prepare test governs (BEM 212's mandatory rule is expressly conditioned on living together; confirm any specific separated-spouse case at MDHHS)."
+          },
+          {
+            "title": "Module 7 \u2014 Applying: documents, verification, addresses",
+            "text": "CHANNELS (ERM 103; Michigan Legal Help): MI Bridges ([newmibridges.michigan.gov](https://newmibridges.michigan.gov)) \u2014 apply, upload documents, track your case, renew, read notices; any county MDHHS office; mail or fax with the MDHHS-1171; SER also accepts the DHS-1514. DOCUMENTS MDHHS ASKS FOR: identification (driver's license, state ID, or passport); SSNs for applying members; proof of Michigan residency (utility bill, lease, or official mail); income for roughly the last 30 days (pay stubs, award letters); and rent or mortgage plus utility bills. FAP: identity, income, and expense documents less than 30 days old (lease or rent proof, bank statements), birth certificate or SSN card, and proof of rent, utilities, child care, or medical costs where they help \u2014 and group-composition factors are verified only if questionable (BEM 212; Michigan Legal Help). Medicaid: identity, SSN, residency, citizenship or immigration status, income, and other insurance ([how-to-apply guide](https://medicaidoffice.net/michigan-medicaid/how-to-apply) \u2014 verify the exact list at MDHHS). SER: proof of the emergency itself (shut-off notice, past-due bill, court eviction paperwork stating the exact amount, a furnace statement), income for the countable period, assets (bank statements), lease and landlord information, and for deliverable fuel the fuel type and tank level \u2014 payment is refused if more than 25% remains in the tank. DECISION CLOCKS: FAP expedited by day 7, regular by day 30 (BAM 115); SER registered within 1 day, crisis assistance within 48 hours, life-threatening within 18 hours (ERM 103, 301); Medicaid about 45 days, or 90 when eligibility turns on a disability determination (42 CFR 435.912). ADDRESS AND HOUSING RULES (BEM 220, BPB 2026-010, effective 4-1-2026): benefits must NOT be denied solely because a person has no permanent dwelling or fixed address; a person without housing may use the local office or another agreeable location as the mailing address, and a temporary mailing address must never be recorded as the physical address. Residence tests differ by program: FAP/CDC \u2014 living in Michigan for any purpose other than vacation, with no permanent-intent test (including people who entered with a job commitment or to seek work, and students home during school breaks); FIP/SDA \u2014 adds an intent to remain permanently or indefinitely (rent, property taxes, utilities, or house payments in Michigan count as evidence); Medicaid \u2014 living in Michigan except temporary absence. SER: file in any county; the SER manual is quoted as serving all persons physically present in Michigan \u2014 residence in the state is not required (secondary-source quote of ERM \u2014 confirm at MDHHS)."
+          },
+          {
+            "title": "Module 8 \u2014 Sources & currency: read the header before you quote",
+            "text": "Everything in this module was verified against the primary source on 10-1-2026 \u2014 the MDHHS manual PDFs on olmweb, eCFR, and MDHHS pages \u2014 and every figure carries the effective date from its document header. MANUAL ITEMS: [BEM 210 FIP group composition](https://mdhhs-pres-prod.michigan.gov/olmweb/ex/BP/Public/BEM/210.pdf) (BPB 2026-002, 1-1-2026); [BEM 211 Medicaid group composition](https://mdhhs-pres-prod.michigan.gov/olmweb/ex/BP/Public/BEM/211.pdf) (BPB 2026-013, 5-1-2026); [BEM 212 SNAP group composition](https://mdhhs-pres-prod.michigan.gov/olmweb/ex/BP/Public/BEM/212.pdf) (BPB 2026-025, 10-1-2026); [BEM 220 residence](https://mdhhs-pres-prod.michigan.gov/olmweb/ex/BP/Public/BEM/220.pdf) (BPB 2026-010, 4-1-2026); [BEM 554 expenses](https://mdhhs-pres-prod.michigan.gov/olmweb/ex/BP/Public/BEM/554.pdf) (verified 10-1-2026); [ERM 103 applications](https://mdhhs-pres-prod.michigan.gov/olmweb/ex/ER/Public/ERM/103.pdf) (verified 10-1-2026); [ERM 205 assets](https://mdhhs-pres-prod.michigan.gov/olmweb/ex/ER/Public/ERM/205.pdf) (verified 10-1-2026); [ERM 208 budgeting](https://mdhhs-pres-prod.michigan.gov/olmweb/ex/ER/Public/ERM/208.pdf) (ERB 2026-003, 10-1-2026); [ERM 301 energy](https://mdhhs-pres-prod.michigan.gov/olmweb/ex/ER/Public/ERM/301.pdf) (ERB 2026-004, 10-1-2026); [ERM 303 relocation](https://dhhs.michigan.gov/olmweb/ex/ER/Public/ERM/303.pdf) (verified 10-1-2026). FEDERAL RULES: cite and read through eCFR \u2014 [7 CFR 273.1](https://www.ecfr.gov/current/title-7/subtitle-B/chapter-II/subchapter-C/part-273/subpart-A/section-273.1) (the SNAP household concept) and [42 CFR 435.603](https://www.ecfr.gov/current/title-42/section-435.603) (MAGI households). TABLES (RFT items live under [the RFT path](https://mdhhs-pres-prod.michigan.gov/olmweb/ex/RF/Public/RFT/)): RFT 250 FAP income limits and RFT 255 food assistance standards (RFB 2025-006, effective 10-1-2025); RFT 210 FIP payment standards (RFB 2025-001, effective 12-2024). CORRECTION NOTE: FAP income limits are in RFT 250 \u2014 RFT 240 is a different table (Medicaid Monthly Protected Income Levels). Do not cite RFT 240 for FAP. CURRENCY DISCIPLINE: MDHHS republishes manual items and RFT tables through the year \u2014 before quoting any rule or dollar figure, open the PDF and recheck the header (the BPB, ERB, or RFB letter plus effective date printed in the item). A new-FY RFB effective 10-1-2026 may post at any time and change the dollar figures above. H.R. 1 BOUNDARY: the MDHHS Medicaid page ([michigan.gov/mdhhs/assistance-programs/medicaid](https://www.michigan.gov/mdhhs/assistance-programs/medicaid)) carries active notices that federal changes under H.R. 1 affect how Michigan provides Medicaid coverage, plus non-citizen eligibility changes. The notices exist; the substantive changes and implementation timeline are NOT covered by this guide \u2014 check that page before relying on any Medicaid rule. This module is an educational overview, not legal advice; verify at MDHHS."
+          }
+        ],
+        "examples": [
+          {
+            "title": "Scenario A \u2014 the adult daughter at her parents' home",
+            "scenario": "A 25-year-old daughter lives in her parents' home. She buys and fixes her own food, pays her own bills, and is not claimed on her parents' tax return. Everyone wants to know: is she her own case or not?",
+            "outcome": "FAP: she MAY be her own FAP group at the same address \u2014 the parent-and-child mandatory combination ends at 22, and she purchases and prepares food separately (BEM 212, BPB 2026-025, effective 10-1-2026). If she contributes to or eats from her parents' food supply, she is one group with them. At 21 she could NOT split, no matter how separate the food is. FIP: at 25 she is not a dependent child of her parents. If she requests FIP for her own child, the assistance group is her (legal parent) plus the child \u2014 the grandparents are not mandatory members because a legal parent lives in the home (BEM 210, BPB 2026-002, effective 1-1-2026). Medicaid: it turns entirely on tax plans (BEM 211; 42 CFR 435.603(f) via eCFR). If she files taxes and claims her child, her household is her plus the child and her parents' income is irrelevant. If she is a non-filer, her household is her plus any spouse living with her plus children under 19 (21 if a full-time student) \u2014 still not her parents. But if her parents claim HER as a tax dependent, her Medicaid household becomes her parents' tax household and their income counts, unless a dependent exception applies (435.603(f)(2)) \u2014 the single most decisive question in multi-generation homes. SER: she is inside the household for energy services \u2014 her income is budgeted and her individual energy cap is charged; a separate-bills arrangement does not carve her out (ERM 301, ERB 2026-004, effective 10-1-2026)."
+          },
+          {
+            "title": "Scenario B \u2014 two adults, one address, different incomes",
+            "scenario": "An adult 18 or older shares an apartment with another unrelated adult who also receives benefits. Different incomes, different expenses, no legal relationship between them.",
+            "outcome": "FAP: two separate groups if each buys and fixes food separately; roommates who only share rent stay separate (BEM 212). If one of them is the other's parent and the child-side person is under 22, they are one mandatory group even with separate food; at 22 or older, separation is allowed. Medicaid: each adult's household is built from their own tax posture \u2014 an unrelated housemate is never in your MAGI household unless you claim them as a tax dependent, which triggers the dependent-exception rules (42 CFR 435.603(f) via eCFR). Two recipients at one address with different incomes is normal and never merges MAGI households by address. FIP: unrelated adults are not in each other's FIP assistance group \u2014 membership is legal-relationship based (BEM 210); the only route an unrelated adult enters another's group is as a qualifying non-parent caretaker. SER: one household under one roof \u2014 for energy services both incomes are budgeted and each person's energy cap is charged individually (ERM 301, ERB 2026-004, effective 10-1-2026)."
+          },
+          {
+            "title": "Scenario C \u2014 the bill is in someone else's name",
+            "scenario": "Your FAP group lives in a home where the heat bill is in another household member's relative's name, and you worship the myth that the paperwork name controls everything.",
+            "outcome": "The expense can still be allowed. BEM 554 verbatim: \"Responsibility to pay means the expense is in the name of a person in the FAP group. Exception: If the expense is in someone else's name, allow the expense if the FAP group claims the expense and the service address on the bill is where they live.\" The lease or bill does not have to be in the applicant's name, and heat/utility standards are never prorated (BEM 554, verified 10-1-2026)."
+          }
+        ],
+        "pitfalls": [
+          "MYTH: \"We buy and fix food separately, so we're separate FAP groups.\" True only if no mandatory combination applies \u2014 married spouses and parents with children under 22 are one group no matter what (BEM 212, BPB 2026-025, effective 10-1-2026). Separate food decides only for adults 22 or older who are not married to each other.",
+          "MYTH: \"An 18-, 19-, or 20-year-old can file their own food case while living with their parent.\" No \u2014 parent-and-child-under-22 is a mandatory combination regardless of separate food (BEM 212; 7 CFR 273.1(b)(1)(ii)).",
+          "MYTH: \"Different names on the lease or bills make us separate households.\" The lease does not control FAP group membership \u2014 food-sharing does \u2014 and BEM 554 allows an expense not in a group member's name if the group claims it and the service address on the bill is where they live.",
+          "MYTH: \"The Medicaid household is everyone living in the house.\" No \u2014 MAGI households follow tax filing plans; a grandmother, roommate, or adult child at the same address can be in a different Medicaid household (42 CFR 435.603(f) via eCFR; BEM 211, BPB 2026-013, effective 5-1-2026).",
+          "MYTH: \"A pregnant woman counts as one person.\" Counted as herself plus the expected deliveries \u2014 at least two (42 CFR 435.603(b); BEM 211).",
+          "MYTH: \"You need a permanent address to get benefits.\" Benefits cannot be denied solely for lacking a fixed address (BEM 220, BPB 2026-010, effective 4-1-2026); SER applications accept a statement of homelessness (ERM 103).",
+          "MYTH: \"FIP and FAP use the same household rules.\" FIP is sleep-and-legal-relationship based; FAP is food-based; Medicaid is tax-based; SER is household-based (BEM 210, 211, 212; ERM 301).",
+          "MYTH: \"My income doesn't count for my adult kid's Medicaid just because we live apart from the tax forms.\" It DOES count if the adult child is your tax dependent, or is a non-filer child under 19 (21 if a full-time student) living with you (42 CFR 435.603(f) via eCFR; BEM 211).",
+          "MYTH: \"Boarders can always apply on their own.\" An excluded boarder cannot get SNAP separately; roomers and live-in attendants have independent access (BEM 212).",
+          "MYTH: \"SER hands me the money.\" SER pays the vendor \u2014 the utility company, landlord, or funeral director \u2014 consistent with the SER manual structure; confirm the payment mechanics when you apply.",
+          "VERIFY-AT-MDHHS BOUNDARY: this guide does not publish the SER Income Need Standards dollar figures (ERM 208 exhibit tables), H.R. 1 implementation specifics, or the State-Plan election formality; and the roughly-10-business-day SER decision standard and ERM 303's 75% affordability test are reported but must be confirmed at MDHHS before you rely on them."
+        ],
+        "exercises": [
+          "Pick your doors from the Module 1 map: which of Medicaid, FAP, FIP, and SER fit your situation, and what does each one actually pay for?",
+          "List everyone you buy and fix food with \u2014 that list is your starting FAP group \u2014 then check the mandatory combinations (spouses; parents with children under 22; under-18 under parental control) before deciding anyone is separate.",
+          "Sketch this year's tax plan: who files, who gets claimed as a dependent \u2014 that sketch, not the lease, is your Medicaid household.",
+          "Build your document pile by program: ID, SSNs, residency proof, income for about 30 days, expenses less than 30 days old \u2014 and for SER, the emergency proof itself (shut-off notice, past-due bill, or court paperwork stating the exact amount).",
+          "Practice the currency habit: before repeating any dollar figure from this guide, open the RFT table and read the RFB header \u2014 say the letter and the effective date out loud."
+        ]
+      }
+    },
+    "glossary": [
+      {
+        "term": "Bridge Card",
+        "definition": "Michigan's EBT card. FAP food benefits are issued on it; some programs may also carry a cash account (confirm with MDHHS)."
+      },
+      {
+        "term": "MAGI",
+        "definition": "Modified Adjusted Gross Income \u2014 the tax-based methodology that builds Medicaid households from tax filing plans (42 CFR 435.603)."
+      },
+      {
+        "term": "Mandatory combination",
+        "definition": "A relationship that must stay in one FAP group even with separate food: married spouses living together; parents with children under 22; a child under 18 under a non-parent's parental control (BEM 212)."
+      },
+      {
+        "term": "Purchase and prepare",
+        "definition": "The FAP food-sharing test: contributing to food purchases, sharing preparation, or eating from the same food supply (BEM 212)."
+      },
+      {
+        "term": "EDG",
+        "definition": "Eligibility Determination Group \u2014 the FIP assistance group built from legal relationships, not food (BEM 210)."
+      },
+      {
+        "term": "Caretaker (FIP)",
+        "definition": "The adult caring for the dependent child: a legal parent or stepparent in the home, or \u2014 only when neither lives there \u2014 a qualifying relative, guardian, or court-ordered caregiver (BEM 210, BPB 2026-002, effective 1-1-2026)."
+      },
+      {
+        "term": "Vendor payment",
+        "definition": "SER pays the utility company, landlord, or funeral director directly rather than issuing money to the applicant (SER manual structure)."
+      },
+      {
+        "term": "BPB / ERB / RFB",
+        "definition": "The policy-bulletin letters in a manual item's header plus its effective date \u2014 the currency check before quoting anything (e.g., BEM 212 at BPB 2026-025, 10-1-2026)."
+      },
+      {
+        "term": "RFT",
+        "definition": "Reference Table \u2014 the numbered tables holding dollar figures: RFT 250 FAP income limits, RFT 255 food assistance standards, RFT 210 FIP payment standards."
+      },
+      {
+        "term": "Expedited service (FAP)",
+        "definition": "Benefits by the 7th calendar day when the expedited criteria are met; regular FAP by day 30 (BAM 115)."
+      },
+      {
+        "term": "Life-threatening crisis",
+        "definition": "The SER 18-hour restoration clock: disconnection already occurred, restoration is medically necessary, no temporary housing alternative, and no Winter Protection Plan coverage (ERM 301)."
+      },
+      {
+        "term": "FPL",
+        "definition": "Federal poverty level \u2014 income standards are expressed as percentages of it (130%, 165%, 200% FPL for FAP tests; 195%, 160%, 54%, 133% for the MAGI groups BEM 211 lists)."
+      },
+      {
+        "term": "eCFR",
+        "definition": "The Electronic Code of Federal Regulations \u2014 the reading copy for federal rules like 42 CFR 435.603 and 7 CFR 273.1 (ecfr.gov)."
+      },
+      {
+        "term": "H.R. 1",
+        "definition": "The 2025-2026 federal law driving changes to Medicaid and food assistance; MDHHS carries active notices about it \u2014 check the MDHHS Medicaid page for the current implementation status."
+      },
+      {
+        "term": "MI Bridges",
+        "definition": "Michigan's online benefits portal: apply, upload verification, renew, report changes, and read notices (newmibridges.michigan.gov)."
+      },
+      {
+        "term": "Statement of homelessness",
+        "definition": "What an SER application may carry in place of an address; an application can be filed in any Michigan county (ERM 103)."
+      }
+    ],
+    "quiz": {
+      "beginner": [
+        {
+          "q": "Under BEM 212, who must be in the same FAP group even if they buy and fix food separately?",
+          "type": "mc",
+          "options": [
+            "Married spouses living together",
+            "Adult roommates",
+            "Unmarried siblings age 25 and up",
+            "Boarders"
+          ],
+          "answer": 0,
+          "explain": "BEM 212 (BPB 2026-025, effective 10-1-2026): \"Spouses who are legally married and live together must be in the same group.\" Separate buying and cooking is irrelevant."
+        },
+        {
+          "q": "A parent and their 20-year-old child live together and keep food completely separate. One FAP group?",
+          "type": "mc",
+          "options": [
+            "Only if the parent agrees",
+            "Separate, always",
+            "One mandatory group until the child turns 22",
+            "Only if the child pays rent"
+          ],
+          "answer": 2,
+          "explain": "Parents and their children under 22 living together must be one group regardless of separate food (BEM 212; 7 CFR 273.1(b)(1)(ii)). The child can have their own case the month after turning 22."
+        },
+        {
+          "q": "An adult child 22 or older can be their own FAP group at the parents' address if they purchase and prepare food separately.",
+          "type": "tf",
+          "answer": true,
+          "explain": "BEM 212 \u2014 the mandatory combination ends at 22; a 22+ child who purchases and prepares separately may be a separate group at the same address."
+        },
+        {
+          "q": "A Medicaid MAGI household is built from which of these?",
+          "type": "mc",
+          "options": [
+            "Who is on the lease",
+            "Your tax filing plan",
+            "Who shares food",
+            "Who sleeps in the home"
+          ],
+          "answer": 1,
+          "explain": "42 CFR 435.603(f) via eCFR and BEM 211 (BPB 2026-013, effective 5-1-2026): filer, dependent, or non-filer \u2014 tax status builds the household, not the lease or the kitchen."
+        },
+        {
+          "q": "For a Medicaid non-filer, the household is:",
+          "type": "mc",
+          "options": [
+            "Everyone in the house",
+            "You plus any spouse living with you plus your children under 19 (21 if a full-time student)",
+            "You alone, always",
+            "Whoever is on the lease"
+          ],
+          "answer": 1,
+          "explain": "42 CFR 435.603(f)(3) via eCFR; BEM 211 states Michigan's child-age election as under 19, or under 21 if a full-time student."
+        },
+        {
+          "q": "Married spouses living together are in each other's MAGI household even if they do not file a joint tax return.",
+          "type": "tf",
+          "answer": true,
+          "explain": "42 CFR 435.603(f)(4) via eCFR: each spouse is included in the other's household regardless of whether they expect to file jointly."
+        },
+        {
+          "q": "How is a pregnant woman counted in a MAGI household?",
+          "type": "mc",
+          "options": [
+            "One member",
+            "Depends on the due date",
+            "Two only if she is working",
+            "At least two members \u2014 plus one for each expected delivery"
+          ],
+          "answer": 3,
+          "explain": "BEM 211: \"Count a pregnant woman as at least two members. If multiples are expected count the woman as three, etc.\" (42 CFR 435.603(b))."
+        },
+        {
+          "q": "FIP decides \"living together\" by which test?",
+          "type": "mc",
+          "options": [
+            "Who shares food",
+            "Where family members usually sleep",
+            "The tax filing plan",
+            "Whose name is on the utilities"
+          ],
+          "answer": 1,
+          "explain": "BEM 210 (BPB 2026-002, effective 1-1-2026): living together = sharing a home where family members usually sleep, except temporary absences \u2014 a sleep and legal-relationship test, not a food test."
+        },
+        {
+          "q": "In FIP, a non-parent can be the caretaker only when:",
+          "type": "mc",
+          "options": [
+            "The parent works nights",
+            "The parent is in jail",
+            "No legal parent or stepparent lives in the home",
+            "The child is under 18"
+          ],
+          "answer": 2,
+          "explain": "BEM 210 (BPB 2026-002, effective 1-1-2026): \"a legal parent or stepparent living in the home, or when no legal parent or stepparent lives in the home, another adult...\""
+        },
+        {
+          "q": "Who is included in the SER group for energy services?",
+          "type": "mc",
+          "options": [
+            "Only the account holder",
+            "Only the adults",
+            "Only whoever signs the SER application",
+            "All household members"
+          ],
+          "answer": 3,
+          "explain": "ERM 301 (ERB 2026-004, effective 10-1-2026), verbatim: \"All household members are included in the SER group. Income of all household members is budgeted.\""
+        },
+        {
+          "q": "What are the SER asset limits (ERM 205)?",
+          "type": "mc",
+          "options": [
+            "$15,000 cash and $15,000 non-cash",
+            "$2,000 cash, no non-cash limit",
+            "$5,000 total",
+            "There is no asset test"
+          ],
+          "answer": 0,
+          "explain": "ERM 205 (verified 10-1-2026): cash (liquid) limit $15,000; non-cash limit $15,000; requests at or over the limit are denied for every service except burial; the homestead is excluded."
+        },
+        {
+          "q": "SER must provide some form of assistance within what window for an energy crisis?",
+          "type": "mc",
+          "options": [
+            "48 hours \u2014 or 18 hours if life-threatening",
+            "7 days",
+            "10 business days, always",
+            "30 days"
+          ],
+          "answer": 0,
+          "explain": "ERM 301 (ERB 2026-004, effective 10-1-2026): some form of assistance within 48 hours of a crisis application; within 18 hours for a life-threatening crisis."
+        },
+        {
+          "q": "SER pays the applicant directly, and the applicant then pays the utility company.",
+          "type": "tf",
+          "answer": false,
+          "explain": "SER pays vendors \u2014 the utility company, landlord, or funeral director \u2014 consistent with the SER manual structure; confirm payment mechanics when you apply."
+        },
+        {
+          "q": "Where can an SER application be filed?",
+          "type": "mc",
+          "options": [
+            "Only in your home county",
+            "Only online through MI Bridges",
+            "In any Michigan county \u2014 with an address or a statement of homelessness",
+            "Only with a permanent address"
+          ],
+          "answer": 2,
+          "explain": "ERM 103 (verified 10-1-2026): any Michigan county, registered within one day, no minimum age, and the application accepts an address or a statement of homelessness."
+        },
+        {
+          "q": "FAP income limits for a SNAP group are published in which reference table?",
+          "type": "mc",
+          "options": [
+            "RFT 210",
+            "RFT 240",
+            "RFT 250",
+            "RFT 255"
+          ],
+          "answer": 2,
+          "explain": "RFT 250 (RFB 2025-006, effective 10-1-2025) holds the FAP income limits. RFT 240 is a different table \u2014 Medicaid Monthly Protected Income Levels. RFT 210 is FIP grants; RFT 255 is food assistance standards."
+        },
+        {
+          "q": "Your heat bill is in someone else's name. Under BEM 554, what happens to the expense?",
+          "type": "mc",
+          "options": [
+            "It is never allowed",
+            "Allowed if the FAP group claims it and the service address on the bill is where they live",
+            "Allowed only for phone bills",
+            "Allowed only if the landlord signs a form"
+          ],
+          "answer": 1,
+          "explain": "BEM 554 verbatim: \"If the expense is in someone else's name, allow the expense if the FAP group claims the expense and the service address on the bill is where they live.\""
+        },
+        {
+          "q": "Heat and utility standards are prorated between household members.",
+          "type": "tf",
+          "answer": false,
+          "explain": "BEM 554 (verified 10-1-2026): heat/utility standards are never prorated."
+        },
+        {
+          "q": "Can benefits be denied solely because a person has no permanent dwelling or fixed address?",
+          "type": "mc",
+          "options": [
+            "No \u2014 BEM 220 forbids it",
+            "Yes, always",
+            "Yes, unless they own a car",
+            "No, but only for Medicaid"
+          ],
+          "answer": 0,
+          "explain": "BEM 220 (BPB 2026-010, effective 4-1-2026): benefits must not be denied solely because the individual has no permanent dwelling or fixed address; a local-office mailing address may be used."
+        },
+        {
+          "q": "Which piece of paperwork is NOT acceptable for SER rent help?",
+          "type": "mc",
+          "options": [
+            "A court judgment stating the exact amount",
+            "A court summons",
+            "A demand for possession / notice to quit",
+            "A court order"
+          ],
+          "answer": 2,
+          "explain": "ERM 303 (verified 10-1-2026): a demand for possession or notice to quit is not acceptable \u2014 a court summons, order, or judgment stating the exact amount is required."
+        },
+        {
+          "q": "A person 60 or older who cannot purchase or prepare meals due to a severe permanent disability may be a separate FAP group even while sharing food, if everyone else's countable income is at or below:",
+          "type": "mc",
+          "options": [
+            "130% of poverty",
+            "165% of poverty",
+            "200% of poverty",
+            "100% of poverty"
+          ],
+          "answer": 1,
+          "explain": "BEM 212; 7 CFR 273.1(b)(2) \u2014 the senior/impaired separate-group option requires the disability condition and others' countable income at or below 165% of poverty."
+        },
+        {
+          "q": "How many SNAP groups may a person participate in per month?",
+          "type": "mc",
+          "options": [
+            "One",
+            "Two",
+            "Three",
+            "Unlimited"
+          ],
+          "answer": 0,
+          "explain": "BEM 212 (with BEM 222): a person must not participate in more than one SNAP group in a month."
+        },
+        {
+          "q": "Foster children are always excluded from the host group's FAP and can never be included.",
+          "type": "tf",
+          "answer": false,
+          "explain": "BEM 212: the group chooses to include or exclude foster children and foster adults; if excluded, the foster child is not eligible as a separate group."
+        },
+        {
+          "q": "Which program's group is built from where family members usually sleep?",
+          "type": "mc",
+          "options": [
+            "SER",
+            "FAP",
+            "Medicaid MAGI",
+            "FIP"
+          ],
+          "answer": 3,
+          "explain": "BEM 210 (BPB 2026-002, effective 1-1-2026): FIP's living-together test is sleep-based, plus legal-relationship mandatory members \u2014 unlike FAP (food), Medicaid (tax plan), and SER (household)."
+        }
+      ]
+    }
+  }
+}

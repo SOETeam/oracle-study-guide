@@ -3,37 +3,78 @@
     {
       "id": "law",
       "name": "Law & Legal",
-      "icon": "⚖️",
+      "icon": "\u2696\ufe0f",
       "description": "Legal fundamentals, court procedures, rights",
-      "subtopics": ["Traffic Law", "Small Claims", "Tenant Rights", "Employment Law"]
+      "subtopics": [
+        "Traffic Law",
+        "Small Claims",
+        "Tenant Rights",
+        "Employment Law"
+      ]
     },
     {
       "id": "business",
       "name": "Business & Entrepreneurship",
-      "icon": "💼",
+      "icon": "\ud83d\udcbc",
       "description": "Starting and running a business",
-      "subtopics": ["Business Plan", "Marketing", "Finance", "Operations"]
+      "subtopics": [
+        "Business Plan",
+        "Marketing",
+        "Finance",
+        "Operations"
+      ]
     },
     {
       "id": "tech",
       "name": "Technology & AI",
-      "icon": "💻",
+      "icon": "\ud83d\udcbb",
       "description": "Modern technology and artificial intelligence",
-      "subtopics": ["Web Development", "AI Basics", "Cybersecurity", "Cloud Computing"]
+      "subtopics": [
+        "Web Development",
+        "AI Basics",
+        "Cybersecurity",
+        "Cloud Computing"
+      ]
     },
     {
       "id": "health",
       "name": "Health & Wellness",
-      "icon": "🏥",
+      "icon": "\ud83c\udfe5",
       "description": "Personal health, nutrition, and wellness",
-      "subtopics": ["Nutrition", "Exercise", "Mental Health", "Sleep"]
+      "subtopics": [
+        "Nutrition",
+        "Exercise",
+        "Mental Health",
+        "Sleep"
+      ]
     },
     {
       "id": "finance",
       "name": "Finance & Money",
-      "icon": "💰",
+      "icon": "\ud83d\udcb0",
       "description": "Personal finance and money management",
-      "subtopics": ["Budgeting", "Saving", "Investing", "Credit"]
+      "subtopics": [
+        "Budgeting",
+        "Saving",
+        "Investing",
+        "Credit"
+      ]
+    },
+    {
+      "id": "mdhhs-benefits",
+      "name": "MDHHS Benefits \u2014 Michigan",
+      "icon": "\ud83c\udfdb\ufe0f",
+      "description": "Michigan Medicaid, food assistance (FAP/EBT), FIP cash, and emergency relief (SER) \u2014 and the four different answers to \"who is in my household?\"",
+      "subtopics": [
+        "Program Map",
+        "Medicaid MAGI Households",
+        "FAP Food/EBT",
+        "FIP Cash",
+        "SER Emergency Relief",
+        "Household Composition",
+        "Applying & Documents",
+        "Sources & Currency"
+      ]
     }
   ]
 }
