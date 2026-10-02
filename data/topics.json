@@ -75,6 +75,23 @@
         "Applying & Documents",
         "Sources & Currency"
       ]
+    },
+    {
+      "id": "michigan-family-law",
+      "name": "Michigan Family Occupancy & Eviction",
+      "icon": "\ud83c\udfe0",
+      "description": "Living in a family home without a lease, the self-help eviction ban, the lawful removal timeline, children's custody and school rights, RV/camper rules, and emergency housing.",
+      "subtopics": [
+        "Living There Without a Lease",
+        "Self-Help Eviction Is Illegal",
+        "The Lawful Removal Timeline",
+        "Children: Custody Basics",
+        "School Stability \u2014 McKinney-Vento",
+        "RVs, Campers & Temporary Dwellings",
+        "CPS Reporting Facts",
+        "Emergency Housing & Help",
+        "Sources & Currency"
+      ]
     }
   ]
 }

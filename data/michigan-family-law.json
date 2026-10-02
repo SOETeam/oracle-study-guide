@@ -1,0 +1,356 @@
+{
+  "topic": {
+    "id": "michigan-family-law",
+    "title": "Michigan Family Occupancy & Eviction",
+    "description": "Living in a family home without a lease, the self-help eviction ban, the lawful removal timeline, children's custody and school rights, RV/camper rules, and emergency housing \u2014 verified against primary sources 10-1-2026.",
+    "icon": "\ud83c\udfe0",
+    "focus": "MCL 600.2918, 554.134, 600.5714, 600.5744, 722.25, 722.27b, 750.350, 722.624, 168.11 \u00b7 42 USC 11431 et seq. \u00b7 Saginaw Twp Zoning Ord. #423 \u00a7302(10) \u00b7 City of Saginaw \u00a7\u00a7 94.081, 94.082 \u00b7 ERM 103, 205, 301, 303",
+    "keyTerms": [
+      "tenancy at will",
+      "notice to quit",
+      "summary proceedings",
+      "writ of restitution",
+      "treble damages",
+      "self-help eviction",
+      "fit-parent presumption",
+      "grandparenting time",
+      "doubled-up",
+      "school of origin",
+      "State Emergency Relief",
+      "HARA"
+    ],
+    "subtopics": [
+      "Living in a family home without a lease",
+      "Self-help eviction is illegal",
+      "The lawful removal timeline",
+      "Children: the custody default",
+      "School stability: the McKinney-Vento Act",
+      "RVs, campers, and temporary dwellings",
+      "CPS reporting facts",
+      "Emergency housing and where to get help",
+      "Sources & currency"
+    ],
+    "levels": {
+      "beginner": {
+        "label": "Beginner \ud83c\udf31",
+        "tagline": "Plain language first, then the rule with its source \u2014 built from MCL statute text, federal code, Saginaw-area ordinances, and MDHHS manual items as read and verified 10-1-2026.",
+        "goals": [
+          "Explain what makes a person a tenant at will without any lease \u2014 and why mail delivery is not the test",
+          "Name the self-help tactics Michigan bans and the damages an occupant can recover for each occurrence",
+          "Walk the lawful removal timeline \u2014 notice, court, judgment, writ, execution \u2014 and its realistic 45-90+ day span",
+          "State the children's defaults: the parental custody presumption, the grandparents' court-only route, and the felony line for non-parent removal",
+          "Know the crisis system's clocks and doorways: SER relocation, HARA intake, 2-1-1, legal aid, and immediate school enrollment under McKinney-Vento"
+        ],
+        "concepts": [
+          {
+            "title": "Module 1 \u2014 Living in a family home without a lease",
+            "text": "No lease does not mean no rights. Michigan law recognizes tenancies that exist without any written agreement.\n\nWhat makes a tenant: Someone who has lived in a home for a stretch of time and contributed to the household \u2014 food, utilities, chores, money \u2014 has given value for the right to stay. The law treats that as a tenancy at will, even with no lease, no rent receipts, and nothing in writing.\n\nWhat a tenancy at will means in practice:\n- The occupant cannot be put out on demand or by surprise.\n- The homeowner must end the tenancy the lawful way: written notice first, then court if the occupant does not leave.\n- Neither side signed a lease, so neither side owes the other a fixed term \u2014 but the notice-and-court rule still protects the occupant.\n\nMail is not the test. Michigan's definition of residence (MCL 168.11) looks at where a person habitually sleeps, keeps personal effects, and has a regular place of lodging \u2014 not at where mail is delivered. Mail that never arrives weakens a paper trail; it does not erase the fact of living there.\n\n\u26a0 The edges can be argued \u2014 a short visit from a true guest is different from months of living with household contribution. A guest-versus-tenant question deserves a call to an attorney or legal aid."
+          },
+          {
+            "title": "Module 2 \u2014 Self-help eviction is illegal",
+            "text": "Michigan bans self-help eviction outright. MCL 600.2918 makes it unlawful for a property owner to force an occupant out instead of going to court.\n\nWhat counts as illegal self-help:\n- Changing, altering, or adding locks without immediately providing keys\n- Removing, keeping, or destroying the occupant's belongings\n- Removing doors, windows, or locks, or boarding up the home\n- Shutting off heat, running water, hot water, electricity, or gas\n- Using force, threats of force, or intimidation to oust someone\n\nThe price tag: An occupant who was put out by force can recover the greater of triple their actual damages or $200.00. An occupant whose possession was unlawfully interfered with can recover the greater of actual damages or $200.00 for each occurrence \u2014 every lock change and every utility shutoff is a separate occurrence. These protections may not be waived, even by agreement.\n\nExceptions are narrow: acting under a court order, brief interference needed for repairs, a good-faith belief the occupant abandoned the premises, and a detailed procedure after a tenant's death. \u201cIt's my house\u201d is not on the list.\n\n\u26a0 This applies inside family homes too. A relative who owns the house has no self-help option against someone who lives there."
+          },
+          {
+            "title": "Module 3 \u2014 The lawful removal timeline",
+            "text": "There is exactly one lawful road to removing an occupant, and it runs through the courts.\n\nThe steps:\n- Written notice to quit \u2014 for a tenancy at will, one month's notice under MCL 554.134\n- Summary proceedings \u2014 if the occupant does not leave, the owner files a summary proceeding in District Court under MCL 600.5714(1)(c)(iii)\n- Judgment \u2014 a judge decides possession; either side has 10 days to appeal\n- Writ of restitution \u2014 the writ cannot issue until 10 days after the judgment (MCL 600.5744(5)), and the owner must request it within 56 days\n- Execution \u2014 only a court officer or the sheriff may physically remove the occupant\n\nThe realistic clock: a month of notice plus weeks of filing and hearing plus the 10-day post-judgment stay means a removal that runs on schedule commonly takes 45 to 90 days or more from the first notice \u2014 longer if hearings are adjourned or the case is contested.\n\n\u26a0 An occupant who receives a notice to quit has rights in that courtroom: defenses, adjournments, and the pay-and-stay rule in nonpayment cases. Get legal advice the day the notice arrives \u2014 legal aid is free to call."
+          },
+          {
+            "title": "Module 4 \u2014 Children: the custody default",
+            "text": "When a custody question arises between a parent and anyone else, Michigan law starts from a strong default: the parent.\n\nThe parental presumption: Under MCL 722.25(1), if a custody dispute is between a parent and a third person, the court presumes the child's best interests are served by awarding custody to the parent \u2014 and that presumption is overcome only by clear and convincing evidence. The Michigan Supreme Court has held the presumption applies without first requiring proof that the parent is \u201cfit\u201d (Hunter v Hunter, 484 Mich 247 (2009)).\n\nGrandparents have a legal route \u2014 through court, not self-help: Under MCL 722.27b a grandparent may file for grandparenting time in defined circumstances. The grandparent must overcome the presumption that a fit parent's decision to deny time does not harm the child, and must prove harm by a preponderance of the evidence. If two fit parents sign an affidavit opposing the time, the court must dismiss the case.\n\nA criminal line nobody should cross: MCL 750.350 makes it a felony \u2014 punishable by up to life \u2014 for anyone other than a child's parent to maliciously, forcibly, or fraudulently lead, take, carry away, decoy, or entice away a child under 14 with intent to detain or conceal the child from a parent or legal guardian.\n\n\u26a0 Children are not property and not bargaining chips. An adult worried about a child's safety reports to CPS (Module 7) or files in court; no one removes a child by force."
+          },
+          {
+            "title": "Module 5 \u2014 School stability: the McKinney-Vento Act",
+            "text": "Federal law keeps children in school when housing falls apart.\n\nWho qualifies: The McKinney-Vento Act (42 USC 11431 et seq.) covers children and youth who are sharing the housing of other persons due to loss of housing, economic hardship, or a similar reason (42 USC 11434a) \u2014 staying doubled-up with relatives counts \u2014 as well as those living in motels, trailer parks, or camping grounds for lack of alternatives, in shelters, or facing imminent loss of housing they live in without paying rent (42 USC 11302(5)).\n\nWhat the school must do:\n- Enroll the child immediately \u2014 even without the usual records or proof of address\n- Keep the child in the school of origin when that is in the child's best interest\n- Arrange transportation\n- Connect the family with the district's homeless liaison\n\n\u26a0 A family does not need to borrow an address or misstate where they live to keep children enrolled. Saying the truth \u2014 doubled-up, staying with family, between homes \u2014 triggers the protections instead of breaking the rules."
+          },
+          {
+            "title": "Module 6 \u2014 RVs, campers, and temporary dwellings",
+            "text": "A camper on private land is not a loophole \u2014 it is regulated property with its own rules.\n\nLocal parking limits (Saginaw-area example): Saginaw Charter Township's zoning ordinance (Zoning Ordinance #423, Section 302(10)) allows recreational vehicles, travel trailers, and campers in residential-district yard areas only for periods not exceeding five consecutive days \u2014 after which the unit must be completely removed from the property for at least eight hours \u2014 and only on a hard, dust-free surface.\n\nHealth and utility rules: A trailer or vehicle occupied in whole or in part as a home counts as a dwelling under Saginaw County's environmental health code, so safe-water and sewage-disposal rules attach. The City of Saginaw requires sewerage facilities (\u00a7 94.081) and an adequate water supply (\u00a7 94.082) for any structure used for human occupancy where connections are available within 100 feet.\n\nThe occupancy trap: If someone lives in a camper on another person's land with permission, the arrangement is a tenancy at will under Michigan law. Removing the occupant later takes the same notice-to-quit and court path as a house (MCL 554.134; MCL 600.5714).\n\n\u26a0 Before anyone moves into a camper \u201ctemporarily\u201d: check the township parking rules, the health department's water and sewage requirements, and the winter reality of a trailer. Accepting the spot creates real tenancy rights that outlast the invitation."
+          },
+          {
+            "title": "Module 7 \u2014 CPS reporting facts",
+            "text": "Anyone may report suspected child abuse or neglect (MCL 722.624) \u2014 family members included. Michigan's centralized intake line is (855) 444-3911, available around the clock.\n\nHow investigations work: CPS investigates harm to children, not custody disputes. Findings fall into Categories I through V based on the evidence and severity, decided under a preponderance standard. A report is a request that the agency look \u2014 it is not a court order, and it hands no one custody.\n\n\u26a0 A custody disagreement is not a CPS matter. If the real question is where a child should live, that belongs in family court under the Child Custody Act, with the parental presumption in place (Module 4). Reporting to CPS to gain leverage in an adult dispute hurts children and can backfire on the reporter."
+          },
+          {
+            "title": "Module 8 \u2014 Emergency housing and where to get help",
+            "text": "Michigan's crisis system has real money and real clocks for families facing homelessness.\n\nState Emergency Relief (SER) through MDHHS:\n- One application covers multiple programs, and it can be filed in any Michigan county (ERM 103)\n- Energy crisis assistance runs on 48-hour clocks \u2014 18 hours for life-threatening situations (ERM 301)\n- Relocation services can pay moving expenses, a security deposit, first month's rent, or rent arrearage, and court costs included in a judgment are allowable to prevent an eviction (ERM 303)\n- Asset limits: $15,000 cash and $15,000 non-cash (ERM 205)\n\nWhere to apply: MI Bridges online, any MDHHS county office, or a paper application. Decisions target within 10 business days; crisis timelines are shorter. Report address changes within 10 days so benefits follow the family.\n\nWho to call (Saginaw area, numbers verified 10-1-2026):\n- Legal Services of Eastern Michigan \u2014 301 E Genesee Ave (5th floor, Commerce Building), Saginaw; toll-free (800) 322-4512\n- Michigan Legal Help \u2014 step-by-step guides and court forms online\n- 2-1-1 Northeast Michigan \u2014 dial 211 or (888) 636-4211, 24/7, for shelter, rent, and utility referrals\n- MDHHS Saginaw County office \u2014 411 E Genesee, Saginaw; (989) 758-1100\n- HARA housing intake \u2014 United Way of Saginaw County, 1840 N Michigan Ave; (989) 758-4357 or 211\n- 70th District Court \u2014 Saginaw County Governmental Center, 111 S Michigan Ave; civil division (989) 790-5380\n\nRelated module in this guide: [Michigan MDHHS Benefits](#/topic/mdhhs-benefits) \u2014 household-composition and benefit rules behind these programs.\n\n\u26a0 Deadlines and paperwork drive these systems. Apply even if eligibility is uncertain \u2014 the worst outcome of applying is a denial letter."
+          },
+          {
+            "title": "Module 9 \u2014 Sources & currency",
+            "text": "This module was verified against primary sources on October 1, 2026. Read the law yourself:\n\nMichigan statutes:\n- [MCL 600.2918 \u2014 damages for self-help eviction](https://legislature.mi.gov/Home/RenderDoc?objectName=mcl-600-2918)\n- [MCL 554.134 \u2014 notice to quit](https://legislature.mi.gov/Home/RenderDoc?objectName=mcl-554-134)\n- [MCL 600.5714 \u2014 summary proceedings](https://legislature.mi.gov/Home/RenderDoc?objectName=mcl-600-5714)\n- [MCL 600.5744 \u2014 writ of restitution](https://legislature.mi.gov/Home/RenderDoc?objectName=mcl-600-5744)\n- [MCL 722.25 \u2014 parental presumption](https://legislature.mi.gov/Home/RenderDoc?objectName=mcl-722-25)\n- [MCL 722.27b \u2014 grandparenting time](https://legislature.mi.gov/Home/RenderDoc?objectName=mcl-722-27b)\n- [MCL 750.350 \u2014 non-parent removal of a child](https://legislature.mi.gov/Home/RenderDoc?objectName=mcl-750-350)\n- [MCL 168.11 \u2014 residence defined](https://legislature.mi.gov/Home/RenderDoc?objectName=mcl-168-11)\n- [MCL 722.624 \u2014 CPS reports](https://legislature.mi.gov/Home/RenderDoc?objectName=mcl-722-624)\n\nFederal law:\n- [42 USC 11431 \u2014 McKinney-Vento policy](https://www.law.cornell.edu/uscode/text/42/11431)\n- [42 USC 11434a \u2014 education definition, including doubled-up](https://www.law.cornell.edu/uscode/text/42/11434a)\n- [42 USC 11302 \u2014 homeless definition](https://www.law.cornell.edu/uscode/text/42/11302)\n\nLocal rules and resources:\n- [Saginaw Charter Township \u2014 RV parking ordinance FAQ](https://www.saginawtownship.org/departments/community_development/code_enforcement_faq.php)\n- [City of Saginaw \u2014 sewerage and water code](https://codelibrary.amlegal.com/codes/saginaw/latest/saginaw_mi/0-0-0-12737)\n- [MSHDA HARA contact list](https://www.michigan.gov/mshda/homeless/homeless-and-special-housing-needs-programs/hara-contact-list)\n- [MDHHS Saginaw County office](https://www.michigan.gov/mdhhs/inside-mdhhs/county-offices/east-michigan/saginaw-county)\n- [Legal Services of Eastern Michigan](https://lsem-mi.org/contact-us/)\n- [2-1-1 Northeast Michigan](https://211nemichigan.org/)\n- [70th District Court](https://saginawcountymi.gov/courts-public-safety/courts/70th-district-court)\n- [Michigan Legal Help](https://michiganlegalhelp.org/)\n\nMDHHS manual items (State Emergency Relief): ERM 103 (applying), ERM 205 (assets), ERM 208 (budgeting), ERM 301 (energy crisis), ERM 303 (relocation) \u2014 published at dhhs.michigan.gov/olmweb.\n\n\u26a0 Laws change. Re-check every citation against the primary source before relying on it \u2014 the legislature's own pages above show the date they were last rendered."
+          }
+        ],
+        "examples": [
+          {
+            "title": "Scenario A \u2014 months in the family home, then \u201cout today\u201d",
+            "scenario": "Someone has lived in a relative's home for months, contributes to food and utilities, and keeps their belongings there. There is no lease. The homeowner says the arrangement is over and they must be gone by the weekend.",
+            "outcome": "The occupant is likely a tenant at will: months of occupancy plus household contribution is value for the right to stay, and Michigan's residence definition turns on habitual sleeping, personal effects, and lodging \u2014 not on mail delivery (MCL 168.11). The lawful path is one month's written notice to quit (MCL 554.134) and, if the occupant stays, summary proceedings in District Court (MCL 600.5714(1)(c)(iii)). A same-week deadline is not a court order. A free call to legal aid sorts the guest-versus-tenant question."
+          },
+          {
+            "title": "Scenario B \u2014 the locks were changed while the occupant was out",
+            "scenario": "The occupant comes home and the exterior locks have been changed. Their belongings are stacked on the porch and the electricity is off.",
+            "outcome": "Three separate violations of MCL 600.2918(2): lock change without immediately providing keys, removal of personal property, and termination of an essential service. Each occurrence supports actual damages or $200.00, whichever is greater, and a forcible ouster can support triple actual damages or $200.00, whichever is greater. The protections cannot be waived. Document everything with photos and dates, and call legal aid the same day."
+          },
+          {
+            "title": "Scenario C \u2014 \u201cjust stay in the camper on the back lot\u201d",
+            "scenario": "A family is offered a camper trailer parked on private property as \u201ctemporary\u201d housing while a family conflict cools down.",
+            "outcome": "Three rulebooks apply at once. Parking: Saginaw-area township zoning limits RV and trailer parking in residential yard areas to five consecutive days before the unit must be removed for eight hours. Health: an occupied trailer counts as a dwelling under county environmental health rules \u2014 safe water and sewage disposal are required. Occupancy: living there with permission is a tenancy at will, so removing the occupant later takes notice to quit and court. What looks like a favor can become a long-term legal arrangement \u2014 understand it before accepting."
+          },
+          {
+            "title": "Scenario D \u2014 the family has to move mid-school-year",
+            "scenario": "A family with school-age children must leave their current home and stay doubled-up with relatives in the same district.",
+            "outcome": "The children likely qualify under McKinney-Vento (42 USC 11434a): sharing housing due to loss of housing or economic hardship. The district must enroll them immediately without the usual records, may keep them in the school of origin with transportation, and has a homeless liaison to coordinate. Tell the school the truth about the housing situation \u2014 the law protects exactly that situation."
+          }
+        ],
+        "pitfalls": [
+          "MYTH: \u201cNo lease means I can be put out any time.\u201d A tenancy at will still requires written notice and a court order before removal \u2014 months of living with household contribution counts.",
+          "MYTH: \u201cThe homeowner can just change the locks.\u201d Self-help eviction is illegal in Michigan: actual damages or $200.00 per occurrence, tripled for force, and the protections cannot be waived.",
+          "MYTH: \u201cIf I get no mail there, I don't live there.\u201d Residency is measured by habitual sleeping, personal effects, and regular lodging \u2014 not by where mail arrives.",
+          "MYTH: \u201cGrandparents can just keep the kids to sort things out.\u201d Non-parent removal of a child under 14 to detain or conceal the child from a parent is a felony (MCL 750.350); the lawful route is filing in court.",
+          "MYTH: \u201cThe kids will have to change schools the day the family moves.\u201d McKinney-Vento protects immediate enrollment, school of origin, and transportation.",
+          "MYTH: \u201cA camper on the back lot solves the housing problem and nobody can touch it.\u201d Township parking limits, county health rules, and tenancy-at-will law all attach to it.",
+          "VERIFY-AT-MDHHS BOUNDARY: SER eligibility for a family staying with relatives is situation-specific \u2014 a group living with friends or relatives is not automatically treated as homeless under SER (ERM 303). Ask MDHHS before assuming either way.",
+          "Deadlines rule everything: 48-hour energy-crisis clocks, 10-business-day SER decisions, 10-day address-change reporting, and the 10-day writ-of-restitution stay.",
+          "Do not sign anything under family pressure. Signing an \u201coccupancy waiver\u201d or \u201cguest agreement\u201d can rewrite rights Michigan law otherwise provides \u2014 and cannot waive the self-help eviction protections.",
+          "One phone call beats a week of guessing: legal aid and 2-1-1 are free, and the 70th District Court civil division can explain filing mechanics."
+        ],
+        "exercises": [
+          "Sketch the lawful removal timeline from first notice to sheriff execution and mark every point where the process can be slowed lawfully.",
+          "Read MCL 600.2918(2) and list which of the seven interference examples would fit a utility-shutoff scenario.",
+          "Compare MCL 722.25(1) with MCL 722.27b(4)(b): who bears which burden of proof, and by what standard?",
+          "Find your district's homeless liaison contact on the school website and note exactly what documents, if any, they request for enrollment.",
+          "Call 2-1-1 and ask what a family with children should do in the first 24 hours of losing housing; record the referrals you are given."
+        ]
+      }
+    },
+    "glossary": [
+      {
+        "term": "Tenancy at will",
+        "definition": "An occupancy with no fixed term \u2014 often without a lease \u2014 that either side can end with proper notice, but only through the notice-and-court process."
+      },
+      {
+        "term": "Estate by sufferance",
+        "definition": "An occupier who stays after the right to stay has ended; still protected from self-help removal."
+      },
+      {
+        "term": "Notice to quit",
+        "definition": "The written notice that ends a tenancy \u2014 one month for a tenancy at will (MCL 554.134) \u2014 before court proceedings can begin."
+      },
+      {
+        "term": "Summary proceedings",
+        "definition": "The expedited District Court process to recover possession of premises (MCL 600.5714)."
+      },
+      {
+        "term": "Judgment for possession",
+        "definition": "The court's decision on who may possess the premises; either side has 10 days to appeal."
+      },
+      {
+        "term": "Writ of restitution",
+        "definition": "The court order that authorizes removal; it cannot issue until 10 days after the judgment (MCL 600.5744(5))."
+      },
+      {
+        "term": "Treble damages",
+        "definition": "Triple the actual damages \u2014 available under MCL 600.2918(1) for a forcible and unlawful ouster."
+      },
+      {
+        "term": "Self-help eviction",
+        "definition": "Removing an occupant without a court order \u2014 lockouts, property removal, utility shutoffs \u2014 banned by MCL 600.2918."
+      },
+      {
+        "term": "Fit-parent presumption",
+        "definition": "The legal default that a parent's decisions about their child are in the child's best interests, which others must overcome to override."
+      },
+      {
+        "term": "Grandparenting time",
+        "definition": "Court-ordered time between a grandparent and a child under MCL 722.27b \u2014 granted only after the grandparent overcomes the fit-parent presumption."
+      },
+      {
+        "term": "Doubled-up",
+        "definition": "Sharing housing with others due to loss of housing, economic hardship, or a similar reason \u2014 a McKinney-Vento category (42 USC 11434a)."
+      },
+      {
+        "term": "School of origin",
+        "definition": "The school a child attended when permanently housed or last enrolled; McKinney-Vento favors keeping the child there."
+      },
+      {
+        "term": "SER (State Emergency Relief)",
+        "definition": "MDHHS crisis payments paid directly to vendors \u2014 energy, relocation, home repairs \u2014 with 48-hour crisis clocks (ERM 301, 303)."
+      },
+      {
+        "term": "HARA",
+        "definition": "Housing Assessment and Resource Agency \u2014 the county's central intake for people experiencing or at risk of homelessness."
+      }
+    ],
+    "quiz": {
+      "beginner": [
+        {
+          "q": "Under MCL 600.2918(1), an occupant who is put out of a home in a forcible and unlawful manner can recover:",
+          "type": "mc",
+          "options": [
+            "The greater of triple their actual damages or $200.00",
+            "Exactly $200.00 in every case",
+            "One month's rent",
+            "Nothing \u2014 the owner decides"
+          ],
+          "answer": 0,
+          "explain": "MCL 600.2918(1): a person ejected by force is entitled to 3 times their actual damages or $200.00, whichever is greater, in addition to recovering possession."
+        },
+        {
+          "q": "A homeowner may change the locks on a family member's room while they are out to force a move.",
+          "type": "tf",
+          "answer": false,
+          "explain": "MCL 600.2918(2)(c) makes changing, altering, or adding locks without immediately providing keys unlawful interference \u2014 actual damages or $200.00 per occurrence."
+        },
+        {
+          "q": "For a tenancy at will in Michigan, how much notice ends the tenancy (MCL 554.134)?",
+          "type": "mc",
+          "options": [
+            "One month's notice in writing",
+            "24 hours",
+            "7 days",
+            "No notice is required"
+          ],
+          "answer": 0,
+          "explain": "MCL 554.134(1): an estate at will or by sufferance may be terminated by either party by giving 1 month's notice."
+        },
+        {
+          "q": "After a judgment for possession, when may a writ of restitution issue (MCL 600.5744(5))?",
+          "type": "mc",
+          "options": [
+            "Not until 10 days after the judgment",
+            "Immediately",
+            "24 hours later",
+            "30 days later"
+          ],
+          "answer": 0,
+          "explain": "MCL 600.5744(5): the writ must not be issued until the expiration of 10 days after the entry of the judgment for possession."
+        },
+        {
+          "q": "Who may physically remove an occupant once a writ of restitution issues?",
+          "type": "mc",
+          "options": [
+            "A court officer or the sheriff",
+            "The owner and two friends",
+            "A locksmith hired by the owner",
+            "Anyone holding the keys"
+          ],
+          "answer": 0,
+          "explain": "Only a court officer or the sheriff executes the removal \u2014 the owner may never carry it out personally."
+        },
+        {
+          "q": "Under MCL 168.11, what makes a place a person's residence?",
+          "type": "mc",
+          "options": [
+            "Where they habitually sleep, keep personal effects, and have a regular place of lodging",
+            "Where their mail is delivered",
+            "What their ID card says",
+            "Where they own property"
+          ],
+          "answer": 0,
+          "explain": "MCL 168.11(1) defines residence by habitual sleeping place, personal effects, and regular lodging \u2014 mail delivery is not the test."
+        },
+        {
+          "q": "In a custody dispute between a parent and a third person, the court presumes custody to the parent unless clear and convincing evidence shows otherwise.",
+          "type": "tf",
+          "answer": true,
+          "explain": "MCL 722.25(1): the best interests of the child are presumed served by awarding custody to the parent unless the contrary is established by clear and convincing evidence."
+        },
+        {
+          "q": "A grandparent who wants court-ordered grandparenting time must:",
+          "type": "mc",
+          "options": [
+            "File in court and overcome the fit-parent presumption by a preponderance of the evidence",
+            "Ask the family's landlord",
+            "File a report with CPS",
+            "Do nothing \u2014 the time is automatic"
+          ],
+          "answer": 0,
+          "explain": "MCL 722.27b(4)(b): the grandparent must prove by a preponderance that denying time creates a substantial risk of harm to the child."
+        },
+        {
+          "q": "Under MCL 750.350, a non-parent who takes a child under 14 with intent to detain or conceal the child from a parent commits:",
+          "type": "mc",
+          "options": [
+            "A felony punishable by up to life in prison",
+            "A civil infraction",
+            "A misdemeanor with a 90-day maximum",
+            "No crime \u2014 it is a family matter"
+          ],
+          "answer": 0,
+          "explain": "MCL 750.350: a felony punishable by imprisonment for life or any term of years. Only the child's adoptive or natural parent is exempt from this section."
+        },
+        {
+          "q": "A family staying doubled-up with relatives because of economic hardship:",
+          "type": "mc",
+          "options": [
+            "Can enroll the children in school immediately, without records, and may keep the school of origin",
+            "Must switch school districts first",
+            "Must enroll the children under a borrowed address",
+            "Cannot enroll the children until they sign a lease"
+          ],
+          "answer": 0,
+          "explain": "42 USC 11434a counts sharing housing due to economic hardship as homeless for education purposes; schools must enroll immediately and provide school-of-origin stability."
+        },
+        {
+          "q": "A child without a permanent address can be enrolled in school right away, even without records.",
+          "type": "tf",
+          "answer": true,
+          "explain": "McKinney-Vento requires immediate enrollment; the district's homeless liaison coordinates records, transportation, and services."
+        },
+        {
+          "q": "Saginaw Charter Township allows a travel trailer parked in required yard areas of residential districts for:",
+          "type": "mc",
+          "options": [
+            "No more than 5 consecutive days, then removed for at least 8 hours",
+            "Unlimited time on a hard surface",
+            "30 days at a time",
+            "One year with a permit"
+          ],
+          "answer": 0,
+          "explain": "Saginaw Charter Township Zoning Ordinance #423, Section 302(10): five consecutive days, then complete removal from the property for a minimum of eight hours, on a hard dust-free surface."
+        },
+        {
+          "q": "The City of Saginaw requires sewerage facilities (\u00a7 94.081) and an adequate water supply (\u00a7 94.082) for occupied structures when:",
+          "type": "mc",
+          "options": [
+            "Connections are available within 100 feet",
+            "It is summer",
+            "Only if the owner lives there",
+            "Never for trailers"
+          ],
+          "answer": 0,
+          "explain": "City of Saginaw Code \u00a7 94.081(A)(2) and \u00a7 94.082: sewerage and water requirements attach where connections can be made within 100 feet."
+        },
+        {
+          "q": "How fast must MDHHS provide some form of assistance after an energy-crisis application (ERM 301)?",
+          "type": "mc",
+          "options": [
+            "Within 48 hours \u2014 18 hours if life-threatening",
+            "30 days",
+            "Only after a hearing",
+            "There is no deadline"
+          ],
+          "answer": 0,
+          "explain": "ERM 301: MDHHS must provide some form of assistance within 48 hours of a crisis application; life-threatening crises run on an 18-hour clock."
+        },
+        {
+          "q": "SER relocation services (ERM 303) can pay for:",
+          "type": "mc",
+          "options": [
+            "First month's rent, security deposit, moving expenses, or rent arrearage",
+            "Only hotel vouchers",
+            "Paying off a mortgage",
+            "A new vehicle"
+          ],
+          "answer": 0,
+          "explain": "ERM 303 authorizes moving expenses, security deposit, first month's rent, and rent arrearage; court costs in a judgment are allowable to prevent an eviction."
+        },
+        {
+          "q": "You must have a signed lease to be considered a tenant in Michigan.",
+          "type": "tf",
+          "answer": false,
+          "explain": "Months of occupancy with household contribution create a tenancy at will without any writing \u2014 protected by MCL 554.134 and 600.2918."
+        }
+      ]
+    }
+  }
+}
