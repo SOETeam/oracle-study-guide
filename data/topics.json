@@ -77,6 +77,19 @@
       ]
     },
     {
+      "id": "funding-mi",
+      "name": "Michigan Funding & Resources",
+      "icon": "\ud83d\udcb2",
+      "description": "Verified Michigan grants, trans funds, LGBT+ referral, small-business help, and family emergency aid \u2014 deadlines, fees, exclusions, and live status read from official pages 2026-10-03.",
+      "subtopics": [
+        "Women \u2014 Business Funding",
+        "Trans \u2014 Direct Funds",
+        "LGBT+ \u2014 Support & Referral",
+        "Small Business \u2014 Michigan",
+        "Families \u2014 Emergency Help"
+      ]
+    },
+    {
       "id": "michigan-family-law",
       "name": "Michigan Family Occupancy & Eviction",
       "icon": "\ud83c\udfe0",

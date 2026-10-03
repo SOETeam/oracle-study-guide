@@ -1,0 +1,223 @@
+{
+  "topic": {
+    "id": "funding-mi",
+    "title": "Michigan Funding & Resources",
+    "description": "Verified Michigan funding and support programs \u2014 women\u2019s grants, trans funds, LGBT+ referral, small-business help, and family emergency aid \u2014 with deadlines, fees, exclusions, and current application status read from official pages on 2026-10-03.",
+    "icon": "\ud83d\udcb2",
+    "focus": "17 verified resources \u00b7 official pages read 2026-10-03",
+    "keyTerms": [
+      "State Emergency Relief",
+      "Michigan Energy Assistance Program",
+      "fee waiver",
+      "microgrant",
+      "woman-owned",
+      "MEAP",
+      "THAW"
+    ],
+    "subtopics": [
+      "Women \u2014 Business Funding",
+      "Trans \u2014 Direct Funds",
+      "LGBT+ \u2014 Support & Referral",
+      "Small Business \u2014 Michigan",
+      "Families \u2014 Emergency Help"
+    ],
+    "levels": {
+      "beginner": {
+        "label": "Beginner \ud83c\udf31",
+        "tagline": "Every entry below is a resource read from its official page on 2026-10-03 \u2014 what it gives, who qualifies, when it closes, what it costs, and whether it is open right now.",
+        "goals": [
+          "Match a need to the right program: business grant, trans fund, referral line, or emergency aid",
+          "Know each deadline and fee before applying, including the Amber hardship waiver route",
+          "Check live application status first \u2014 THAW was paused and the 2026 pitch season concluded",
+          "Spot industry and eligibility exclusions, including the WomanUp adult-entertainment bar"
+        ],
+        "concepts": [
+          {
+            "title": "Women \u2014 Business Funding",
+            "text": "Two funding routes for women-owned businesses, both read from the official program pages on 2026-10-03: a national monthly grant with a hardship fee waiver, and a Michigan pitch competition whose 2027 cycle closes Oct 4 2026.\n\n- Amber Grant (WomensNet) \u2014 $10,000 monthly grants plus Startup and Business-Category grants, 3 x $50,000 year-end grants, $510,000 awarded across 2026 \u2014 eligibility: women 18+ who own at least 50% of a business based in the United States or Canada \u2014 deadline: monthly cycle from the 1st through 11:59 PM Eastern on the last day (next cutoff Oct 31 2026) \u2014 fee: $15 per application, non-refundable, with a hardship fee waiver available by emailing info@ambergrantsforwomen.com before applying \u2014 trans status: criteria-clean-no-gate \u2014 https://ambergrantsforwomen.com/get-an-amber-grant/\n- WomanUp & Pitch Competition (Michigan Women Forward) \u2014 prizes per regional competition of $10,000, $5,000, $2,500, and $1,000 plus $1,000 audience choice, and $500 each for the top-50 non-placers \u2014 eligibility: Michigan-based, for-profit, at least 51% woman-owned, in the Idea/Startup track (under 3 years and under $150k revenue) or the Established/Growth track \u2014 deadline: 2027 cycle opened Aug 10 2026 and closes Oct 4 2026 at 11:59 PM, competitions run Feb 2 to Mar 2 2027 \u2014 fee: $20 with a 2-page concept paper, no waiver stated \u2014 trans status: criteria-clean-no-gate \u2014 https://miwf.org/business-programs/womanup-pitch/\n\n\u26a0 WomanUp & Pitch industry exclusion: businesses in the cannabis, weapons, or adult entertainment industries are not eligible to participate \u2014 current employees of Michigan Women Forward and Consumers Energy are excluded as well, and prior non-winning finalists must wait one year. The 2027-cycle window closes Oct 4 2026 at 11:59 PM, with competitions Feb 2 to Mar 2 2027.\n\n\u26a0 Verified 2026-10-03 against official pages."
+          },
+          {
+            "title": "Trans \u2014 Direct Funds",
+            "text": "Direct funds for trans and nonbinary people, plus the Michigan-specific entry point. The Trans Lifeline microgrants and both Point of Pride funds were read from official pages on 2026-10-03; the microgrants require no diagnosis, insurance, or income gate.\n\n- Trans Lifeline Microgrants \u2014 cash toward legal and document-update fees such as name and gender-marker costs; amount not published, $100,000 moved in 2025 through 5 partner organizations \u2014 eligibility: trans and nonbinary people of any age, with no diagnosis, insurance, or income gate and no receipts or proof of use required \u2014 deadline: rolling, processed chronologically, stated wait 2-4 weeks, 48 applications processed per month \u2014 fee: $0 to apply \u2014 trans status: explicit-inclusive \u2014 https://translifeline.org/microgrants/\n- Point of Pride Annual Transgender Surgery Fund \u2014 direct financial assistance toward gender-affirming surgery, award amount not published \u2014 eligibility: transgender (FTM, MTF, non-binary, genderqueer, gender non-conforming, and all other non-cis identities), 18+ at time of surgery, financial need, surgery in the US with a US-based surgeon \u2014 deadline: applications open Nov 1 and close Nov 30 at 11:59 PM EST, surgery on or after March 1 of the following year, next window opens Nov 1 2026 \u2014 fee: $0 \u2014 trans status: explicit-inclusive \u2014 https://www.pointofpride.org/annual-transgender-surgery-fund\n- Point of Pride HRT Access Fund \u2014 18 months of HRT-related care in kind: telemed visits, 6 lab visits, Uber vouchers, gender-marker letters, and prescription cost coverage \u2014 eligibility: trans or non-cis identity, financial need, live in the United States, at least 18 by Aug 1 2026, and meet the chosen telehealth provider's requirements \u2014 deadline: annual window May 1 to May 31, the 2026 window is closed and the next window is May 2027 \u2014 fee: $0 \u2014 trans status: explicit-inclusive \u2014 https://www.pointofpride.org/hrt-access-fund\n- Transgender Michigan \u2014 advocacy, support, education, and community events (Health Fair Oct 24, party Oct 31, Transgender Job Fair Nov 11 2026), no cash grants on the page \u2014 eligibility: mission serves transgender and gender non-conforming communities across Michigan \u2014 deadline: ongoing resource \u2014 fee: no fee stated \u2014 trans status: explicit-inclusive \u2014 https://www.transgendermichigan.org/\n\n\u26a0 Point of Pride windows are annual: the Surgery Fund opens Nov 1 and closes Nov 30 at 11:59 PM EST, and the HRT Access Fund runs May 1 to May 31. The HRT fund pays in kind rather than cash, and each partner provider only serves states inside its licensed area \u2014 confirm the provider covers Michigan.\n\n\u26a0 Verified 2026-10-03 against official pages."
+          },
+          {
+            "title": "LGBT+ \u2014 Support & Referral",
+            "text": "Free support and referral entry points rather than cash grants. Both pages were read on 2026-10-03 and both are open to Michigan residents.\n\n- Equality Michigan (EQMI) \u2014 education, victim services, and outreach statewide, no direct grants on the page \u2014 eligibility: LGBTQ+ neighbors throughout Michigan \u2014 deadline: ongoing \u2014 fee: no fee stated, services are free and the page solicits donations \u2014 trans status: explicit-inclusive \u2014 https://www.equalitymi.org/\n- LGBT National Hotline \u2014 free and confidential peer support, information, and local resources at 888-843-4564, with a Coming Out line at 888-688-5428 \u2014 eligibility: support volunteers identify as part of the LGBTQIA+ family and serve callers of all ages \u2014 deadline: ongoing, the lines are live \u2014 fee: $0 \u2014 trans status: explicit-inclusive \u2014 https://www.lgbthotline.org/\n\n\u26a0 These are referral and support resources, not funding. Only Equality Michigan's homepage was read on 2026-10-03, so deeper service details on its sub-pages are unconfirmed \u2014 verify at equalitymi.org before describing specific services.\n\n\u26a0 Verified 2026-10-03 against official pages."
+          },
+          {
+            "title": "Small Business \u2014 Michigan",
+            "text": "Michigan's free business-support network, two state and federal funding gateways, and one pitch competition to watch. Three of these five entries are free services rather than grants.\n\n- Michigan SBDC (MI-SBDC) \u2014 no-cost consulting, training, market research, and grant-readiness help for new and existing small businesses; the SBDC disburses no grants itself \u2014 eligibility: any new venture or existing small business \u2014 deadline: ongoing, no deadline \u2014 fee: $0 (no-cost consulting) \u2014 trans status: criteria-clean-no-gate \u2014 https://sbdcmichigan.org/our-services\n- MEDC 'I Need Funding' (Michigan Economic Development Corporation) \u2014 Michigan Supplier Conversion Grant ($31.8M federal pool for retooling), Capital Access loans routed through third-party lenders, and Match on Main reimbursement grants for downtown micro businesses \u2014 eligibility: 'MEDC offers funding resources to companies at all stages'; Supplier Conversion is restricted to current small and medium manufacturers of internal-combustion-engine vehicle parts \u2014 deadline: Supplier Conversion Notices of Intent being accepted as of 2026-10-03, Match on Main rounds are set by local partners with exact dates not stated on the page \u2014 fee: $0 to apply \u2014 trans status: criteria-clean-no-gate \u2014 https://www.michiganbusiness.org/services/funding/\n- SCORE Michigan (free mentoring) \u2014 free 1:1 mentoring, workshops, and templates from an SBA resource partner, with the Michigan chapter index at https://www.score.org/mi/ \u2014 eligibility: 'a free service offered to any aspiring or established owners of a U.S.-based business' \u2014 deadline: ongoing, no deadline \u2014 fee: $0 \u2014 trans status: criteria-clean-no-gate \u2014 https://www.score.org/how-mentoring-works/\n- SBA Michigan District Office \u2014 federal guaranteed-loan programs, counseling, federal contracting certifications, and disaster recovery assistance, serving the entire state of Michigan \u2014 eligibility: help with SBA funding programs, counseling, certifications, and disaster recovery; SBA loans are credit-based through private lenders \u2014 deadline: ongoing, program-specific cycles \u2014 fee: $0 for counseling and referrals, lender and guaranty fees can attach to loans \u2014 trans status: criteria-clean-no-gate \u2014 https://legacy.sba.gov/district/michigan\n- Michigan's Next Big Idea Pitch Competition (Michigan Celebrates Small Business) \u2014 $10,000 cash prize, 2026 winner Zo's Mini Donuts, sponsored by Comcast Business with the Small Business Association of Michigan \u2014 eligibility: existing Michigan-based businesses ready to scale, with full 2027 rules not yet posted \u2014 deadline: the 2026 cycle has concluded and 2027 application dates are not yet posted \u2014 fee: no fee stated \u2014 trans status: criteria-clean-no-gate \u2014 https://michigancelebrates.org/2026-pitch-competition/\n\n\u26a0 Michigan's Next Big Idea Pitch Competition: the 2026 cycle has concluded and 2027 application dates are not yet posted, so do not present it as open. MEDC round deadlines are set by local partners and must be confirmed before anyone applies.\n\n\u26a0 Verified 2026-10-03 against official pages."
+          },
+          {
+            "title": "Families \u2014 Emergency Help",
+            "text": "Emergency help for Michigan households: state relief, one-call referral, energy-bill assistance, and one fund currently paused for new applications. All four pages were read on 2026-10-03.\n\n- MDHHS State Emergency Relief (SER) \u2014 immediate help for heat and utilities, home repairs, relocation assistance, home ownership services, and burial \u2014 eligibility: 'provides immediate help to individuals and families facing conditions of extreme hardship or for emergencies that threaten health and safety', designed for low-income households that can normally meet their needs, with eligibility determined by the local MDHHS office \u2014 deadline: rolling emergency help with no application deadline, and not an appropriate solution to ongoing or chronic financial difficulty \u2014 fee: $0 (state benefit) \u2014 trans status: criteria-clean-no-gate \u2014 https://www.michigan.gov/mdhhs/assistance-programs/emergency-relief/overview/ser\n- Michigan 211 \u2014 referral gateway to 27,000+ programs covering utilities, food, clothing, transportation, housing, HIV/STI services, grief and bereavement, and more; call 2-1-1 or 844-875-9211, text available \u2014 eligibility: open to any Michigan resident with no income gate stated \u2014 deadline: ongoing, the line is staffed \u2014 fee: $0 \u2014 trans status: criteria-clean-no-gate \u2014 https://mi211.org/get-help\n- Michigan Energy Assistance Program (MEAP) \u2014 payment or partial payment of home energy bills (electricity, natural gas, propane, heating oil, other deliverable fuel) through an affordable monthly payment plan or a one-time direct payment \u2014 eligibility: eligible low-income households for their primary residence, income eligibility applies, applied for through local agencies or 211 \u2014 deadline: heating-season program year with no fixed deadline posted on the fetched page \u2014 fee: $0 \u2014 trans status: criteria-clean-no-gate \u2014 https://www.michigan.gov/mpsc/consumer/energy-assistance\n- The Heat and Warmth Fund (THAW) \u2014 energy bill payment assistance as a MEAP partner, either an affordable monthly payment plan or a one-time direct payment toward the energy bill \u2014 eligibility: Michigan residents seeking energy bill payment assistance, with income qualification through MEAP \u2014 deadline: status as fetched 2026-10-03, temporarily not accepting new applications because of high demand, site directs users to 2-1-1 and MEAP \u2014 fee: $0 \u2014 trans status: criteria-clean-no-gate \u2014 https://thawfund.org/\n\n\u26a0 THAW status caution: as fetched on 2026-10-03, THAW was temporarily not accepting new applications because of high demand and points visitors to 2-1-1 (mi211.org) and MEAP \u2014 check thawfund.org before applying, and use Michigan 211 or MEAP meanwhile.\n\n\u26a0 Verified 2026-10-03 against official pages."
+          }
+        ],
+        "examples": [
+          {
+            "title": "Applying with a tight budget",
+            "text": "The Amber Grant charges $15 per application. If that fee creates a financial hardship, email info@ambergrantsforwomen.com BEFORE applying to request a fee waiver \u2014 the fee is non-refundable once paid, and one application covers every grant type."
+          },
+          {
+            "title": "Energy bill due and THAW is paused",
+            "text": "As fetched 2026-10-03, THAW was not accepting new applications. The route that stays open: call 2-1-1 (or 844-875-9211) for Michigan 211 referral, or apply through a local MEAP agency for payment or partial payment of the home energy bill."
+          }
+        ],
+        "pitfalls": [
+          {
+            "title": "Treating a paused fund as gone",
+            "text": "\u26a0 THAW is temporarily closed to new applications, not defunct \u2014 the status can change, so re-check thawfund.org instead of assuming it is permanently unavailable."
+          },
+          {
+            "title": "Applying to a concluded competition",
+            "text": "\u26a0 Michigan\u2019s Next Big Idea Pitch Competition finished its 2026 cycle and has not posted 2027 dates; WomanUp & Pitch is the live Michigan route, closing Oct 4 2026 at 11:59 PM."
+          }
+        ],
+        "exercises": [
+          {
+            "title": "Build a Michigan shortlist",
+            "text": "Pick one need (business, trans care, family emergency) and list the two best entries for it from this page, with each deadline and fee written out from the bullet."
+          },
+          {
+            "title": "Verify one entry yourself",
+            "text": "Open one official URL from this page and confirm its deadline or status line still matches what is written here; note the date you checked."
+          }
+        ]
+      }
+    },
+    "glossary": [
+      {
+        "term": "State Emergency Relief (SER)",
+        "definition": "MDHHS crisis help for heat and utilities, home repairs, relocation, home ownership services, and burial \u2014 rolling, with eligibility set by the local office."
+      },
+      {
+        "term": "MEAP",
+        "definition": "Michigan Energy Assistance Program \u2014 pays or partly pays home energy bills for the primary residence via a monthly payment plan or one-time direct payment."
+      },
+      {
+        "term": "THAW",
+        "definition": "The Heat and Warmth Fund \u2014 a MEAP partner delivering energy bill assistance; temporarily not accepting new applications as fetched 2026-10-03."
+      },
+      {
+        "term": "SBDC",
+        "definition": "Small Business Development Center \u2014 no-cost consulting, training, and market research; grants no money itself."
+      },
+      {
+        "term": "MEDC",
+        "definition": "Michigan Economic Development Corporation \u2014 state funding portal listing grants, capital-access loans, and Match on Main reimbursement grants."
+      }
+    ],
+    "quiz": {
+      "beginner": [
+        {
+          "question": "Which women's funding program explicitly excludes businesses in the adult entertainment industry?",
+          "type": "multiple-choice",
+          "options": [
+            "Amber Grant (WomensNet)",
+            "WomanUp & Pitch Competition (Michigan Women Forward)",
+            "Michigan's Next Big Idea Pitch Competition",
+            "MEDC Match on Main"
+          ],
+          "correct": 1,
+          "explanation": "The official WomanUp & Pitch page states that businesses in the cannabis, weapons, or adult entertainment industries are not eligible; the Amber Grant rules carry no such industry exclusion."
+        },
+        {
+          "question": "Which fund covers legal-document costs such as name and gender-marker updates?",
+          "type": "multiple-choice",
+          "options": [
+            "Point of Pride HRT Access Fund",
+            "The Heat and Warmth Fund (THAW)",
+            "Trans Lifeline Microgrants",
+            "Michigan SBDC"
+          ],
+          "correct": 2,
+          "explanation": "Trans Lifeline Microgrants pay toward legal and document-update fees, cost nothing to apply, and require no receipts or proof of use; the HRT Access Fund covers hormone care, THAW covers energy bills, and the SBDC is consulting only."
+        },
+        {
+          "question": "How do you request the Amber Grant fee waiver?",
+          "type": "multiple-choice",
+          "options": [
+            "Email info@ambergrantsforwomen.com before applying",
+            "Call the WomensNet hotline after applying",
+            "Email help@ambergrantsforwomen.com after the deadline",
+            "No waiver exists \u2014 the $15 fee is absolute"
+          ],
+          "correct": 0,
+          "explanation": "The rules say that if the $15 fee creates a financial hardship, a fee waiver application may be requested, prior to applying, by emailing info@ambergrantsforwomen.com."
+        },
+        {
+          "question": "What does MDHHS State Emergency Relief (SER) cover?",
+          "type": "multiple-choice",
+          "options": [
+            "College tuition and textbooks",
+            "Childcare subsidies and WIC food packages",
+            "Heat and utilities, home repairs, relocation assistance, home ownership services, and burial",
+            "Small business payroll and commercial rent"
+          ],
+          "correct": 2,
+          "explanation": "SER provides immediate help for heat and utilities, home repairs, relocation assistance, home ownership services, and burial for households facing extreme hardship or an emergency threatening health and safety."
+        },
+        {
+          "question": "What does the Michigan Energy Assistance Program (MEAP) pay?",
+          "type": "multiple-choice",
+          "options": [
+            "Rent arrears and security deposits",
+            "Water and sewer bills only",
+            "Car insurance premiums",
+            "Home energy bills \u2014 electricity, natural gas, propane, heating oil, and other deliverable fuel"
+          ],
+          "correct": 3,
+          "explanation": "MEAP reduces energy insecurity by paying or partly paying home energy costs for the primary residence, either through an affordable monthly payment plan or a one-time direct payment."
+        },
+        {
+          "question": "When does the Point of Pride Annual Transgender Surgery Fund accept applications?",
+          "type": "multiple-choice",
+          "options": [
+            "May 1 to May 31",
+            "Nov 1 to Nov 30 at 11:59 PM EST",
+            "Rolling, with no annual deadline",
+            "Jan 1 to Jan 31"
+          ],
+          "correct": 1,
+          "explanation": "Applications open Nov 1 and close Nov 30 at 11:59 PM EST, and surgery must happen on or after March 1 of the following year; the May window belongs to the Point of Pride HRT Access Fund."
+        },
+        {
+          "question": "How does the Point of Pride HRT Access Fund deliver its 18 months of support?",
+          "type": "multiple-choice",
+          "options": [
+            "As a cash payment sent to the recipient",
+            "As a debit card loaded monthly",
+            "In kind \u2014 telemed visits, lab visits, Uber vouchers, gender-marker letters, and prescription cost coverage",
+            "As a tax credit claimed at filing"
+          ],
+          "correct": 2,
+          "explanation": "The HRT Access Fund is in-kind care delivered through partner telehealth providers (visits, labs, ride vouchers, letters, prescriptions) rather than cash, and only inside each provider's licensed service area."
+        },
+        {
+          "question": "Which single contact point searches more than 27,000 Michigan programs?",
+          "type": "multiple-choice",
+          "options": [
+            "SCORE Michigan",
+            "The SBA Michigan District Office",
+            "Michigan 211 \u2014 call 2-1-1 or 844-875-9211",
+            "Equality Michigan"
+          ],
+          "correct": 2,
+          "explanation": "Michigan 211's database lists 27,000+ programs across utilities, food, housing, transportation, and more; SCORE mentors businesses, the SBA District Office handles federal programs, and Equality Michigan is advocacy and victim services."
+        },
+        {
+          "question": "As fetched on 2026-10-03, THAW was temporarily not accepting new energy-bill assistance applications.",
+          "type": "tf",
+          "correct": true,
+          "explanation": "THAW's homepage said high demand had paused new applications and directed people to 2-1-1 (mi211.org) and MEAP \u2014 check back before applying."
+        },
+        {
+          "question": "The Michigan SBDC charges small businesses a fee for its consulting services.",
+          "type": "tf",
+          "correct": false,
+          "explanation": "The Michigan SBDC advertises no-cost consulting, training, and market research; it charges nothing for advising and disburses no grants itself."
+        }
+      ]
+    }
+  }
+}
