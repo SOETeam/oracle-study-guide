@@ -105,6 +105,23 @@
         "Emergency Housing & Help",
         "Sources & Currency"
       ]
+    },
+    {
+      "id": "dl-mi",
+      "name": "Michigan Driver Licensing \u2014 Permit to License",
+      "icon": "\ud83d\ude97",
+      "description": "Eligibility and documents, the Temporary Instruction Permit, knowledge test, third-party road skills test, issuance, renewal, reinstatement and every official fee \u2014 verified against Michigan.gov 2026-10-04.",
+      "subtopics": [
+        "Eligibility & Documents",
+        "TIP & Knowledge Test",
+        "Road Skills Test",
+        "After Passing",
+        "Under-18 GDL",
+        "Reinstatement, Replacement & Out-of-State",
+        "Costs Table",
+        "Pitfalls",
+        "Free Study Resources"
+      ]
     }
   ]
 }
