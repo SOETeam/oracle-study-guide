@@ -99,12 +99,12 @@
         "goals": [
           "Separate the two federal cannabis rescheduling tracks and say what each one still lacks",
           "Explain why cocaine scores zero on the three tracks that advanced cannabis, psilocybin, and ketamine",
-          "Name the November 12, 2026 hemp-THC deadline and the product categories it touches"
+          "Name the two hemp-THC deadlines (November 12, 2026 for cannabinoids a plant cannot naturally produce; December 11, 2026 for the total-THC definition and the 0.4 mg/container cap) and the product categories each touches"
         ],
         "concepts": [
           {
             "title": "Cannabis — The Federal-State Split",
-            "text": "The April 2026 order: on April 28, 2026 the U.S. Attorney General placed two narrow categories of marijuana in Schedule III — marijuana in FDA-approved drug products, and marijuana (including naturally derived delta-9-THC) grown or sold under a qualifying state medical license (AG Order 6754-2026). It was the first time since 1970 federal policy recognized an accepted medical use for cannabis. [V 2026-09-27]\n\nWhat did NOT change: everything sold through state adult-use programs — including Michigan's recreational market — remains Schedule I. The relief is contested too: the D.C. Circuit denied a stay of the order on September 9, 2026, but the merits are still being litigated and the order could still be vacated. [V 2026-09-27]\n\nThe unfinished second track: DEA held an 11-day rescheduling hearing June 29 – July 15, 2026 on the broader proposal to move all marijuana to Schedule III. Closing briefs landed August 17; the administrative law judge's recommended decision was still outstanding in late September 2026, and neither he nor the DEA Administrator faces a statutory deadline. [V 2026-09-27]\n\n⚠ Even full rescheduling would not legalize cannabis: production and possession outside DEA-registered channels would remain federally criminal, Schedule III substances stay controlled under 21 U.S.C. §812, and dispensaries would not become pharmacies."
+            "text": "The April 2026 order: on April 28, 2026 the U.S. Attorney General placed two narrow categories of marijuana in Schedule III — marijuana in FDA-approved drug products, and marijuana (including naturally derived delta-9-THC) grown or sold under a qualifying state medical license (AG Order 6754-2026). It was the first time since 1970 federal policy recognized an accepted medical use for cannabis. [V 2026-09-27]\n\nWhat did NOT change: everything sold through state adult-use programs — including Michigan's recreational market — remains Schedule I. The relief is contested too: the D.C. Circuit denied a stay of the order on September 9, 2026, but the merits are still being litigated and the order could still be vacated. [V 2026-09-27]\n\nThe unfinished second track: DEA held an 11-day rescheduling hearing June 29 – July 15, 2026 on the broader proposal to move all marijuana to Schedule III. Closing briefs landed August 17; then on September 29, 2026 Chief Administrative Law Judge Derek Julius stayed the proceeding pending resolution of a September 28 motion (DUID Victim Voices, Kenneth Finn, M.D., and the National Drug and Alcohol Screening Association) to admit a new GAO report on scheduling-process gaps (GAO-26-108623, September 23, 2026); DEA's response was due October 13, 2026. No recommended-decision date is set, and neither the ALJ nor the DEA Administrator faces a statutory deadline. [V 2026-10-10]\n\n⚠ Even full rescheduling would not legalize cannabis: production and possession outside DEA-registered channels would remain federally criminal, Schedule III substances stay controlled under 21 U.S.C. §812, and dispensaries would not become pharmacies."
           },
           {
             "title": "Psychedelics — Michigan & the National Picture",
@@ -120,7 +120,7 @@
           },
           {
             "title": "Hemp-Derived THC — The November 2026 Shift",
-            "text": "The loophole is closing: the 2018 Farm Bill defined hemp as ≤0.3% delta-9 THC dry weight, which the industry exploited for delta-8, THCA, and intoxicating hemp products. Section 781 of P.L. 119-37 (signed November 12, 2025) redefines hemp on a TOTAL-THC basis — including THCA and all isomers — and excludes from hemp final consumer products over 0.4 mg total THC per container, synthesized cannabinoids, and any cannabinoid with THC-like effects as determined by HHS. [V 2026-09-27]\n\nEffective date: November 12, 2026, after a one-year grace period. The U.S. Hemp Roundtable estimates the ban covers more than 95% of current hemp products; no repeal or delay had been enacted as of late September 2026, though repeal, replacement-regulation, and three-year-delay bills are pending in Congress. [V 2026-09-27]\n\n⚠ What this means in practice: intoxicating hemp products — delta-8 gummies, THCA flower, and most hemp-derived psychoactive items sold in smoke shops and online — sit on the wrong side of the federal line as of November 2026. State legality does not shield a federal sales or shipping charge."
+            "text": "The loophole is closing: the 2018 Farm Bill defined hemp as ≤0.3% delta-9 THC dry weight, which the industry exploited for delta-8, THCA, and intoxicating hemp products. Section 781 of P.L. 119-37 (signed November 12, 2025) redefines hemp on a TOTAL-THC basis — including THCA and all isomers — and excludes from hemp final consumer products over 0.4 mg total THC per container, synthesized cannabinoids, and any cannabinoid with THC-like effects as determined by HHS. [V 2026-09-27]\n\nEffective dates — two of them, not one: Section 781 of P.L. 119-37 (signed November 12, 2025) set a one-year transition to November 12, 2026, but P.L. 119-103 §2019 (H.R. 6500, signed September 2, 2026) split that date. The full redefinition — total THC including THCA, the 0.4 mg total THC per container cap on finished consumable products, and the exclusion for naturally occurring cannabinoids synthesized outside the plant — now takes effect December 11, 2026. The November 12, 2026 date remains only for intermediate and final hemp-derived cannabinoid products containing cannabinoids not capable of being naturally produced by a Cannabis sativa L. plant (certain synthetic cannabinoids), which lose federal hemp status that day. The U.S. Hemp Roundtable estimates the eventual ban covers more than 95% of current hemp products; repeal and further-delay bills remain pending in Congress. [V 2026-10-10]\n\n⚠ What this means in practice: on November 12, 2026, products containing cannabinoids a cannabis plant cannot naturally produce (certain synthetic cannabinoids) lose federal hemp status; on December 11, 2026, the rest lands — THCA flower, hemp-derived delta-9 gummies and drinks above the 0.4 mg total THC per container cap, and other intoxicating hemp items sold in smoke shops and online sit on the wrong side of the federal line. State legality does not shield a federal sales or shipping charge. [V 2026-10-10]"
           }
         ],
         "examples": [
@@ -143,13 +143,13 @@
         "pitfalls": [
           "MYTH: “Rescheduling means the feds legalized cannabis.” Reclassification is not a legal consumer market — production outside DEA-registered channels would stay federally criminal.",
           "MYTH: “Decriminalization equals legalization.” Oregon reversed Measure 110 in 2024; British Columbia's pilot expired January 31, 2026 without renewal. The 2024–2026 pattern on cocaine is retreat, not advance.",
-          "MYTH: “Hemp-derived THC gummies stay federally legal after November 12, 2026.” Section 781's total-THC redefinition takes effect that day; no repeal or delay had been enacted as of late September 2026.",
+          "MYTH: “Hemp-derived THC gummies stay federally legal after December 11, 2026.” Section 781's total-THC redefinition and 0.4 mg/container cap take effect December 11, 2026 after P.L. 119-103 §2019 (signed September 2, 2026) delayed them; only cannabinoids a plant cannot naturally produce keep the November 12, 2026 date. [V 2026-10-10]",
           "⚠ Executive Order 14401 legalizes nothing and reschedules nothing on its own — it funds research partnerships and directs review."
         ],
         "exercises": [
           "Trace the two federal cannabis rescheduling tracks and write down what each one still lacks.",
           "Compare Oregon's Measure 109 and Colorado's regulated model in one sentence each.",
-          "Write down the November 12, 2026 hemp deadline and the product categories it touches."
+          "Write down both hemp-THC deadlines (November 12 and December 11, 2026) and the product categories each touches."
         ]
       },
       "advanced": {
@@ -175,7 +175,7 @@
           },
           {
             "title": "Sources & Currency",
-            "text": "Verify anything here: every policy claim carries a [V date] stamp naming the day the underlying research was compiled from primary sources. Re-check load-bearing facts at the official pages: [Michigan Naloxone Direct Portal](https://www.michigan.gov/opioids) · [MCL 333.27963 — adult-use possession](https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-333-27963) · [CFSRE drug checking](https://testing.cfsre.org). Federal-status pages to re-check by name: the DEA marijuana rescheduling regulatory-actions page and the FDA drug approvals database.\n\nCurrency: legal-status research is current to September 27, 2026; harm-reduction program and pricing data to October 3, 2026. Federal cannabis, psychedelic, and hemp policy is moving fast — the hemp-THC ban's November 12, 2026 effective date and the pending DEA psilocybin recommendation are the two deadlines to re-check.\n\n⚠ This module is public-health and legal-status education. It is not medical or legal advice, it creates no provider or attorney relationship, and it never authorizes conduct that violates any law. Laws, prices, and programs change — verify against official sources before acting."
+            "text": "Verify anything here: every policy claim carries a [V date] stamp naming the day the underlying research was compiled from primary sources. Re-check load-bearing facts at the official pages: [Michigan Naloxone Direct Portal](https://www.michigan.gov/opioids) · [MCL 333.27963 — adult-use possession](https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-333-27963) · [CFSRE drug checking](https://testing.cfsre.org). Federal-status pages to re-check by name: the DEA marijuana rescheduling regulatory-actions page and the FDA drug approvals database.\n\nCurrency: legal-status research is current to September 27, 2026; harm-reduction program and pricing data to October 3, 2026. Federal cannabis, psychedelic, and hemp policy is moving fast — the hemp-THC two-step effective dates (November 12, 2026 for cannabinoids a plant cannot naturally produce; December 11, 2026 for the total-THC definition and 0.4 mg cap) and the stayed DEA marijuana-rescheduling recommendation (proceeding stayed September 29, 2026; DEA response due October 13, 2026) are the deadlines to re-check. [V 2026-10-10]\n\n⚠ This module is public-health and legal-status education. It is not medical or legal advice, it creates no provider or attorney relationship, and it never authorizes conduct that violates any law. Laws, prices, and programs change — verify against official sources before acting."
           }
         ],
         "examples": [
@@ -369,16 +369,16 @@
           "explanation": "Schedule III substances stay controlled under 21 U.S.C. §812; production and possession outside DEA-registered channels would remain federally criminal. [V 2026-09-27]"
         },
         {
-          "question": "A federal law effective November 12, 2026 (P.L. 119-37 §781) will:",
+          "question": "Section 781 of P.L. 119-37 (as amended by P.L. 119-103) takes effect:",
           "type": "multiple-choice",
           "options": [
-            "Legalize intoxicating hemp products nationwide",
-            "Redefine hemp on a total-THC basis and effectively ban most intoxicating hemp products",
-            "Lower the hemp THC cap to 0.1%",
-            "Transfer cannabis regulation to TTB immediately"
+            "November 12, 2026, for all hemp products",
+            "November 12, 2026, for cannabinoids a plant cannot naturally produce; December 11, 2026, for the total-THC definition and the 0.4 mg/container cap",
+            "It was repealed in September 2026",
+            "January 1, 2027"
           ],
           "correct": 1,
-          "explanation": "§781 redefines hemp as ≤0.3% TOTAL THC (including THCA and isomers) and excludes consumer products over 0.4 mg total THC per container. [V 2026-09-27]"
+          "explanation": "§2019 of P.L. 119-103 (signed September 2, 2026) delayed most §781 changes to December 11, 2026; only cannabinoids not capable of being naturally produced by a cannabis plant keep the November 12, 2026 date. [V 2026-10-10]"
         },
         {
           "question": "Which statement about MDMA is accurate as of September 2026?",
@@ -439,12 +439,12 @@
           "type": "multiple-choice",
           "options": [
             "Both finished",
-            "Limited order in effect under litigation (stay denied Sep 9 2026); broader hearing done with the ALJ recommendation pending",
+            "Limited order in effect under litigation (stay denied Sep 9 2026); broader proceeding stayed Sep 29 2026 pending GAO-report briefing — recommendation still pending",
             "Broader rule finished, limited order vacated",
             "Both dead"
           ],
           "correct": 1,
-          "explanation": "Track A (April 2026 order) survived a stay denial but merits remain litigated; Track B awaits the ALJ's recommended decision with no statutory deadline. [V 2026-09-27]"
+          "explanation": "Track A (April 2026 order) survived a stay denial but merits remain litigated; Track B's ALJ stayed the proceeding September 29, 2026 over a GAO-report motion (DEA response due October 13), with no statutory deadline. [V 2026-10-10]"
         },
         {
           "question": "Cocaine has an FDA drug pipeline for new consumer indications, like psychedelics do.",
