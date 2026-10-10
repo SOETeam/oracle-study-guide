@@ -1,0 +1,568 @@
+{
+  "topic": {
+    "id": "drug-policy-mi",
+    "title": "Michigan Drug Policy & Harm Reduction — Fall 2026",
+    "description": "Cannabis, psychedelic, and cocaine legal status in Michigan and the U.S. as of fall 2026 — plus naloxone access, fentanyl test strips, four tiers of substance testing, and settlement-funded programs. Public-health education only; not medical or legal advice.",
+    "icon": "🧪",
+    "focus": "status claims [V 2026-09-27] · harm-reduction data [V 2026-10-03] · 5 corpus reports · education only — not medical or legal advice",
+    "keyTerms": [
+      "naloxone",
+      "fentanyl",
+      "xylazine",
+      "nitazene",
+      "standing order",
+      "syringe service program",
+      "opioid settlement",
+      "Schedule I",
+      "Schedule III",
+      "deprioritization",
+      "REMS",
+      "280E",
+      "THCA",
+      "reagent",
+      "FTIR",
+      "harm reduction"
+    ],
+    "subtopics": [
+      "Cannabis Basics",
+      "Naloxone & Overdose Response",
+      "Fentanyl Test Strips",
+      "Federal Cannabis Tracks",
+      "Psychedelics",
+      "Ketamine",
+      "Cocaine & Coca",
+      "Hemp THC Ban",
+      "Testing Tiers",
+      "Programs & Funding",
+      "Golden Rules",
+      "Sources"
+    ],
+    "levels": {
+      "beginner": {
+        "label": "Beginner 🌱",
+        "tagline": "What is legal in Michigan, what free life-saving tools exist, and how the federal-state split actually works. Policy claims [V 2026-09-27]; harm-reduction data [V 2026-10-03].",
+        "goals": [
+          "Read Michigan's adult-use cannabis possession rules off the statute — 2.5 oz person, 10 oz secured home, 12 plants",
+          "Get free naloxone into the mail from the state portal and know how to use the 911-first sequence",
+          "Know that fentanyl test strips are legal in Michigan and what a negative result does NOT prove"
+        ],
+        "concepts": [
+          {
+            "title": "What This Module Is (and Is Not)",
+            "text": "This module is public-health and legal-status education for adults in Michigan. It summarizes published law, official programs, and research current to the dates stamped on each section.\n\nThis module is NOT medical or legal advice: it does not tell you to start, stop, or change any substance, and it cannot replace a doctor, a lawyer, or the actual text of a statute. Laws in this area move fast — every policy claim carries a [V 2026-09-27] or [V 2026-10-03] stamp and an official link so you can re-check it yourself.\n\nIf you suspect an overdose: call 911 immediately and give naloxone if it is available. Naloxone is legal to carry in Michigan and free by mail — that is the beginner level of this module."
+          },
+          {
+            "title": "Cannabis in Michigan — Basics",
+            "text": "Legal status: Michigan voters approved adult-use cannabis in 2018 (Proposal 1), and Michigan is one of 24 states + D.C. where recreational cannabis is legal as of September 2026. [V 2026-09-27]\n\nPossession rules: under [MCL 333.27963](https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-333-27963), adults 21 and over may possess up to 2.5 ounces of cannabis on their person (including up to 15 grams of concentrate), keep up to 10 ounces secured at home, and grow up to 12 plants per household — out of public view. Consumption is legal only on private property with the owner's permission; public use remains prohibited.\n\n⚠ Legal in Michigan does NOT mean legal everywhere: cannabis remains Schedule I under federal law, and airports, tribal land, national parks, and employer policies follow their own authority. Crossing a state line with cannabis is still a federal offense.\n\nLicensed sources only: state-licensed adult-use and medical dispensaries are the only legal retail channel; unlicensed shops and most online sales stay outside the legal market. [V 2026-09-27]"
+          },
+          {
+            "title": "Naloxone — Free, Legal, Life-Saving",
+            "text": "What it does: naloxone (Narcan) reverses opioid overdoses by knocking opioids off the brain's receptors for roughly 30–90 minutes. In Michigan it is available by standing order — anyone can carry it, anyone can administer it, no personal prescription needed. [V 2026-10-03]\n\nFree by mail: the [Michigan Naloxone Direct Portal](https://www.michigan.gov/opioids) mails free naloxone kits statewide — over 730,000 kits and 6,600+ documented reversals since 2020. NEXT Distro (nextdistro.org) mails free naloxone, fentanyl strips, and sterile supplies with no clinic visit. [V 2026-10-03]\n\nStatewide results: MDHHS supports 115 community naloxone sites that have distributed 1.8 million doses since 2020, and Michigan overdose deaths have fallen four straight years — down about 40% since 2021 — a decline the state credits substantially to harm reduction. [V 2026-10-03]\n\n⚠ After you give naloxone: call 911 anyway and stay with the person. Naloxone wears off before the opioid does, and overdose can return."
+          },
+          {
+            "title": "Fentanyl Test Strips — Legal in Michigan",
+            "text": "Fentanyl test strips detect fentanyl in a sample in minutes for roughly $0.50–$1 per test. They are LEGAL in Michigan — they were never outlawed here (the 1978 paraphernalia law reaches sellers, not buyers), and more than 25 states now allow them. [V 2026-10-03]\n\nWhat exists now: strips test for fentanyl, xylazine, benzodiazepines, medetomidine, and nitazenes — the adulterants driving today's overdose deaths. The BTNX Rapid Response 20 ng/ml strip is the field standard used by national programs. [V 2026-10-03]\n\n⚠ A negative strip test is not a safety certificate. A strip tests the sample you dip — not the whole bag, not the dose you plan to take — and it cannot see every adulterant. The goal is better decisions, not permission.\n\n⚠ Federal headwind: since July 2025, federal SAMHSA funds can no longer buy fentanyl test strips. Michigan opioid-settlement dollars CAN — $131.75 million is budgeted for FY2026 with $7.75 million in the harm-reduction line. [V 2026-10-03]"
+          }
+        ],
+        "examples": [
+          {
+            "title": "Scenario A — free kits by mail",
+            "scenario": "A shelter prints QR-code cards at the meal line; a week later free naloxone and strip kits arrive in mailboxes — no clinic visit, no IDs.",
+            "outcome": "The Michigan Naloxone Direct Portal (730,000+ kits since 2020) and NEXT Distro both mail free kits to anyone who asks. Cards cost pennies; naloxone is legal for any bystander to carry and give. [V 2026-10-03]"
+          },
+          {
+            "title": "Scenario B — 8 ounces in a locked box",
+            "scenario": "An adult keeps about 8 ounces of cannabis at home in a locked box and drives it to a cabin across the state line.",
+            "outcome": "At home it is under the 10-ounce secured limit under MCL 333.27963. Across the state line — and especially through an airport or national park — it is a federal offense; state legality does not travel with you."
+          },
+          {
+            "title": "Scenario C — the strip says negative",
+            "scenario": "Someone dips a strip, it comes back negative for fentanyl, and the whole bag gets written off as safe.",
+            "outcome": "The strip only tested the crumbs that went in the water. A negative result is not a safety certificate — mixtures, other adulterants, and potency all sit outside what one strip sees. [V 2026-10-03]"
+          }
+        ],
+        "pitfalls": [
+          "MYTH: “Legal in Michigan means legal everywhere.” Federal law, other states, tribal land, national parks, airports, and employer policies follow their own rules — a lawful Michigan purchase is not a passport.",
+          "MYTH: “Legal cannabis means risk-free cannabis.” THC impairs driving — Michigan's OWI laws apply to cannabis exactly as they do to alcohol, and you do not have to exceed a number to be charged.",
+          "MYTH: “A negative strip test means the drug is safe.” The golden rule printed on every card says otherwise: better decisions, not permission.",
+          "⚠ Calling 911 late: naloxone wears off before the opioid does — always call and stay with the person."
+        ],
+        "exercises": [
+          "Find your county health department's page and check whether it distributes naloxone.",
+          "Visit the Michigan Naloxone Direct Portal and note what a kit order actually asks for.",
+          "List three situations where Michigan cannabis legality does not protect you."
+        ]
+      },
+      "intermediate": {
+        "label": "Intermediate 🧭",
+        "tagline": "Where cannabis, psychedelics, ketamine, cocaine, and hemp-derived THC stand — and which way each is moving. All status claims [V 2026-09-27].",
+        "goals": [
+          "Separate the two federal cannabis rescheduling tracks and say what each one still lacks",
+          "Explain why cocaine scores zero on the three tracks that advanced cannabis, psilocybin, and ketamine",
+          "Name the November 12, 2026 hemp-THC deadline and the product categories it touches"
+        ],
+        "concepts": [
+          {
+            "title": "Cannabis — The Federal-State Split",
+            "text": "The April 2026 order: on April 28, 2026 the U.S. Attorney General placed two narrow categories of marijuana in Schedule III — marijuana in FDA-approved drug products, and marijuana (including naturally derived delta-9-THC) grown or sold under a qualifying state medical license (AG Order 6754-2026). It was the first time since 1970 federal policy recognized an accepted medical use for cannabis. [V 2026-09-27]\n\nWhat did NOT change: everything sold through state adult-use programs — including Michigan's recreational market — remains Schedule I. The relief is contested too: the D.C. Circuit denied a stay of the order on September 9, 2026, but the merits are still being litigated and the order could still be vacated. [V 2026-09-27]\n\nThe unfinished second track: DEA held an 11-day rescheduling hearing June 29 – July 15, 2026 on the broader proposal to move all marijuana to Schedule III. Closing briefs landed August 17; the administrative law judge's recommended decision was still outstanding in late September 2026, and neither he nor the DEA Administrator faces a statutory deadline. [V 2026-09-27]\n\n⚠ Even full rescheduling would not legalize cannabis: production and possession outside DEA-registered channels would remain federally criminal, Schedule III substances stay controlled under 21 U.S.C. §812, and dispensaries would not become pharmacies."
+          },
+          {
+            "title": "Psychedelics — Michigan & the National Picture",
+            "text": "Psilocybin remains Schedule I federally and under Michigan law. Nationally it is legal for regulated adult use in two states only — Oregon (Measure 109; 23 licensed service centers as of Feb 2026) and Colorado (47 licensed healing centers in 2026) — with one medical program (New Mexico) and a small set of decriminalization jurisdictions. Michigan has NO statewide psilocybin access; six Michigan cities/counties deprioritize enforcement, beginning with Ann Arbor in 2020 — deprioritization is an enforcement policy, not legalization. [V 2026-09-27]\n\nFDA track: Compass Pathways' rolling NDA for synthetic psilocybin (COMP360) for treatment-resistant depression was expected to complete in Q4 2026 with a possible H1 2027 launch; Usona's psilocybin program also holds a national priority voucher. No psilocybin product had been approved as of late September 2026. [V 2026-09-27]\n\nDEA track: on August 11, 2026, DEA sent the long-pending citizen petition to move psilocybin to Schedule II to HHS for review. Psilocybin remains Schedule I today. [V 2026-09-27]\n\nMDMA: FDA rejected the PTSD-treatment NDA in August 2024 (complete response letter, after a 10–1 advisory-committee vote against benefit-risk). A refiling reported in August 2026 came without a new Phase 3 trial; FDA's disposition is unknown, and MDMA remains Schedule I with no legal consumer access. [V 2026-09-27]"
+          },
+          {
+            "title": "Ketamine — Legal in Clinic, Contested at Home",
+            "text": "Legal structure: ketamine and esketamine are Schedule III and lawful only through licensed practitioners. FDA-approved Spravato (esketamine) is approved for treatment-resistant depression — as monotherapy since January 2025 — but only inside REMS-certified healthcare settings with at least two hours of post-dose monitoring. Racemic ketamine is FDA-approved only as an injectable anesthetic; psychiatric use is off-label. [V 2026-09-27]\n\nThe gray zone: the at-home telehealth model — compounded ketamine troches self-administered at home — sits under active pressure. FDA warned about compounded at-home ketamine in 2022 and 2023, issued 14 warning letters to online sellers in June–July 2026 (including sites selling vials and powders with no prescription), and FDA and DEA are investigating at-home telehealth sales that reportedly led to overuse and death. [V 2026-09-27]\n\n⚠ The 2026 dividing line is setting, not state: certified in-clinic administration is unambiguously legal; unsupervised at-home use — prescribed or not — is where enforcement is aimed."
+          },
+          {
+            "title": "Cocaine & the Coca Leaf — Why It Is Different",
+            "text": "Already a pharmaceutical: cocaine is Schedule II and two FDA-approved products (Goprelto, 2017; Numbrino, 2020) provide 4% cocaine HCl topical anesthesia for nasal procedures. What does NOT exist: any cocaine product pipeline for new indications — no sponsor, no trials. [V 2026-09-27]\n\nNo decriminalization pathway: Oregon's Measure 110 experiment was reversed by HB 4002 in 2024; British Columbia's 2.5-gram pilot expired January 31, 2026 without renewal after evaluations found no measurable drop in overdose deaths or hospitalizations. No U.S. state decriminalizes cocaine possession. [V 2026-09-27]\n\nInternational: in December 2025 the WHO Expert Committee completed its first review of the coca leaf in 30+ years and recommended MAINTAINING Schedule I — traditional chewing and tea pose no major public-health risks, but easy cocaine extractability and rising production won the scheduling argument. [V 2026-09-27]\n\nDirection of travel: the cocaine-adjacent products actually advancing are anti-addiction vaccines — a fentanyl vaccine entered first-in-human trials in early 2026 — products designed to BLOCK cocaine and fentanyl, not sell them. [V 2026-09-27]"
+          },
+          {
+            "title": "Hemp-Derived THC — The November 2026 Shift",
+            "text": "The loophole is closing: the 2018 Farm Bill defined hemp as ≤0.3% delta-9 THC dry weight, which the industry exploited for delta-8, THCA, and intoxicating hemp products. Section 781 of P.L. 119-37 (signed November 12, 2025) redefines hemp on a TOTAL-THC basis — including THCA and all isomers — and excludes from hemp final consumer products over 0.4 mg total THC per container, synthesized cannabinoids, and any cannabinoid with THC-like effects as determined by HHS. [V 2026-09-27]\n\nEffective date: November 12, 2026, after a one-year grace period. The U.S. Hemp Roundtable estimates the ban covers more than 95% of current hemp products; no repeal or delay had been enacted as of late September 2026, though repeal, replacement-regulation, and three-year-delay bills are pending in Congress. [V 2026-09-27]\n\n⚠ What this means in practice: intoxicating hemp products — delta-8 gummies, THCA flower, and most hemp-derived psychoactive items sold in smoke shops and online — sit on the wrong side of the federal line as of November 2026. State legality does not shield a federal sales or shipping charge."
+          }
+        ],
+        "examples": [
+          {
+            "title": "Scenario A — the sale that is still Schedule I",
+            "scenario": "A Michigan adult buys adult-use cannabis at a state-licensed dispensary, lawful under state law from door to door.",
+            "outcome": "That exact product stays federally Schedule I — the April 2026 order covered only FDA-approved drugs and state-licensed medical marijuana — and adult-use operators remain fully under §280E. [V 2026-09-27]"
+          },
+          {
+            "title": "Scenario B — the six-city ordinance",
+            "scenario": "Someone reads that a Michigan city deprioritized psilocybin enforcement and concludes possession is now legal there.",
+            "outcome": "Deprioritization changes enforcement priorities only — possession remains illegal under state law and can still appear on records checks. Six Michigan cities/counties have taken this step since Ann Arbor in 2020. [V 2026-09-27]"
+          },
+          {
+            "title": "Scenario C — two ketamine sellers",
+            "scenario": "One telehealth company prescribes compounded troches through licensed clinicians; another site sells vials and powder with no prescription at all.",
+            "outcome": "The first sits in a contested but lawful gray zone; the second is exactly what FDA's 14 warning letters (June–July 2026) targeted. In-clinic REMS administration is unambiguous. [V 2026-09-27]"
+          }
+        ],
+        "pitfalls": [
+          "MYTH: “Rescheduling means the feds legalized cannabis.” Reclassification is not a legal consumer market — production outside DEA-registered channels would stay federally criminal.",
+          "MYTH: “Decriminalization equals legalization.” Oregon reversed Measure 110 in 2024; British Columbia's pilot expired January 31, 2026 without renewal. The 2024–2026 pattern on cocaine is retreat, not advance.",
+          "MYTH: “Hemp-derived THC gummies stay federally legal after November 12, 2026.” Section 781's total-THC redefinition takes effect that day; no repeal or delay had been enacted as of late September 2026.",
+          "⚠ Executive Order 14401 legalizes nothing and reschedules nothing on its own — it funds research partnerships and directs review."
+        ],
+        "exercises": [
+          "Trace the two federal cannabis rescheduling tracks and write down what each one still lacks.",
+          "Compare Oregon's Measure 109 and Colorado's regulated model in one sentence each.",
+          "Write down the November 12, 2026 hemp deadline and the product categories it touches."
+        ]
+      },
+      "advanced": {
+        "label": "Advanced 🔬",
+        "tagline": "The four tiers of substance testing, community program models, and the settlement money waiting to fund them. Program and pricing data [V 2026-10-03].",
+        "goals": [
+          "Pick the right testing tier for the question being asked — strips for killers, reagents for identity, FTIR for mixtures, labs for truth",
+          "Price a neighborhood starter program (~$550–700) and name its funding source",
+          "Know which money can buy strips (state settlement) and which cannot (federal SAMHSA, barred July 2025)"
+        ],
+        "concepts": [
+          {
+            "title": "The Four Tiers of Substance Testing",
+            "text": "Tier 1 — Immunoassay strips ($0.50–$1/test): dip-and-read in minutes for fentanyl, xylazine, benzodiazepines, medetomidine, and nitazenes. The BTNX 20 ng/ml strip is the field standard; roughly 1,000 strips cost $400–600. Catches today's two biggest killers — fentanyl and xylazine. [V 2026-10-03]\n\nTier 2 — Reagent kits ($0.20–$0.40/test): colorimetric spot tests (Marquis, Mecke, Mandelin, Froehde, Liebermann, Ehrlich, Simon's) identify the drug class. DanceSafe and Bunk Police sell ~$20 bottles (50–75 tests, bulk to $10); the Bunk Police COSMOS package ($115) covers all nine reagents with a 1,500+ video-reaction library so untrained volunteers read colors correctly. Honest limits: mixtures confuse reagents, and reagents cannot detect fentanyl — that is Tier 1's job. [V 2026-10-03]\n\nTier 3 — FTIR spectroscopy (program-grade): handheld/desktop instruments identify up to six components in about 15 minutes — the model NYC Health runs inside syringe-service sites. Devices run $20–40K, but NYC published a free implementation handbook and StreetCheck/MADDS offers its software platform free to partner programs. [V 2026-10-03]\n\nTier 4 — Lab confirmation (definitive, often free): the CFSRE Drug Checking Service ([testing.cfsre.org](https://testing.cfsre.org)) partners directly with community organizations for GC-MS/LC-MS analysis, results in 2–3 weeks. ⚠ Erowid's DrugsData — 23 years of anonymous mail-in testing — was ordered by the DEA to stop anonymous testing in September 2025; CFSRE and StreetCheck are the open lanes now. [V 2026-10-03]"
+          },
+          {
+            "title": "Programs & Funding in Michigan",
+            "text": "Money already exists: Michigan budgeted $131.75 million for FY2026 substance-use-disorder programs with $7.75 million in the harm-reduction line, drawn from opioid-settlement dollars; every Michigan county holds a local settlement share, and county opioid-remediation mini-grants are designed for purchases at exactly this scale. ⚠ Federal SAMHSA dollars cannot buy test strips since July 2025 — state and settlement dollars can. [V 2026-10-03]\n\nPrograms that already run: Michigan supports 34 syringe service programs statewide, up from 5 in 2018; MDHHS's 115 community naloxone sites; and free-mail models like NEXT Distro and the Michigan Naloxone Direct Portal. Harm Reduction Michigan maintains free unlocked naloxone boxes near clinics and businesses and helps communities replicate the model. [V 2026-10-03]\n\nWhat a starter program costs: roughly $550–700 buys 1,000 fentanyl strips + 1,000 xylazine strips + a COSMOS reagent package + laminated instruction/QR cards — enough street-level testing for a whole neighborhood for a month, with free naloxone layered in from the state portal. [V 2026-10-03]\n\nDistribution that works: hand QR-code cards through shelters, meal lines, and outreach events — no IDs, no names, no judgment. Peers and trusted messengers beat institutions for reach; low barrier, high dignity. [V 2026-10-03]"
+          },
+          {
+            "title": "Golden Rules & Common Myths",
+            "text": "Golden rules: never use alone; carry naloxone if opioids are anywhere in the picture; test before use where testing is possible; in any suspected overdose call 911 first and give naloxone, then stay — naloxone wears off before the opioid does. A negative strip test is not a safety certificate: reagents miss things, labs miss things, tolerance drops after abstinence, and unknown potency kills. The goal of every tool in this module is better decisions, not permission. [V 2026-10-03]\n\nLegal-posture rules: legal in Michigan is not legal everywhere — federal law, other states, tribal land, national parks, airports, and employer policies follow their own authority. Deprioritization is not legalization. Rescheduling is not descheduling. This module is education, not medical advice — clinical decisions belong with clinicians."
+          },
+          {
+            "title": "Sources & Currency",
+            "text": "Verify anything here: every policy claim carries a [V date] stamp naming the day the underlying research was compiled from primary sources. Re-check load-bearing facts at the official pages: [Michigan Naloxone Direct Portal](https://www.michigan.gov/opioids) · [MCL 333.27963 — adult-use possession](https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-333-27963) · [CFSRE drug checking](https://testing.cfsre.org). Federal-status pages to re-check by name: the DEA marijuana rescheduling regulatory-actions page and the FDA drug approvals database.\n\nCurrency: legal-status research is current to September 27, 2026; harm-reduction program and pricing data to October 3, 2026. Federal cannabis, psychedelic, and hemp policy is moving fast — the hemp-THC ban's November 12, 2026 effective date and the pending DEA psilocybin recommendation are the two deadlines to re-check.\n\n⚠ This module is public-health and legal-status education. It is not medical or legal advice, it creates no provider or attorney relationship, and it never authorizes conduct that violates any law. Laws, prices, and programs change — verify against official sources before acting."
+          }
+        ],
+        "examples": [
+          {
+            "title": "Scenario A — the $550 neighborhood program",
+            "scenario": "A mutual-aid group wants month-long street-level testing for its neighborhood with almost no budget.",
+            "outcome": "1,000 fentanyl strips + 1,000 xylazine strips (~$500) + the $115 COSMOS reagent package + laminated QR cards — funded through a county opioid-remediation mini-grant, with free naloxone layered in from the state portal. [V 2026-10-03]"
+          },
+          {
+            "title": "Scenario B — the color that does not match",
+            "scenario": "A trained volunteer runs a Marquis test and the color matches no library entry — likely a mixture.",
+            "outcome": "Reagents are confused by mixtures and cannot detect fentanyl; the honest next step is Tier 1 strips plus a Tier 4 lab confirmation through the CFSRE community partnership (GC-MS, 2–3 weeks). [V 2026-10-03]"
+          },
+          {
+            "title": "Scenario C — the grant application that would fail",
+            "scenario": "A program applies to buy 2,000 fentanyl test strips with federal SAMHSA grant money.",
+            "outcome": "Barred since July 2025 — federal SAMHSA dollars can no longer buy strips. State opioid-settlement dollars can ($7.75M in Michigan's FY2026 harm-reduction line). Rewrite the application against the settlement line. [V 2026-10-03]"
+          }
+        ],
+        "pitfalls": [
+          "MYTH: “If a strip test is negative, the sample is safe.” A negative strip result is not a safety certificate — reagents miss things, labs miss things, and the goal is better decisions, not permission.",
+          "MYTH: “Harm reduction encourages use.” Michigan's own numbers run the other way — four straight years of falling overdose deaths (≈40% since 2021) alongside the state's harm-reduction expansion. [V 2026-10-03]",
+          "⚠ Spending federal grant money on test strips — barred since July 2025; use state or settlement dollars.",
+          "⚠ Reading reagent colors without a reference library — mixtures lie; the 1,500+ video-reaction libraries exist precisely for untrained volunteers."
+        ],
+        "exercises": [
+          "Price a starter testing program from published strip and reagent costs and name one realistic funding source.",
+          "Look up your county's opioid-settlement remediation contact.",
+          "Draft a one-page laminated instruction card for strip use with the golden rule printed on it."
+        ]
+      }
+    },
+    "glossary": [
+      {
+        "term": "naloxone",
+        "definition": "Opioid-overdose reversal drug (Narcan); knocks opioids off brain receptors for 30–90 minutes; legal to carry and give in Michigan by standing order."
+      },
+      {
+        "term": "fentanyl test strip",
+        "definition": "Immunoassay dip test that detects fentanyl in a dissolved sample in minutes; legal in Michigan; a negative result is not a safety certificate."
+      },
+      {
+        "term": "xylazine",
+        "definition": "Veterinary sedative adulterant in the drug supply that causes wounds and does NOT respond to naloxone; has its own test strips."
+      },
+      {
+        "term": "standing order",
+        "definition": "A pharmacist-issued authorization letting anyone obtain naloxone without an individual prescription."
+      },
+      {
+        "term": "syringe service program (SSP)",
+        "definition": "Legal harm-reduction site distributing sterile supplies and naloxone; Michigan runs 34 statewide (up from 5 in 2018)."
+      },
+      {
+        "term": "opioid settlement funds",
+        "definition": "State and county shares of national pharmaceutical settlements; Michigan budgeted $131.75M for FY2026 with a $7.75M harm-reduction line."
+      },
+      {
+        "term": "reagent kit",
+        "definition": "Colorimetric spot test (Marquis, Mecke, Mandelin, etc.) that identifies a drug class; confused by mixtures; cannot detect fentanyl."
+      },
+      {
+        "term": "FTIR spectroscopy",
+        "definition": "Program-grade instrument identifying up to ~6 components in ~15 minutes — the NYC drug-checking model."
+      },
+      {
+        "term": "deprioritization",
+        "definition": "Local policy making enforcement the lowest priority (e.g., six Michigan psilocybin cities) — not legalization; possession stays illegal."
+      },
+      {
+        "term": "REMS",
+        "definition": "Risk Evaluation and Mitigation Strategy — the certification and post-dose monitoring requirement governing Spravato administration."
+      }
+    ],
+    "quiz": {
+      "beginner": [
+        {
+          "question": "As of September 2026, how many U.S. states allow recreational cannabis — and where does Michigan stand?",
+          "type": "multiple-choice",
+          "options": [
+            "24 states + D.C., and Michigan is one of them",
+            "10 states, and Michigan is not among them",
+            "All 50 states, including Michigan",
+            "None — cannabis is banned in every state"
+          ],
+          "correct": 0,
+          "explanation": "NCSL-derived trackers counted 24 states + D.C. as of September 2026; Michigan has been adult-use legal since its 2018 vote. [V 2026-09-27]"
+        },
+        {
+          "question": "Cannabis remains illegal under federal law even in states like Michigan that allow adult use.",
+          "type": "true-false",
+          "correct": true,
+          "explanation": "Adult-use cannabis stays Schedule I federally. The April 2026 Schedule III order covered only FDA-approved drug products and state-licensed medical marijuana. [V 2026-09-27]"
+        },
+        {
+          "question": "In Michigan, fentanyl test strips are:",
+          "type": "multiple-choice",
+          "options": [
+            "Illegal drug paraphernalia",
+            "Legal — they were never outlawed here",
+            "Legal only with a prescription",
+            "Legal only for licensed clinics"
+          ],
+          "correct": 1,
+          "explanation": "The 1978 paraphernalia law reaches sellers, not buyers; strips are legal in Michigan and 25+ other states. [V 2026-10-03]"
+        },
+        {
+          "question": "Anyone in Michigan can carry naloxone (Narcan) and give it to someone overdosing.",
+          "type": "true-false",
+          "correct": true,
+          "explanation": "Naloxone is available by standing order in Michigan — anyone can carry it, anyone can administer it. [V 2026-10-03]"
+        },
+        {
+          "question": "Which Michigan resource mails free naloxone kits directly to residents?",
+          "type": "multiple-choice",
+          "options": [
+            "The Michigan Naloxone Direct Portal at michigan.gov/opioids",
+            "The county clerk's office",
+            "Local pharmacies only, by prescription",
+            "911 dispatch"
+          ],
+          "correct": 0,
+          "explanation": "The state portal has distributed 730,000+ kits with 6,600+ documented reversals since 2020; NEXT Distro is a second free mail channel. [V 2026-10-03]"
+        },
+        {
+          "question": "Since 2021, Michigan overdose deaths have:",
+          "type": "multiple-choice",
+          "options": [
+            "Doubled",
+            "Stayed flat",
+            "Fallen four straight years — down about 40%",
+            "Fallen, but only in rural counties"
+          ],
+          "correct": 2,
+          "explanation": "Michigan has posted four consecutive years of decline (≈40% since 2021) and credits harm-reduction programs. [V 2026-10-03]"
+        },
+        {
+          "question": "Cocaine is already a legal pharmaceutical in the U.S. — as an FDA-approved topical anesthetic.",
+          "type": "true-false",
+          "correct": true,
+          "explanation": "Goprelto (2017) and Numbrino (2020) are FDA-approved 4% cocaine HCl nasal anesthetics; cocaine is Schedule II. [V 2026-09-27]"
+        },
+        {
+          "question": "Psilocybin in Michigan today is:",
+          "type": "multiple-choice",
+          "options": [
+            "Legal statewide under a regulated market",
+            "Legal by prescription",
+            "Still illegal under state law; six cities/counties only deprioritize enforcement",
+            "Decriminalized statewide"
+          ],
+          "correct": 2,
+          "explanation": "Michigan has no statewide psilocybin access; six cities/counties deprioritize enforcement, beginning with Ann Arbor in 2020. [V 2026-09-27]"
+        },
+        {
+          "question": "A negative fentanyl test strip result proves a drug sample is safe.",
+          "type": "true-false",
+          "correct": false,
+          "explanation": "The golden rule printed on every card: a negative strip test is not a safety certificate — strips, reagents, and even labs all miss things. [V 2026-10-03]"
+        },
+        {
+          "question": "As of FY2026, what can Michigan's state opioid-settlement funds buy that federal SAMHSA funds cannot?",
+          "type": "multiple-choice",
+          "options": [
+            "Fentanyl test strips",
+            "Naloxone only",
+            "Syringes only",
+            "Nothing — both are frozen"
+          ],
+          "correct": 0,
+          "explanation": "Since July 2025 federal SAMHSA money can no longer buy test strips; state settlement dollars can ($7.75M harm-reduction line within $131.75M FY2026). [V 2026-10-03]"
+        }
+      ],
+      "intermediate": [
+        {
+          "question": "The April 2026 federal rescheduling order moved marijuana into Schedule III for which categories?",
+          "type": "multiple-choice",
+          "options": [
+            "All marijuana, everywhere",
+            "FDA-approved drug products AND state-licensed medical marijuana",
+            "Only hemp-derived THC",
+            "Only research-grade cannabis"
+          ],
+          "correct": 1,
+          "explanation": "AG Order 6754-2026 (effective April 28, 2026) covered exactly those two narrow categories; adult-use cannabis remains Schedule I. [V 2026-09-27]"
+        },
+        {
+          "question": "Even if DEA fully rescheduled cannabis to Schedule III, dispensaries would become federally legal pharmacies.",
+          "type": "true-false",
+          "correct": false,
+          "explanation": "Schedule III substances stay controlled under 21 U.S.C. §812; production and possession outside DEA-registered channels would remain federally criminal. [V 2026-09-27]"
+        },
+        {
+          "question": "A federal law effective November 12, 2026 (P.L. 119-37 §781) will:",
+          "type": "multiple-choice",
+          "options": [
+            "Legalize intoxicating hemp products nationwide",
+            "Redefine hemp on a total-THC basis and effectively ban most intoxicating hemp products",
+            "Lower the hemp THC cap to 0.1%",
+            "Transfer cannabis regulation to TTB immediately"
+          ],
+          "correct": 1,
+          "explanation": "§781 redefines hemp as ≤0.3% TOTAL THC (including THCA and isomers) and excludes consumer products over 0.4 mg total THC per container. [V 2026-09-27]"
+        },
+        {
+          "question": "Which statement about MDMA is accurate as of September 2026?",
+          "type": "multiple-choice",
+          "options": [
+            "FDA approved it for PTSD in 2024",
+            "FDA rejected the NDA in Aug 2024; a refiling reported Aug 2026 came without a new Phase 3, and FDA's disposition is unknown",
+            "It is Schedule III and prescribable",
+            "The VA sells it to veterans"
+          ],
+          "correct": 1,
+          "explanation": "The August 2024 complete response letter followed a 10–1 advisory-committee vote against benefit-risk; MDMA remains Schedule I with no legal consumer access. [V 2026-09-27]"
+        },
+        {
+          "question": "FDA-approved esketamine (Spravato) may be administered:",
+          "type": "multiple-choice",
+          "options": [
+            "By mail for at-home use",
+            "Only in REMS-certified healthcare settings with post-dose monitoring",
+            "At any pharmacy counter",
+            "Only in hospital ICUs"
+          ],
+          "correct": 1,
+          "explanation": "The Spravato REMS requires certified settings and at least two hours of post-dose monitoring; monotherapy for TRD was added January 2025. [V 2026-09-27]"
+        },
+        {
+          "question": "In 2026 the FDA warned online sellers of at-home telehealth ketamine — 14 warning letters in June–July — while prescription telehealth ketamine through licensed clinicians remained lawful.",
+          "type": "true-false",
+          "correct": true,
+          "explanation": "The letters targeted no-prescription/unapproved sellers; licensed-prescriber telehealth remained operating under rising pressure. [V 2026-09-27]"
+        },
+        {
+          "question": "Oregon's Measure 110 (2020), which decriminalized personal possession of all drugs, ended up:",
+          "type": "multiple-choice",
+          "options": [
+            "Still in force unchanged",
+            "Reversed — HB 4002 recriminalized possession in 2024",
+            "Copied by ten other states",
+            "Expanded to all substances in 2026"
+          ],
+          "correct": 1,
+          "explanation": "Oregon recriminalized possession in 2024; British Columbia's pilot also expired without renewal in January 2026. [V 2026-09-27]"
+        },
+        {
+          "question": "WHO's December 2025 review of the coca leaf concluded:",
+          "type": "multiple-choice",
+          "options": [
+            "Move it to Schedule III",
+            "Maintain Schedule I — extractability and rising production outweigh traditional-use findings",
+            "Deschedule it entirely",
+            "Ban only coca tea"
+          ],
+          "correct": 1,
+          "explanation": "The Expert Committee found traditional chewing and tea pose no major public-health risks but cocaine is easily extracted from the leaf, so Schedule I stays. [V 2026-09-27]"
+        },
+        {
+          "question": "The two federal cannabis rescheduling tracks stood where in late September 2026?",
+          "type": "multiple-choice",
+          "options": [
+            "Both finished",
+            "Limited order in effect under litigation (stay denied Sep 9 2026); broader hearing done with the ALJ recommendation pending",
+            "Broader rule finished, limited order vacated",
+            "Both dead"
+          ],
+          "correct": 1,
+          "explanation": "Track A (April 2026 order) survived a stay denial but merits remain litigated; Track B awaits the ALJ's recommended decision with no statutory deadline. [V 2026-09-27]"
+        },
+        {
+          "question": "Cocaine has an FDA drug pipeline for new consumer indications, like psychedelics do.",
+          "type": "true-false",
+          "correct": false,
+          "explanation": "No sponsor, no trials — the cocaine-adjacent frontier is anti-addiction vaccines designed to block cocaine and fentanyl. [V 2026-09-27]"
+        }
+      ],
+      "advanced": [
+        {
+          "question": "What legal basis did the Attorney General use for the April 2026 Schedule III order — and why did APA challenges follow?",
+          "type": "multiple-choice",
+          "options": [
+            "Notice-and-comment rulemaking",
+            "Treaty-implementation authority under the Single Convention, bypassing notice-and-comment",
+            "A direct Congressional mandate",
+            "A federal court order"
+          ],
+          "correct": 1,
+          "explanation": "The AG used treaty-implementation authority to skip notice-and-comment rulemaking — precisely why APA challenges were filed. [V 2026-09-27]"
+        },
+        {
+          "question": "Effect of the April 2026 order on cannabis taxes (§280E):",
+          "type": "multiple-choice",
+          "options": [
+            "All cannabis businesses were relieved",
+            "Qualifying state-licensed medical operators moved out of 280E (with a 2026 transition rule); adult-use operators remain fully subject",
+            "280E was doubled for medical operators",
+            "No change for anyone"
+          ],
+          "correct": 1,
+          "explanation": "Rescheduling removed 280E for businesses no longer trafficking in Schedule I/II substances; adult-use operators and mixed businesses face apportionment still awaiting IRS rules. [V 2026-09-27]"
+        },
+        {
+          "question": "The DEA rescheduling hearing on the broader marijuana proposal (June 29 – July 15, 2026) left the process:",
+          "type": "multiple-choice",
+          "options": [
+            "Completed — marijuana was formally moved",
+            "Awaiting the chief ALJ's recommended decision, with no statutory deadline for him or the Administrator",
+            "Canceled permanently",
+            "Referred to Congress"
+          ],
+          "correct": 1,
+          "explanation": "Closing briefs were filed August 17, 2026; no recommended decision had issued by late September. [V 2026-09-27]"
+        },
+        {
+          "question": "Psilocybin's federal status as of September 2026:",
+          "type": "multiple-choice",
+          "options": [
+            "Schedule II after the August 2026 petition",
+            "Still Schedule I; DEA sent the citizen petition to HHS on Aug 11, 2026, and Compass's rolling NDA was expected to complete in Q4 2026",
+            "FDA-approved as medicine since 2025",
+            "Descheduled by Executive Order 14401"
+          ],
+          "correct": 1,
+          "explanation": "Rescheduling petitions and NDAs are pending processes — psilocybin remained Schedule I with no FDA approval. [V 2026-09-27]"
+        },
+        {
+          "question": "Executive Order 14401 (April 2026) by itself legalized or rescheduled any psychedelic.",
+          "type": "true-false",
+          "correct": false,
+          "explanation": "The order funds ARPA-H partnerships and directs review; commentators note it legalizes nothing and reschedules nothing on its own. [V 2026-09-27]"
+        },
+        {
+          "question": "FTIR spectroscopy in a community drug-checking program can:",
+          "type": "multiple-choice",
+          "options": [
+            "Prove a sample's purity",
+            "Identify up to about six components in roughly 15 minutes",
+            "Detect only fentanyl",
+            "Replace confirmatory mass spectrometry in every case"
+          ],
+          "correct": 1,
+          "explanation": "It is the model NYC Health runs inside syringe-service sites — identity of components, not purity. [V 2026-10-03]"
+        },
+        {
+          "question": "After the DEA ordered Erowid's DrugsData to stop anonymous mail-in testing (September 2025), the open lab lanes for community drug checking are:",
+          "type": "multiple-choice",
+          "options": [
+            "Erowid's DrugsData, unchanged",
+            "CFSRE's community partnership service (testing.cfsre.org) and StreetCheck/MADDS",
+            "Local police departments",
+            "University chemistry departments only"
+          ],
+          "correct": 1,
+          "explanation": "CFSRE partners directly with community organizations for GC-MS/LC-MS confirmation in 2–3 weeks; StreetCheck connects programs to lab partners. [V 2026-10-03]"
+        },
+        {
+          "question": "The honest limitation of reagent kits (Marquis, Mecke, Mandelin, and peers):",
+          "type": "multiple-choice",
+          "options": [
+            "They are illegal in Michigan",
+            "They identify the drug class but are confused by mixtures and cannot detect fentanyl",
+            "They measure purity exactly",
+            "They only work on liquids"
+          ],
+          "correct": 1,
+          "explanation": "Reagents answer what-is-this, not what-else-is-in-it — and fentanyl detection is Tier 1 strips' job. [V 2026-10-03]"
+        },
+        {
+          "question": "Michigan's syringe-service landscape changed how between 2018 and 2026?",
+          "type": "multiple-choice",
+          "options": [
+            "Syringe services were banned statewide",
+            "From 5 programs to 34, funded largely by opioid-settlement dollars",
+            "Only Detroit has one",
+            "They are run by the state police"
+          ],
+          "correct": 1,
+          "explanation": "34 SSPs statewide, up from 5 in 2018, settlement-funded. [V 2026-10-03]"
+        },
+        {
+          "question": "Federal SAMHSA grants can pay for fentanyl test strip purchases in Michigan as of 2025–2026.",
+          "type": "true-false",
+          "correct": false,
+          "explanation": "A July 2025 federal action barred SAMHSA funds from buying strips; Michigan state opioid-settlement dollars still can. [V 2026-10-03]"
+        }
+      ]
+    }
+  }
+}
