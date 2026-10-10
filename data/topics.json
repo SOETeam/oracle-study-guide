@@ -122,6 +122,37 @@
         "Pitfalls",
         "Free Study Resources"
       ]
+    },
+    {
+      "id": "selfdefense-mi",
+      "name": "Michigan Self-Defense Law",
+      "icon": "\\ud83d\\udee1\\ufe0f",
+      "description": "Michigan self-defense and use-of-force law as published law \u2014 the 2006 Self-Defense Act, the castle-doctrine presumption, retreat rules, force thresholds, lawful tools and carry, post-incident procedure, and county/court resources. Statutes verbatim from legislature.mi.gov (read 2026-10-09). Educational research only \u2014 NOT legal advice; consult a licensed Michigan attorney before acting on anything here.",
+      "subtopics": [
+        "Doctrine \u2014 Two Layers",
+        "Statutes \u2014 The 2006 Acts",
+        "Retreat \u2014 Three Tiers",
+        "Force \u2014 Thresholds",
+        "Presumption \u2014 Castle Rules",
+        "Boundaries \u2014 Known Access",
+        "Aftermath \u2014 Immunity",
+        "Tools \u2014 Lawful Carry",
+        "Playbook \u2014 Incident Night",
+        "County \u2014 Courts and PPO"
+      ]
+    },
+    {
+      "id": "drug-policy-mi",
+      "name": "Michigan Drug Policy & Harm Reduction",
+      "icon": "\ud83e\uddea",
+      "description": "Cannabis, psychedelic, and cocaine legal status in Michigan and the U.S. as of fall 2026 \u2014 plus naloxone access, fentanyl test strips, four testing tiers, and settlement-funded programs. Public-health education only; not medical or legal advice.",
+      "subtopics": [
+        "Beginner \u2014 Legal Landscape & Life-Saving Basics",
+        "Intermediate \u2014 Substance-by-Substance Status",
+        "Advanced \u2014 Testing, Programs & Funding",
+        "Golden Rules & Common Myths",
+        "Sources & Currency"
+      ]
     }
   ]
 }

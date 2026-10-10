@@ -1,0 +1,555 @@
+{
+  "topic": {
+    "id": "selfdefense-mi",
+    "title": "Michigan Self-Defense Law",
+    "description": "Michigan self-defense and use-of-force law as published law \u2014 the 2006 Self-Defense Act, the castle-doctrine presumption, retreat rules, force thresholds, lawful tools and carry, post-incident procedure, and county/court resources. Statutes verbatim from legislature.mi.gov (read 2026-10-09). Educational research only \u2014 NOT legal advice; consult a licensed Michigan attorney before acting on anything here.",
+    "icon": "\\ud83d\\udee1\\ufe0f",
+    "focus": "15 sections across 3 levels \u00b7 30-question quiz (10 per level) \u00b7 statutes & rules verified 2026-10-10",
+    "keyTerms": [
+      "Self-Defense Act",
+      "MCL 780.972",
+      "MCL 780.951",
+      "rebuttable presumption",
+      "duty to retreat",
+      "great bodily harm",
+      "CPL",
+      "Personal Protection Order"
+    ],
+    "subtopics": [
+      "Doctrine \u2014 Two Layers",
+      "Statutes \u2014 The 2006 Acts",
+      "Retreat \u2014 Three Tiers",
+      "Force \u2014 Thresholds",
+      "Presumption \u2014 Castle Rules",
+      "Boundaries \u2014 Known Access",
+      "Aftermath \u2014 Immunity",
+      "Tools \u2014 Lawful Carry",
+      "Playbook \u2014 Incident Night",
+      "County \u2014 Courts and PPO"
+    ],
+    "levels": {
+      "beginner": {
+        "label": "Beginner \\ud83c\\udf31",
+        "tagline": "Michigan has been a statutory stand-your-ground state since 2006 \u2014 no duty to retreat anywhere you have the legal right to be \u2014 but the castle presumption is narrower than the slogan suggests. These sections are published law only.",
+        "goals": [
+          "Separate the justification (MCL 780.972) from the presumption (MCL 780.951) \u2014 the number one practical confusion",
+          "State the three statutory triggers for deadly force and the lower trigger for non-deadly force",
+          "Name the two surviving retreat duties: mutual combat and unwithdrawn aggression",
+          "Know that Michigan has NO pretrial criminal immunity hearing and no MCL 780.972e"
+        ],
+        "concepts": [
+          {
+            "title": "The Two Layers: Justification vs Presumption",
+            "text": "Michigan law runs on two separate layers, and confusing them is the top practical error.\n\nLayer 1 \u2014 the justification, MCL 780.972 (Self-Defense Act, 2006 PA 309): (1) deadly force, \"anywhere he or she has the legal right to be with no duty to retreat,\" on an honest and reasonable belief that force is necessary to prevent imminent death or imminent great bodily harm, or imminent sexual assault, to self or another \u2014 gated on not being engaged in a crime at the time. (2) non-deadly force, same no-retreat scope, against the \"imminent unlawful use of force.\" Verbatim: https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-780-972\n\nLayer 2 \u2014 the castle presumption, MCL 780.951 (2006 PA 311): a rebuttable presumption in a civil or criminal case of an honest and reasonable belief of imminent death, great bodily harm, or sexual assault, IF the other person is breaking into a dwelling or business premises or has broken in and is still present, or is unlawfully attempting to remove a person from a dwelling, business premises, or occupied vehicle, AND the defender honestly and reasonably believes that is happening. The presumption is an evidentiary windfall, not the right itself \u2014 it can be voided while the 780.972 defense still stands on the facts. Verbatim: https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-780-951\n\n- Gatekeeper on both layers: the individual must not be \"engaged in the commission of a crime at the time\" force is used. The justification asks what the other person is doing, not who they are.\n- Common-law backstop, MCL 768.21c(1): where section 2 of the Self-Defense Act does not apply, common law applies except that no retreat is required in one's own dwelling or within its curtilage. MCL 780.973 preserves the pre-October 1 2006 common law otherwise.\n- Civil money layer: MCL 600.2922b grants immunity from civil liability for force used in compliance with section 2 of the Act; MCL 600.2922c requires the court to award actual attorney fees and costs once it finds that compliance. Civil immunity rides on the SAME section 2 compliance, so whatever destroys the justification also destroys the immunity.\n- Verified negative: the Self-Defense Act is MCL 780.971 through 780.974 ONLY. The section number \"780.972e\" does not exist, and Michigan has NO Florida-style pretrial criminal immunity hearing statute.\n- Verified negative: the Act has not been amended since 2006. The \"2017 amendment\" claim traces to 2017 PA 111 (SB 244), an economic-development act unrelated to self-defense. No enacted stand-your-ground reform as of October 2026."
+          },
+          {
+            "title": "The Statutory Map: Three 2006 Acts",
+            "text": "Michigan's use-of-force law is built from three companion public acts of 2006, all effective October 1 2006, plus one civil-procedure pair \u2014 and it has not been amended since.\n\n- MCL 780.951 \u2014 Act 311 of 2006, Presumption Regarding Self-Defense \u2014 the rebuttable presumption in dwelling, business, and occupied-vehicle intrusion scenarios. https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-780-951\n- MCL 780.961 \u2014 Act 310 of 2006, Deadly Force \u2014 the prosecutor's burden. Subsection (1): force in compliance with section 2 \"commits no crime.\" Subsection (2): the prosecutor \"shall present evidence to the judge or magistrate at the time of warrant issuance, at the time of any preliminary examination, and at the time of any trial establishing that the individual's actions were not justified\" under section 2. https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-780-961\n- MCL 780.971 through 780.974 \u2014 Act 309 of 2006, the Self-Defense Act \u2014 no duty to retreat anywhere lawful, force thresholds, and two savings clauses: 780.973 (does not modify the common law on the duty to retreat except as section 2 provides) and 780.974 (does not diminish common-law deadly-force rights as of October 1 2006). https://legislature.mi.gov/documents/mcl/pdf/mcl-Act-309-of-2006.pdf\n- MCL 600.2922b and 600.2922c \u2014 Act 314 of 2006 \u2014 civil immunity plus mandatory attorney-fee award. Both unamended since 2006; a pending 2025 bill, HB 4404, would amend them. https://www.legislature.mi.gov/Bills/Bill?ObjectName=2025-HB-4404\n- All four share the effective date October 1 2006. The Act is substantive and applies prospectively only \u2014 conduct before that date is judged under the old common law (People v Conyer, 281 Mich App 526 (2008); People v Dupree, 486 Mich 693 (2010))."
+          },
+          {
+            "title": "Duty to Retreat: The Precise Three-Tier State",
+            "text": "This is the most-misunderstood area. Michigan's current rule has three tiers.\n\nTier 1 \u2014 home, business, or vehicle: no duty to retreat, ever. MCL 780.972 covers \"anywhere he or she has the legal right to be,\" which necessarily includes the home. Common law agrees: People v Riddle, 467 Mich 116 (2002) \u2014 \"one who is attacked in his dwelling is never required to retreat where it is otherwise necessary to exercise deadly force in self-defense... This is true even where one is a voluntary participant in mutual combat.\" Verbatim: https://law.justia.com/cases/michigan/supreme-court/2002/20020731-s118181-77-riddle4apr02-op.html\n\n- Riddle limit: the common-law castle doctrine covers the home and its attached appurtenances \u2014 not the open yard or curtilage generally. Post-2006, MCL 780.972 supplies no-retreat protection outdoors when its conditions are met, but the 780.951 presumption still does not cover the yard.\n- Tier 2 \u2014 anywhere else lawfully present: no duty to retreat if the Act's conditions are met \u2014 not engaged in a crime, legal right to be there, and an honest and reasonable belief of imminent death, great bodily harm, or sexual assault for deadly force, or imminent unlawful force for non-deadly force. That covers a sidewalk, a parking lot, or being an invited guest in another's home.\n- Tier 3 \u2014 the two surviving retreat obligations. First, mutual combat: a willing participant must retreat as far as safely possible before using deadly force, unless in the castle \u2014 Riddle, reaffirmed in People v Reese, 491 Mich 127 (2012); mutual combatants are by definition engaged in a crime, outside the Act. Second, an initial aggressor who has not withdrawn: protection returns only with withdrawal AND clear communication of it (People v Guajardo, 300 Mich App 26 (2013) \u2014 \"a defendant does not act in justifiable self-defense when he or she uses excessive force or when the defendant is the initial aggressor\"). Escalation counts as aggression.\n- Jury-instruction practice: M Crim JI 7.16 (duty to retreat) is given only if the duty is in dispute; 7.17 (no duty in own dwelling) is deleted as redundant with the Act; M Crim JI 7.16a implements the 780.951 presumption; 7.20 states that the prosecutor must prove beyond a reasonable doubt the defendant did not act in self-defense."
+          },
+          {
+            "title": "Force Thresholds and the Honest-and-Reasonable Standard",
+            "text": "The two force levels have different statutory triggers, and the belief behind them is judged twice \u2014 once inside the head, once against the world.\n\n- Deadly force triggers (statutory): imminent death, imminent great bodily harm, or imminent sexual assault \u2014 of the defender or another. Non-deadly trigger: the \"imminent unlawful use of force\" \u2014 a much lower bar; no death or great-bodily-harm belief required.\n- The dual standard: the belief must be honest (subjective) and reasonable (objective) \u2014 reasonableness \"depends on what an ordinarily prudent and intelligent person would do on the basis of the perceptions of the actor\" (People v Orlewicz, 293 Mich App 96 (2011)). The jury judges all circumstances as they appeared to the defendant at the time.\n- Proportionality: no deadly force against what seems like a threat of only minor injury; only the amount of force necessary (M Crim JI 7.15(4) and (5)).\n- Imminence is real: \"threats of future harm do not constitute imminent danger for purposes of self-defense.\" A defender who retrieved a rifle, waited minutes, and lured the target out of a room was the aggressor who initiated the deadly confrontation and received no instruction (People v Guajardo, citing People v Truong, 218 Mich App 325 (1996)).\n- Defense of others is built into MCL 780.972 itself and survives at common law; its scope reaches assaultive AND nonassaultive crimes, determined on the facts of each case rather than the charges brought (People v Leffew, 508 Mich 625 (2022)).\n- Defense of property: NO Michigan statute authorizes deadly force to protect property. The 780.951 presumption covers intrusion against persons, not theft of things. Deadly force must still satisfy MCL 780.972 \u2014 mere theft or vandalism, even in progress, does not qualify."
+          },
+          {
+            "title": "The Castle Presumption: Scope and All Five Exceptions",
+            "text": "The presumption is narrower than the slogan suggests, and the legislature wrote five holes into it.\n\n- Scope key: the presumption attaches ONLY for breaking in or breaking in and still present, or unlawful forcible removal of a PERSON from a dwelling, business, or occupied vehicle. A mere trespasser in the yard or someone fleeing with property does not automatically trigger it.\n- Definitions, MCL 780.951(3): \"dwelling\" means \"a structure or shelter that is used permanently or temporarily as a place of abode, including an appurtenant structure attached to that structure or shelter\"; \"business premises\" means a building used for the transaction of business including attached appurtenant structures; \"vehicle\" means \"a conveyance of any kind, whether or not motorized.\"\n- Exception (2)(a), legal right to be: voids the presumption against anyone with the legal right to be in the dwelling, business premises, or vehicle, \"including an owner, lessee, or titleholder,\" UNLESS there is a domestic-violence protection injunction or a written pretrial-supervision, probation, or parole no-contact order against that person. The carve-back is the practical lever: a qualifying protective order re-arms the presumption even though the person otherwise has legal access.\n- Exception (2)(b): the person being removed is a child or grandchild of, or in the lawful custody or guardianship of, the person against whom force is used.\n- Exception (2)(c): the defender is engaged in a crime or using the premises or vehicle to further a crime.\n- Exception (2)(d): the target is a peace officer acting lawfully in the performance of official duties.\n- Exception (2)(e), domestic-violence-aggressor history: voids the presumption where the target is a spouse or former spouse, dating partner, co-parent, or household resident or former resident AND the individual using force has a prior history of domestic violence as the aggressor. Generic statute text \u2014 if the OTHER person has the violent history, this exception does not apply.\n- Bottom line: the presumption is built for intruders, not housemates. Against anyone with legal access, the case rests on ordinary MCL 780.972 proof.\n- Case application: People v Wafer, 501 Mich. 986 (2018) \u2014 sustained forceful banging on a locked door at night supported both 780.951(1)(a) and (1)(b); the defendant was entitled to the M Crim JI 7.16a presumption instruction and refusal required a new trial. Citation confirmed live [V 2026-10-10]: People v Wafer, 501 Mich. 986 (2018), decided Mar 9 2018, MSC 153828."
+          },
+          {
+            "title": "Boundary Situations: Known Access, Landlords, Campers",
+            "text": "The rules that change behavior when the person at the door is not a stranger.\n\n- KNOWN ACCESS, GENERIC: neither statute cares who the person is. MCL 780.972 keys on conduct \u2014 imminent unlawful force means a person may defend, with no duty to retreat, regardless of relationship. The exceptions strip the PRESUMPTION, never the DEFENSE. A person with legal access in the home triggers exception (2)(a); with a qualifying protective order against that person, exception (2)(a) switches off and the presumption re-arms. This is the single most powerful legal move in known-access situations.\n- LANDLORD SELF-HELP: MCL 600.2918(1) \u2014 anyone \"ejected or put out of any lands or tenements in a forcible and unlawful manner\" recovers 3 times actual damages or $200, whichever is greater, plus possession. Subsection (2)(a) covers use of force or threat of force, lock changes, and utility shutoff \u2014 $200 minimum PER OCCURRENCE; no family-relationship exception; may not be waived; the only safe harbor is acting \"pursuant to court order.\" Process first: an at-will tenancy ends by one month's notice (MCL 554.134(1)), and only the writ of restitution executed by the sheriff removes an occupant (MCL 600.5744(1)). Self-help eviction is prohibited by law.\n- Landlord force overlay: the owner or landlord is the paradigm \"owner... or titleholder\" with legal right to be, so exception (2)(a) voids the presumption against them unless a protective order exists. The 780.972 justification survives on its own text \u2014 non-deadly force against \"the imminent unlawful use of force by another individual\" has no \"except landlords\" clause. Deadly force does NOT become available because an eviction is illegal: a wrongful ejection is a civil wrong \u2014 treble damages, possession, the sheriff \u2014 not a death-justifying assault. A non-owner agent with no legal right to be falls under the 780.951(1)(a) forcible-removal trigger on its face. Behavioral rule: never convert a lockout into a fight \u2014 document, call police, re-enter peacefully, sue within 90 days for possession or one year for damages. No Michigan case was found squarely on resisting a landlord self-help ejection with force \u2014 that reading of 780.972(2) is flagged UNVERIFIED as to case law.\n- CAMPER-AS-DWELLING: identical definitions sit in MCL 780.951(3)(c), MCL 768.21c(2), and MCL 750.110a(1)(a) \u2014 \"structure or shelter... used permanently or temporarily as a place of abode.\" A lived-in camper or trailer is a \"dwelling\" for the castle presumption, the no-retreat provisions, and home-invasion law; MCL 780.951(3)(g) also makes it a \"vehicle,\" and the removal trigger covers an occupied vehicle. Persuasive unpublished authority applies the home-invasion definition to campers (People v Fuller, Mich. Ct. App. 2025, unpublished; People v Tubbs, Mich. Ct. App. 2013, unpublished), and People v Powell, 278 Mich App 318 (2008) makes intent to use as a place of abode the primary factor. FLAGGED: those holdings arise under MCL 750.110a, not 780.951 self-defense directly \u2014 definitional identity plus persuasive precedent, not a citation-ready holding. A tent is a \"shelter\" in the text but has NO case-law support found \u2014 UNVERIFIED."
+          },
+          {
+            "title": "Aftermath: Prosecution, Immunity, and Fees",
+            "text": "The honest limits \u2014 what the law does NOT give you, and what it does.\n\n- NO pretrial criminal immunity hearing exists in Michigan. The presumed section is nonexistent; expect arrest and the full process even after a justified act. The protections are real but they come after the system engages.\n- Stage 1, charging review: police file the report and the prosecutor decides whether a crime occurred; the officer swears the complaint and a judge or magistrate signs the warrant. At warrant issuance the prosecutor MUST present evidence the force was NOT justified (MCL 780.961(2)). Practical upshot: report first and preserve exculpatory evidence; counsel can submit witness statements, photos, and medical records into that review; the charging-review window is when no-charge decisions happen.\n- Stage 2, preliminary examination: the state must again show non-justification or the charge can fail to bind over.\n- Stage 3, trial: once the defendant produces SOME evidence of self-defense, the prosecution must disprove it beyond a reasonable doubt (People v Rajput, 505 Mich 7 (2020), quoting People v Dupree, 486 Mich 693 at 712). The prima facie threshold is low \u2014 even weak or doubtful supporting evidence requires the instruction. If the force complied with section 2, \"an individual... commits no crime\" (MCL 780.961(1)).\n- Civil side: this IS where a real pretrial immunity fight exists \u2014 MCL 600.2922b immunity asserted by pre-suit or pretrial motion can terminate the lawsuit before trial, and MCL 600.2922c mandates fees. Caveat: civil immunity is not automatic; it must be litigated on the same record, and a close call that avoids conviction can still produce civil exposure.\n- No imperfect self-defense: People v Reese, 491 Mich 127 (2012) \u2014 the doctrine does not exist in Michigan as a freestanding mitigation. There is no partial-credit middle verdict \u2014 it is acquittal or the full charge on ordinary principles."
+          },
+          {
+            "title": "Tools and Carry: What Michigan Law Actually Permits",
+            "text": "Ranked by practicality, every item statute-verified.\n\n- OC pepper spray, solution not over 18 percent OC \u2014 LEGAL openly or concealed, in a vehicle, NO license. MCL 750.224(3)(a) exempts a self-defense spray or foam device as defined in MCL 750.224d(1). The famous 35-gram limit caps the CS tear-gas formulation, NOT OC \u2014 OC is governed by the 18 percent concentration cap. Avoid CS or combo canisters over 35 grams, bear-spray concentrations, and non-listed agents such as PAVA, which fall back into the MCL 750.224(1)(e) felony. Use limit: ejecting CS or OC at a person is a misdemeanor, 2 years and $2,000, unless reasonable use in protection of person or property (MCL 750.224d(2)). Double-verified against MCL 750.224d and MSP Legal Update 167 (03/2026).\n- Personal alarm \u2014 LEGAL. No Michigan statute regulates audible personal alarms; they are not weapons under MCL 750.224 or 750.227 (absence-of-statute, single verification).\n- Knives \u2014 LEGAL with wide latitude. No state blade-length limit. Switchblade and butterfly knives legal since 2017 PA 96, effective October 11 2017 (repealing MCL 750.226a). Single-edged folding knives may be carried openly or concealed. FELONY, 5 years and $2,500, only for CONCEALED daggers, dirks, stilettos, or double-edged nonfolding stabbing instruments \u2014 and for those items in a VEHICLE even openly, outside one's own home, business, or owned land (MCL 750.227(1)). \"Go armed\" under MCL 750.226 requires unlawful intent (People v Mitchell, 835 NW2d 615 (2013)). Concealed means not discernible by ordinary observation (State v Jones, 162 NW2d 847 (1968)). K-12 school property and school buses are weapon-free zones (MCL 750.237a).\n- Kubotan or plain keychain stick \u2014 MOST LIKELY LEGAL (interpretive; no statute names them). Caveats: unlawful-intent exposure under MCL 750.226; offensive use can be charged as an \"other dangerous weapon\" under MCL 750.82; spiked versions risk \"metallic knuckles\" classification; a kubotan-shaped knife is a knife.\n- Open carry (pistol, on foot, 18 or older): legal without a license \u2014 but the vehicle is the trap: a pistol in a vehicle WITHOUT a CPL is a crime whether concealed or otherwise (MCL 750.227(2)); only the narrow MCL 28.432a(12a)(j) transport exception (unloaded, in trunk or locked container, on the routes between home, business, repair, or transport) applies. Non-CPL holders are barred from carrying on the premises of banks, churches, courts, theatres, sports arenas, day care centers, hospitals, and liquor-licensed establishments (MCL 750.234d; exemptions include CPL holders and owner permission). Brandishing is MCL 750.234e; carrying while impaired or at BAC 0.08 or above is a misdemeanor (MCL 750.237). A visible printing bulge is reasonable suspicion of CCW justifying a Terry stop \u2014 the burden of proving an exemption is the carrier's (People v Williams, COA 365299, 2024).\n- CPL \u2014 the strongest option: $115 at the Saginaw County Clerk, 111 S. Michigan Ave Room 101, prints included, in-office kiosk; apply in person under oath on form RI-012; fingerprints within 45 days or the application is withdrawn; license or denial within 45 days of classifiable fingerprints \u2014 if neither issues, the fingerprint receipt itself serves as a temporary CPL (MCL 28.425b(13) and (14)). Course: 8 hours within 5 years under MCL 28.425j \u2014 5 or more hours classroom including use-of-deadly-force law taught by an attorney or deadly-force-trained instructor, 3 hours range, 30 rounds. Qualifications: 21 or older, Michigan resident 6 months, no felony, enumerated misdemeanor windows, not subject of a PPO or ERPO. Valid 4 to 5 years to birthday; renewal $115 with self-certified 3 hours training review plus 1 hour range within 6 months (MCL 28.425l). DUTY: carry the CPL and state ID and IMMEDIATELY disclose to a peace officer who stops you that you are armed \u2014 first violation $500 plus 6-month suspension, within 3 years $1,000 plus revocation (MCL 28.425f). Prohibited premises while concealed: schools, day cares, arenas, bars and taverns, worship unless permitted, venues seating 2,500 or more, hospitals, college dorms and classrooms \u2014 parking areas excluded (MCL 28.425o). Alcohol: BAC 0.02 is an infraction, 0.08 a misdemeanor with 3-year suspension, 0.10 or under the influence means revocation (MCL 28.425k). Courts bar weapons in official court space absent chief-judge permission. ATF determined June 3 2025 that the Michigan CPL is a NICS-alternative permit; the Michigan CPL is honored by roughly 40 states (counting-method dependent), and another state's license is valid in Michigan only for residents of the issuing state.\n- Taser-type EMD device \u2014 only AFTER a CPL exists, bought through a dealer who verifies the CPL and trains on use, effects, and risks (MCL 750.224a(2)(b) and (5)). An EMD device must also carry a traceable identification and tracking system dispensed on first use (MCL 750.224a(7)(a)).\n- NEVER, felony traps: contact stun guns are a 4-YEAR FELONY for everyone, even CPL holders (MCL 750.224a(1) and (4); People v Yanna, 297 Mich App 137 (2012) struck the total ban; 2012 PA 122, effective August 6 2012, is the operative partial regime). Expandable batons, nightsticks, blackjacks, and metal knuckles are a 5-year felony to POSSESS, reaching the home, not just carry (MCL 750.224(1)(d); People v Hassenfratz; People v Beasley). Also never: concealed double-edged knives; any double-edged knife in a vehicle; a pistol in a vehicle without a CPL; CS or tear-gas devices over 35 grams or non-listed agents.\n- Verified Saginaw County CPL training providers, all MCL 28.425j compliant: Kodiak Tactical $150; Sheridan Arms indoor range $150; Uncle Jay's Pond in Hemlock $100; Bad River Defense at Saginaw Gun Club $110 (verified on the providers' own sites 2026-10-09)."
+          },
+          {
+            "title": "The Incident-Night Playbook",
+            "text": "If an incident ever happens, the first hours decide much of the case. Generic procedure, standard Michigan defense practice.\n\n- Secure the firearm if the threat has stopped; do not hold it in your hand when officers arrive.\n- Call 911 FIRST \u2014 \"someone attacked me, I need police and medical.\" A delayed call lets the other party report first and shape the narrative; the call itself is evidence. 911 calls are recorded before the dispatcher answers, so speak accordingly.\n- Give name, exact location, and the medical request ONLY; describe the other person only as needed for responders' safety \u2014 do not narrate the fight.\n- \"I was the victim of a crime. I will give a full statement after I speak with my attorney\" \u2014 standard, lawyer-endorsed practice in Michigan (Stickley Law, U.S. LawShield, Makowski Legal).\n- Scene discipline: do NOT clean up or move anything \u2014 that is tampering and destroys your best proof. DO photograph the scene and your injuries, collect witness names and numbers NOW while they are still there, get a medical exam even if you feel fine since adrenaline masks injuries, write a timeline for your own attorney only, and say nothing to bystanders, the other party's family, or on social media.\n- Retain counsel early \u2014 the charging-review window is when no-charge decisions happen."
+          },
+          {
+            "title": "County Directory and PPO Lane",
+            "text": "Official numbers, read from county sites on 2026-10-09; Saginaw lines re-verified live on saginawcountymi.gov 2026-10-10 [V 2026-10-10]. These are public offices, not case material.\n\n- 70th District Court, Saginaw County Governmental Center, 111 S. Michigan Ave 3rd Floor \u2014 main (989) 790-5200; Civil 989-790-5380, Criminal 989-790-5385, Traffic 989-790-5390 [V 2026-10-10, saginawcountymi.gov]; hears misdemeanors, arraignments, and preliminary exams on all felonies (felonies bind to the 10th Circuit in the same building).\n- 10th Judicial Circuit Court \u2014 same Governmental Center.\n- Saginaw County Prosecuting Attorney, Room 212 \u2014 (989) 790-5330 [V 2026-10-10]; charges are issued only from completed police reports and the charging decision belongs solely to the prosecutor; subpoena-status line after 5 p.m. (989) 790-5580.\n- Saginaw County Sheriff, 311 S. Harrison St \u2014 admin (989) 790-5400 [V 2026-10-10]; handles CPL records and gun checks for the county.\n- County Central Dispatch non-emergency (989) 797-4580, text-911 available, admin (989) 797-4590 [V 2026-10-10] \u2014 do not email requests for assistance.\n- PPO Office, lower level of the Governmental Center \u2014 (989) 790-5412 [V 2026-10-10], 8:00 to 4:00. Domestic-violence shelter and safety planning: Underground Railroad in Saginaw, (989) 755-0411 [V 2026-10-10].\n- 74th District Court, Bay County Court Facility, 1230 Washington Ave Suite 736, Bay City \u2014 (989) 895-4232 [V 2026-10-10, baycountymi.gov]; jurisdiction covers all of Bay County.\n- 18th Judicial Circuit Court, same facility \u2014 main line: confirm in Bay County\u2019s official directory (baycountymi.gov).\n- Bay County Prosecuting Attorney, Suite 768 \u2014 line: confirm in Bay County\u2019s official directory (baycountymi.gov); an older county page names a prior prosecutor.\n- Bay City Dept. of Public Safety non-emergency (989) 892-8571; the official city site is baycitymi.gov and the .org domain is dead.\n- Bay County Central Dispatch \u2014 non-emergency and admin lines: confirm in Bay County\u2019s official directory (baycountymi.gov).\n- PPO lane, MCL 600.2950: free filing with the county clerk in any Michigan county \u2014 no filing fee (MCR 3.703(A)) [V 2026-10-10, MCR ch.3]. Ex parte ruling within 1 business day (MCR 3.705(A)(1)) [V 2026-10-10, MCR ch.3] if immediate and irreparable harm would result from delay; valid not less than 182 days. The respondent has 14 days after service to move to rescind, with the hearing scheduled within 14 days \u2014 within 5 days if the order bars firearms. Violation means arrest and criminal contempt, up to 93 days jail and/or $500 (MCR 3.708(H)(5)(a)) [V 2026-10-10, MCR ch.3] \u2014 document every violation and request a show-cause hearing if no arrest. A domestic PPO also bars the respondent's firearm purchase and possession under federal law, 18 USC 922(g)(8).\n- Verified Michigan criminal-defense resources on their own live sites 2026-10-09: Oakes Law Group (888) 886-5711 in Saginaw, 24/7, free consult; Great Lakes Bay Legal (989) 401-0877, a former Saginaw County Prosecuting Attorney, free consult; Revolution Law PLC (989) 402-9859 in Bay City; Makowski Legal (313) 434-3900, statewide firearms and CPL authority with 24/7 emergency intake for self-defense incidents; Grabel and Associates with a live Bay County page, phone not verified this pass. Indigent defense: Saginaw County Defenders, saginawdefenders.org.\n- Free and low-cost general resources: Legal Services of Eastern Michigan in Saginaw; Michigan Legal Help at michiganlegalhelp.org; 2-1-1 referral; Michigan State Police CCW unit at michigan.gov/msp/services/ccw for forms RI-012, reciprocity, and prohibited premises."
+          }
+        ],
+        "examples": [
+          {
+            "title": "Late-night banging on a locked door",
+            "scenario": "Someone is forcefully pounding on your front door at 2 a.m. and refuses to leave.",
+            "outcome": "People v Wafer, 501 Mich. 986 (2018): sustained forceful banging at night supported both 780.951(1)(a) and (1)(b) [V 2026-10-10]; the jury should have received the M Crim JI 7.16a presumption instruction."
+          },
+          {
+            "title": "Housemate with legal access, intruder without",
+            "scenario": "Your roommate's ex forces the door; that person has a standing domestic-violence protection injunction against them.",
+            "outcome": "Exception (2)(a) carve-back: the injunction re-arms the presumption against someone who otherwise has the legal right to be there \u2014 the presumption applies, and the case no longer rests on ordinary 780.972 proof alone."
+          },
+          {
+            "title": "Trespasser in the yard, never attempts entry",
+            "scenario": "Someone is cutting across your lawn at 2 a.m. but makes no move toward the house.",
+            "outcome": "The 780.951 presumption does not attach \u2014 scope is breaking in, or unlawful forcible removal of a PERSON from a dwelling, business, or occupied vehicle. Ordinary MCL 780.972 proof still governs any force used."
+          }
+        ],
+        "pitfalls": [
+          "MYTH: Michigan has a Florida-style pretrial self-defense immunity hearing \u2014 it does not; the burden runs at warrant issuance, preliminary exam, and trial (MCL 780.961(2)) [V 2026-10-10].",
+          "Confusing the justification (MCL 780.972) with the presumption (MCL 780.951) \u2014 the presumption is a shortcut to the same honest-and-reasonable belief, not a second defense.",
+          "Citing MCL 780.972e \u2014 no such section exists; the official chapter 780 section list ends at 780.974 [V 2026-10-10]."
+        ],
+        "exercises": [
+          "State the three statutory triggers for deadly force under MCL 780.972(1), and the lower trigger for non-deadly force.",
+          "Name the two surviving retreat duties \u2014 mutual combat and unwithdrawn aggression \u2014 and give a one-line fact pattern for each.",
+          "List all five exceptions in MCL 780.951(2) and say in one sentence what each one is about."
+        ]
+      },
+      "intermediate": {
+        "label": "Intermediate \\u2696\\ufe0f",
+        "tagline": "The mechanisms, the money layer, and the paperwork \u2014 where doctrine meets a docket number.",
+        "goals": [
+          "Trace a self-defense claim through warrant, preliminary exam, and trial \u2014 and the burden at each stage",
+          "Distinguish where immunity actually exists (civil, MCL 600.2922b/c) from where it does not (criminal pretrial)",
+          "Map the PPO process against the presumption's exception list"
+        ],
+        "concepts": [
+          {
+            "title": "The Burden Chain and the Money Layer",
+            "text": "What actually protects a defender, stage by stage, plus the civil track.\n\n- Charging review, weeks to months: police file, prosecutor review, warrant issuance only with evidence the force was NOT justified. MCL 780.961(2) requires the prosecutor to present that evidence at warrant issuance, at any preliminary examination, and at any trial.\n- Preliminary examination in the 70th or 74th District: the state must AGAIN show non-justification or the charge can fail to bind over.\n- Merely raising self-defense shifts the burden: once a defendant produces some evidence of self-defense, the prosecution must disprove it beyond a reasonable doubt (People v Rajput, 505 Mich 7 (2020), quoting People v Dupree, 486 Mich 693 at 712). The prima facie threshold is low \u2014 even weak or doubtful supporting evidence requires the instruction. Some circuit courts hear a pretrial \"self-defense motion,\" but that is court-created procedure, not a statutory immunity hearing.\n- Trial: same burden. If the force complied with the Act, \"an individual... commits no crime\" (MCL 780.961(1)).\n- Civil side \u2014 this is where a real pretrial immunity hearing exists: MCL 600.2922b civil immunity is asserted by pre-suit or pretrial motion and a granted motion terminates the lawsuit before trial; MCL 600.2922c mandates actual attorney fees and costs once the court finds compliance. Civil immunity is not automatic \u2014 it must be litigated on the same record, and a close call that avoids conviction can still produce civil exposure.\n- Practical steps feeding BOTH tracks, starting night one: preserve the scene untouched with photos before EMS moves anything; witness names and numbers to counsel immediately; full medical exam and records since your injuries are objective proof of imminence; your own photos of injuries, weapons, and positions; give a full statement once, with your attorney present, never piecemeal; retain counsel early because the charging-review window is when no-charge decisions happen."
+          },
+          {
+            "title": "PPO Mechanics and Presumption Interaction",
+            "text": "The paperwork lane, from filing through enforcement, and how it feeds back into the castle analysis.\n\n- Statute: Personal Protection Order under MCL 600.2950, covering spouse or former spouse, dating partner, same-household member, or child in common.\n- Where and fee: file with the county clerk in ANY Michigan county \u2014 you need not live there \u2014 and there is no filing fee (MCR 3.703(A)) [V 2026-10-10, MCR ch.3]. Saginaw intake is the PPO Office, lower level of the Governmental Center, (989) 790-5412 [V 2026-10-10], 8:00 to 4:00. Bay County intake is the Circuit Court clerk at 1230 Washington Ave, Bay City.\n- What to bring: the respondent's full name, address, and date of birth; a narrative with dates, times, places, and injuries, with photos; the clerk files it and calls you about the ex parte result; in-county service is arranged through the Sheriff.\n- Ex parte: the judge must rule within 1 business day (MCR 3.705(A)(1)) [V 2026-10-10, MCR ch.3] if \"immediate and irreparable injury... will result from the delay\" (MCL 600.2950(12)); valid not less than 182 days with its expiration stated (MCL 600.2950(13)).\n- The 14-day hearing: the respondent may move to modify or rescind within 14 days after service or actual notice; the court must schedule that hearing within 14 days \u2014 within 5 days if the order bars firearms (MCL 600.2950(14)). If the judge denies the ex parte request, you may request a hearing within 21 days.\n- Enforcement: police may arrest on violation; violation is criminal contempt with a maximum of 93 days and $500 (MCR 3.708(H)(5)(a)) [V 2026-10-10, MCR ch.3]. Document every violation; if no arrest, file for a show-cause hearing through the PPO office.\n- Firearms: a domestic PPO bars firearm purchase and possession for the respondent, and federal law disarms the respondent while the order is active (18 USC 922(g)(8)).\n- Strategic tie-back: MCL 780.951(2)(a) preserves the home presumption where the intruder is protected by a no-contact injunction, so a PPO against a person with legal access re-arms the presumption; but 780.951(2)(e) removes the presumption against a household or dating partner where the individual USING force has a prior domestic-violence-as-aggressor history. Get counsel before any force decision in a shared home."
+          },
+          {
+            "title": "Verified Legal Help and Standing Resources",
+            "text": "Public directories confirmed on the firms' own live sites on 2026-10-09 \u2014 no engagement, no case material, just public contact information.\n\n- Oakes Law Group \u2014 Saginaw criminal defense with a dedicated page, (888) 886-5711, 24/7 availability, free consultation; serves the 10th Circuit and 70th District Courts; felonies, weapons, home invasion.\n- Great Lakes Bay Legal \u2014 Nathan J. Collison, a former Saginaw County Prosecuting Attorney and former Chief Appellate Attorney there, (989) 401-0877, free consultation; violent-crime defense across Saginaw, Bay, and Midland counties.\n- Revolution Law PLC \u2014 Bay County criminal defense, (989) 402-9859, Bay City; felony, misdemeanor, and DUI trial practice.\n- Makowski Legal \u2014 statewide Michigan firearms, CPL, and self-defense authority; wrote the USCCA Michigan CPL legal curriculum; (313) 434-3900, Livonia, with a 24/7 emergency line for active self-defense incidents.\n- Grabel and Associates \u2014 statewide criminal defense with a live Bay County page for violent crimes and weapons charges; use the site contact form, phone not verified in this pass.\n- Indigent defense: Saginaw County Defenders, saginawdefenders.org, for court-appointed representation.\n- Free and low-cost: Legal Services of Eastern Michigan in Saginaw for civil legal aid; Michigan Legal Help at michiganlegalhelp.org for self-help guides including CPL denial appeals; 2-1-1 for regional referral; the Michigan State Police CCW unit at michigan.gov/msp/services/ccw for forms, reciprocity, and prohibited premises.\n- Court rule and process sources: the Michigan Legislature site for statute text, courts.michigan.gov for court rules and forms, michigan.gov/voices4 for the PPO overview, and the county sites saginawcountymi.gov and baycountymi.gov for local directories."
+          }
+        ],
+        "examples": [
+          {
+            "title": "Warrant-stage burden",
+            "scenario": "Police are drafting an affidavit for a warrant after an incident where you claim self-defense.",
+            "outcome": "MCL 780.961(2): the proponent must show the crime was not committed in self-defense \u2014 and that burden applies at warrant issuance, preliminary exam, and trial [V 2026-10-10]. It never eases between stages."
+          },
+          {
+            "title": "Civil suit after a justified incident",
+            "scenario": "A civil suit is filed against you over force that complied with the Self-Defense Act.",
+            "outcome": "MCL 600.2922b immunity applies to the same conduct, and 600.2922c makes fees mandatory: the court \"shall award the payment of actual attorney fees and costs\" [V 2026-10-10] \u2014 not discretionary."
+          },
+          {
+            "title": "PPO intake the same day",
+            "scenario": "You need an ex parte personal protection order and have no money for court costs.",
+            "outcome": "MCR 3.703(A): no fees for filing [V 2026-10-10, MCR ch.3]. MCR 3.705(A)(1): the court must rule within one business day of filing [V 2026-10-10, MCR ch.3]. The order is valid not less than 182 days (MCL 600.2950)."
+          }
+        ],
+        "pitfalls": [
+          "Treating 600.2922b immunity as criminal \u2014 it is civil; Michigan has no pretrial self-defense immunity hearing.",
+          "Assuming an ex parte PPO expires on its own schedule \u2014 MCL 600.2950(13) sets a 182-day minimum duration with the expiration stated on the order.",
+          "Forgetting the firearms variant of the timeline: the rescission hearing is scheduled within 14 days of service, or within 5 days if the order bars firearms (MCL 600.2950(14))."
+        ],
+        "exercises": [
+          "Walk a self-defense claim through warrant, preliminary exam, and trial, stating the burden at each stage (MCL 780.961(2)).",
+          "Compare CPL issuance under MCL 28.425b ($100 + $15 = $115, 45 days) with renewal under 28.425l ($115, 3 hours including 1 hour range time within 6 months) and list exactly what changes.",
+          "Draft the PPO filing checklist: respondent's name, address, and date of birth; narrative with dates, times, places, and injuries; photos."
+        ]
+      },
+      "advanced": {
+        "label": "Advanced \\ud83c\\udfd1\\ufe0f",
+        "tagline": "The unresolved edges \u2014 flagged holdings, unpublished authority, and the negative claims that rest on absence of proof.",
+        "goals": [
+          "Tell a citation-ready holding from a textual reading that only looks like one",
+          "Load every UNVERIFIED flag before relying on a boundary claim",
+          "Reason about the negative claims \u2014 no 780.972e, no 2017 amendment \u2014 and what would falsify them"
+        ],
+        "concepts": [
+          {
+            "title": "Unpublished and Unverified: Reading the Flags",
+            "text": "The corpus carries explicit confidence flags. Load them before relying on any boundary claim.\n\n- UNVERIFIED, landlord force: no Michigan case was found squarely on resisting a landlord self-help ejection with force. The statement that non-deadly force is within 780.972(2) against an attacking agent is a textual reading of the statute, not a holding.\n- UNVERIFIED, camper-as-dwelling under self-defense: the Fuller (2025) and Tubbs (2013) holdings arise under MCL 750.110a home-invasion law, not 780.951. The bridge is definitional identity \u2014 identical words in 780.951(3)(c), 768.21c(2), and 750.110a(1)(a) \u2014 plus persuasive unpublished precedent. Strong reasoning, not a citation-ready holding. A tent has NO case-law support found.\n- Unpublished opinions are persuasive, not binding \u2014 MCR 7.215(C)(1). People v Haynes (Mich. Ct. App. No. 308491, unpublished) applied exception (2)(a) where victims had the legal right to be in the home, costing the defendant the instruction.\n- FLAGGED citation: People v Wafer, 501 Mich. 986 (2018), was located through a secondary summary and the Supreme Court answer brief rather than the order PDF itself.\n- NEGATIVE CLAIMS: no MCL 780.972e and no pretrial criminal immunity hearing rest on the chapter-780 index and exact-string searches returning nothing \u2014 high-confidence, but absence of proof rather than proof of absence. The \"no 2017 amendment\" claim rests on the statute history lines reading only 2006 plus identification of 2017 PA 111 as an unrelated economic act. The \"no enacted SYG reform as of October 2026\" claim came from a single search that returned only unrelated bills \u2014 a niche bill could have been missed.\n- Defense-of-property common law at the non-deadly level was not located in an appellate case; that statement rests on the statutory structure, Riddle, and proportionality principles.\n- Practical rule: a flagged claim is a research assignment, not a citation. Each one names the exact source class that would confirm or kill it."
+          },
+          {
+            "title": "Presumption vs Justification: Advanced Reasoning",
+            "text": "Two layers, one gatekeeper, and the ordering rules that decide cases.\n\n- Ordering rule: fit the 780.972 justification FIRST, then ask whether the 780.951 presumption helps prove the belief element. The presumption presumes only the belief element (honest and reasonable fear of death, great bodily harm, or sexual assault) once the intrusion facts and the honest-and-reasonable belief in 780.951(1)(b) are shown; the defense must still fit within MCL 780.972, including the not-engaged-in-a-crime condition.\n- Both layers collapse if the defender is committing an offense: 780.972 is conditioned on not being \"engaged in the commission of a crime at the time,\" and 780.951(2)(c) independently voids the presumption when the defender is engaged in a crime or using the premises to further one.\n- Exception precision, (2)(b): the child and grandchild carve-out keys on the removed person's relationship to the person force is used against \u2014 if the remover is taking out their OWN child or grandchild, the presumption is voided. If the child is not theirs, the exception does not apply on its face.\n- The (2)(e) relationship scope: spouse or former spouse, dating relationship, child in common, resident or former resident of the household \u2014 and only where the individual using force has the prior domestic-violence-as-aggressor history. The other person's violent history does not touch this exception.\n- Landlord reasoning chain: exception (2)(a) reaches \"including an owner, lessee, or titleholder,\" which kills any \"it is my house, not theirs\" argument about ownership in the other person; the protective-order carve-back inside (2)(a) is the one textual switch that re-arms the presumption; the 780.972(2) justification is relationship-blind, so an attacking agent's conduct, not their label, controls the non-deadly analysis.\n- Property line: the presumption covers removal of PERSONS, never the taking of THINGS; deadly force never becomes available because a civil wrong is happening; the civil remedies are treble damages under MCL 600.2918, possession, and the sheriff executing a writ of restitution.\n- Mutual combat survives the Act through the savings clauses: mutual combatants are by definition \"engaged in the commission of a crime,\" outside section 2, so the common-law retreat duty in Riddle and Reese persists \u2014 but inside the castle, Riddle's own words hold: \"When a person is in his 'castle,' there is no safer place to retreat.\"\n- Retroactivity: the Act is substantive and prospective only (Conyer; Dupree), so the 2006 date is a hard boundary for any pre-Act conduct analysis."
+          }
+        ],
+        "examples": [
+          {
+            "title": "A citation that survived the verify lane",
+            "scenario": "You want to cite Wafer in a brief and only have a secondary summary.",
+            "outcome": "VERIFIED: People v Wafer, 501 Mich. 986 (2018), decided Mar 9 2018, MSC 153828 \u2014 citation confirmed live [V 2026-10-10]; the (1)(a)/(1)(b) holding stands as stated. Cite the confirmation, not the summary."
+          },
+          {
+            "title": "A negative claim checked the hard way",
+            "scenario": "Someone cites MCL 780.972e for a defensive-display rule in a meeting.",
+            "outcome": "The official chapter 780 section list ends at 780.974 and contains no 780.972e [V 2026-10-10] \u2014 a negative claim is only as strong as the list you actually read, so read the list."
+          },
+          {
+            "title": "A flag that stayed a flag",
+            "scenario": "A landlord-force case result would neatly settle your question.",
+            "outcome": "Still UNVERIFIED: landlord-force case law, tent-as-dwelling, and the personal-alarm/kubotan absence-of-statute claims remain flagged by the verify lane \u2014 keep the flag; do not upgrade a boundary claim on a secondary source."
+          }
+        ],
+        "pitfalls": [
+          "Upgrading an UNVERIFIED flag because the source \"sounds official\" \u2014 flags ship until re-sourced with a live fetch (verify-lane rule: keep flags, do not upgrade).",
+          "Treating the SDA's history as fully settled \u2014 780.961 shows only 2006 PA 310; the 780.972 history line was not captured, so the single-search caveat stands [V 2026-10-10].",
+          "Citing a rule you never fetched \u2014 MCR 3.703, 3.705, and 3.708 now carry [V 2026-10-10] because chapter 3 was pulled from courts.michigan.gov; unverified rule cites ship dropped, not hedged."
+        ],
+        "exercises": [
+          "For each UNVERIFIED flag in this module, name the primary source that would upgrade it and the evidence you would accept.",
+          "Argue both sides where 780.951 ends and 780.972 proof begins when every one of the five exceptions applies.",
+          "Run the negative-claim test yourself: fetch the official chapter 780 section list and document where it ends."
+        ]
+      }
+    },
+    "quiz": {
+      "beginner": [
+        {
+          "question": "Under MCL 780.972, Michigan's no-duty-to-retreat rule applies:",
+          "type": "multiple-choice",
+          "options": [
+            "only inside one's own home",
+            "anywhere the individual has the legal right to be",
+            "only on private property",
+            "only for CPL holders"
+          ],
+          "correct": 1,
+          "explanation": "Section 2 covers \"anywhere he or she has the legal right to be with no duty to retreat\" \u2014 home, sidewalk, parking lot alike."
+        },
+        {
+          "question": "Deadly force under MCL 780.972(1) requires an honest and reasonable belief it is necessary to prevent:",
+          "type": "multiple-choice",
+          "options": [
+            "any felony",
+            "imminent death, imminent great bodily harm, or imminent sexual assault",
+            "property loss over $1,000",
+            "imminent minor injury"
+          ],
+          "correct": 1,
+          "explanation": "The three statutory triggers only."
+        },
+        {
+          "question": "MCL 780.951's rebuttable presumption is triggered when the other person is:",
+          "type": "multiple-choice",
+          "options": [
+            "stealing property from the yard",
+            "breaking into a dwelling or business and still present, or unlawfully attempting to remove a person from a dwelling, business, or occupied vehicle",
+            "trespassing in the yard",
+            "making threats from the street"
+          ],
+          "correct": 1,
+          "explanation": "It keys on breaking in or forcible removal of a PERSON \u2014 a fleeing thief or yard trespasser does not trigger it automatically."
+        },
+        {
+          "question": "True/False: Michigan has a Florida-style pretrial self-defense immunity hearing.",
+          "type": "true-false",
+          "correct": false,
+          "explanation": "The Self-Defense Act is MCL 780.971 through 780.974 only; no section 780.972e exists and no statutory pretrial criminal immunity hearing exists. The protections are the prosecutor's burden under 780.961(2), the burden shift at trial, and civil immunity under 600.2922b and 2922c."
+        },
+        {
+          "question": "MCL 780.951(2)(a) voids the castle presumption against:",
+          "type": "multiple-choice",
+          "options": [
+            "any intruder",
+            "a person with the legal right to be in the dwelling, including an owner, lessee, or titleholder, unless a qualifying no-contact or protective order exists against them",
+            "strangers only",
+            "invited guests only"
+          ],
+          "correct": 1,
+          "explanation": "The exception is written for people with legal access \u2014 and its carve-back is the protective order that re-arms the presumption."
+        },
+        {
+          "question": "The five exceptions to MCL 780.951's presumption include all of these EXCEPT:",
+          "type": "multiple-choice",
+          "options": [
+            "co-resident with legal right to be",
+            "the target is a peace officer acting lawfully",
+            "the defender is engaged in a crime",
+            "a neighbor who is not a resident or former resident of anyone's household"
+          ],
+          "correct": 3,
+          "explanation": "The fifth exception, the domestic-violence-aggressor-history exception, keys on relationship categories \u2014 spouse, dating partner, co-parent, household resident \u2014 plus the defender's own prior history. A neighbor outside those categories is not one."
+        },
+        {
+          "question": "True/False: an initial aggressor in Michigan can claim self-defense without first withdrawing.",
+          "type": "true-false",
+          "correct": false,
+          "explanation": "Escalation counts as aggression; protection returns only with withdrawal AND clear communication of it (People v Guajardo; People v Reese)."
+        },
+        {
+          "question": "Mutual combat in Michigan means:",
+          "type": "multiple-choice",
+          "options": [
+            "it is licensed by statute",
+            "a willing participant must retreat as far as safely possible before deadly force unless in the castle",
+            "it removes all duties",
+            "it is a myth with no legal effect"
+          ],
+          "correct": 1,
+          "explanation": "People v Riddle, reaffirmed in People v Reese \u2014 mutual combatants are engaged in a crime, outside the Act, so the retreat duty survives through the savings clauses."
+        },
+        {
+          "question": "True/False: Michigan recognizes imperfect self-defense as a partial verdict.",
+          "type": "true-false",
+          "correct": false,
+          "explanation": "People v Reese, 491 Mich 127 (2012) \u2014 the doctrine does not exist in Michigan; it is acquittal or the full charge."
+        },
+        {
+          "question": "Defense of property under Michigan law:",
+          "type": "multiple-choice",
+          "options": [
+            "authorizes deadly force against any thief",
+            "authorizes no deadly force \u2014 deadly force must still satisfy MCL 780.972's imminent death, great bodily harm, or sexual assault threshold",
+            "is unlimited on private land",
+            "applies only to vehicles"
+          ],
+          "correct": 1,
+          "explanation": "No Michigan statute authorizes deadly force for property; the presumption covers removal of persons, not things."
+        }
+      ],
+      "intermediate": [
+        {
+          "question": "Which device is a felony to POSSESS for everyone, even a CPL holder?",
+          "type": "multiple-choice",
+          "options": [
+            "OC pepper spray under 18 percent",
+            "a contact stun gun",
+            "a single-edged folding knife",
+            "a personal alarm"
+          ],
+          "correct": 1,
+          "explanation": "MCL 750.224a \u2014 contact stun guns are a 4-year felony; only CPL-held EMD devices bought through dealer-verified training qualify."
+        },
+        {
+          "question": "Michigan's 35-gram pepper-spray limit actually caps:",
+          "type": "multiple-choice",
+          "options": [
+            "OC concentration",
+            "the CS tear-gas formulation",
+            "canister size for all sprays",
+            "nothing \u2014 it was repealed"
+          ],
+          "correct": 1,
+          "explanation": "35 grams governs CS; OC-only spray is governed by the 18 percent concentration cap (MCL 750.224d; MSP Legal Update 167)."
+        },
+        {
+          "question": "Concealed carry of which knife is a 5-year felony under MCL 750.227(1)?",
+          "type": "multiple-choice",
+          "options": [
+            "single-edged folding knife",
+            "double-edged nonfolding stabbing instrument",
+            "pocketknife under 3 inches",
+            "hunting knife adapted and carried as such"
+          ],
+          "correct": 1,
+          "explanation": "Daggers, dirks, stilettos, and double-edged nonfolding instruments \u2014 and those items in a vehicle even openly."
+        },
+        {
+          "question": "Switchblade and automatic knives in Michigan:",
+          "type": "multiple-choice",
+          "options": [
+            "banned statewide",
+            "legal since 2017 PA 96, effective October 11 2017",
+            "legal only with a CPL",
+            "legal only on private property"
+          ],
+          "correct": 1,
+          "explanation": "The 1952 ban, MCL 750.226a, was repealed effective October 11 2017."
+        },
+        {
+          "question": "A pistol in a vehicle without a CPL:",
+          "type": "multiple-choice",
+          "options": [
+            "legal if openly visible",
+            "a crime whether concealed or otherwise, outside the narrow unloaded-transport exception",
+            "legal during daylight hours",
+            "legal if unloaded"
+          ],
+          "correct": 1,
+          "explanation": "MCL 750.227(2) \u2014 the vehicle is the trap for unlicensed open carriers."
+        },
+        {
+          "question": "The Michigan CPL application fee at the Saginaw County Clerk is:",
+          "type": "multiple-choice",
+          "options": [
+            "$100",
+            "$115 including fingerprints",
+            "$150",
+            "$250"
+          ],
+          "correct": 1,
+          "explanation": "$100 licensing fee plus the $15 fingerprint fee; prints taken at the office or any LiveScan vendor."
+        },
+        {
+          "question": "If neither the license nor a denial issues within 45 days of classifiable fingerprints:",
+          "type": "multiple-choice",
+          "options": [
+            "you must reapply",
+            "the fingerprint receipt itself serves as a temporary CPL",
+            "the application is void",
+            "MSP decides later with no status"
+          ],
+          "correct": 1,
+          "explanation": "MCL 28.425b(14) \u2014 the receipt acts as the temporary license until the clerk issues a decision."
+        },
+        {
+          "question": "When stopped by police while carrying a concealed pistol, MCL 28.425f(3) requires you to:",
+          "type": "multiple-choice",
+          "options": [
+            "say nothing",
+            "immediately disclose that you are carrying",
+            "wait for a warrant",
+            "hand over the license only if asked"
+          ],
+          "correct": 1,
+          "explanation": "Immediate disclosure; first violation $500 plus a 6-month suspension, repeat within 3 years $1,000 plus revocation."
+        },
+        {
+          "question": "Under MCL 600.2922c, if the court finds your force complied with section 2 of the Self-Defense Act in a civil suit, it:",
+          "type": "multiple-choice",
+          "options": [
+            "may award fees",
+            "shall award actual attorney fees and costs",
+            "awards nothing",
+            "dismisses only with prejudice"
+          ],
+          "correct": 1,
+          "explanation": "Mandatory fee-shifting under MCL 600.2922c."
+        },
+        {
+          "question": "A Personal Protection Order in Michigan is:",
+          "type": "multiple-choice",
+          "options": [
+            "a paid filing at $300",
+            "free to file with the county clerk in any Michigan county, with an ex parte ruling within 1 business day and a validity of at least 182 days",
+            "available only in Saginaw County",
+            "issued only after a full hearing"
+          ],
+          "correct": 1,
+          "explanation": "MCL 600.2950 and MCR 3.703(A), 3.705(A)(1); the respondent gets 14 days to contest; violation carries up to 93 days and $500."
+        }
+      ],
+      "advanced": [
+        {
+          "question": "True/False: expandable batons are legal to keep at home in Michigan.",
+          "type": "true-false",
+          "correct": false,
+          "explanation": "MCL 750.224(1)(d) bans blackjacks, billys, and bludgeons \u2014 a 5-year felony reaching possession at home, and no published case exempts expandable batons."
+        },
+        {
+          "question": "The prosecutor's burden under MCL 780.961(2) applies at:",
+          "type": "multiple-choice",
+          "options": [
+            "warrant issuance only",
+            "warrant issuance, any preliminary examination, and any trial",
+            "trial only",
+            "sentencing only"
+          ],
+          "correct": 1,
+          "explanation": "The same three stages, each requiring evidence that the actions were not justified."
+        },
+        {
+          "question": "Once a defendant produces some evidence of self-defense at trial, the prosecution must:",
+          "type": "multiple-choice",
+          "options": [
+            "prove the defendant innocent",
+            "disprove self-defense beyond a reasonable doubt",
+            "show a preponderance",
+            "do nothing extra"
+          ],
+          "correct": 1,
+          "explanation": "People v Rajput quoting People v Dupree \u2014 the low prima facie threshold shifts the burden to the prosecution."
+        },
+        {
+          "question": "True/False: a lived-in camper or trailer is a \"dwelling\" under Michigan's self-defense and home-invasion definitions.",
+          "type": "true-false",
+          "correct": true,
+          "explanation": "Identical text in MCL 780.951(3)(c), 768.21c(2), and 750.110a(1)(a) \u2014 a structure or shelter used permanently or temporarily as a place of abode; persuasive unpublished cases (Fuller 2025, Tubbs 2013) apply it to campers, though not directly under 780.951."
+        },
+        {
+          "question": "Which instruction carries MCL 780.951's castle presumption to the jury?",
+          "type": "multiple-choice",
+          "options": [
+            "M Crim JI 7.16b",
+            "M Crim JI 7.16a",
+            "M Crim JI 4.1(2)",
+            "No instruction \u2014 the judge applies the presumption alone"
+          ],
+          "correct": 1,
+          "explanation": "The 780.951 presumption implements via M Crim JI 7.16a \u2014 an earlier draft mis-referenced the instruction number; corrected by the verify lane [V 2026-10-10]. The other options are wrong instructions or a false claim that no instruction issues."
+        },
+        {
+          "question": "In People v Wafer, 501 Mich. 986 (2018), sustained forceful banging on a locked door at night supported:",
+          "type": "multiple-choice",
+          "options": [
+            "only 780.951(1)(a)",
+            "only 780.951(1)(b)",
+            "both 780.951(1)(a) and (1)(b)",
+            "neither \u2014 the presumption never applies to a residence"
+          ],
+          "correct": 2,
+          "explanation": "Citation confirmed live: 501 Mich. 986 (2018), decided Mar 9 2018, MSC 153828 [V 2026-10-10]; the (1)(a)/(1)(b) holding stands as stated, and refusal of the presumption instruction required a new trial."
+        },
+        {
+          "question": "Under MCR 3.705(A)(1), the court must rule on a request for an ex parte PPO:",
+          "type": "multiple-choice",
+          "options": [
+            "within 14 days of filing",
+            "within 5 days of service",
+            "within one business day of filing the petition",
+            "only after a show-cause hearing"
+          ],
+          "correct": 2,
+          "explanation": "MCR 3.705(A)(1): \"The court must rule on a request for an ex parte order within one business day of the filing date of the petition\" [V 2026-10-10, MCR ch.3]."
+        },
+        {
+          "question": "What does it cost to file a PPO with the county clerk in any Michigan county?",
+          "type": "multiple-choice",
+          "options": [
+            "Nothing \u2014 there are no fees for filing a personal protection action",
+            "$50 motion fee",
+            "$100 plus $15 for fingerprints",
+            "$115 flat filing fee"
+          ],
+          "correct": 0,
+          "explanation": "MCR 3.703(A): \"There are no fees for filing a personal protection action, and no summons is issued\" [V 2026-10-10, MCR ch.3]. $115 ($100 + $15) is the CPL application cost under MCL 28.425b, not a PPO fee."
+        },
+        {
+          "question": "Criminal contempt for violating a PPO (MCR 3.708(H)(5)(a)) is punishable by:",
+          "type": "multiple-choice",
+          "options": [
+            "up to 93 days incarceration and/or a $500 fine",
+            "up to 182 days and a $1,000 fine",
+            "up to 1 year and a $2,500 fine",
+            "civil penalties only \u2014 no incarceration"
+          ],
+          "correct": 0,
+          "explanation": "MCR 3.708(H)(5)(a): guilty of criminal contempt \u2192 incarceration no more than 93 days and a fine of not more than $500.00 [V 2026-10-10, MCR ch.3]; MCL 600.2950 sets the same 93 days/$500 maximum."
+        },
+        {
+          "question": "A colleague cites \"MCL 780.972e\" for a defensive-display rule. What does the official chapter 780 section list show?",
+          "type": "multiple-choice",
+          "options": [
+            "no such section \u2014 the list ends at 780.974",
+            "780.972e exists but was repealed in 2017",
+            "780.972e exists and covers stun guns",
+            "780.972e exists in the Senate version only"
+          ],
+          "correct": 0,
+          "explanation": "NEGATIVE verified against the legislature.mi.gov chapter 780 section list: it ends at 780.974 and contains no 780.972e [V 2026-10-10]. Treat any cite to it as an error."
+        }
+      ]
+    },
+    "meta": {
+      "corpus": "ORACLE_SELFD_CORPUS_selfdefense-mi_1009.md",
+      "source_brief": "SARAH_LEGAL_1009 lane1-lane4 + master brief",
+      "verified": "2026-10-10",
+      "status": "VERIFIED + CORRECTED \u2014 two-pass pipeline complete 2026-10-10 (verify verdict READY-WITH-CAVEATS; 11/11 corrections applied by build lane)",
+      "privacy": "No owner, client, family, or inner-circle names or addresses; generic published-law education only; legal disclaimer in description",
+      "verdict": "READY-WITH-CAVEATS",
+      "corrections_applied": 11
+    }
+  }
+}
