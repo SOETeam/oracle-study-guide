@@ -1,0 +1,270 @@
+{
+  "topic": {
+    "id": "sarah-research-methods",
+    "title": "Research Methods: Sources, Citations & Verification",
+    "description": "How to research anything you can be held to: the source-and-date rule, public-record research flow, MCL citation basics, verification chains, the reality line, consensus vs verification, currency stamps, and how to state a legality claim correctly. Method distilled from published research practice, read 2026-10-17.",
+    "icon": "\ud83d\udd0d",
+    "focus": "9 methodology modules \u00b7 provenance and citation discipline \u00b7 public-record flow \u00b7 read 2026-10-17",
+    "keyTerms": [
+      "provenance",
+      "source-and-date rule",
+      "custodian",
+      "primary document",
+      "MCL",
+      "independence test",
+      "reality line",
+      "verification stamp",
+      "consensus",
+      "funnel"
+    ],
+    "subtopics": [
+      "Source-and-Date Rule",
+      "Primary Documents",
+      "Public-Record Flow",
+      "MCL Citations",
+      "Verification Chains",
+      "Reality Line",
+      "Consensus vs Verification",
+      "Currency & Traps",
+      "Legality Claims"
+    ],
+    "levels": {
+      "beginner": {
+        "label": "Beginner \ud83c\udf31",
+        "tagline": "Research you can be held to \u2014 every rule below was read from published methodology sources on 2026-10-17, and each one is teachable in an afternoon.",
+        "goals": [
+          "Attach a source and a read date to every claim you publish",
+          "Run a public-record search from custodian to primary document",
+          "Read and cite a Michigan statute correctly (MCL chapter.section)",
+          "Build a verification chain with a real independence test",
+          "State a legality claim as jurisdiction, authority and date",
+          "Keep your own reality line visible to the reader"
+        ],
+        "concepts": [
+          {
+            "title": "Module 1 \u2014 The Source-and-Date Rule",
+            "text": "The rule, stated plainly:\nEvery claim you publish carries two things: the SOURCE it came from and the DATE you read that source. A claim with no source is an opinion; a source with no date is a rumor with an address.\n\nHow to run it in practice:\n- Give each source a short tag in the text, such as a bracketed abbreviation, and close the document with a source register listing every tag and the full path or URL behind it\n- Number the claims so a reader can walk each one back to a file or page\n- Anything you could NOT trace to a file gets its own tag and is flagged as unverified or as the writer's own inference, never blended in with the sourced material\n- Do the compile read-only: read each source file in full before you cite it, and say so\n\nWhy the flag matters more than the finding:\nA document that marks its own weak points is trusted on its strong points. A document that quietly mixes verified and unverified material loses the reader's trust the moment one claim fails, and takes every other claim down with it.\n\n\u26a0 Verified 2026-10-17 against published research-methodology sources"
+          },
+          {
+            "title": "Module 2 \u2014 Primary Documents First",
+            "text": "The hierarchy, best source first:\n- Statute text from the legislature's own site \u2014 [MCL section text](https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-257-311) [V 2026-10-17]\n- Agency pages and official manuals from the agency itself \u2014 [Michigan.gov](https://www.michigan.gov/) [V 2026-10-17]\n- Court records and dockets \u2014 [Michigan Courts](https://www.courts.michigan.gov/) [V 2026-10-17], [CourtListener dockets](https://www.courtlistener.com/) [V 2026-10-17]\n- Transcripts and filings published by the originating institution, such as a conference posting its own panel transcript as a PDF\n- Only then: news coverage, explainers, commentary, and social posts about any of the above\n\nThe receipt-and-wrapper test:\nA verified quote can sit inside a sales pitch. The receipts may be real while the wrapper is a funnel: fear framing, a cycle-forecast calendar, a book, a course, a credential claim. Method: verify each quoted document against its primary source, publish the verified quote, and refuse to inherit the seller's conclusions or forecasts. STRIP THE FUNNEL, KEEP THE RECEIPTS.\n\nTwo habits that come out of the same lesson:\n- Prefer documents over narration \u2014 a paper's own abstract, a company's own engineering post, a transcript's own words\n- Narration is evidence about the narrator, not about the world; file it that way\n\n\u26a0 Verified 2026-10-17 against published research-methodology sources"
+          },
+          {
+            "title": "Module 3 \u2014 The Public-Record Research Flow",
+            "text": "Seven steps, in order:\n1. Write the question as a testable claim \u2014 something that can be true or false, with a number, a name or a date in it\n2. Find the CUSTODIAN: the agency, court or institution that creates and holds the record you need\n3. Go to the official page, statute or docket and read the actual text \u2014 not a summary of it\n4. Stamp the read date next to the fact while it is in front of you\n5. Cross-check against a second source that is genuinely independent, then record the result\n6. Write down what you could NOT verify, in the document, where the reader will see it\n7. Persist the finding to a durable file at the moment you find it \u2014 research that lives only in a chat session or a memory is one crash away from never having existed\n\nWhere the public records live:\n- Federal records requests start at [FOIA.gov](https://www.foia.gov/) [V 2026-10-17], and each agency publishes its own FOIA office and fee schedule\n- Federal court dockets: [PACER](https://pacer.uscourts.gov/) [V 2026-10-17] \u2014 many are paywalled, so check free mirrors such as [CourtListener](https://www.courtlistener.com/) [V 2026-10-17] first\n- Michigan court records: [Michigan Courts](https://www.courts.michigan.gov/) [V 2026-10-17] plus each county's own public access terminal\n- Statutes, session laws and legislative history: [Michigan Legislature](https://www.legislature.mi.gov/) [V 2026-10-17]\n\nThe independence test (the step people skip):\nTwo outlets reporting the same number is ONE source if both trace back to the same wire story, the same press release or the same underlying dataset. Count sources by their root, not by their logo. Where possible, cross-validate a figure against a dataset that was collected by a different organization using a different method \u2014 same conclusion from two different machines is real corroboration.\n\n\u26a0 Verified 2026-10-17 against published research-methodology sources"
+          },
+          {
+            "title": "Module 4 \u2014 Reading and Citing Michigan Statutes",
+            "text": "How Michigan statutes are numbered:\n- MCL means Michigan Compiled Laws, the state's updated, consolidated statute book\n- The citation format is MCL chapter.section, so MCL 257.311 means chapter 257 (the Michigan Vehicle Code), section 311\n- Read the section text directly at the legislature's site \u2014 [MCL 257.311 at legislature.mi.gov](https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-257-311) [V 2026-10-17] \u2014 and cite the section, not a blog's description of it\n\nCitation discipline:\n- Quote the operative phrase you are relying on, in quotation marks, instead of paraphrasing a holding into something broader than the text\n- Never break a citation across a sentence with a period, so write MCL 257.311 and keep the number intact\n- Statutes are amended, repealed and replaced: before trusting an old copy, check the section's amendment history on the same page\n- Related session laws are numbered as Public Acts; when a claim turns on WHEN a change took effect, the effective date lives with the act, so look it up\n\nName the layer your claim comes from:\nA rule can appear in three different places and they are not interchangeable: (1) the statute itself, (2) an agency's official page describing how the agency applies it, (3) a press release or news story about either. If a requirement comes from an agency page and not from statute text, attribute it to the page. Readers deserve to know which of the three they are being asked to act on.\n\n\u26a0 Verified 2026-10-17 against published research-methodology sources"
+          },
+          {
+            "title": "Module 5 \u2014 Verification Chains",
+            "text": "The two-source rule, with teeth:\nA claim is verified when two INDEPENDENT sources support it and neither traces back to the other. Independence is about the root of the information, not the number of pages repeating it.\n\nVerbatim-quote discipline:\n- If you present words in quotation marks, verify the wording against the primary recording, transcript or filing\n- If what you have is a paraphrase, label it a paraphrase \u2014 even when it is inside a document that otherwise quotes accurately\n- Treat a quote extracted from a video summary as unverified-as-quote until you have read the primary transcript\n\nPartial verification is not verification:\nWhen a roundup or a video gets most details right and one detail wrong, the wrong detail gets flagged, corrected and attributed to its real origin. Do not let a mostly-correct source borrow credibility for the part it got wrong, and do not let the correction quietly disappear either. Public corrections are part of the record.\n\nChain anatomy, one line each:\nclaim \u2192 source tag \u2192 read date \u2192 independent cross-check \u2192 verification status. If any link is missing, the claim ships as unverified or it does not ship.\n\n\u26a0 Verified 2026-10-17 against published research-methodology sources"
+          },
+          {
+            "title": "Module 6 \u2014 The Reality Line",
+            "text": "The method in one test:\nDraw a line between DOCUMENTED EVENTS and FRAMING, and run every item through a single binary question: is this documented, or is it interpretation? Then keep each item on its own side of the line.\n\nPractical rules:\n- Documented events check out against primary sources \u2014 leaked documents later confirmed, an incident acknowledged by the company, a transcript published by the host institution\n- Speculative framing stays flagged as unverified, contested or disputed, INCLUDING when an official account exists and the affected parties dispute it \u2014 report both the ruling and the dispute\n- Unquantified claims stay unquantified: if nobody measured it, write that nobody measured it rather than lending it the appearance of a number\n- Opinions are welcome on the document side of the line as long as they are labeled as opinions\n\nWhy the line is worth defending:\nShared, cited, replayable facts are the only coordination substrate that does not require trusting any one narrator. A record that makes any action or data use either replayable-and-consented or not-used is worth more than any promise about good behavior, and a published ledger of who did what, when, under what consent beats a policy statement every time.\n\n\u26a0 Verified 2026-10-17 against published research-methodology sources"
+          },
+          {
+            "title": "Module 7 \u2014 Consensus Is Not Verification",
+            "text": "The finding:\nSources that agree with each other are not automatically right, because agreement can be correlation rather than confirmation. Published research on large language models found that their outputs mirror OTHER models' outputs far more than humans mirror one another, even after controlling for model-family overlap (PNAS Nexus 2025; 22 models tested) \u2014 so asking several models the same question can return what looks like a chorus when it is one voice at volume.\n\nThe diversity check:\n- Brand diversity is not source diversity: a product may be a wrapper or a router over the same underlying model, so a second opinion from it can be the same brain in a different coat\n- Track WHICH source actually answered, not which logo is on the box\n- Over-specified, sharply logical questions push any set of sources toward ONE answer; if you want genuine options, vary the framing, the persona or the task framing and sample again\n\nFleet-grade rules that transfer to any researcher:\n- Treat agreement among genuinely independent sources as CORROBORATION, which raises confidence but is not the same as verification against a primary document\n- Treat disagreement between genuinely independent sources as SIGNAL: it marks the exact spot where the primary record has to be pulled\n- Consensus is worth seeking when the question is objective and checkable; it is worth distrusting when the question is strategic, novel or creative\n\n\u26a0 Verified 2026-10-17 against published research-methodology sources"
+          },
+          {
+            "title": "Module 8 \u2014 Currency, Silent Change and Traps",
+            "text": "The stamp is the product:\nEvery module you publish carries a verification line naming the date it was checked and the class of sources checked against. It is the reader's promise about freshness, and it forces you to actually look.\n\nThe failure mode it defends against:\nWeb pages change silently. An undated page, an archived copy or a cached snippet is the most common source of confident wrongness: the facts were true when written and nobody re-checked. Treat any finding older than a few months as STALE until re-verified, and re-verify both statute pages and agency pages, since both move.\n\nTraps worth knowing about in 2026:\n- Automated scrapers and AI agents now read the open web constantly, INCLUDING pages with hidden off-screen text planted as traps for machines; verify what you fetch with your own eyes, and be aware that a page can serve different content to different readers\n- Anything YOU publish is also machine-readable: what you write about a community, that community reads, and so does everyone else's automation\n- Screenshots and summaries are secondhand: pull the live page and note the URL you actually read\n\nHonest degradation:\nIf a verification pass cannot be completed \u2014 the page is down, the record is sealed, the tool is broken \u2014 say so in the output and log the blocker. An honest gap in the record beats a silent skip, and never ship a claim you could not check as though you had checked it.\n\n\u26a0 Verified 2026-10-17 against published research-methodology sources"
+          },
+          {
+            "title": "Module 9 \u2014 Case Study: Stating a Legality Claim",
+            "text": "The three-part test for any legality claim:\nX is legal is never a complete sentence in research. It is three claims: under WHICH jurisdiction, under WHAT authority, as of WHEN. Write all three, or write it as a question.\n\nWorked example, from published public-health research read on 2026-10-03:\n- The strips claim: fentanyl test strips are legal in Michigan, because the state's 1978 paraphernalia law reaches sellers rather than users \u2014 a claim that names the jurisdiction, the statute family and the read date\n- The access claim: naloxone is available under a standing order that lets any person carry and administer it \u2014 an authority claim that points at the order, not at folklore\n- The second layer: legal status and FUNDING eligibility are different questions. Federal SAMHSA dollars were barred from purchasing test strips by a July 2025 Dear Colleague letter, while state opioid-settlement dollars remained eligible, with a Michigan state budget line for it \u2014 [Michigan opioid response](https://www.michigan.gov/opioids) [V 2026-10-17], [SAMHSA](https://www.samhsa.gov/) [V 2026-10-17]\n- So one item can be lawful to possess, unfundable from one pocket of money and fundable from another, all on the same day\n\nThe transferable discipline:\n- Legal status, funding eligibility and enforcement climate are THREE questions; answer the one you were asked and never imply the other two\n- A negative test result is information, not a safety certificate \u2014 better decisions, not permission \u2014 and the same shape applies to research: a verified fact authorizes better conclusions, not certainty\n- Nothing here is legal advice; a study guide teaches you HOW to check, and a licensed professional tells you what YOU should do\n\n\u26a0 Verified 2026-10-17 against published research-methodology sources"
+          }
+        ],
+        "examples": [
+          {
+            "title": "Scenario A \u2014 the quote is real, the pitch is not",
+            "scenario": "A viral video quotes two corporate executives saying striking things about the economy. The video also sells a book, a course and a cycle-forecast calendar, and none of its forecasts are checkable.",
+            "outcome": "Fetch the originating institution's own published transcript and verify the wording verbatim. Publish the verified quotes as the establishment's own words; drop the forecasts, the fear framing and the product pitch entirely. Receipts without wrapper is the whole method: the verification applies to the document, not to the narrator standing next to it."
+          },
+          {
+            "title": "Scenario B \u2014 three outlets, one source",
+            "scenario": "Three news sites report the same statistic about a state program, and you are about to write that multiple outlets confirm it.",
+            "outcome": "Open all three: if each cites the same agency press release, you have ONE source and should cite the press release directly with its own date. Real corroboration means a second organization that gathered the data by a different method reached the same number \u2014 that is the pairing worth shipping."
+          },
+          {
+            "title": "Scenario C \u2014 the mostly-correct roundup",
+            "scenario": "An explainer video you are citing gets eight claims right and attributes a ninth story to the wrong organization.",
+            "outcome": "Keep the eight with their sources, flag the ninth with its true origin, and note the misattribution in the record rather than quietly deleting it. A public correction protects the credibility of everything else in the document, and shows the reader exactly where the source's own verification stopped."
+          }
+        ],
+        "pitfalls": [
+          "MYTH: \u201cSeveral outlets are saying it, so it is verified.\u201d Agreement is correlation until you trace each outlet to its root; three sites citing one wire story are one source.",
+          "MYTH: \u201cThe law says so\u201d is a finished citation. Name the jurisdiction, the statute or authority, and the date you read it \u2014 otherwise the sentence is not checkable by anyone, including you.",
+          "Do not let an agency page, a statute and a press release stand in for each other: attribute each claim to the layer it actually came from.",
+          "A finding that lives only in a chat session or a memory is not a finding \u2014 persist research to a durable file the moment you produce it.",
+          "Paraphrase labeled as a quote is a fabrication in slow motion; verify wording against the primary transcript or mark it a paraphrase.",
+          "Consensus built by asking sharper and sharper versions of one question collapses toward a single answer \u2014 vary the framing when you want real options.",
+          "If a verification pass fails, report the gap and the blocker. A silent skip is how wrong facts survive to publication.",
+          "Old pages feel authoritative: re-verify anything months old before you act on it or republish it."
+        ],
+        "exercises": [
+          "Take a claim you currently believe and write its full chain: source tag, URL, date read, independent cross-check, verification status. Mark the first link you cannot fill.",
+          "Find a Michigan statute relevant to your life (parking, tenancy, records requests) and read the section text at legislature.mi.gov: write the MCL citation, quote the operative phrase in quotation marks, and note the amendment history.",
+          "Take any legality question you have been told an answer to and rewrite it three ways: which jurisdiction, what authority, as of when. Then answer only the version you can source."
+        ]
+      }
+    },
+    "glossary": [
+      {
+        "term": "Provenance",
+        "definition": "The trail of where a claim came from: source, custodian, read date. A claim without provenance is an opinion."
+      },
+      {
+        "term": "Source-and-date rule",
+        "definition": "Every published claim carries the source it came from and the date that source was read; anything untraceable is tagged unverified."
+      },
+      {
+        "term": "Custodian",
+        "definition": "The agency, court or institution that creates and holds the record you need \u2014 go to them, not to a summary of them."
+      },
+      {
+        "term": "Primary document",
+        "definition": "The statute text, transcript, filing or dataset in its originating form, as opposed to commentary describing it."
+      },
+      {
+        "term": "MCL",
+        "definition": "Michigan Compiled Laws, cited as chapter.section, for example MCL 257.311 \u2014 chapter 257, section 311, read at legislature.mi.gov."
+      },
+      {
+        "term": "Independence test",
+        "definition": "Count sources by their ROOT, not their logo: two outlets citing the same wire story or press release are one source."
+      },
+      {
+        "term": "Reality line",
+        "definition": "The boundary separating documented events from interpretation and speculation, kept visible so readers can see which side each claim sits on."
+      },
+      {
+        "term": "Verification stamp",
+        "definition": "The dated line naming the sources a document was checked against \u2014 the reader's promise about freshness."
+      },
+      {
+        "term": "Consensus",
+        "definition": "Agreement among sources; corroboration at best, never a substitute for a primary document, since agreement can be shared correlation."
+      },
+      {
+        "term": "Funnel",
+        "definition": "Sales or fear framing wrapped around real quotes; strip the funnel, keep the receipts, inherit none of the conclusions."
+      }
+    ],
+    "quiz": {
+      "beginner": [
+        {
+          "q": "Under the source-and-date rule, what must every published claim carry?",
+          "type": "mc",
+          "options": [
+            "The date it was written and the author's opinion",
+            "A headline and a hyperlink",
+            "A screenshot and a summary",
+            "The source it came from and the date that source was read"
+          ],
+          "answer": 3,
+          "explain": "The rule is two-part: name the source and stamp the read date. A claim with no source is an opinion, and a source with no date is a rumor with an address."
+        },
+        {
+          "q": "You want to know what a Michigan statute actually requires. What is the best source?",
+          "type": "mc",
+          "options": [
+            "A social post quoting a headline",
+            "An archived copy from three years ago",
+            "A law firm's blog summary",
+            "The section text on the legislature's own site"
+          ],
+          "answer": 3,
+          "explain": "Read the section text directly at legislature.mi.gov, quote the operative phrase, and check the amendment history. Summaries and old copies are secondhand and can silently drift out of date."
+        },
+        {
+          "q": "What does the citation MCL 257.311 tell you?",
+          "type": "mc",
+          "options": [
+            "A federal code section",
+            "Chapter 257, section 311 of the Michigan Compiled Laws",
+            "Page 257, paragraph 311 of a court filing",
+            "Public Act 257 of 1931"
+          ],
+          "answer": 1,
+          "explain": "MCL means Michigan Compiled Laws and the format is chapter.section, so 257.311 is section 311 inside chapter 257, the Michigan Vehicle Code."
+        },
+        {
+          "q": "Three news sites report the same figure, all citing the same wire story. How many sources do you have?",
+          "type": "mc",
+          "options": [
+            "Three",
+            "Four, counting the wire service",
+            "One",
+            "Two"
+          ],
+          "answer": 2,
+          "explain": "The independence test counts sources by their root, not their logo: three outlets repeating one wire story is one source. Cite the wire story or the underlying dataset directly."
+        },
+        {
+          "q": "Which statement about consensus is supported by the research cited in this module?",
+          "type": "mc",
+          "options": [
+            "Agreement among five sources is always verification",
+            "Agreement among sources can be correlation rather than confirmation, so it is weak evidence on its own",
+            "Only majority agreement makes a claim true",
+            "Sources that disagree are always wrong"
+          ],
+          "answer": 1,
+          "explain": "Published research on language models found their outputs mirror other models' outputs far more than humans mirror one another, so a chorus can be one voice at volume. Corroboration raises confidence; a primary document verifies."
+        },
+        {
+          "q": "A roundup video gets eight claims right and one wrong. What is the correct move?",
+          "type": "mc",
+          "options": [
+            "Publish the eight and hope nobody checks the ninth",
+            "Drop the whole video from the record",
+            "Keep the eight and quietly delete the error",
+            "Flag the wrong claim with its true origin and keep the eight with their sources"
+          ],
+          "answer": 3,
+          "explain": "Partial verification is not verification of the whole. Flagging the failed detail publicly protects the credibility of everything else and shows exactly where the source's verification stopped."
+        },
+        {
+          "q": "What does a verification stamp on a study guide tell the reader?",
+          "type": "mc",
+          "options": [
+            "That the material can never change",
+            "That no further reading is needed",
+            "The date the material was checked and the class of sources checked against",
+            "That a professional endorses it"
+          ],
+          "answer": 2,
+          "explain": "The stamp is the freshness promise: date plus named source class. Pages and statutes change silently, so the stamp tells the reader how much re-checking is still owed."
+        },
+        {
+          "q": "What are the three parts of a complete legality claim?",
+          "type": "mc",
+          "options": [
+            "Jurisdiction, authority, and the date it was read",
+            "Statute, lawyer, and fee",
+            "Country, opinion, and headline",
+            "Arrest, charge, and outcome"
+          ],
+          "answer": 0,
+          "explain": "X is legal is incomplete until you name which jurisdiction, under what authority, and as of when. Legal status, funding eligibility and enforcement climate are three different questions and none of them answers the other two."
+        },
+        {
+          "q": "If a page you read in March still looks authoritative in October, you can rely on it without re-checking.",
+          "type": "tf",
+          "answer": false,
+          "explain": "Web pages and statute sections both change silently. Treat anything months old as stale until re-verified, and pull the live page rather than a cached copy or screenshot."
+        },
+        {
+          "q": "When a verification pass cannot be completed, the honest move is to log the gap and the blocker rather than skip silently.",
+          "type": "tf",
+          "answer": true,
+          "explain": "Honest degradation: an honest gap in the record beats a silent skip. A claim you could not check must ship as unverified, or not ship."
+        }
+      ]
+    }
+  }
+}

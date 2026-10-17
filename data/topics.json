@@ -160,6 +160,23 @@
         "Golden Rules",
         "Sources"
       ]
+    },
+    {
+      "id": "sarah-research-methods",
+      "name": "Research Methods \u2014 Sources, Citations & Verification",
+      "icon": "\ud83d\udd0d",
+      "description": "Provenance and the source-and-date rule, public-record research flow, MCL citation basics, verification chains, the reality line, consensus vs verification, and how to state a legality claim as jurisdiction, authority and date.",
+      "subtopics": [
+        "Source-and-Date Rule",
+        "Primary Documents",
+        "Public-Record Flow",
+        "MCL Citations",
+        "Verification Chains",
+        "Reality Line",
+        "Consensus vs Verification",
+        "Currency & Traps",
+        "Legality Claims"
+      ]
     }
   ]
 }
