@@ -216,6 +216,25 @@
         "Open-source models",
         "How to evaluate AI claims"
       ]
+    },
+    {
+      "id": "harm-reduction-alcohol",
+      "name": "Alcohol \u00d7 Substances: Harm Reduction",
+      "icon": "\ud83e\ude7a",
+      "description": "What happens when alcohol meets cocaine, psilocybin, or cannabis \u2014 98 sourced findings across six research lanes, shelved as documented / theoretical / unstudied, plus Michigan's legal map (one-statute OWI, city decriminalization, Clean Slate) and the Ch. 7 tincture verdict. Public-health education only: no extraction protocols, no synthesis instructions, no dosing guidance \u2014 and not medical or legal advice. Sources read 2026-10-17.",
+      "subtopics": [
+        "Shelf 1 \u2014 Documented (sourced)",
+        "Shelf 2 \u2014 Theoretical (mechanism-labeled)",
+        "Shelf 3 \u2014 Unstudied & unverified",
+        "Lane 1 \u2014 Alcohol \u00d7 Cocaine",
+        "Lane 2 \u2014 Alcohol \u00d7 Psilocybin",
+        "Lane 3 \u2014 Alcohol \u00d7 Cannabis",
+        "Lane 4 \u2014 Michigan legal map",
+        "Lane 5 \u2014 Psilocin \u00d7 Cocaine + Alcohol",
+        "Lane 6 \u2014 Microdosing \u00d7 Mixtures",
+        "Ch. 7 \u2014 The tincture question (verdict)",
+        "Boundaries & provenance"
+      ]
     }
   ]
 }
