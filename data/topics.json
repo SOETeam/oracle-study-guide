@@ -196,6 +196,26 @@
         "Human-Agentic Systems",
         "Cybernetics & BCIs"
       ]
+    },
+    {
+      "id": "future-tech",
+      "name": "Top Developments in Technology & AI",
+      "icon": "\ud83d\ude80",
+      "description": "Ten technology developments moving now \u2014 agentic AI, on-device AI, robotics, BCIs, AI in medicine and education, quantum, fusion, space, open-source models \u2014 plus how to evaluate AI claims. Every claim labeled Verified / Reported / Disputed / Unknown. Sources read 2026-10-17. Public education only; not legal advice and not medical advice.",
+      "subtopics": [
+        "How to read this module",
+        "Agentic AI / agents",
+        "On-device / local AI",
+        "Robotics \u2014 humanoids",
+        "Brain-computer interfaces",
+        "AI in medicine",
+        "AI in education",
+        "Quantum computing",
+        "Energy & fusion",
+        "Space industry",
+        "Open-source models",
+        "How to evaluate AI claims"
+      ]
     }
   ]
 }

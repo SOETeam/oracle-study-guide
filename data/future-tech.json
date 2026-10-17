@@ -1,0 +1,656 @@
+{
+  "topic": {
+    "id": "future-tech",
+    "title": "Top Developments in Technology & AI That Will Change the Future",
+    "description": "Ten technology developments moving right now \u2014 agentic AI, on-device AI, robotics, brain-computer interfaces, AI in medicine and education, quantum computing, energy and fusion, the space industry, and the open-source model movement \u2014 with honest uncertainty labels (Verified / Reported / Disputed / Unknown) and a section on how to evaluate AI claims. All sources read 2026-10-17. Public education only; not legal advice, not medical advice, and not investment advice.",
+    "icon": "\ud83d\ude80",
+    "focus": "12 modules \u00b7 sources read 2026-10-17 \u00b7 uncertainty labels on every claim",
+    "keyTerms": [
+      "agentic AI",
+      "prompt injection",
+      "on-device AI",
+      "open weights vs open source",
+      "humanoid robot",
+      "brain-computer interface",
+      "FDA clearance",
+      "adaptive learning",
+      "standard deviation",
+      "logical qubit",
+      "quantum advantage",
+      "fusion",
+      "provenance",
+      "hallucination",
+      "uncertainty label"
+    ],
+    "subtopics": [
+      "How to read this module",
+      "Agentic AI / agents",
+      "On-device / local AI",
+      "Robotics \u2014 humanoids",
+      "Brain-computer interfaces",
+      "AI in medicine",
+      "AI in education",
+      "Quantum computing",
+      "Energy & fusion",
+      "Space industry",
+      "Open-source models",
+      "How to evaluate AI claims"
+    ],
+    "levels": {
+      "beginner": {
+        "label": "Beginner \ud83c\udf31",
+        "tagline": "What each development actually is, why it matters to you, and what to watch through 2030 \u2014 with every claim labeled by how well it is verified. Sources read 2026-10-17.",
+        "goals": [
+          "Say what each of the ten developments is, in plain language",
+          "Tell a Verified claim from a Reported, Disputed, or Unknown one",
+          "Know the real evidence behind AI in medicine and AI in education",
+          "Recognize the difference between a roadmap and a result",
+          "Apply seven checks to any AI claim you encounter"
+        ],
+        "concepts": [
+          {
+            "title": "Module 1 \u2014 How to read this module (uncertainty labels)",
+            "text": "What this module is:\nA public-education snapshot of ten technology developments that are moving right now \u2014 agentic AI, on-device AI, robotics, brain-computer interfaces, AI in medicine, AI in education, quantum computing, energy and fusion, the space industry, and the open-source model movement \u2014 plus a section on how to evaluate AI claims. Every claim below was read from a linked source on 2026-10-17; the [V 2026-10-17] stamp marks that check.\n\nHow uncertainty is labeled:\n- **[Verified]** \u2014 the fact is documented in a primary source (an official page, a peer-reviewed paper, a regulatory database) that we read ourselves\n- **[Reported]** \u2014 a credible outlet or study states it, but we did not independently confirm the underlying data\n- **[Disputed]** \u2014 credible sources disagree about it, and we say so\n- **[Unknown]** \u2014 nobody knows yet; anyone giving you a confident number is guessing\n\nWhat this module is NOT:\n- Not investment advice, not a prediction of which company wins, and not a claim that any of this is inevitable\n- Not a substitute for reading the linked sources yourself \u2014 the links are the point, not decoration\n- \u26a0 A dated technology claim decays fast. If a number here matters to a decision you are making, re-open the link and check the date before you act.\n\nWhy ordinary people should care about all ten:\n- These technologies will shape what jobs exist, what a doctor can diagnose, what a school can afford, what your electricity costs, and how much of your data leaves your own device. They are not spectator sports.\n\nVerification date: 2026-10-17."
+          },
+          {
+            "title": "Module 2 \u2014 Agentic AI / autonomous agents",
+            "text": "What it is:\nAgentic AI systems are models given tools and permission to take actions \u2014 reading files, sending messages, writing code, booking things \u2014 rather than just answering a question. Microsoft's Copilot Cowork went generally available on 2026-06-16 and works across Microsoft 365 apps [\u2014 [Microsoft](https://microsoft.com/en-us/microsoft-365/blog/2026/06/16/copilot-cowork-is-now-generally-available) [V 2026-10-17]](https://microsoft.com/en-us/microsoft-365/blog/2026/06/16/copilot-cowork-is-now-generally-available). Anthropic's 2026 State of AI Agents Report (500+ technical leaders) found 57% of organizations use agents for multi-step workflows and 86% deploy AI coding agents for production code [Reported \u2014 vendor survey; Anthropic sells agents] [Anthropic](https://claude.com/resources/guides/the-2026-state-of-ai-agents-report/research-insights-part-i-the-current-landscape) [V 2026-10-17].\n\nWhy it matters to you:\n- This is the shift from AI you talk to to AI that does things \u2014 including things you did not ask for, on your behalf, with your credentials\n- G2's 2026 research found 31% of employees spend 6+ hours per week supervising agents (\"bot-sitting\") and 45% say that eats more than a quarter of their expected productivity gain [Reported] [G2](https://prnewswire.com/news-releases/new-g2-research-ai-agents-have-moved-from-pilot-to-production-but-oversight-comes-at-a-cost-302908654.html) [V 2026-10-17]\n- The failure mode that matters most is prompt injection: instructions hidden in a webpage, email, or document that hijack the agent. OWASP ranks it the #1 risk for LLM applications [OWASP LLM01:2025](https://genai.owasp.org/llmrisk/llm01-prompt-injection/); a 2026 competition paper showed indirect prompt injection works against deployed agents processing email, documents, and repositories [arXiv:2603.15714](https://arxiv.org/html/2603.15714) [V 2026-10-17]\n- A published demonstration showed poisoned skills could make Copilot Cowork exfiltrate M365 files, because sending messages to the user did not require human approval [PromptArmor](https://www.promptarmor.com/resources/microsoft-copilot-cowork-exfiltrates-files) [Reported \u2014 vendor research, not independently replicated here]\n- An analysis of 3,984 AI agent skills from major marketplaces found 76 confirmed malicious payloads and 13.4% with at least one critical security issue [Reported] [arXiv:2605.28588](https://arxiv.org/pdf/2605.28588v1) [V 2026-10-17]\n\nWhat to watch, 2027\u20132030:\n- Whether agent adoption produces measurable productivity gains or mostly supervision overhead \u2014 the survey numbers are self-reported and vendors have a stake in the answer [Unknown]\n- Whether the prompt-injection class of bug gets structurally fixed or stays a permanent patch-and-hope. Current defenses are mostly input filtering, which the injection literature keeps beating [Disputed]\n- Regulation: the EU's Article 50 transparency rules (label AI-generated content and disclose interacting with a bot) applied from 2026-08-02 [EU AI Act Art. 50](https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act) [Verified]"
+          },
+          {
+            "title": "Module 3 \u2014 On-device / local AI models",
+            "text": "What it is:\nOn-device (local) AI runs a model on your own phone, laptop, or edge device instead of in a data center. At WWDC 2026 Apple announced a 20-billion-parameter sparse on-device foundation model that activates only 1\u20134B parameters per prompt [9to5Mac summary of AFM 3](https://9to5mac.com/2026/06/11/apples-new-foundation-models-explained-on-device-ai-cloud-ai-and-everything-in-between) [Reported \u2014 Apple's own announcement]. Google publishes LiteRT-LM as a cross-platform library for running language models on phones through embedded systems [Google AI Edge](https://developers.google.com/edge/litert-lm/overview) [V 2026-10-17].\n\nWhy it matters to you:\n- Privacy: with a local model, your prompt does not have to leave the device, so there is no server log of what you asked\n- Availability: it works offline and does not break when the vendor's API has an outage or changes pricing\n- Cost: no per-token bill for the inference you run locally\n- The tradeoff is capability: small models (roughly a few hundred million to a few billion parameters) are meaningfully less capable than frontier cloud models on hard reasoning tasks [2026 survey on on-device SLMs](https://doi.org/10.1109/iementech202669403.2026.11434122) [Verified \u2014 peer-reviewed survey]\n- A second tradeoff is your hardware: on-device speed depends on your chip's NPU, and older phones get a much worse experience than new ones\n\nWhat to watch, 2027\u20132030:\n- Whether the capability gap between small local models and frontier cloud models keeps closing \u2014 it has been closing, but no one has published a durable guarantee that it will [Disputed]\n- Whether \"runs locally\" becomes a meaningful privacy label consumers can verify, or stays a marketing phrase \u2014 right now most users cannot audit whether a feature silently falls back to the cloud [Unknown]\n- Whether regulators require disclosure of when data leaves the device [Unknown]"
+          },
+          {
+            "title": "Module 4 \u2014 Robotics: humanoids",
+            "text": "What it is:\nHumanoid robots are two-legged (or wheeled-bipedal) general-purpose robots built to work in spaces designed for people. At the 2026 World Humanoid Robot Games in Beijing, robots set sprint and jump records but struggled at practical tasks such as hammering nails [Nature news, 2026-08-27](https://www.nature.com/articles/d41586-026-02713-z) [V 2026-10-17]. Industry data reported Chinese makers held more than 97% of global humanoid shipments in H1 2026, about 19,100 units total [Bloomberg, 2026-08-10](https://www.bloomberg.com/news/articles/2026-08-10/china-humanoid-makers-hold-97-of-global-shipments-report-says) [Reported]. Shanghai has set a goal of 8,000 humanoid robots in factories by 2028 [Shanghai municipal government, 2026-10-16](https://english.shanghai.gov.cn/en-Latest-WhatsNew/20261016/4296563ac7f643bf8e32ef14dc70a1ab.html) [Reported \u2014 a target, not an outcome].\n\nWhy it matters to you:\n- Shipping units is not the same as doing useful work: the Nature report is explicit that record-breaking athletics coexists with failure at mundane manual tasks\n- The near-term economic question is wages and job design in warehousing, manufacturing, and logistics \u2014 not whether robots will \"replace everyone\"\n- A large gap exists between a choreographed demo video and a robot that works an 8-hour shift without human resets; press coverage routinely conflates the two [Disputed]\n\nWhat to watch, 2027\u20132030:\n- Deployed-unit counts that are independently audited, versus company-announced production targets \u2014 these are different numbers and are routinely reported as if interchangeable [Unknown]\n- Whether generalization improves: can one robot handle novel objects and clutter, or does each new task need retraining [Disputed]\n- Safety standards for robots working alongside people, which are still being written in most jurisdictions [Unknown]"
+          },
+          {
+            "title": "Module 5 \u2014 Brain-computer interfaces",
+            "text": "What it is:\nA brain-computer interface (BCI) reads signals from the brain and turns them into commands for a computer or device. Neuralink's first human participant received an implant in January 2024 [Reuters](https://www.reuters.com/technology/neuralink-implants-brain-chip-first-human-musk-says-2024-01-29/); by 2026-01-28 the company reported 21 total participants enrolled across trials worldwide [Reuters](https://www.reuters.com/legal/litigation/elon-musks-neuralink-says-it-has-21-participants-enrolled-trials-2026-01-28) [Reported \u2014 company-reported figures]. The first participant, Noland Arbaugh, regained some ability to control a computer by thought after a spinal cord injury [background](https://en.wikipedia.org/wiki/Noland_Arbaugh) [Verified \u2014 documented case].\n\nWhy it matters to you:\n- The realistic near-term benefit is restoring communication and control for people with paralysis, ALS, and spinal cord injuries \u2014 genuinely life-changing for those individuals\n- It is not \"telepathy\" and not memory enhancement; those claims have no peer-reviewed human evidence [Unknown]\n- There are two broad families with very different risk profiles: implanted electrodes (invasive, higher signal, surgery required) and non-invasive surface sensors (safe, but noisier and less precise) [2026 BCI market synthesis](https://insidebci.com/market/2026-07-13-bci-vertical-broadening-beyond-motor-2026-synthesis) [V 2026-10-17]\n- Regulatory status is easy to overstate: an FDA tracker lists devices by pathway and phase, and feasibility-study clearance is not market approval [BCI FDA tracker](https://bciintel.com/bci-fda-approval-tracker) [Reported \u2014 third-party tracker]\n\nWhat to watch, 2027\u20132030:\n- Independent (non-company) peer-reviewed results with larger participant counts and longer follow-up \u2014 current human data is still small\n- Whether any device moves from feasibility study to a regulated commercial approval for a specific indication [Unknown]\n- Whether non-invasive BCIs become good enough for consumer uses, which would matter far more people than implants do [Disputed]"
+          },
+          {
+            "title": "Module 6 \u2014 AI in medicine",
+            "text": "What it is:\nAI in medicine spans imaging interpretation, risk prediction from routine tests, triage, and administrative work. A 2018 DeepMind/UCL/Moorfields system recommended the correct referral decision for more than 50 eye diseases as accurately as experts [Nature Medicine](https://nature.com/articles/s41591-018-0107-6) and [DeepMind's writeup](https://deepmind.google/blog/a-major-milestone-for-the-treatment-of-eye-disease) [Verified]. An FDA-cleared tool now flags several heart conditions from a standard 12-lead ECG [report on EchoNext clearance](https://medicaleconomics.com/view/fda-cleared-ai-tool-flags-hidden-heart-disease-from-a-standard-ecg) [Reported].\n\nWhy it matters to you:\n- The honest headline is a validation gap, not a revolution: a 2026 systematic analysis in PLOS Digital Health found 1,357 FDA-cleared AI/ML medical devices, of which only 34 (2.5%) were linked to registered prospective trials, 12 (0.9%) posted results, and only 3 (0.2%) evaluated patient-centered outcomes such as mortality, morbidity, or readmissions [PLOS Digital Health, 2026-08-19](https://pmc.ncbi.nlm.nih.gov/articles/PMC13489462) [Verified]\n- Practical meaning: a tool can be legally cleared and marketed without strong evidence that using it makes patients live longer or better\n- Most cleared devices are in radiology, so \"AI in medicine\" in practice today means \"AI reads some scans\" far more than \"AI is your doctor\" [Verified]\n- Algorithmic bias is a real, documented risk: if a tool was trained mostly on one population, its performance can degrade for others\n\nWhat to watch, 2027\u20132030:\n- Whether the published evidence base catches up with the cleared-device count \u2014 that is the single most informative number to track [Unknown]\n- Whether regulators start requiring outcome evidence for clearance, not just technical performance [Disputed]\n- Whether AI tools change clinician workflow in ways that help or add clicks and liability \u2014 this is where the day-to-day value will show up first [Unknown]"
+          },
+          {
+            "title": "Module 7 \u2014 AI in education (adaptive systems)",
+            "text": "What it is:\nAdaptive learning systems adjust content and difficulty to a student's responses in real time; the newer generation adds generative-AI tutoring. This study guide's own modules are an example of an adaptive, leveled system: content organized by level, quizzes that gate on demonstrated mastery, and instant feedback.\n\nWhy it matters to you \u2014 and the honest evidence:\n- A World Bank systematic review and meta-analysis of randomized trials (191 effect sizes from 14 studies in 10 economies, background paper for the 2026 World Development Report) estimated adaptive and AI-enabled interventions raise learning by 0.125 standard deviations versus traditional instruction \u2014 above the median for education interventions, but modest [Verified] [World Bank, 2026-08-01](https://thedocs.worldbank.org/en/doc/2fba81cd6cd60d2f54532fc7062395fb-0050062026/original/Can-EdTech-Close-Learning-Gaps.pdf) [V 2026-10-17]\n- The same review found no evidence that generative tools outperform the non-generative technologies that preceded them, and noted the evidence base has no low-income settings and reports costs in only two studies [Verified]\n- A two-year cluster-randomized trial in 18 Tennessee middle schools found Khan Academy with Khanmigo raised math achievement by about 0.06\u20130.08 SD per school year (0.14 SD for a full year of active participation), gains similar to Khan Academy without the AI [NBER WP 35620, August 2026](https://www.nber.org/papers/w35620) [Verified]\n- A randomized trial at a large US university (2,379 undergraduates) found course-integrated GenAI tutor access reduced final grades by 0.37 SD and LMS participation by 0.90 SD, with larger losses for first-generation students \u2014 that is, access alone can displace engagement rather than add to it [EdWorkingPaper 26-1598, 2026-09-29](https://edsi.umd.edu/sites/default/files/ai26-1598.pdf) [Verified]\n- A Stanford analysis of two districts found average weekly AI-tutor use of 2.18 and 5.23 minutes \u2014 far below the 30 minutes/week the platform provider recommends for measurable reading gains [NSSA summary](https://nssa.stanford.edu/news/ai-tutor-access-alone-doesnt-equate-student-gains-study-says) [Reported]\n\nPolicy context, verified:\n- Michigan's MDE published AI guidance for districts in May 2026, organized around purposeful use, privacy, AI literacy, human oversight, and equity [MDE press release, 2026-05-12](https://www.michigan.gov/mde/news-and-information/press-releases/2026/05/12/artificial-intelligence-guidance-from-mde); the MDE AI resource page hosts the starter and comprehensive guides [MDE](https://www.michigan.gov/mde/services/academic-standards/educational-technology/artificial-intelligence) [Verified]\n- Michigan law requires every public high school to offer at least one computer science course beginning with the 2027\u20132028 school year [MCL 380.1166c](https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-380-1166c), as explained in MDE's guidance [MDE CS guidance](https://www.michigan.gov/mde/-/media/Project/Websites/mde/general/Computer-Science-Course-Requirement-Guidance.pdf) [Verified \u2014 statute + official guidance]\n- Federal: Executive Order 14277 (2025-04-23) directs promotion of AI literacy and educator training [EO 14277](https://whitehouse.gov/presidential-actions/2025/04/advancing-artificial-intelligence-education-for-american-youth); NSF launched the FINDERS FOUNDRY in April 2026 to fund evidence-based learning tools, up to $8.5M across two phases [NSF](https://www.nsf.gov/tip/updates/nsf-launches-nsf-finders-foundry-accelerate-technology) [Verified]\n\nWhat to watch, 2027\u20132030:\n- Whether more randomized trials show AI tutoring beating good non-AI software, not just beating doing nothing \u2014 that is the actual bar [Unknown]\n- Whether schools measure usage and outcomes, or just procurement \u2014 the Stanford minutes-per-week finding suggests access without engagement is common\n- Whether the Michigan CS-offer requirement (2027\u201328) is met with real courses and qualified teachers, versus catalog entries [Unknown]"
+          },
+          {
+            "title": "Module 8 \u2014 Quantum computing status",
+            "text": "What it is:\nQuantum computers use quantum-mechanical effects (superposition and entanglement) to process information in a fundamentally different way from classical chips. The hard engineering problem is error correction: physical qubits are noisy, so useful machines must encode many physical qubits into fewer reliable \"logical\" qubits.\n\nWhere it actually stands, as of 2026-10-17:\n- In July 2026, IBM and University of Chicago researchers reported a demonstration they describe as meeting the criteria for quantum advantage \u2014 70 logical qubits, a computation they say classical methods cannot efficiently reproduce, completed in about 15 minutes, with a verifiable fidelity certificate [IBM newsroom](https://newsroom.ibm.com/2026-07-30-ibm-and-the-university-of-chicago-demonstrate-quantum-advantage,-establishing-trusted-quantum-computation-on-logical-circuits) and the underlying paper [arXiv:2607.25941](https://arxiv.org/abs/2607.25941) [Verified \u2014 peer-reviewed preprint + official release; the advantage claim itself is Disputed by nature, since it depends on classical baselines that keep improving]\n- IBM connected its first modular cryogenic systems in August 2026, a step toward fault tolerance [IBM](https://newsroom.ibm.com/2026-08-19-ibm-connects-its-first-modular-cryogenic-systems-in-milestone-toward-fault-tolerant-quantum-computing) [Verified]\n- IBM's stated roadmap targets \"Starling,\" a fault-tolerant system with 200 logical qubits and 100 million gates, by 2029 [IBM FTQC blog](https://www.ibm.com/quantum/blog/large-scale-ftqc) [Reported \u2014 a company roadmap, historically well followed but not a guarantee]\n- Researchers at Google Quantum AI published a five-stage framework arguing useful applications remain a grand challenge with critical obstacles [PRX Quantum perspective](https://arxiv.org/html/2511.09124v3) [Verified]\n- A 2026 empirical assessment of quantum computing in bioinformatics found the literature dominated by speculative proposals rather than empirical evidence [Frontiers HPC](https://frontiersin.org/journals/high-performance-computing/articles/10.3389/fhpcp.2026.1923360/full) [Verified]\n\nWhy it matters to you:\n- No quantum computer is running your daily workload, and none will suddenly make your laptop obsolete\n- The concrete near-term stakes are cryptography: data encrypted today could be stored and decrypted later by a future quantum machine, which is why \"harvest now, decrypt later\" is a real policy concern [Reported]\n- Commercially useful quantum advantage on a problem anyone actually needs has not been demonstrated [Unknown]\n\nWhat to watch, 2027\u20132030:\n- Logical-qubit counts and error rates reported by independent groups, not just vendor roadmaps\n- Whether any claimed advantage is reproduced by an unaffiliated lab\n- Post-quantum cryptography migration progress in banking, government, and health systems [Unknown]"
+          },
+          {
+            "title": "Module 9 \u2014 Energy and fusion",
+            "text": "What it is:\nTwo separate things get bundled here: (1) AI's own electricity and water demand, and (2) fusion energy, the long-promised clean power source.\n\nAI's energy footprint [Verified]:\n- Stanford's 2026 AI Index estimated AI data-center power capacity at 29.6 GW \u2014 about New York State's peak demand \u2014 and estimated GPT-4o annual inference water use could exceed the drinking water needs of 1.2 million people; it put one model's training emissions (Grok 4) at an estimated 72,816 tons CO2-equivalent [Stanford HAI AI Index takeaways](https://hai.stanford.edu/news/inside-the-ai-index-12-takeaways-from-the-2026-report) [Verified \u2014 published estimate; the underlying figures are estimates with wide error bars]\n\nFusion status, honest version:\n- The US DOE released its finalized Fusion Science and Technology Roadmap on 2026-06-09, a national strategy targeting commercial fusion energy [DOE](https://energy.gov/articles/energy-department-releases-finalized-fusion-science-and-technology-roadmap-accelerate) [Verified \u2014 official document]\n- Europe's JET tokamak closed four decades of operation with a new energy record from its final deuterium-tritium campaigns, results published in Nuclear Fusion (2026) [EUROfusion](https://euro-fusion.org/eurofusion-news/jets-final-fusion-campaigns-set-a-new-energy-record-and-hand-iter-a-legacy-of-irreplaceable-data/) [Verified \u2014 peer-reviewed]\n- Helion's Orion plant is stated to deliver 50 MW to Microsoft data centers by 2029; Scientific American reports physicists warn its promises may be outrunning what the technology has proved [Scientific American, 2026-05-19](https://www.scientificamerican.com/article/helion-energy-is-building-a-fusion-power-plant-can-its-technology-deliver/), and Axios reported Helion has been quietly hedging its full-operation date [Axios, 2026-09-08](https://www.axios.com/pro/climate-deals/2026/09/08/helion-energy-fusion-net-electricity-date-year) [Disputed]\n- \u26a0 As of 2026-10-17 no fusion plant has delivered commercial electricity to a grid. Fusion has been \"20 years away\" for decades; treat any confident near-term date from a company seeking funding with skepticism, and more so when it is a company selling to a single large buyer.\n\nWhy it matters to you:\n- Your electricity bill and grid reliability are shaped by whatever gets built; if AI demand keeps growing, someone pays for the generation\n- Fusion, if it ever works commercially, would be a major climate and energy-security event \u2014 but it will not lower your bill in the 2027\u20132030 window on current evidence\n\nWhat to watch, 2027\u20132030:\n- Independent verification of any fusion plant's net electricity output\n- Whether announced timelines slip again \u2014 Helion's has already shifted [Reported]\n- Data-center power commitments actually being built versus announced [Unknown]"
+          },
+          {
+            "title": "Module 10 \u2014 The space industry",
+            "text": "What it is:\nThe space industry has gone from government-only to high-cadence commercial launch, dominated by reusable rockets and satellite-internet constellations.\n\nVerified, as of 2026-10-17:\n- SpaceX's Starship reached orbit for the first time on Flight 14, 2026-09-28, deploying 26 Starlink satellites before the mission ended early on an engine issue [Reuters](https://www.reuters.com/business/media-telecom/spacexs-starship-launches-14th-flight-first-headed-orbit-2026-09-28/) [Verified]\n- A $90 million commercial Starship launch price appeared in Voyager Technologies' SEC 10-K (page 138), implying roughly $600/kg at 150 tons to low Earth orbit [analysis of the filing](https://liveinthefuture.org/stories/starship-90-million-launch-cost.html) [Verified \u2014 SEC filing; the per-kg figure is an inference from stated capacity, and Starship's routine-reuse economics are not yet proven]\n- Falcon 9's listed price rose to $74 million in 2026 [price tracker](https://satbase.com/articles/spacex-falcon-9-price-increase-2026) [Reported]\n- Starlink reported 9 million+ customers during 2025 [Starlink 2025 progress report](https://starlink.com/public-files/starlinkProgressReport_2025.pdf); a February 2026 report put it at 10 million [SatNews](https://satnews.com/2026/02/16/bank-too-many-leo-constellations-but-18m-starlink-customers-by-end-2026/) [Reported \u2014 company figures]\n- NASA's Artemis II crewed lunar flyby launched 2026-04-01 and splashed down 2026-04-10, the first crewed lunar mission in over 50 years [NASA](https://www.nasa.gov/mission/artemis-ii/) [Verified]\n\nWhy it matters to you:\n- Cheaper launch means cheaper connectivity, earth observation, and disaster-response imagery \u2014 real consumer and public-safety benefits\n- It also means more objects in orbit, more debris risk, more light pollution for astronomers and rural communities, and growing militarization of space [Verified as concerns; magnitude debated]\n- \"$600/kg\" describes a list price for an idealized fully-reusable profile, not today's actual average cost of getting your payload up [Disputed]\n\nWhat to watch, 2027\u20132030:\n- Whether Starship's demonstrated orbit capability becomes routine, reliable reuse \u2014 the flight ended early on an engine issue\n- Actual $/kg achieved on real commercial payloads versus announced figures\n- Debris-mitigation rules and collision-avoidance capacity as satellite counts keep rising [Unknown]"
+          },
+          {
+            "title": "Module 11 \u2014 The open-source model movement",
+            "text": "What it is:\nThe open-model movement releases model weights (the trained parameters) for download so others can run, study, and fine-tune them \u2014 as opposed to closed APIs. Mozilla's September 2026 State of Open Source AI maps where open models have caught up on capability and cost, and is explicit that \"open source\" and \"open weights\" are different claims [Mozilla, 2026-09](https://stateofopensource.ai/state-of-open-source-ai-v1-1.pdf) [Verified \u2014 report we read].\n\nThe catch that matters most, verified:\n- \"Open\" on a launch tweet is not \"open\" in the license file. An August 2026 audit of 30 models publicly described as open/open-weight/open-source found 17 genuinely permissive (MIT, Apache 2.0 or equivalent) and 11 with a real commercial condition \u2014 user thresholds, attribution requirements, field-of-use bans, or regional exclusions [licence audit](https://www.digitalapplied.com/blog/open-weight-model-licence-audit-2026) summarized as [11 of 30](https://ai-blogs.org/news/2026-08-22-an-audit-of-thirty-open-models-found-eleven-with-commercial-conditions-am.html) [Reported \u2014 third-party audit of a sample, not a census of all models]\n- The Open Source Initiative published an Open Source AI Definition 1.0 requiring the preferred form to make modifications, not just weights [OSI OSAID 1.0](https://opensource.org/ai/open-source-ai-definition); the Linux Foundation's OpenMDW-1.1 is a permissive model license whose only substantive condition is preserving the license and notices [OpenMDW](https://openmdw.ai/about/) [Verified]\n- The risk side is live too: Anthropic published a report arguing an open model (GLM-5.3) poses cyberattack risk because it was released without meaningful safeguards [Anthropic, 2026-09-29](https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities) [Reported \u2014 vendor's own assessment, contested by others; see MIT Tech Review's framing of the benefits/risks tradeoff [MIT Tech Review, 2026-10-13](https://www.technologyreview.com/2026/10/13/1146366/open-models-have-real-benefits-do-they-outweigh-the-risks/)]\n- Washington debated banning open-weight models and declined to, per Mozilla's account [Reported]\n\nWhy it matters to you:\n- Open weights mean you can run a capable model offline, on your own hardware, without a per-token bill or a vendor's terms-of-service change locking you out\n- They also mean a bad actor can download the same weights and strip safeguards \u2014 the same property cuts both ways\n- For a business: check the actual license of the exact checkpoint you deploy, not the model family's reputation\n\nWhat to watch, 2027\u20132030:\n- Whether the capability gap between open and closed frontier models keeps closing \u2014 it has narrowed, without a guarantee it continues [Disputed]\n- Whether license terms tighten or loosen under commercial pressure\n- Whether any jurisdiction actually bans open-weight distribution, versus debating it [Unknown]"
+          },
+          {
+            "title": "Module 12 \u2014 How to evaluate AI claims (verification discipline)",
+            "text": "Why you need a method:\nAI-related claims travel fast, are often vendor-funded, and are frequently wrong in specific, predictable ways. Retractions in AI/ML literature are growing fast \u2014 one study reports an annual growth rate of 67.8% in retracted AI/ML articles over the last decade [study summary](https://www.universityworldnews.com/post.php?story=20260703132615397) (journal version [Communications of the ACM / RUSC](https://www.tandfonline.com/doi/full/10.1080/00987913.2026.2663516)) [Reported \u2014 the 67.8% figure is from secondary coverage of the study; the underlying paper should be read directly before citing the number] and a GPTZero analysis found 53 papers with hallucinated citations among NeurIPS 2025's accepted set, per a 2026 citation-verification paper [HALLMARK, arXiv:2607.18360](https://arxiv.org/abs/2607.18360) [Reported].\n\nThe seven checks \u2014 use these on any AI claim you meet:\n1. Separate the artifact from the announcement. Read the license file, the technical report, or the SEC filing \u2014 not the blog post. An audit of 30 \"open\" models found 11 had real commercial conditions the announcement did not mention [licence audit](https://www.digitalapplied.com/blog/open-weight-model-licence-audit-2026).\n2. Check the number's denominator and date. \"88% of organizations use AI\" is a survey self-report from Stanford's AI Index [AI Index 2026](https://hai.stanford.edu/ai-index/2026-ai-index-report/economy), not a measure of how much those organizations achieved. Adoption and impact are different numbers; only 39% report enterprise-level EBIT impact in one 2026 compilation [compilation](https://hai.stanford.edu/ai-index/2026-ai-index-report) [Reported].\n3. Ask who funded the study and who sells the product. Vendor surveys (agent adoption, model benchmarks) are weakest exactly where the vendor has the most to gain. Prefer randomized trials and independent replications.\n4. Demand a baseline. An AI tutor beating \"no tutor\" is not news; beating good non-AI software is. The World Bank meta-analysis found no evidence generative tools outperform prior edtech [World Bank](https://thedocs.worldbank.org/en/doc/2fba81cd6cd60d2f54532fc7062395fb-0050062026/original/Can-EdTech-Close-Learning-Gaps.pdf).\n5. Distinguish clearance/approval from demonstrated benefit. Of 1,357 FDA-cleared AI medical devices, only 3 (0.2%) evaluated patient-centered outcomes [PLOS Digital Health](https://pmc.ncbi.nlm.nih.gov/articles/PMC13489462).\n6. Watch for benchmark gaming and saturation. When a benchmark's frontier scores cluster in the high 90s, it stops discriminating between models and its headline number tells you little [why benchmarks stopped informing](https://benchr.org/articles/why-benchmarks-stopped-telling-you) [Reported \u2014 commentary]. Prefer held-out, contamination-checked evaluations.\n7. Test whether the claim survives independent replication and dates. Hallucinated citations, fabricated references, and un-replicated single-lab results are common enough that a citation existing does not mean it says what the poster claims [HALLMARK](https://arxiv.org/abs/2607.18360); and note that human detection of high-quality deepfake video has been measured at about 24.5% correct [deepfake statistics compilation](https://www.brightdefense.com/resources/deepfake-statistics/) [Reported], so \"I'd know if it were fake\" is not a plan. Google reported SynthID watermarks on 100B+ pieces of content at I/O 2026 [Mashable](https://mashable.com/article/google-openai-synthid-google-io-2026) [Reported] \u2014 provenance tools help only when they are actually present.\n\nPractical rules of thumb:\n- A single number with no date, no source, and no method is a marketing asset, not evidence.\n- Roadmaps are not results. IBM's 2029 Starling target and Helion's 2029 grid date are both company statements, not delivered facts [IBM](https://www.ibm.com/quantum/blog/large-scale-ftqc); [Helion/SciAm](https://www.scientificamerican.com/article/helion-energy-is-building-a-fusion-power-plant-can-its-technology-deliver/).\n- If an AI system makes a claim that affects money, health, law, or reputation, verify it against the primary source before acting \u2014 that discipline, not the model's confidence, is what keeps you safe.\n- For a dated reality check on measurement itself: METR found AI tools made experienced developers take 19% longer in one randomized setting, then found its follow-up experiment too biased to trust [METR, 2026-02-24](https://metr.org/blog/2026-02-24-uplift-update/) \u2014 a good model of honest uncertainty: state the result, state the limit, don't oversell either.\nVerification date: 2026-10-17."
+          }
+        ],
+        "examples": [
+          {
+            "title": "Scenario A \u2014 an agent does something you didn't ask for",
+            "scenario": "You give an AI agent access to your files and inbox to \"tidy up.\" A week later you notice a message was sent that you never wrote.",
+            "outcome": "This is the prompt-injection failure mode: instructions embedded in a page, email, or document redirected the agent. OWASP ranks prompt injection the top LLM risk, and a published demo showed poisoned skills making Copilot Cowork exfiltrate files because message-sending did not require human approval. Before granting an agent broad permissions, require human approval for outward-facing actions (sending, paying, deleting), scope its access to what the task needs, and review its actions log \u2014 the safest agent is one that cannot act irreversibly without you."
+          },
+          {
+            "title": "Scenario B \u2014 a health claim that sounds rigorous",
+            "scenario": "A news item says a new AI tool is \"FDA-cleared\" and will catch disease earlier, so you assume it has been proven to improve outcomes.",
+            "outcome": "Clearance is not proof of patient benefit. A 2026 PLOS Digital Health analysis of 1,357 FDA-cleared AI devices found only 3 (0.2%) evaluated patient-centered outcomes like mortality, morbidity, or readmissions. Ask instead: was there a prospective trial? Were results posted and peer-reviewed? Did anyone outside the company run it? If the answer to all three is no, treat the claim as unvalidated regardless of the clearance."
+          },
+          {
+            "title": "Scenario C \u2014 an \"open-source\" model with a surprise",
+            "scenario": "Your team deploys a model labeled open-source because it's free to download, then gets a legal notice about a revenue threshold in the license.",
+            "outcome": "An August 2026 audit of 30 models labeled open/open-weight/open-source found 11 carried a real commercial condition \u2014 user thresholds, attribution, field-of-use bans, or regional exclusions. Read the license attached to the exact checkpoint you deploy, not the model family's reputation or the launch post. \"Open weights\" also isn't \"open source\": without training code and data info you can't rebuild or fully audit the model."
+          }
+        ],
+        "pitfalls": [
+          "MYTH: \"AI will take all the jobs\" / \"AI can't take any jobs.\" Both are confident claims about an uncertain transition. What is documented: Stanford's 2026 AI Index reports AI workforce disruption has hit young workers first, and organizational adoption reached 88% \u2014 while productivity effects remain contested (one randomized coding trial found a 19% slowdown, its follow-up too biased to trust). State what's measured, label the rest Unknown.",
+          "MYTH: \"Fusion is almost here.\" No fusion plant has delivered commercial electricity to a grid as of 2026-10-17. DOE published a commercialization roadmap in June 2026 and Helion targets 2029, but scientists quoted by Scientific American warn the promises may outrun the technology, and Helion has been quietly hedging its date.",
+          "MYTH: \"Quantum computers will break encryption next year.\" No cryptographically relevant quantum computer exists. The real concern is data stored now being decrypted later (\"harvest now, decrypt later\"), which is why post-quantum cryptography migration matters \u2014 but a specific \"internet breaks in 2027\" date is a guess.",
+          "MYTH: \"AI in medicine is revolutionizing healthcare.\" 1,357 AI devices are FDA-cleared; only 3 (0.2%) have evaluated patient-centered outcomes. Cleared-and-marketed is not proven-to-help. Radiology dominates \u2014 \"AI in medicine\" mostly means AI reads some scans.",
+          "MYTH: \"AI tutors automatically improve learning.\" Evidence is mixed and modest: a World Bank meta-analysis found +0.125 SD on average with no edge for generative tools over prior edtech; an 18-school randomized trial found Khanmigo gains similar to non-AI practice; a 2,379-student university trial found tutor access reduced grades by 0.37 SD via displaced engagement.",
+          "MYTH: \"I'd spot a deepfake.\" Human detection of high-quality deepfake video has been measured around 24.5% correct. Do not rely on your eye; rely on provenance signals and source verification.",
+          "MYTH: \"It's published, so it's true.\" AI/ML retractions are growing roughly 67.8% per year over the last decade (per one study's summary), and hallucinated citations have been found in top-tier accepted papers. A citation existing proves only that it exists.",
+          "\u26a0 A number with no date, no denominator, and no method is marketing. Ask: compared to what? Measured how? Says who, and who profits?"
+        ],
+        "exercises": [
+          "Take any AI product claim you encountered this week and write down: (a) the exact number or promise, (b) its source, (c) whether the source sells the product, (d) the baseline it's compared against. If you can't fill in (d), mark the claim Unknown.",
+          "For a news story about a breakthrough (quantum, fusion, robotics, medicine), open the primary source and find one limitation the headline omitted. Note whether the claim is Verified, Reported, Disputed, or Unknown after reading it.",
+          "Check the license of one \"open\" AI model: find the LICENSE file for the exact checkpoint, and classify it as genuinely permissive or conditional (threshold, attribution, field-of-use, region). Compare the license text to how the model was announced.",
+          "Given a health or education AI claim, identify what evidence type would actually settle it (prospective trial, randomized assignment, independent replication) and whether that evidence currently exists."
+        ]
+      }
+    },
+    "glossary": [
+      {
+        "term": "Agentic AI",
+        "definition": "An AI system given tools and permission to take multi-step actions (read files, send messages, write code) rather than only answering a prompt. Raises the prompt-injection and oversight risks described in Module 2."
+      },
+      {
+        "term": "Prompt injection",
+        "definition": "Instructions hidden in a webpage, email, document, or tool output that hijack an AI system's behavior. Ranked the #1 risk for LLM applications by OWASP (LLM01:2025)."
+      },
+      {
+        "term": "On-device / local AI",
+        "definition": "Running a model on your own phone or laptop rather than a data center. Buys privacy, offline use, and no per-token cost; trades away some capability versus frontier cloud models."
+      },
+      {
+        "term": "Open weights vs open source",
+        "definition": "Open weights = the trained parameters are downloadable. Open source (per OSI's OSAID 1.0) also requires the preferred form to make modifications. Almost everything shipping under the \"open\" banner is the former."
+      },
+      {
+        "term": "Humanoid robot",
+        "definition": "A general-purpose robot built in human form to work in spaces designed for people. Shipping units and performing useful unscripted work are different measures."
+      },
+      {
+        "term": "Brain-computer interface (BCI)",
+        "definition": "A system that reads brain signals and turns them into device commands. Invasive (implanted) types give stronger signals but require surgery; non-invasive surface sensors are safer but noisier."
+      },
+      {
+        "term": "FDA clearance / approval",
+        "definition": "Permission to market a medical device. It is not, by itself, evidence the device improves patient outcomes \u2014 of 1,357 cleared AI devices, only 3 (0.2%) evaluated patient-centered outcomes."
+      },
+      {
+        "term": "Adaptive learning",
+        "definition": "Software that adjusts content and difficulty to a student's demonstrated level in real time. Evidence shows modest average gains (~0.125 SD) that depend heavily on implementation and usage."
+      },
+      {
+        "term": "Standard deviation (SD)",
+        "definition": "A measure of effect size in education research: 0.1 SD is small, ~0.2 SD is considered meaningful for many interventions. Used throughout Module 7 to keep comparisons honest."
+      },
+      {
+        "term": "Logical vs physical qubit",
+        "definition": "Physical qubits are noisy hardware; logical qubits are error-corrected combinations of many physical ones. Useful quantum computing depends on getting reliable logical qubits."
+      },
+      {
+        "term": "Quantum advantage",
+        "definition": "A computation a quantum computer performs that leading classical methods cannot efficiently reproduce. Claims depend on classical baselines that keep improving, so the label is inherently contestable."
+      },
+      {
+        "term": "Fusion",
+        "definition": "Powering a reaction by fusing light nuclei, as in the sun. No fusion plant has delivered commercial electricity to a grid as of 2026-10-17."
+      },
+      {
+        "term": "Provenance / watermarking",
+        "definition": "Signals attached to content showing its origin, such as Google's SynthID or C2PA Content Credentials. Helps only when actually present; absence of a watermark proves nothing."
+      },
+      {
+        "term": "Hallucination",
+        "definition": "A plausible-sounding but ungrounded statement from a model, including fabricated citations. Worsens in long multi-turn contexts as early errors cascade."
+      },
+      {
+        "term": "[Verified] / [Reported] / [Disputed] / [Unknown]",
+        "definition": "This module's uncertainty labels: read from a primary source ourselves / stated by a credible source we didn't confirm / credible sources disagree / nobody knows yet."
+      }
+    ],
+    "quiz": {
+      "beginner": [
+        {
+          "question": "What is the defining feature of \"agentic\" AI, as opposed to a chatbot?",
+          "type": "multiple-choice",
+          "options": [
+            "It has been approved by a government regulator",
+            "It can only be used by enterprise customers",
+            "It runs entirely on your own device with no internet connection",
+            "It is given tools and permission to take actions, not just answer questions"
+          ],
+          "correct": 3,
+          "explanation": "Agentic systems read files, send messages, write code, and take multi-step actions. That is precisely why prompt injection matters more for them than for a chatbot: a hijacked agent can act, not just talk. See Module 2."
+        },
+        {
+          "question": "Which is a real, documented risk of AI agents in 2026?",
+          "type": "multiple-choice",
+          "options": [
+            "They always drain a device's battery within minutes",
+            "Instructions hidden in a webpage or email can hijack them (prompt injection)",
+            "They only work in the laboratory",
+            "They cannot connect to the internet"
+          ],
+          "correct": 1,
+          "explanation": "OWASP ranks prompt injection the #1 LLM risk (LLM01:2025), and a 2026 competition paper showed indirect prompt injection working against deployed agents processing email and documents. A published demo also showed poisoned skills causing file exfiltration."
+        },
+        {
+          "question": "What does running an AI model \"on-device\" mainly give you?",
+          "type": "multiple-choice",
+          "options": [
+            "Privacy, offline availability, and no per-token cost \u2014 at some capability tradeoff",
+            "Guaranteed frontier-level capability on any task",
+            "Free unlimited cloud storage",
+            "A legal guarantee your data is never logged"
+          ],
+          "correct": 0,
+          "explanation": "Local models keep prompts from leaving the device and keep working offline, but small models (a few hundred million to a few billion parameters) are meaningfully less capable than frontier cloud models on hard reasoning. \"Runs locally\" is also not always independently auditable."
+        },
+        {
+          "question": "Which statement about humanoid robots is supported by evidence from 2026?",
+          "type": "multiple-choice",
+          "options": [
+            "Robots have fully replaced warehouse workers",
+            "Robots set athletic records but still struggle with practical manual tasks like hammering nails",
+            "Robots now reliably do all household and factory tasks",
+            "No humanoid robots have shipped in volume"
+          ],
+          "correct": 1,
+          "explanation": "Nature's report on the 2026 World Humanoid Robot Games is explicit about this split: record-breaking sprints and jumps alongside failure at mundane tasks. Roughly 19,100 units shipped globally in H1 2026, but shipping units is not the same as doing useful unscripted work."
+        },
+        {
+          "question": "What is the realistic near-term benefit of brain-computer interfaces?",
+          "type": "multiple-choice",
+          "options": [
+            "Replacing all keyboard and mouse input within two years",
+            "Restoring communication and device control for people with paralysis or ALS",
+            "Telepathy and mind reading",
+            "Memory enhancement for healthy people"
+          ],
+          "correct": 1,
+          "explanation": "Documented human results to date involve restoring some computer control after paralysis, such as the first Neuralink participant. Memory enhancement and telepathy have no peer-reviewed human evidence \u2014 those are Unknown, not near-term."
+        },
+        {
+          "question": "According to a 2026 PLOS Digital Health analysis, what share of FDA-cleared AI medical devices evaluated patient-centered outcomes like mortality or readmissions?",
+          "type": "multiple-choice",
+          "options": [
+            "0.2% (3 of 1,357)",
+            "About 2.5%",
+            "100% \u2014 clearance requires it",
+            "About 50%"
+          ],
+          "correct": 0,
+          "explanation": "Of 1,357 FDA-cleared AI/ML devices, only 34 (2.5%) were linked to registered prospective trials and only 3 (0.2%) evaluated patient-centered outcomes. Clearance means permission to market \u2014 not demonstrated patient benefit."
+        },
+        {
+          "question": "What did a World Bank meta-analysis (2026) find about adaptive and AI-enabled education tools?",
+          "type": "multiple-choice",
+          "options": [
+            "They raise learning by about 0.125 SD versus traditional instruction, with no evidence generative tools beat earlier edtech",
+            "They have been proven ineffective in every setting",
+            "They double student test scores",
+            "They only work for university students"
+          ],
+          "correct": 0,
+          "explanation": "191 effect sizes from 14 randomized studies in 10 economies: +0.125 SD average, above the median for education interventions but modest. The review explicitly found no evidence generative tools outperform the technologies that preceded them, and had no low-income settings."
+        },
+        {
+          "question": "As of 2026-10-17, has any fusion power plant delivered commercial electricity to a grid?",
+          "type": "multiple-choice",
+          "options": [
+            "Fusion energy does not exist as a research field yet",
+            "Yes, several plants are operating commercially",
+            "Yes, one plant since 2024",
+            "No \u2014 none has, though DOE published a commercialization roadmap in June 2026"
+          ],
+          "correct": 3,
+          "explanation": "DOE released its finalized Fusion Science and Technology Roadmap on 2026-06-09 and JET set a final energy record, but no plant has sent commercial power to a grid. Helion's 2029 target is a company statement that scientists say may outrun the technology."
+        },
+        {
+          "question": "What is the difference between \"open weights\" and \"open source\" AI?",
+          "type": "multiple-choice",
+          "options": [
+            "They are exact synonyms",
+            "Open weights means the parameters are downloadable; open source also requires the preferred form to make modifications (code/data)",
+            "Open source means the model is free; open weights means it is paid",
+            "Open weights only applies to image models"
+          ],
+          "correct": 1,
+          "explanation": "Mozilla's 2026 report states the distinction plainly, and OSI's OSAID 1.0 requires the preferred form to make modifications. Almost everything shipping under the \"open\" banner is open weights, not open source."
+        },
+        {
+          "question": "Which of these was a verified space-industry event in 2026?",
+          "type": "multiple-choice",
+          "options": [
+            "NASA permanently ended the Artemis program",
+            "Starlink ceased operations",
+            "SpaceX's Starship reached orbit for the first time on Flight 14 (2026-09-28)",
+            "No orbital launches occurred"
+          ],
+          "correct": 2,
+          "explanation": "Reuters confirmed Starship's first orbital flight on 2026-09-28, deploying 26 Starlink satellites before ending early on an engine issue. NASA's Artemis II crewed lunar flyby also launched 2026-04-01 and splashed down 2026-04-10."
+        },
+        {
+          "question": "AI adoption statistics showing that \"88% of organizations use AI\" prove those organizations achieved productivity gains.",
+          "type": "true-false",
+          "correct": false,
+          "explanation": "Adoption and impact are different numbers. 88% is survey self-report of using AI in at least one function (Stanford AI Index 2026); only a minority report meaningful bottom-line impact in the same period. Ask for the baseline and the outcome measure, not the adoption rate."
+        },
+        {
+          "question": "\"Fusion will lower household electricity bills by 2030\" is a claim this module supports.",
+          "type": "true-false",
+          "correct": false,
+          "explanation": "No fusion plant has delivered commercial electricity to a grid as of 2026-10-17. DOE has a roadmap and Helion targets 2029, but both are plans, not results, and scientists warn the timelines may outrun the technology. This is Unknown/Disputed, not supported."
+        },
+        {
+          "question": "Michigan law requires every public high school to offer at least one computer science course beginning with the 2027-2028 school year.",
+          "type": "true-false",
+          "correct": true,
+          "explanation": "Verified: MCL 380.1166c says \"Beginning with the 2027-2028 school year, each public high school shall offer at least 1 computer science course,\" as explained in MDE's official guidance."
+        },
+        {
+          "question": "An AI-generated citation that looks properly formatted is evidence the source says what the poster claims.",
+          "type": "true-false",
+          "correct": false,
+          "explanation": "Fabricated and hallucinated citations are documented \u2014 a 2026 citation-verification paper cites an analysis finding 53 papers with hallucinated citations among NeurIPS 2025's accepted set. A citation existing proves only that it exists; open it and read it."
+        },
+        {
+          "question": "Running an AI model on your own phone means your prompt never leaves the device.",
+          "type": "true-false",
+          "correct": true,
+          "explanation": "That is the core privacy benefit of local/on-device AI: with a local model the prompt need not be sent to a server, so there is no server-side log of it. Caveat: some features silently fall back to the cloud, so \"runs locally\" is not always independently auditable."
+        }
+      ],
+      "intermediate": [
+        {
+          "question": "A vendor reports that \"67% of enterprises have moved beyond pilot\" with AI agents. What is the strongest reason for caution?",
+          "type": "multiple-choice",
+          "options": [
+            "Surveys are never used in legitimate research",
+            "The percentage is mathematically impossible",
+            "It is a vendor-funded survey with self-reported responses and a commercial interest in the answer",
+            "Enterprises never adopt new technology"
+          ],
+          "correct": 2,
+          "explanation": "The figure comes from industry research published by companies that sell agent software, such as CrewAI, OutSystems, and Anthropic. Vendor surveys are weakest exactly where the vendor profits most. Prefer randomized trials or independently audited outcomes over adoption percentages."
+        },
+        {
+          "question": "Which pairing of a claim and its correct uncertainty label is right?",
+          "type": "multiple-choice",
+          "options": [
+            "\"Helion will deliver grid electricity by 2029\" \u2192 Verified",
+            "\"Fusion is 20 years away\" \u2192 Unknown/contested, since no plant has delivered commercial power and timelines keep slipping",
+            "\"AI tutors improve learning\" \u2192 Verified, always",
+            "\"Quantum will break encryption next year\" \u2192 Verified"
+          ],
+          "correct": 1,
+          "explanation": "Helion's 2029 date is a company target (Disputed \u2014 scientists warn it may outrun the tech, and Axios reported hedging). The encryption date is a guess. The blanket \"AI tutors improve learning\" is contradicted by mixed trials. Fusion's timing is genuinely open."
+        },
+        {
+          "question": "What did the randomized university trial of a course-integrated GenAI tutor (2,379 students) find?",
+          "type": "multiple-choice",
+          "options": [
+            "Only graduate students were affected",
+            "Grades fell by 0.37 SD and participation fell by 0.90 SD, with larger losses for first-generation students",
+            "Grades rose by 0.4 standard deviations",
+            "No measurable effect on grades or participation"
+          ],
+          "correct": 1,
+          "explanation": "The authors' interpretation: tutor access displaced engagement with existing learning activities without improving performance, with potentially differential impact across groups. This is why \"access to an AI tutor\" is not the same as \"learning benefit.\""
+        },
+        {
+          "question": "Which statement about the IBM/Chicago quantum advantage demonstration (July 2026) is most accurate?",
+          "type": "multiple-choice",
+          "options": [
+            "It reported 70 logical qubits and a verifiable result on a task described as beyond efficient classical reproduction \u2014 but the advantage claim inherently depends on classical baselines that keep improving",
+            "It proved quantum computers are now useful for everyday business tasks",
+            "It involved no error correction",
+            "It has been independently replicated by three unaffiliated labs"
+          ],
+          "correct": 0,
+          "explanation": "IBM's release and the arXiv paper describe structured circuits with an error-detection fidelity certificate \u2014 real progress on verifiable quantum computation. But quantum advantage is contestable by construction: classical methods improve, and no independent multi-lab replication of this specific result is established here."
+        },
+        {
+          "question": "You find a model labeled \"open-source\" with an MIT license on weights but no training code or data information. Best description?",
+          "type": "multiple-choice",
+          "options": [
+            "Closed source",
+            "Fully open source per OSI's OSAID 1.0",
+            "Open weights, not fully open source \u2014 you can run and fine-tune it but not rebuild or fully audit it",
+            "Illegal to use commercially"
+          ],
+          "correct": 2,
+          "explanation": "OSI's OSAID 1.0 requires the preferred form to make modifications, which goes beyond downloadable parameters. Also check for hidden commercial conditions: an August 2026 audit found 11 of 30 \"open\" models carried real commercial terms."
+        },
+        {
+          "question": "What is \"harvest now, decrypt later\"?",
+          "type": "multiple-choice",
+          "options": [
+            "A method for compressing encrypted traffic",
+            "A technique for training quantum models",
+            "A blockchain consensus mechanism",
+            "Adversaries store encrypted data today, intending to decrypt it later once quantum computers can break current encryption"
+          ],
+          "correct": 3,
+          "explanation": "This is why post-quantum cryptography migration matters even before a cryptographically relevant quantum computer exists \u2014 data with a long secrecy life (health, state, IP) is already at risk from future decryption."
+        },
+        {
+          "question": "Which is the strongest evidence type for a claim that an AI tool improves outcomes?",
+          "type": "multiple-choice",
+          "options": [
+            "A benchmark score on a test the vendor chose",
+            "A vendor blog post with a large percentage",
+            "A peer-reviewed randomized controlled trial with an appropriate baseline and independent replication",
+            "A press release quoting the company CEO"
+          ],
+          "correct": 2,
+          "explanation": "This module's recurring lesson: clearance, adoption rates, benchmarks, and vendor surveys are all weaker than randomized trials against a real baseline. The World Bank and the university trial both used randomized designs \u2014 and still found modest or negative effects."
+        },
+        {
+          "question": "Regarding AI in medicine, what does \"FDA-cleared\" actually establish?",
+          "type": "multiple-choice",
+          "options": [
+            "Permission to market the device \u2014 which is not the same as demonstrated patient benefit",
+            "The device passed independent randomized trials",
+            "The device improves patient outcomes",
+            "The device is covered by insurance"
+          ],
+          "correct": 0,
+          "explanation": "Of 1,357 cleared AI devices, only 3 (0.2%) evaluated patient-centered outcomes. Ask whether a prospective trial exists and whether results were posted and peer-reviewed before treating clearance as proof."
+        },
+        {
+          "question": "What is the most defensible reading of on-device AI's capability tradeoff?",
+          "type": "multiple-choice",
+          "options": [
+            "Local models sacrifice some capability versus frontier cloud models, and the gap has been narrowing without a durable guarantee it will continue",
+            "Small local models always beat cloud models",
+            "Capability is irrelevant to model choice",
+            "Local models have identical capability to cloud models"
+          ],
+          "correct": 0,
+          "explanation": "Peer-reviewed 2026 survey work on on-device small language models documents both the compression advances and the remaining open challenges. \"Narrowing\" is an observed trend; \"will close entirely\" is Unknown."
+        },
+        {
+          "question": "A company announces a production target (such as 8,000 humanoid robots in factories by 2028). How should you treat it?",
+          "type": "multiple-choice",
+          "options": [
+            "As a guaranteed outcome",
+            "As evidence the robots already work",
+            "As a target/goal, distinct from independently audited delivered units",
+            "As a verified shipment figure"
+          ],
+          "correct": 2,
+          "explanation": "Announced production or deployment targets are routinely reported as if they were outcomes. Keep target, production, shipment, and deployed-and-doing-useful-work as four separate numbers, and prefer independently audited figures."
+        },
+        {
+          "question": "The World Bank's 2026 meta-analysis found generative AI tutoring clearly outperforms the non-generative edtech that came before it.",
+          "type": "true-false",
+          "correct": false,
+          "explanation": "The review states it found no evidence that generative tools outperform the technologies that preceded them \u2014 though the confidence interval is wide enough to bound rather than resolve the comparison. Honest reading: unknown, not proven superior."
+        },
+        {
+          "question": "Prompt injection is a top-ranked risk for LLM applications and has been demonstrated against deployed agents.",
+          "type": "true-false",
+          "correct": true,
+          "explanation": "OWASP ranks it #1 (LLM01:2025), and a 2026 competition paper documented indirect prompt injection against agents processing email, documents, and repositories. A published demo showed file exfiltration via poisoned skills in a commercial agent product."
+        },
+        {
+          "question": "No fusion plant has delivered commercial electricity to a grid as of October 2026.",
+          "type": "true-false",
+          "correct": true,
+          "explanation": "Verified in this module: DOE published a commercialization roadmap (2026-06-09) and JET set a final energy record, but no grid has received commercial fusion power. Helion's 2029 target is a company plan."
+        },
+        {
+          "question": "Clearing the FDA means a medical AI device has been proven to improve patient outcomes.",
+          "type": "true-false",
+          "correct": false,
+          "explanation": "Clearance is permission to market. Only 3 of 1,357 cleared AI devices (0.2%) evaluated patient-centered outcomes like mortality, morbidity, or readmissions, per a 2026 PLOS Digital Health analysis."
+        },
+        {
+          "question": "An announced \"open\" model always has a permissive license with no commercial restrictions.",
+          "type": "true-false",
+          "correct": false,
+          "explanation": "An August 2026 audit of 30 models labeled open/open-weight/open-source found 11 carried real commercial conditions (user thresholds, attribution, field-of-use bans, regional exclusions). Read the license on the exact checkpoint."
+        }
+      ],
+      "advanced": [
+        {
+          "question": "Which methodological point most sharply limits what vendor-published AI adoption surveys can tell us?",
+          "type": "multiple-choice",
+          "options": [
+            "Self-reported adoption without independent outcome measurement conflates usage with impact, and the funder has a directional interest",
+            "They use too few respondents",
+            "Surveys cannot be randomized",
+            "They are always older than one year"
+          ],
+          "correct": 0,
+          "explanation": "Adoption figures (such as 88% organizational adoption in Stanford's AI Index, or vendor agent surveys) measure claimed usage, not realized productivity. Pair them with outcome measures and note who funded the work before drawing conclusions."
+        },
+        {
+          "question": "The strongest argument against citing a single benchmark score to rank models is:",
+          "type": "multiple-choice",
+          "options": [
+            "Scores cluster near ceiling (saturation), can be gamed, and may be contaminated by training data \u2014 so a high score may not transfer to your task",
+            "Benchmarks are illegal to publish",
+            "Benchmarks are only for image models",
+            "All models score identically"
+          ],
+          "correct": 0,
+          "explanation": "When frontier scores sit in the high 90s, the benchmark stops discriminating. Prefer held-out, contamination-checked evaluations, and prefer randomized field trials (like the university tutor trial) over any headline score."
+        },
+        {
+          "question": "A study reports \"AI makes experienced developers 19% slower,\" then a follow-up finds its own new experiment too biased to trust. What is the correct epistemic takeaway?",
+          "type": "multiple-choice",
+          "options": [
+            "The first result is definitively true",
+            "Both results are worthless",
+            "AI never affects productivity",
+            "Task-level productivity effects are hard to measure; state the result, state the limitation, and resist converting either into a universal law"
+          ],
+          "correct": 3,
+          "explanation": "This is METR's own framing (2026-02-24): selection effects and measurement problems made the follow-up unreliable, and self-reported speedups are also unreliable. The honest output is a bounded claim with its limits attached \u2014 which is this module's whole discipline."
+        },
+        {
+          "question": "Why does \"open weights\" complicate safety, in a way closed APIs do not?",
+          "type": "multiple-choice",
+          "options": [
+            "Open weights are always less capable",
+            "Once weights are downloadable, safeguards can be stripped and the model redistributed, so the same property enabling local privacy also enables misuse",
+            "Open weights cannot be inspected",
+            "Open weights require an internet connection"
+          ],
+          "correct": 1,
+          "explanation": "Anthropic's report on GLM-5.3 and MIT Tech Review's framing both center this tradeoff: openness enables sovereignty, offline use, and auditability \u2014 and also removal of guardrails. Washington debated a ban and declined; the policy question is unresolved."
+        },
+        {
+          "question": "For a claim that an AI medical device works, which evidence chain is strongest?",
+          "type": "multiple-choice",
+          "options": [
+            "Expert opinion in a conference abstract",
+            "FDA clearance + a company press release",
+            "A registered prospective trial with posted, peer-reviewed results measuring patient-centered outcomes in a representative cohort",
+            "A vendor benchmark on curated images"
+          ],
+          "correct": 2,
+          "explanation": "This is exactly the gap the PLOS analysis quantifies: of 1,357 cleared devices, 34 had registered prospective trials, 12 posted results, 12 published peer-reviewed, and 3 measured patient-centered outcomes. Each step filters out most devices."
+        },
+        {
+          "question": "What does the World Bank finding that its edtech evidence base has \"no low-income settings\" imply?",
+          "type": "multiple-choice",
+          "options": [
+            "The study is fraudulent",
+            "The intervention cannot work in low-income settings",
+            "Low-income students do not benefit from tutoring",
+            "External validity is untested there \u2014 the average effect estimate should not be transported to those contexts without new evidence"
+          ],
+          "correct": 3,
+          "explanation": "This is a scope-of-evidence limit, not a negative result. Generalizing a +0.125 SD average from 10 economies to settings never studied is an inference beyond the data \u2014 label it Unknown, not assumed."
+        },
+        {
+          "question": "Which statement best captures the quantum status as of 2026-10-17?",
+          "type": "multiple-choice",
+          "options": [
+            "Quantum computers now run production workloads",
+            "Quantum computing has been disproven",
+            "Fault-tolerant quantum computing is commercially available",
+            "Error-corrected logical-qubit demonstrations and verifiable advantage claims exist, but useful quantum advantage on a problem anyone needs has not been demonstrated"
+          ],
+          "correct": 3,
+          "explanation": "IBM's July 2026 demo (70 logical qubits, verifiable fidelity) and its August modular-cryogenic milestone are real progress toward fault tolerance, with a 2029 Starling target. Google Quantum AI's own perspective frames useful applications as an open grand challenge."
+        },
+        {
+          "question": "What is the most accurate characterization of the deepfake-detection problem?",
+          "type": "multiple-choice",
+          "options": [
+            "Humans reliably detect high-quality deepfakes",
+            "Deepfakes are illegal everywhere, so risk is zero",
+            "AI detectors are 100% accurate",
+            "Human detection of high-quality deepfake video has been measured around 24.5% correct, so provenance tools and source verification are needed \u2014 but tools only help when present"
+          ],
+          "correct": 3,
+          "explanation": "\"I'd know if it were fake\" fails empirically. Google reported SynthID watermarks on 100B+ pieces of content at I/O 2026, but watermarks are absent from non-participating generators, and C2PA credentials are only as good as their coverage. Verify the source."
+        },
+        {
+          "question": "What should a reader do when a technology claim in this module (or anywhere) affects money, health, law, or reputation?",
+          "type": "multiple-choice",
+          "options": [
+            "Assume older claims are still valid",
+            "Verify against the primary source, check the date and baseline, and label the residual uncertainty before acting",
+            "Ask an AI model to confirm it",
+            "Act on it immediately if the source sounds confident"
+          ],
+          "correct": 1,
+          "explanation": "This is the module's core discipline. Dated technology claims decay; confidence is not evidence; and asking another model to confirm a claim just tests whether the model repeats it. Open the link, read the primary source, note the date."
+        },
+        {
+          "question": "Which combination correctly describes two verified 2026 events in this module?",
+          "type": "multiple-choice",
+          "options": [
+            "Open-source models were banned in the US AND Starlink shut down",
+            "The EU AI Act was repealed AND Michigan repealed its CS requirement",
+            "Starship reached orbit on 2026-09-28 AND Artemis II crewed lunar flyby launched 2026-04-01",
+            "Fusion reached the grid AND quantum computing was banned"
+          ],
+          "correct": 2,
+          "explanation": "Both are verified from primary sources: Reuters for Starship Flight 14 (first orbit, 26 Starlinks deployed, early end on an engine issue) and NASA for Artemis II (launch 2026-04-01, splashdown 2026-04-10). The distractors are all false as of 2026-10-17."
+        },
+        {
+          "question": "A roadmap date from a well-funded company (such as fault tolerance by 2029, grid power by 2029) counts as a verified result.",
+          "type": "true-false",
+          "correct": false,
+          "explanation": "Roadmaps are company statements, not delivered facts. IBM's Starling target and Helion's 2029 grid date are both plans. IBM has a history of hitting its milestones; Helion's timeline has already been hedged. Label both Reported, not Verified."
+        },
+        {
+          "question": "The evidence that AI tutoring improves learning is strong, consistent, and clearly superior to prior edtech.",
+          "type": "true-false",
+          "correct": false,
+          "explanation": "It is mixed and modest: +0.125 SD average (World Bank), Khanmigo gains similar to non-AI practice (NBER), and a 2,379-student RCT found a 0.37 SD grade reduction from displaced engagement. The World Bank found no evidence generative tools beat earlier edtech."
+        },
+        {
+          "question": "\"Open source AI\" and \"open weights AI\" mean the same thing.",
+          "type": "true-false",
+          "correct": false,
+          "explanation": "Mozilla's 2026 report and OSI's OSAID 1.0 distinguish them: open weights = downloadable parameters; open source also requires the preferred form to make modifications. An audit found 11 of 30 \"open\" models carried real commercial conditions."
+        },
+        {
+          "question": "A high benchmark score guarantees the model will perform as well on your specific task.",
+          "type": "true-false",
+          "correct": false,
+          "explanation": "Benchmarks saturate, can be gamed, and may be contaminated by training data. When frontier scores cluster near ceiling, the number stops discriminating. Prefer held-out evaluations and randomized field trials over headline scores."
+        },
+        {
+          "question": "Prompt injection is a demonstrated, top-ranked risk for deployed AI agents \u2014 not a theoretical concern.",
+          "type": "true-false",
+          "correct": true,
+          "explanation": "OWASP ranks it #1 (LLM01:2025), a 2026 competition paper demonstrated indirect prompt injection against agents processing email/documents/repos, and a published demo showed file exfiltration via poisoned skills in a commercial product."
+        }
+      ]
+    }
+  }
+}
