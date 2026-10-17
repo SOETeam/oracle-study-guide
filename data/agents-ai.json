@@ -1,0 +1,277 @@
+{
+  "topic": {
+    "id": "agents-ai",
+    "title": "Build Your Own Local AI Agent",
+    "description": "Local-first AI agents from the ground up: what an agent actually is, a documented how-to on Hermes Agent by Nous Research, the structural truth about hallucination, what agents can and cannot do in 2026, human-agentic orchestration patterns, and cybernetics from Wiener's 1948 definition to modern brain-computer interfaces \u2014 every claim read from its source on 2026-10-17.",
+    "icon": "\ud83e\udd16",
+    "focus": "Verified 2026-10-17 \u00b7 Hermes docs, Nature 2026 hallucination paper, METR Time Horizon 1.1, Neuralink updates, UC Irvine BCI study",
+    "keyTerms": [
+      "agent",
+      "context window",
+      "hallucination",
+      "skill",
+      "orchestrator",
+      "subagent",
+      "feedback loop",
+      "cybernetics"
+    ],
+    "subtopics": [
+      "What an Agent Is",
+      "Why Local-First",
+      "Install Hermes",
+      "Config, Gateway & Security",
+      "Skills",
+      "Cron & Delegation",
+      "Hallucination & Verification",
+      "Context, Cost & Tiers",
+      "Agent Limits 2026",
+      "Human-Agentic Systems",
+      "Cybernetics & BCIs"
+    ],
+    "levels": {
+      "beginner": {
+        "label": "Beginner \ud83c\udf31",
+        "tagline": "From zero to a working local agent \u2014 every command, price and capability claim below was read from the cited source on 2026-10-17, and the through-line is verify everything.",
+        "goals": [
+          "Explain an agent as model + tools + loop + memory, and name the files where a real agent keeps its state",
+          "Install and configure a local agent safely: secrets in .env, approval gates on, containers before anything destructive",
+          "Write a subagent brief a fresh-context worker can execute: objective, output format, tool guidance, boundaries",
+          "Verify instead of trust: open every citation, demand evidence, test outputs against ground truth",
+          "Read the 2026 landscape honestly: hour-scale task horizons, percent-scale hallucination, dozens of BCI trial participants"
+        ],
+        "concepts": [
+          {
+            "title": "Module 1 \u2014 What an agent actually is",
+            "text": "A working definition: an agent is a language model plus three things \u2014 tools it can call, a loop that feeds results back to it, and memory that outlives a single message. Anthropic's engineering team defines a multi-agent system as \"multiple agents (LLMs autonomously using tools in a loop) working together\", and the same definition strips down to the single-agent case \u2014 [Anthropic engineering blog](https://www.anthropic.com/engineering/multi-agent-research-system) [V 2026-10-17].\n\nThe four parts:\n- Model \u2014 the reasoning engine. At run time it knows only what is in its context; it generates the next chunk of text (tokens) and decides which tool to call next. There is no separate knowledge store being consulted\n- Tools \u2014 the hands: shell/terminal, file read and write, web search and page extraction, browser control, APIs. A model without tools is a chatbot; a model with tools is a candidate agent\n- Loop \u2014 the agent runs: read the request, choose a tool, run it, read the result, decide again, until done. Anthropic published the shape it teaches its research subagents explicitly as an observe-orient-decide-act loop \u2014 [Anthropic engineering blog](https://www.anthropic.com/engineering/multi-agent-research-system) [V 2026-10-17]\n- Memory \u2014 the context window (everything the model currently sees at once) plus files that persist across sessions: notes, configuration, saved procedures (\"skills\") and conversation history. Memory files are how an agent keeps anything at all between runs\n\nTwo honest clarifications before anything else: an agent is a program you run, not a person, and its apparent understanding is pattern completion over its context \u2014 not knowledge of your situation. Every section that follows is downstream of taking those two facts seriously.\n\n\u26a0 Verified 2026-10-17 against Nous Hermes documentation, primary research and cited sources"
+          },
+          {
+            "title": "Module 2 \u2014 Why local-first: privacy, cost, sovereignty",
+            "text": "Local-first means the agent's wiring \u2014 its memory, configuration, saved skills and scheduled jobs \u2014 lives on hardware you control. Three reasons people do it, with the honest caveats:\n\n- Privacy \u2014 the agent's memory is files on your machine and you choose what leaves it. A cloud chatbot keeps your history on someone else's servers; a self-hosted agent exposes only what you explicitly send to a model. Health, legal and financial work is the strongest case for this\n- Cost \u2014 metered hosted APIs charge per token on every turn; a self-hosted model costs hardware and electricity once. But the 2026 honest answer: budget hosted tiers have collapsed to cents per full one-million-token window, so small workloads are cheaper on cheap hosted models and heavy repeated workloads are cheaper self-hosted. Do the arithmetic for your own usage instead of trusting slogans \u2014 [Third-party price tracker, October 2026](https://llmpricewatch.com/models/gemini-api-pricing-explained) [V 2026-10-17]\n- Sovereignty \u2014 your skills, memory and configuration are plain files you can back up, version and move, and the model behind them is swappable. Hermes, used as the worked example below, swaps its model provider behind the same agent: Nous Portal, OpenRouter, OpenAI, Anthropic, Google, or any OpenAI-compatible endpoint including one you host yourself \u2014 [Hermes docs](https://hermes-agent.nousresearch.com/docs) [V 2026-10-17]\n\nOne correction to the slogan: running on your laptop does not make an agent private if it calls a cloud model with everything it sees. Privacy comes from knowing the data path \u2014 which files the agent reads, what goes into the prompt, and where the model actually runs. Map that path before you hand the agent anything you would not paste into a public forum.\n\n\u26a0 Verified 2026-10-17 against Nous Hermes documentation, primary research and cited sources"
+          },
+          {
+            "title": "Module 3 \u2014 Install: Hermes Agent as the worked example",
+            "text": "Disclosure first: Hermes Agent (built by Nous Research) is the worked example here because this very module was written by a Hermes agent \u2014 apply the same skepticism to this section that you apply to everything else, and check each command against the official docs \u2014 [Official documentation](https://hermes-agent.nousresearch.com/docs) [V 2026-10-17]. Hermes is one option among Claude Code, OpenAI Codex CLI and open-source frameworks; it even imports setups from the first two, which is a fair hint that no agent is irreplaceable. Source and issues are public \u2014 [GitHub repository](https://github.com/NousResearch/hermes-agent) [V 2026-10-17].\n\nInstall and first run:\n- Linux, macOS, WSL2 or Android (Termux): curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash \u2014 on Windows: iex (irm https://hermes-agent.nousresearch.com/install.ps1), or use the desktop installer \u2014 [Installation guide](https://hermes-agent.nousresearch.com/docs/getting-started/installation) [V 2026-10-17]\n- The installer brings Python 3.11 (via uv), Node.js 22, ripgrep and ffmpeg, clones the code into ~/.hermes/hermes-agent/ and symlinks the hermes command; hermes doctor diagnoses a broken install and hermes update upgrades it \u2014 [Installation guide](https://hermes-agent.nousresearch.com/docs/getting-started/installation) [V 2026-10-17]\n- Fastest working setup: hermes setup --portal \u2014 one OAuth covers a model plus the Tool Gateway (web search, image generation, text-to-speech, cloud browser). Otherwise hermes model chooses provider and key \u2014 [Hermes docs](https://hermes-agent.nousresearch.com/docs) [V 2026-10-17]\n\nThe state directory ~/.hermes/ is the whole agent: config.yaml (settings), .env (API keys), auth.json (OAuth credentials), SOUL.md (identity/personality), memories/ (MEMORY.md and USER.md), skills/ (procedural knowledge), cron/ (scheduled jobs), sessions/ and logs/ (secrets auto-redacted). Back up that directory and you have backed up the agent; delete it and you have a fresh one.\n\n\u26a0 Verified 2026-10-17 against Nous Hermes documentation, primary research and cited sources"
+          },
+          {
+            "title": "Module 4 \u2014 Config, gateway and security",
+            "text": "Configuration has two layers and the split matters: secrets (API keys, bot tokens) go in ~/.hermes/.env, everything else (model, terminal backend, compression, toolsets) goes in config.yaml; when both are set, config.yaml wins for non-secret settings, and settings resolve CLI arguments first, then config.yaml, then .env, then built-in defaults \u2014 [Configuration reference](https://hermes-agent.nousresearch.com/docs/user-guide/configuration) [V 2026-10-17]. hermes config get and hermes config set route each value to the right file automatically.\n\nWhere the shell runs is a first-class setting: terminal.backend is one of local, docker, ssh, modal, daytona, vercel_sandbox or singularity \u2014 [Configuration reference](https://hermes-agent.nousresearch.com/docs/user-guide/configuration) [V 2026-10-17]. Learn on local; move to a container before you start handing the agent destructive tools.\n\nGateways: Hermes connects to 19 native messaging platforms plus IRC and Microsoft Teams via plugins \u2014 Telegram, Discord, Slack, WhatsApp, Signal, Matrix, email, SMS and more \u2014 one agent, many surfaces, and scheduled jobs deliver to any of them \u2014 [Hermes docs](https://hermes-agent.nousresearch.com/docs) [V 2026-10-17].\n\nSecurity is the part beginners skip and operators learn expensively: an agent with shell access is a person with shell access. Hermes ships command approval (confirm before dangerous commands), container isolation, an egress proxy and a credential-injection proxy, plus per-platform tool configuration \u2014 [Security model](https://hermes-agent.nousresearch.com/docs/user-guide/security) [V 2026-10-17]. Turn the approval gate on before your first destructive experiment, not after it.\n\n\u26a0 Verified 2026-10-17 against Nous Hermes documentation, primary research and cited sources"
+          },
+          {
+            "title": "Module 5 \u2014 Skills: the agent's procedural memory",
+            "text": "Skills are the agent's procedural memory: documents describing how to do a task, stored in ~/.hermes/skills/ as SKILL.md files, loaded only when needed \u2014 [Skills system](https://hermes-agent.nousresearch.com/docs/user-guide/features/skills) [V 2026-10-17].\n\n- Progressive disclosure \u2014 the agent first sees only a list of names and one-line descriptions (about 3K tokens), reads a full skill on demand, then pulls specific reference files inside it. This is what makes hundreds of procedures affordable in context\n- The agent writes its own skills \u2014 after it figures out a non-trivial workflow it saves it via the skill_manage tool (create, patch, write_file) and patches it later. That closed learning loop is why an agent measurably improves on task types it has seen before\n- /learn teaches a new skill from a local doc directory, a URL, pasted notes, or the workflow you just demonstrated in conversation\n- Open standard \u2014 skills follow the agentskills.io specification, so they are portable and shareable; third-party installs are content-hashed and quarantined with the source URL recorded \u2014 [Skills system](https://hermes-agent.nousresearch.com/docs/user-guide/features/skills), [agentskills.io specification](https://agentskills.io) [V 2026-10-17]\n- Trust boundaries \u2014 skills are procedures the agent follows, so project-local skills inside a cloned repo are not auto-loaded without your approval, and a skills.write_approval gate forces human sign-off on the agent's own skill writes \u2014 [Skills system](https://hermes-agent.nousresearch.com/docs/user-guide/features/skills) [V 2026-10-17]\n\nPractical rule: a skill should encode what surprised you \u2014 the pitfall, the exact command sequence, the verification step \u2014 not generic advice the model already produced correctly once.\n\n\u26a0 Verified 2026-10-17 against Nous Hermes documentation, primary research and cited sources"
+          },
+          {
+            "title": "Module 6 \u2014 Cron and delegation: automation and subagents",
+            "text": "Two automation layers, and the money question hides in the second one.\n\nScheduled jobs (cron): job definitions are plain JSON in ~/.hermes/cron/jobs.json. The gateway scheduler checks due jobs, starts a fresh agent session per run, optionally injects attached skills, runs the prompt to completion, delivers the final response to its target (Telegram, Discord, a bot chat, multiple targets) and records run metadata \u2014 [Cron jobs](https://hermes-agent.nousresearch.com/docs/user-guide/features/cron) [V 2026-10-17]. Script-only mode (no_agent) runs a watchdog script with zero model calls; a [SILENT] marker suppresses delivery and [CRON_FAILURE] declares a failed run. Jobs are files, so they survive restarts and reboots.\n\nDelegation (subagents): delegate_task spawns an isolated child agent. The critical property \u2014 a subagent starts with a completely fresh conversation: it sees only the goal and context fields its parent fills in, none of the parent's history \u2014 [Subagent delegation](https://hermes-agent.nousresearch.com/docs/user-guide/features/delegation) [V 2026-10-17]. Up to 10 run concurrently by default, grouped tasks return one consolidated message, only the child's final summary enters the parent's context, and a /review command spawns an independent reviewer whose only job is to re-open and judge the work just produced.\n\nThis is where the money goes: Anthropic's published numbers say agents burn roughly 4x the tokens of a chat and multi-agent systems roughly 15x \u2014 their orchestrator-plus-subagents Research system beat a single agent by 90.2 percent on their internal research eval, and parallel tool use cut research time up to 90 percent \u2014 [Anthropic engineering blog](https://www.anthropic.com/engineering/multi-agent-research-system), [annotated summary](https://simonwillison.net/2025/Jun/14/multi-agent-research-system/) [V 2026-10-17]. Parallelism buys speed and coverage; the bill scales with it.\n\nHuman-agentic rule number one, learned expensively: vague briefs produce duplicated or missing work. Every subagent brief needs an objective, an output format, tool guidance and hard task boundaries.\n\n\u26a0 Verified 2026-10-17 against Nous Hermes documentation, primary research and cited sources"
+          },
+          {
+            "title": "Module 7 \u2014 Hallucination: the structural problem",
+            "text": "Hallucination is not a bug to wait out \u2014 it is structural, and the 2026 literature explains exactly why.\n\n- Cause \u2014 models are trained to predict the next token, and a 2026 Nature paper shows this creates statistical pressure toward hallucination even with error-free training data: facts that appear only once in training data (a birthday, an obscure detail) offer no pattern to learn, so the model must guess. If 20 percent of some family of facts appears exactly once, expect at least 20 percent hallucination on that family \u2014 [Nature 2026, Kalai et al](https://www.nature.com/articles/s41586-026-10549-w) [V 2026-10-17]\n- Incentive \u2014 evaluations are scored binary, so guessing beats admitting uncertainty. On OpenAI's SimpleQA, o4-mini answered almost everything and was wrong about 75 percent of the time, while GPT-5-mini abstained on 52 percent of questions and was wrong only 26 percent \u2014 leaderboards still reward the guesser \u2014 [OpenAI, Why language models hallucinate](https://openai.com/index/why-language-models-hallucinate/), [Nature 2026](https://www.nature.com/articles/s41586-026-10549-w) [V 2026-10-17]\n- Measured rates \u2014 Vectara's HHEM leaderboard (summarization, source document provided) put the best models near 2-3 percent fabrication as of September 2026 \u2014 [Vectara HHEM leaderboard](https://github.com/vectara/hallucination-leaderboard/) [V 2026-10-17] \u2014 but a 172-billion-token document Q&A study across 35 models found fabrication more than tripling as context grew, exceeding 10 percent for every model tested at 200K tokens \u2014 [RIKER study, arXiv 2603.08274](https://doi.org/10.48550/arxiv.2603.08274) [V 2026-10-17]\n\nThe discipline that follows: treat model output as leads, never sources. Open every citation yourself \u2014 a model can fabricate a plausible title, authors and DOI in one breath. Demand tool output as evidence, not prose. When a claim matters, require two independent sources. \"Verify everything\" is not paranoia here; it is the correct operating manual for a system that guesses for a living.\n\n\u26a0 Verified 2026-10-17 against Nous Hermes documentation, primary research and cited sources"
+          },
+          {
+            "title": "Module 8 \u2014 Context, cost and model tiers in 2026",
+            "text": "Context window: how much text a model can see at once, measured in tokens (roughly three-quarters of an English word each). Third-party trackers in late 2026 list Google's Gemini 3.1 Pro at roughly one to two million tokens, Claude models at 200K stable (1M in beta) and GPT-5.x around 128K-400K \u2014 [Context window comparison, October 2026](https://morphllm.com/llm-context-window-comparison), [price tracker](https://llmpricewatch.com/models/gemini-api-pricing-explained) [V 2026-10-17].\n\nPrice per million tokens (third-party trackers, October 2026): budget tier roughly $0.10-0.50 input and $0.40-3 output; flagship tier about $2-5 input and $12-30 output; Anthropic dropped its long-context surcharge during 2026 \u2014 [price tracker](https://llmpricewatch.com/models/gemini-api-pricing-explained), [comparison table](https://morphllm.com/llm-context-window-comparison) [V 2026-10-17]. Vendor list prices move monthly: treat any figure older than a season as stale and re-check the provider's own pricing page before budgeting.\n\nCost structure of agents specifically: every tool result, file read and search hit enters the context and is re-sent on later turns, so the token bill grows with the work done. Prompt caching discounts the repeated prefix; compaction (summarizing old context) trades money for lost detail; delegation multiplies cost \u2014 about 15x a chat for multi-agent setups per Anthropic \u2014 [Anthropic engineering blog](https://www.anthropic.com/engineering/multi-agent-research-system) [V 2026-10-17].\n\nTier strategy: cheap fast models for mechanical steps (classification, extraction, formatting), frontier models for judgment (planning, verification, ambiguous requests). The right question is never \"which model is best\" but \"which model clears the reliability bar for this step\" \u2014 and both price and quality move, so re-measure.\n\n\u26a0 Verified 2026-10-17 against Nous Hermes documentation, primary research and cited sources"
+          },
+          {
+            "title": "Module 9 \u2014 What agents can and cannot do (2026)",
+            "text": "What agents actually complete, measured: nonprofit evaluator METR tracks a \"time horizon\" \u2014 the longest task, in human-expert completion time, that a model finishes with 50 percent success. Its Time Horizon 1.1 release (2026-01-29) found the horizon doubling about every 196 days across six years, and about every 89 days looking only at 2024 onward; published trackers of these evaluations put frontier 50-percent horizons in early-to-mid 2026 at roughly 5 hours (Claude Opus 4.5 on TH1.1) up to about 14.5 hours (Claude Opus 4.6, February 2026) \u2014 [Time Horizon 1.1 summary](https://swarchitect.net/en/loop-time-horizon-2026-09), [horizon tracker](https://singularityplus.com/agents) [V 2026-10-17].\n\nRead that carefully: 50 percent is coin-flip. The horizon at 90 percent success is much shorter, and benchmarks are cleaner than real work \u2014 no ambiguous goals, no broken logins, no approval gates.\n\nReliable in 2026: file operations, code with tests the agent can actually run, web research it verifies against sources, structured transforms of text and data, and mechanical multi-step pipelines. Unreliable: exact recall of obscure facts, long unsupervised missions, judging the quality of its own output, anything physical, and knowing when it is wrong \u2014 models have no dependable internal error signal.\n\nDesign implication: verify outputs against ground truth (tests, sources, checksums), never against the agent's confidence. Confidence is free; correctness costs verification. And expect the horizon to keep growing \u2014 the doubling is real \u2014 but re-run your own acceptance tests when you upgrade the model, because capability updates silently change behavior.\n\n\u26a0 Verified 2026-10-17 against Nous Hermes documentation, primary research and cited sources"
+          },
+          {
+            "title": "Module 10 \u2014 Human-agentic systems: operating patterns",
+            "text": "Orchestrating humans and agents together as one system. These patterns come from Anthropic's published multi-agent engineering lessons and from operating real agent fleets; where the second is the source, it is labeled as operator experience \u2014 [Anthropic engineering blog](https://www.anthropic.com/engineering/multi-agent-research-system) [V 2026-10-17].\n\n- Orchestrator plus worker lanes \u2014 one lead agent plans and delegates while specialized subagents explore in parallel, each with its own context window. Anthropic's Research system is exactly this, including a dedicated citation-checking agent that runs before the answer is returned\n- Plan-doc-first \u2014 write the plan to a file before executing anything. Anthropic's lead agent saves its plan to memory because a 200K-token context can be truncated mid-mission; the plan must outlive the window. A plan on disk is also reviewable by a human and by an independent reviewer agent\n- Verification gates \u2014 separate generation from judgment: an independent reviewer that re-opens the artifacts rather than trusting the transcript, citation passes that check every link resolves, and tests as acceptance criteria. Anthropic reports small eval sets (20-30 queries) exposing 30-80 percent effect sizes from prompt changes \u2014 cheap insurance\n- Approval scoping \u2014 humans keep the irreversible steps: command approval gates, least-privilege credentials, network egress controls. Subagents inherit the parent's provider credentials, so scope what a child can reach before spawning it \u2014 [Subagent delegation](https://hermes-agent.nousresearch.com/docs/user-guide/features/delegation), [Security model](https://hermes-agent.nousresearch.com/docs/user-guide/security) [V 2026-10-17]\n- Effort scaling \u2014 fact-finding is one agent with a handful of tool calls; a direct comparison is a few subagents; complex research is 10+ with hard divisions of labor. Under-scoping wastes hours on duplicated work; over-scoping burns money for nothing\n\nFleet lessons, honestly labeled as operator experience: coordination failures are mostly briefing failures; only final summaries should enter the orchestrator's context; watch the roster while it runs instead of trusting it silently; and keep a human on the approval rail for anything that spends money, sends messages or deletes data.\n\n\u26a0 Verified 2026-10-17 against Nous Hermes documentation, primary research and cited sources"
+          },
+          {
+            "title": "Module 11 \u2014 Cybernetics: Wiener to brain-computer interfaces",
+            "text": "The actual definition: cybernetics is Norbert Wiener's term, from the Greek kybernetes (steersman; the same root as \"governor\"), and it is defined by the subtitle of his 1948 book \u2014 Cybernetics: Or Control and Communication in the Animal and the Machine \u2014 [Wiley, Cybernetics encyclopedia entry](https://onlinelibrary.wiley.com/doi/10.1002/9780470050118.ecse930), [Cybernetics (book)](https://en.wikipedia.org/wiki/Cybernetics:_Or_Control_and_Communication_in_the_Animal_and_the_Machine) [V 2026-10-17]. Its organizing idea is feedback-mediated regulation: a system senses its own state, compares it to a goal, and acts on the difference (the error signal). A thermostat, a nervous reflex and an LLM agent are all in scope \u2014 not because they share a substance, but because they share the formal problem of acting under delay, noise and partial information.\n\nThat framing explains today's agent better than the marketing does: tools are sensors and actuators, the model is the controller, the goal is the setpoint \u2014 and a hallucination is bad telemetry. Wiener's own warning, echoed in his later book The Human Use of Human Beings, was that systems fail not only from lack of power but from bad signals and false images of their own condition, and he raised social concerns about automation that read as current.\n\nWhere cybernetics is literal \u2014 brain-computer interfaces (BCIs), state of the art in 2026:\n- Neuralink's Telepathy: 21 trial participants announced January 28 2026 \u2014 [Neuralink, Two Years of Telepathy](https://neuralink.com/updates/two-years-of-telepathy/) [V 2026-10-17]; its PRIME study (NCT06429735) is a first-in-human feasibility study of the N1 implant in people with tetraplegia or tetraparesis, with 15 estimated enrollment \u2014 [ClinicalTrials.gov NCT06429735](https://clinicaltrials.gov/study/NCT06429735) [V 2026-10-17]; an October 2026 Neuralink update reported an 11.32 bits-per-second decoding record and 50,000 hours of brain data \u2014 [Neuralink update](https://neuralink.com/updates/pretraining-on-50000-hours/) [V 2026-10-17]. For scale, an able-bodied mouse user manages roughly 8-10 bits per second\n- Bidirectional BCIs (motor commands out, sensation back): a UC Irvine-led team with Caltech and Keck School of Medicine of USC published a brain-controlled exoskeleton system (Brain Stimulation, April 2026) that decoded stepping intent at 0.92 correlation and stimulated the sensory cortex so a paralyzed participant felt her steps, scoring 93 percent on a blind step-counting task, using the FDA-approved Ekso GT exoskeleton \u2014 [UC Irvine release](https://news.uci.edu/2026/04/16/uc-irvine-led-study-achieves-brain-controlled-walking-with-artificial-sensory-feedback), [study summary](https://insidebci.com/research/2026-04-16-bidirectional-brain-computer-interface-restores-sensation-during-brain-controlled-walking) [V 2026-10-17]\n\nHype check in both directions: implanted BCIs in 2026 number in the dozens of trial participants worldwide, for severe paralysis \u2014 not consumer mind-reading, and no consumer device exists; meanwhile the much-advertised \"human-AI merger\" today means keyboards, APIs and software agents \u2014 the loop that has actually closed between humans and machines is Wiener's feedback loop, with the human keeping the setpoint.\n\n\u26a0 Verified 2026-10-17 against Nous Hermes documentation, primary research and cited sources"
+          }
+        ],
+        "examples": [
+          {
+            "title": "Scenario A \u2014 the confident fake citation",
+            "scenario": "A researcher asks a local agent for sources on a narrow topic. The agent returns four citations with plausible authors, journals and years, and a fluent summary. Three of the four papers do not exist.",
+            "outcome": "Every citation was a lead, not a source. The fix is discipline, not a different model: open each link yourself, confirm it resolves to the document described, and require the agent to show the tool output it based the summary on. Systems that force evidence into the loop \u2014 a citation-checking pass, an independent reviewer that re-opens the artifacts \u2014 catch this structurally instead of hopefully."
+          },
+          {
+            "title": "Scenario B \u2014 the vague delegation",
+            "scenario": "A lead agent delegates \"Fix the error in the dashboard\" to a subagent. The subagent, which has never seen the conversation, guesses at three different errors, edits two files, and returns a confused summary.",
+            "outcome": "Subagents start with a completely fresh conversation. The brief needed the goal, the exact file and line, the observed error text, the environment, and the definition of done. Anthropic found the same failure in production: without an objective, output format, tool guidance and task boundaries, subagents duplicate work or leave gaps."
+          },
+          {
+            "title": "Scenario C \u2014 the long-context trap",
+            "scenario": "A support workflow keeps one long agent conversation open all week. By Friday, answers that used to be right drift: the agent mixes up two tickets and invents a policy clause that does not exist.",
+            "outcome": "Fabrication rises with context length: the 172-billion-token study found rates exceeding 10 percent for every model tested at 200K tokens, even though the best were near 1 percent at 32K \u2014 long context is not free recall. Fix: keep durable state in written records instead of chat history, re-ground each session from source files, and start a fresh session per ticket."
+          }
+        ],
+        "pitfalls": [
+          "MYTH: \u201cThe agent remembers our conversations.\u201d Context is per-session; without persistent memory files, every fresh session starts blank \u2014 and subagents always start blank, seeing only the goal and context their parent provides.",
+          "MYTH: \u201cRunning it locally makes it private.\u201d Only if the model itself runs on your machine; a local shell agent pointed at a cloud API still sends everything it sees to the vendor. Map the data path.",
+          "A citation in model output is a lead, not a source \u2014 open it yourself before you repeat it to anyone.",
+          "Bigger context does not mean better recall: fabrication more than tripled as context grew in the 172-billion-token document Q&A study, exceeding 10 percent at 200K tokens for every model tested.",
+          "Multi-agent setups use about 15x the tokens of a chat (Anthropic's own numbers) \u2014 buy parallelism only where the task's value pays for it.",
+          "An agent with shell access is a person with shell access \u2014 command approval gates and least-privilege credentials belong on before the first destructive command, not after.",
+          "A 50 percent task horizon (METR) is coin-flip reliability; the horizon at 90 percent success is much shorter, and benchmark tasks are cleaner than real work.",
+          "Model upgrades silently change behavior \u2014 pin versions where you can, and re-run your acceptance checklist after any model or tool change."
+        ],
+        "exercises": [
+          "Install a local agent (Hermes or any alternative) on a machine you can afford to experiment on. Write down where each of these lives: settings, secrets, memory, scheduled jobs, saved procedures. If you cannot answer for your own tool, you do not yet know its data path.",
+          "Pick one task you would trust an agent to do weekly. Write the verification checklist a human would need before accepting its output \u2014 the ground truth for every claim it will produce. That checklist is your acceptance test.",
+          "Run the same research question once through a single agent and once through an orchestrator with parallel subagents. Compare not just the answers but token usage and wall-clock time, then decide with numbers whether 15x the tokens bought enough quality for your use case."
+        ]
+      }
+    },
+    "glossary": [
+      {
+        "term": "Agent",
+        "definition": "A language model wired to tools and run in a loop, with memory that outlives a single message. Model plus tools plus loop plus memory."
+      },
+      {
+        "term": "Context window",
+        "definition": "How much text (in tokens) a model can see at once; everything sent to it is re-sent on later turns until compacted or evicted."
+      },
+      {
+        "term": "Token",
+        "definition": "The unit text is split into for a model, roughly three-quarters of an English word; both pricing and context limits are counted in tokens."
+      },
+      {
+        "term": "Hallucination",
+        "definition": "A confident, plausible falsehood. Structurally unavoidable for one-off facts under next-token training, and rewarded by binary-scored evaluations that prefer guessing to abstention."
+      },
+      {
+        "term": "Skill",
+        "definition": "A saved procedure document the agent loads on demand \u2014 procedural memory, written by a human or by the agent, stored in ~/.hermes/skills/ and following the agentskills.io standard."
+      },
+      {
+        "term": "Orchestrator",
+        "definition": "The lead agent that plans, decomposes work and delegates to subagents; it should keep only final summaries in its context and the plan on disk."
+      },
+      {
+        "term": "Subagent",
+        "definition": "An isolated child agent spawned by delegate_task with a completely fresh conversation \u2014 it sees only the goal and context fields its parent fills in."
+      },
+      {
+        "term": "Verification gate",
+        "definition": "A separate step that checks outputs against ground truth \u2014 tests, sources, checksums \u2014 instead of against the agent's confidence."
+      },
+      {
+        "term": "Cybernetics",
+        "definition": "Norbert Wiener's 1948 field: control and communication in the animal and the machine, organized around feedback loops, error signals and noise."
+      },
+      {
+        "term": "BCI",
+        "definition": "Brain-computer interface: electrodes that read motor intent and, in bidirectional systems, stimulate the sensory cortex to return sensation. 2026 trials involve dozens of participants worldwide."
+      }
+    ],
+    "quiz": {
+      "beginner": [
+        {
+          "q": "In the working definition used in this module, what turns a language model into an agent?",
+          "type": "mc",
+          "options": [
+            "Fine-tuning it on your own documents",
+            "A bigger context window than a chatbot has",
+            "Running on local hardware instead of the cloud",
+            "Tools it can call, a loop that feeds results back, and memory that outlives one message"
+          ],
+          "answer": 3,
+          "explain": "The definition is model plus tools plus loop plus memory. Bigger windows, local hardware and fine-tuning change the economics or the quality, but none of them creates the loop that makes an agent."
+        },
+        {
+          "q": "In Hermes Agent, where do API keys and bot tokens belong?",
+          "type": "mc",
+          "options": [
+            "auth.json only",
+            "config.yaml, which wins over everything",
+            "~/.hermes/.env \u2014 secrets live in .env, everything else in config.yaml",
+            "SOUL.md so the agent remembers them"
+          ],
+          "answer": 2,
+          "explain": "Secrets go in .env and everything else in config.yaml; when both are set, config.yaml wins for non-secret settings. Resolution order is CLI arguments, then config.yaml, then .env, then built-in defaults."
+        },
+        {
+          "q": "A parent agent calls delegate_task with the goal \u201cFix the error.\u201d What does the subagent see?",
+          "type": "mc",
+          "options": [
+            "Only the goal and context fields the parent fills in \u2014 subagents start with a completely fresh conversation",
+            "Nothing at all until the parent sends a follow-up message",
+            "The parent's full conversation history",
+            "The parent's memory files but not its chat"
+          ],
+          "answer": 0,
+          "explain": "Subagents have zero knowledge of the parent's history or prior tool calls. Their only context is the goal and context the parent provides, which is why vague briefs produce duplicated or missing work."
+        },
+        {
+          "q": "According to the 2026 Nature paper cited here, why do language models hallucinate?",
+          "type": "mc",
+          "options": [
+            "Models deliberately deceive users",
+            "Next-token training cannot learn facts that appear only once, and binary-scored evaluations reward guessing over admitting uncertainty",
+            "Context windows truncate mid-answer",
+            "Training data contains too many errors"
+          ],
+          "answer": 1,
+          "explain": "The paper shows the statistical pressure exists even with error-free data (one-off facts have no pattern to learn), then argues hallucination persists because accuracy metrics penalize abstention: a model that guesses outscores one that admits uncertainty."
+        },
+        {
+          "q": "What does Vectara's HHEM leaderboard actually measure?",
+          "type": "mc",
+          "options": [
+            "Overall factual accuracy on open questions",
+            "How often a model refuses to answer",
+            "Speed of token generation",
+            "How often a model fabricates content when summarizing a document, judged against that document"
+          ],
+          "answer": 3,
+          "explain": "HHEM scores summarization factual consistency with the source document provided \u2014 an analogue for truthfulness, not a general truth test. As of September 2026 the best models sit near 2-3 percent fabrication on that task."
+        },
+        {
+          "q": "Per Anthropic's published numbers, roughly how many tokens does a multi-agent system use compared with a chat?",
+          "type": "mc",
+          "options": [
+            "About 100x",
+            "About the same",
+            "About 15x",
+            "About 2x"
+          ],
+          "answer": 2,
+          "explain": "Anthropic reports agents use about 4x the tokens of a chat and multi-agent systems about 15x. That system beat a single agent by 90.2 percent on their internal research eval \u2014 performance bought, in part, with tokens."
+        },
+        {
+          "q": "What does Norbert Wiener's 1948 book subtitle define cybernetics as?",
+          "type": "mc",
+          "options": [
+            "Control and communication in the animal and the machine",
+            "Artificial intelligence before it had a name",
+            "The mathematics of information transmission alone",
+            "The study of thinking machines"
+          ],
+          "answer": 0,
+          "explain": "Cybernetics: Or Control and Communication in the Animal and the Machine. The term comes from the Greek kybernetes (steersman), and the field is organized around feedback-mediated regulation in organisms and machines alike."
+        },
+        {
+          "q": "METR's \u201ctime horizon\u201d measures\u2026",
+          "type": "mc",
+          "options": [
+            "The doubling time of GPU performance",
+            "How long a model can keep running before it degrades",
+            "The longest task, in human-expert completion time, that a model completes with 50 percent success",
+            "Wall-clock execution time on benchmark tasks"
+          ],
+          "answer": 2,
+          "explain": "It is a difficulty measure in human-time units at coin-flip success, not a runtime. Time Horizon 1.1 (January 2026) put the frontier at roughly 5 to 14.5 hours depending on model and eval date, doubling about every 196 days overall and about every 89 days since 2024."
+        },
+        {
+          "q": "A larger context window means the model will not fabricate \u2014 the 172-billion-token study found fabrication rates fell as context grew.",
+          "type": "tf",
+          "answer": false,
+          "explain": "The opposite held: fabrication more than tripled as context grew, exceeding 10 percent for every model tested at 200K tokens, even though the best sat near 1 percent at 32K. Long context is not free recall."
+        },
+        {
+          "q": "Cybernetics comes from the Greek word for steersman, and Wiener's field covered feedback regulation in both organisms and machines.",
+          "type": "tf",
+          "answer": true,
+          "explain": "From kybernetes (steersman; the same root as governor), defined by the subtitle of Wiener's 1948 book. Its core is feedback-mediated regulation \u2014 sense state, compare to goal, act on the difference \u2014 across animals, machines and organizations."
+        }
+      ]
+    }
+  }
+}

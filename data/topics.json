@@ -177,6 +177,25 @@
         "Currency & Traps",
         "Legality Claims"
       ]
+    },
+    {
+      "id": "agents-ai",
+      "name": "Build Your Own Local AI Agent",
+      "icon": "\ud83e\udd16",
+      "description": "What an agent is, how to run one locally (Hermes Agent by Nous Research, documented), why hallucination is structural, what agents can and cannot do in 2026, how to orchestrate humans with agent fleets, and cybernetics from Wiener to brain-computer interfaces \u2014 verified 2026-10-17.",
+      "subtopics": [
+        "What an Agent Is",
+        "Why Local-First",
+        "Install Hermes",
+        "Config, Gateway & Security",
+        "Skills",
+        "Cron & Delegation",
+        "Hallucination & Verification",
+        "Context, Cost & Tiers",
+        "Agent Limits 2026",
+        "Human-Agentic Systems",
+        "Cybernetics & BCIs"
+      ]
     }
   ]
 }
