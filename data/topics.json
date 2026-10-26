@@ -235,6 +235,25 @@
         "Ch. 7 \u2014 The tincture question (verdict)",
         "Boundaries & provenance"
       ]
+    },
+    {
+      "id": "sv07-printer",
+      "name": "Sovol SV-07 Printer \u2014 Setup, Gcode & Repair",
+      "icon": "\ud83d\udda8\ufe0f",
+      "description": "A general study guide for anyone with an SV-07: factory specs, first setup and calibration for minimal readjustment, the Klipper + Moonraker stack, the two print-killing failure modes (power-loss-recovery G92 parse errors and unhomed print-end moves), heater-fault lockdown and the ramp test, a pause-at-start case study, the Moonraker file API contract, a safe find-to-print workflow, and repair, recovery and maintenance cadence \u2014 sources read 2026-10-26. Printer operation education only. Not legal advice and not medical advice; follow the machine's own documentation and normal heater, mains and motion safety practice.",
+      "subtopics": [
+        "SV-07 Hardware & Factory Specs",
+        "The Klipper + Moonraker Stack on MKS Pi",
+        "Network Identity & IP Drift (sanitized)",
+        "First Setup & Calibration \u2014 Minimal Readjustment",
+        "Print-Start Failure: PLR & the G92 E Parse Error",
+        "Print-End Failure: Unhomed Axes & Must Home Axis First",
+        "Heater Faults: verify_heater Lockdown & the Ramp Test",
+        "Case Study: Prints That START Paused",
+        "Moonraker API Quirks & File Upload Rules",
+        "Safe Find-to-Print Workflow & Gcode Hygiene",
+        "Repair, Recovery & Maintenance Cadence"
+      ]
     }
   ]
 }

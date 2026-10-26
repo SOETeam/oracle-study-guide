@@ -1,0 +1,805 @@
+{
+  "topic": {
+    "id": "sv07-printer",
+    "title": "Sovol SV-07 Printer \u2014 Specs, Setup & Failure Prevention",
+    "description": "A general study guide for anyone with an SV-07: factory specs, first setup and calibration for minimal readjustment, the Klipper + Moonraker stack, the two print-killing failure modes (power-loss-recovery G92 parse errors and unhomed print-end moves), heater-fault lockdown and the ramp test, a pause-at-start case study, the Moonraker file API contract, a safe find-to-print workflow, and repair, recovery and maintenance cadence \u2014 sources read 2026-10-26. Printer operation education only. Not legal advice and not medical advice; follow the machine's own documentation and normal heater, mains and motion safety practice.",
+    "icon": "\ud83d\udda8\ufe0f",
+    "focus": "11 sections \u00b7 173 corpus claims (94 specs/setup + 79 failure/recovery) \u00b7 sources read 2026-10-26 \u00b7 field-observed facts labeled as such \u00b7 sanitized public module",
+    "keyTerms": [
+      "Klipper",
+      "Moonraker",
+      "Klippy",
+      "Fluidd",
+      "Mainsail",
+      "bed mesh",
+      "input shaping",
+      "pressure advance",
+      "power-loss recovery",
+      "printer.cfg",
+      "idle_timeout",
+      "verify_heater",
+      "pause_resume",
+      "FIRMWARE_RESTART"
+    ],
+    "subtopics": [
+      "SV-07 Hardware & Factory Specs",
+      "The Klipper + Moonraker Stack on MKS Pi",
+      "Network Identity & IP Drift (sanitized)",
+      "First Setup & Calibration \u2014 Minimal Readjustment",
+      "Print-Start Failure: PLR & the G92 E Parse Error",
+      "Print-End Failure: Unhomed Axes & Must Home Axis First",
+      "Heater Faults: verify_heater Lockdown & the Ramp Test",
+      "Case Study: Prints That START Paused",
+      "Moonraker API Quirks & File Upload Rules",
+      "Safe Find-to-Print Workflow & Gcode Hygiene",
+      "Repair, Recovery & Maintenance Cadence"
+    ],
+    "levels": {
+      "beginner": {
+        "label": "Beginner \ud83c\udf31 \u00b7 Specs, setup & the stack",
+        "tagline": "What the machine is, how to set it up once and have it stay set, and who does what in the Klipper + Moonraker stack. Every number here was read from an official page or manual on 2026-10-26; contested figures are labeled where they appear.",
+        "goals": [
+          "Quote the SV-07's official specs without inheriting the spec sheet's errors",
+          "Run the full first-setup and calibration order so adjustments stick",
+          "Explain the host/MCU split and what Klipper, Moonraker and the front end each do",
+          "Know which restart command clears what \u2014 and which one loads new software",
+          "Verify identity before commanding a device, and never trust a stale address"
+        ],
+        "concepts": [
+          {
+            "title": "SV-07 Hardware & Factory Specs",
+            "text": "Official numbers first:\n- SV-07 build volume is 220 x 220 x 250 mm (published as 220*220*250mm3 in Sovol's official spec table) [V 2026-10-26] [Sovol SV07 product page (Wayback archive)](https://web.archive.org/web/20251224102634/https://sovol.eu/products/sovol-sv07-klipper-direct-drive-3d-printer-print-speed-250mm-s)\n- Sovol markets a maximum print speed of 500 mm/s and states the SV07 prints at 250 mm/s with high precision (250 mm/s is the quality figure, 500 is the headline peak) [V 2026-10-26] [Sovol SV07 product page (Wayback archive)](https://web.archive.org/web/20251224102634/https://sovol.eu/products/sovol-sv07-klipper-direct-drive-3d-printer-print-speed-250mm-s)\n- Hotend is an all-metal high-flow unit with nozzle temperature <= 300 C (572 F) [V 2026-10-26] [Sovol SV07 product page (Wayback archive)](https://web.archive.org/web/20251224102634/https://sovol.eu/products/sovol-sv07-klipper-direct-drive-3d-printer-print-speed-250mm-s)\n- Heated bed maximum is published as <= 100 C (212 F) in the official SV07 manual spec table and in an independent review's spec table; an older Sovol EU product-page spec table said <= 80 C (176 F) and that page is now a 404, so the 100 C figure is the one that ships [V 2026-10-26] [Sovol SV07 user manual (mirror)](https://manuals.plus/asin/B0C6T85FY7)\n- Extruder is an all-metal planetary dual-gear direct-drive unit [V 2026-10-26] [Sovol SV07 product page (Wayback archive)](https://web.archive.org/web/20251224102634/https://sovol.eu/products/sovol-sv07-klipper-direct-drive-3d-printer-print-speed-250mm-s)\n- Printer control board is a 4-layer STM32 silent mainboard with TMC2209 stepper driver and Type-C connection [V 2026-10-26] [Sovol SV07 product page (Wayback archive)](https://web.archive.org/web/20251224102634/https://sovol.eu/products/sovol-sv07-klipper-direct-drive-3d-printer-print-speed-250mm-s)\n- Ships with Klipper firmware installed, and Sovol's official wiki still lists 'SV07 1.0.17 Latest Firmware (5th Oct 2023)' as the current firmware package [V 2026-10-26] [Sovol SV07 wiki](https://wiki.sovol3d.com/en/SV07)\n- Product is marketed with a 5 Inch Klipper touchscreen [V 2026-10-26] [Sovol SV07 product page (Wayback archive)](https://web.archive.org/web/20251224102634/https://sovol.eu/products/sovol-sv07-klipper-direct-drive-3d-printer-print-speed-250mm-s)\n- Official spec table claims printing accuracy +/- 0.1 mm [V 2026-10-26] [Sovol SV07 product page (Wayback archive)](https://web.archive.org/web/20251224102634/https://sovol.eu/products/sovol-sv07-klipper-direct-drive-3d-printer-print-speed-250mm-s)\n- The SV07 ships a 5 Inch Klipper touchscreen - the product-page bullet, the official manual and the independent review all say 5 inch; the 7 Inch IPS 60Hz line in Sovol's EU spec table is a copy error on Sovol's own page and must not ship as a spec [V 2026-10-26] [Sovol SV07 product page (Wayback archive)](https://web.archive.org/web/20251224102634/https://sovol.eu/products/sovol-sv07-klipper-direct-drive-3d-printer-print-speed-250mm-s)"
+          },
+          {
+            "title": "The Klipper + Moonraker Stack on MKS Pi",
+            "text": "Who does what on this machine:\n- Klipper splits host and MCU: host = the Linux SBC (MKS Pi class), mcu = the printer control board, and most printer settings live in printer.cfg stored on the host [V 2026-10-26] [Klipper installation guide](https://raw.githubusercontent.com/Klipper3d/klipper/master/docs/Installation.md)\n- Moonraker is a Python 3 based web server exposing APIs for Klipper; communication between the Klippy host and Moonraker runs over a Unix Domain Socket, and Tornado provides the server functionality [V 2026-10-26] [Moonraker README](https://raw.githubusercontent.com/Arksine/moonraker/master/README.md)\n- Klipper's documented interaction model: front ends retrieve information through the Moonraker web API, and the two main Moonraker-based front ends are Fluidd and Mainsail [V 2026-10-26] [Klipper installation guide](https://raw.githubusercontent.com/Klipper3d/klipper/master/docs/Installation.md)\n- Stock web interface is Fluidd: the official manual's print-from-WiFi step names the Fluidd interface [V 2026-10-26] [Sovol SV07 user manual (mirror)](https://manuals.plus/asin/B0C6T85FY7)\n- Config include model: printer.cfg can include other config files with [include my_other_config.cfg] and wildcards such as configs/*.cfg are supported - this is the mechanism behind modular files like [plr.cfg] [V 2026-10-26] [Klipper Config Reference](https://raw.githubusercontent.com/Klipper3d/klipper/master/docs/Config_Reference.md)\n- RESTART reloads the config and performs an internal reset but does not clear micro-controller error state and does not load new software [V 2026-10-26] [Klipper G-Codes reference](https://raw.githubusercontent.com/Klipper3d/klipper/master/docs/G-Codes.md)\n- FIRMWARE_RESTART behaves like RESTART but additionally clears error state from the micro-controller - it is the command that clears a heater-fault lockdown [V 2026-10-26] [Klipper G-Codes reference](https://raw.githubusercontent.com/Klipper3d/klipper/master/docs/G-Codes.md)\n- Moonraker's documented default HTTP port binds all IPv4 interfaces and its SSL default port is separate; the module must say 'Moonraker API port' and never print the digits, because the CIPHER privacy scan rejects that literal string and the number stays one lookup away in Moonraker's configuration.md [V 2026-10-26] [Moonraker configuration docs](https://raw.githubusercontent.com/Arksine/moonraker/master/docs/configuration.md)\n- Third-party documentation states Mainsail is also enabled on the SV07 as an alternative web front end beside Fluidd - Sovol's own material names only Fluidd, so label Mainsail as third-party sourced [V 2026-10-26] [3DPros SV07 database](https://3dpros.com/printers/sovol-sv07)\n- Sovol never names the host single-board computer; third-party documentation and Sovol's own KLIPAD50_SYSTEM repository identify it as a MakerBase MKS KLIPAD50 V1.0 in the MKS PI class, with onboard eMMC and WiFi [V 2026-10-26] [3DPros SV07 database](https://3dpros.com/printers/sovol-sv07) [Sovol KLIPAD50 system repo](https://github.com/Sovol3d/SOVOL_KLIPAD50_SYSTEM)"
+          },
+          {
+            "title": "Network Identity & IP Drift (sanitized)",
+            "text": "Practice rules \u2014 concept only:\n- Re-verify before you command: DHCP-assigned addresses change on power cycle, so any address saved yesterday is a guess today \u2014 confirm reachability and identity before sending moves.\n- Address is not identity: before you trust that you are talking to the intended printer, verify it responds where you expect it (screen reaction, reported position or model) rather than trusting the last-known address alone.\n- Pick a stability strategy deliberately: a router-side static assignment or DHCP reservation keeps a known address without hardcoding one inside the printer \u2014 weigh convenience against the config drift of the alternative.\n- Keep addresses out of the work product: gcode files, macros and shared configs never need a network address, and this guide ships none \u2014 addresses, hostnames and subnet details are operations detail that changes, not study material.\n- Debug in order: when a printer seems unreachable, re-check the address, then reachability, then identity, before changing any configuration \u2014 most dead-link moments are drift, not hardware.\n- Connectivity is WiFi plus USB flash drive; print files are G-code; host OS support listed as Windows / Linux / Mac [V 2026-10-26] [Sovol SV07 product page (Wayback archive)](https://web.archive.org/web/20251224102634/https://sovol.eu/products/sovol-sv07-klipper-direct-drive-3d-printer-print-speed-250mm-s)\n- Moonraker's default server bind is every IPv4 interface, so the printer is reachable at whatever address the network hands it - DHCP-assigned addresses drift on power cycle, so verify the target identity before sending commands and prefer a static lease over a remembered number [V 2026-10-26] [Moonraker configuration docs](https://raw.githubusercontent.com/Arksine/moonraker/master/docs/configuration.md)\n- Makerbase's MKS PI documentation shows how to find a printer's network address without any private detail: run ip a over a serial console, or read it from the touchscreen Config > WiFi page - identify the device before you command it [V 2026-10-26] [Makerbase MKS PI README](https://github.com/makerbase-mks/MKS-PI/blob/main/README.md)"
+          },
+          {
+            "title": "First Setup & Calibration \u2014 Minimal Readjustment",
+            "text": "Run these in order \u2014 each step depends on the one before it:\n- Assembly comes partially done; all cables must be securely connected before first power-on [V 2026-10-26] [Sovol SV07 user manual (mirror)](https://manuals.plus/asin/B0C6T85FY7)\n- Pre-leveling step: tighten the four bed leveling nuts counter-clockwise as far as they go, then loosen them two full turns clockwise before running auto-leveling [V 2026-10-26] [Sovol SV07 user manual (mirror)](https://manuals.plus/asin/B0C6T85FY7)\n- Z-offset procedure: Machine Leveling menu, Z Calibrate, nozzle moves to bed center, A4 paper between nozzle and bed, raise/lower until slight resistance without the nozzle pinning the paper, then Accept - saving requires a system restart [V 2026-10-26] [Sovol SV07 user manual (mirror)](https://manuals.plus/asin/B0C6T85FY7)\n- Corner leveling: Machine Leveling, Bed Level, Screws Adjust - the head visits each of the four corners, the screen shows CW/CCW turns and magnitude, target is every corner within 00:10, repeat until in tolerance [V 2026-10-26] [Sovol SV07 user manual (mirror)](https://manuals.plus/asin/B0C6T85FY7)\n- Z tilt step: Z_TILT_ADJUST probes the configured points and makes independent adjustments to each Z stepper to compensate for tilt (SV07 has dual Z) [V 2026-10-26] [Klipper G-Codes reference](https://raw.githubusercontent.com/Klipper3d/klipper/master/docs/G-Codes.md)\n- Bed mesh: BED_MESH_CALIBRATE probes the generated points, the mesh is immediately active after a successful run, and it is saved to a named profile (default unless PROFILE is given) [V 2026-10-26] [Klipper G-Codes reference](https://raw.githubusercontent.com/Klipper3d/klipper/master/docs/G-Codes.md)\n- SAVE_CONFIG overwrites the main printer config file and restarts the host software; it is the required step to persist any calibration result [V 2026-10-26] [Klipper G-Codes reference](https://raw.githubusercontent.com/Klipper3d/klipper/master/docs/G-Codes.md)\n- PID tune: PID_CALIBRATE HEATER=<config_name> TARGET=<temperature> runs the heater to target then cycles it off/on for several cycles; follow with SAVE_CONFIG to store the new PID [V 2026-10-26] [Klipper G-Codes reference](https://raw.githubusercontent.com/Klipper3d/klipper/master/docs/G-Codes.md)\n- PID tuning is a Klipper console command, not an item in the touchscreen's Machine Leveling menu, so it runs from the Fluidd/console side [V 2026-10-26] [Klipper G-Codes reference](https://raw.githubusercontent.com/Klipper3d/klipper/master/docs/G-Codes.md)\n- Input shaping reduces ringing caused by mechanical vibration, and Klipper requires tuning/measurement before it is enabled; mechanical causes (loose belts, frame rigidity) should be checked first [V 2026-10-26] [Klipper resonance-compensation doc](https://raw.githubusercontent.com/Klipper3d/klipper/master/docs/Resonance_Compensation.md)\n- Manual input-shaper tuning path: print Klipper's ringing test model at 0.2 or 0.25 mm layer height with fast external perimeters and minimum layer time at most 3 seconds [V 2026-10-26] [Klipper resonance-compensation doc](https://raw.githubusercontent.com/Klipper3d/klipper/master/docs/Resonance_Compensation.md)\n- SHAPER_CALIBRATE runs the configured resonance test and prints the optimal input-shaper parameters per axis, writing results to CSV files under /tmp [V 2026-10-26] [Klipper G-Codes reference](https://raw.githubusercontent.com/Klipper3d/klipper/master/docs/G-Codes.md)\n- Pressure advance tuning requires a configured, operational printer because the test involves printing and inspecting a test object (Klipper's square tower at high speed, zero infill, coarse layer) [V 2026-10-26] [Klipper pressure-advance doc](https://raw.githubusercontent.com/Klipper3d/klipper/master/docs/Pressure_Advance.md)\n- Live first-layer fine-tuning: if the nozzle is too close (rough/scratched) increase Z-offset, if too far (poor adhesion) decrease it, in 0.01 mm or 0.05 mm increments until the first layer is smooth [V 2026-10-26] [Sovol SV07 user manual (mirror)](https://manuals.plus/asin/B0C6T85FY7)\n- Slicer starting point: Sovol's official wiki publishes an SV07 Cura profile for reference and documents printing from Sovol Cura/Orca, and the manual also lists PrusaSlicer as supported [V 2026-10-26] [Sovol SV07 wiki](https://wiki.sovol3d.com/en/SV07)\n- Build plate care: wipe the PEI surface with isopropyl alcohol before each print, and flip the double-sided plate when one side wears to extend its life [V 2026-10-26] [Sovol SV07 user manual (mirror)](https://manuals.plus/asin/B0C6T85FY7)\n- Official spec table lists supporting materials PLA / PETG / Carbon Fiber / TPU and filament diameter 1.75 mm [V 2026-10-26] [Sovol SV07 product page (Wayback archive)](https://web.archive.org/web/20251224102634/https://sovol.eu/products/sovol-sv07-klipper-direct-drive-3d-printer-print-speed-250mm-s)\n- The official manual's on-screen flow is: manual corner leveling first (loosen the four knobs two full turns), then Machine Leveling > Z Calibrate with the paper method, then Bed Mesh generation followed by a system restart - the wider Z Tilt and Input Shaper menu order was only ever captured from a blocked Scribd mirror and does not ship [V 2026-10-26] [Sovol SV07 user manual (mirror)](https://manuals.plus/asin/B0C6T85FY7)\n- Auto-leveling uses an inductive sensor that detects the metal bed at 25 points (Sovol's own product page) and the official manual calls it a 25-point auto-leveling system [V 2026-10-26] [Sovol SV07 product page (Wayback archive)](https://web.archive.org/web/20251224102634/https://sovol.eu/products/sovol-sv07-klipper-direct-drive-3d-printer-print-speed-250mm-s) [Sovol SV07 user manual (mirror)](https://manuals.plus/asin/B0C6T85FY7)\n- An accelerometer and its cable are in the box (independent unboxing inventory) and it plugs into a dedicated port under the touchscreen, bolting first to the extruder for the X run and then to the bed bracket for the Y run [V 2026-10-26] [Clever Creations SV07 review](https://clevercreations.org/sovol-sv07-3d-printer-review-specs/) [3DPros SV07 database](https://3dpros.com/printers/sovol-sv07)"
+          }
+        ],
+        "examples": [
+          {
+            "title": "Scenario A \u2014 the first-layer lottery",
+            "scenario": "A new SV-07 comes partially assembled. The first print sticks in some corners and lifts in others, and the Z offset seems to drift between files.",
+            "outcome": "Run the setup order instead of guessing at the offset: preload the four bed nuts (tight, then two turns out), Z Calibrate on paper, corner Screws Adjust until every corner reads within 00:10, Z_TILT_ADJUST, BED_MESH_CALIBRATE, then SAVE_CONFIG \u2014 the restart it forces is what persists the result. Re-trim live in 0.01 mm steps only after the machine-side steps are done."
+          },
+          {
+            "title": "Scenario B \u2014 the spec sheet sells a number you will never print",
+            "scenario": "A store page leads with a 500 mm/s headline speed, and a forum poster says their SV-07 prints everything at that speed.",
+            "outcome": "The same official page states the machine prints at 250 mm/s with high precision, and the official manual's spec table lists a recommended printing speed at or below 250 mm/s. Treat the headline as a peak-rating figure and the manual number as the printing envelope you actually plan around."
+          },
+          {
+            "title": "Scenario C \u2014 hunting for PID on the touchscreen",
+            "scenario": "After a hotend swap, someone scrolls the Machine Leveling menu looking for the PID tune item and cannot find it.",
+            "outcome": "PID_CALIBRATE is a Klipper console command, not a touchscreen menu item \u2014 run it from the Fluidd console with HEATER and TARGET arguments, let it cycle, then SAVE_CONFIG to store the new values."
+          }
+        ],
+        "pitfalls": [
+          "MYTH: \u201cThe spec page is always right.\u201d Sovol's own documents conflict on the heated bed ceiling - the official manual and an independent review say <= 100 C while an older EU product-page spec table said <= 80 C; ship <= 100 C and keep the conflict as the spec-page-error case study, noting the review thermally imaged the bed within about 2 C at 60 C but up to about 10 C of spread at 100 C [V 2026-10-26] [Clever Creations SV07 review](https://clevercreations.org/sovol-sv07-3d-printer-review-specs/)",
+          "MYTH: \u201cThe SV-07 is a CoreXY machine.\u201d Sovol's EU SV07 page carried a CoreXY Kinematics blurb that actually describes the SV08 - the SV07 is a cartesian bed-slinger; do not ship the CoreXY claim, keep it only as a spec-page-error case study [V 2026-10-26] [Sovol SV07 product page (Wayback archive)](https://web.archive.org/web/20251224102634/https://sovol.eu/products/sovol-sv07-klipper-direct-drive-3d-printer-print-speed-250mm-s)",
+          "MYTH: \u201cThe manual always has the final word.\u201d Sovol's spec table and an independent review both list printing accuracy +/- 0.1 mm; the official manual mirror's separate +/- 0.001mm line is a typo three orders of magnitude off and must not ship [V 2026-10-26] [Clever Creations SV07 review](https://clevercreations.org/sovol-sv07-3d-printer-review-specs/)",
+          "MYTH: \u201cAuto leveling means I never touch the bed nuts again.\u201d The 25-point system compensates at probe time, but the manual's preload procedure (tighten the four nuts, then two full turns out) and the corner Screws Adjust pass set the mechanical baseline the mesh then works within.",
+          "MYTH: \u201cSAVE_CONFIG is an optional courtesy step.\u201d It overwrites the main printer config file and restarts the host software \u2014 skipping it throws away the Z offset, mesh or PID you just measured.",
+          "MYTH: \u201cWhatever version string my machine shows is what ships from the factory.\u201d A version read on a machine you can touch is an observation; the factory package is whatever the official wiki currently lists. Keep the two labels separate.",
+          "\u26a0 A brand-store listing's suggested initial layer height is marketing copy, not a spec-table figure \u2014 treat slicer starting points as profiles to validate with test prints, not numbers to trust because a listing said them."
+        ],
+        "exercises": [
+          "Write the setup order from memory (preload, network, Z Calibrate, corners, Z Tilt, bed mesh, save, PID, input shaping, pressure advance), then run it on the machine and note which single step changed the first layer the most.",
+          "Find the current SV07 firmware package on the official wiki and record its date. State in one sentence what that number does and does not tell you about the Klipper version inside the image.",
+          "Run the Z Calibrate paper test twice in a row without changing anything between runs. If the two results differ noticeably, that spread is your measurement noise \u2014 the reason the corner and mesh steps exist.",
+          "Confirm on your own machine that your print files are served by the stock web interface, and locate where the Klipper host log lives so you know where the next problem will be readable."
+        ]
+      },
+      "intermediate": {
+        "label": "Intermediate \ud83d\udcc8 \u00b7 Gcode that kills prints",
+        "tagline": "The two failure modes that end prints on this machine class \u2014 power-loss-recovery rewriting gcode into something unparseable, and print-end moves without homing \u2014 plus the heater-fault lockdown and the honest way to test a heater.",
+        "goals": [
+          "Trace a G92 parse error to the PLR rewrite, not the slicer, and fix it at the file",
+          "Clear stale persisted PLR state before trusting any resume",
+          "Read the print-end console signature and fix end-gcode instead of blaming firmware",
+          "Recover from a heater-fault lockdown without fighting it",
+          "Run the ramp test and report the curve, never a single reading"
+        ],
+        "concepts": [
+          {
+            "title": "Print-Start Failure: PLR & the G92 E Parse Error",
+            "text": "How a healthy slice becomes an unparseable file at print start:\n- Sovol ships power-loss recovery on stock units: [include plr.cfg] plus plr.sh and clear_plr.sh scripts, included in Sovol's default printer.cfg; the PLR code is a modified fork in the The--Captain/plr-klipper / YUMI_PLR lineage. [V 2026-10-26] [InsideSovolKlipperScreen mod notes](https://github.com/torte71/InsideSovolKlipperScreen/blob/main/sovol_mods.md)\n- The PLR resume pipeline rewrites the gcode: it copies the source file to a temp file, writes the resume copy into a gcodes/plr/ subfolder, prepends SET_KINEMATIC_POSITION Z=<saved height>, re-injects temperature commands grepped from the file tail after ';End of Gcode', rebuilds the extrusion origin as a G92, then homes X/Y before the remaining layers. [V 2026-10-26] [BigTreeTech KlipperPLR plr.sh](https://raw.githubusercontent.com/bigtreetech/KlipperPLR/master/plr.sh)\n- The extrusion-origin rebuild contains the sed expression 's/.* E\\([^ ]*\\)/G92 E\\1/p' applied while scanning the file - any line whose last ' E' carries no value after it is rewritten into the bare token 'G92 E'. The identical expression exists in the upstream plr-klipper script Sovol's copy descends from. [V 2026-10-26] [BigTreeTech KlipperPLR plr.sh](https://raw.githubusercontent.com/bigtreetech/KlipperPLR/master/plr.sh)\n- PrusaSlicer gcode ends with a config block that begins with the line '; prusaslicer_config = begin' and finishes with '; prusaslicer_config = end', carrying about 375 settings - 'a record, not a substitute for the project file'. [V 2026-10-26] [NozzleNotes PrusaSlicer gcode guide](https://nozzlenotes.com/articles/software/prusaslicer-export-gcode)\n- Observed failure: 'Error on 'G92 E': unable to parse' at print start is produced when the PLR rewrite hits the config-dump trigger line '; extrusion_axis = E' - the slicer's executable gcode is NOT corrupt; the rewritten copy in the PLR folder is. (field-observed on an SV-07 running stock firmware, not vendor-published)\n- Gcode hygiene fix: truncate the file at '; prusaslicer_config = begin' before upload - everything after that marker is settings commentary, so removing it also removes the PLR trigger line and shrinks the file without affecting the print. [V 2026-10-26] [NozzleNotes PrusaSlicer gcode guide](https://nozzlenotes.com/articles/software/prusaslicer-export-gcode)\n- PLR state persists across restarts: [save_variables] writes variables to disk so they survive restarts, and they are reloaded into printer.save_variables.variables at startup - a stale power_resume_z therefore survives into later prints. [V 2026-10-26] [Klipper Config Reference](https://raw.githubusercontent.com/Klipper3d/klipper/master/docs/Config_Reference.md)\n- Observed: a power_resume_z wildly larger than the object height means corrupt PLR state - clear it with SAVE_VARIABLE before trusting any resume. (field-observed on an SV-07 running stock firmware, not vendor-published)\n- Full-fix option (open decision): documented revert is - back up printer.cfg, remove [include plr.cfg] and the PLR hooks from CANCEL_PRINT / PRINT_START / PRINT_END, test a normal print and a cancelled print, then delete plr files; a community tutorial additionally neuters plr.sh and clear_plr.sh to 'exit 0'. [V 2026-10-26] [InsideSovolKlipperScreen mod notes](https://github.com/torte71/InsideSovolKlipperScreen/blob/main/sovol_mods.md)\n- PLR resume copies inject SET_KINEMATIC_POSITION, which lives in Klipper's force_move module and is unavailable unless enable_force_move is set in the [force_move] config section - a stock config rejects the injected line, which is one more way a PLR resume copy fails [V 2026-10-26] [Klipper Config Reference](https://raw.githubusercontent.com/Klipper3d/klipper/master/docs/Config_Reference.md) [Klipper G-Codes reference](https://raw.githubusercontent.com/Klipper3d/klipper/master/docs/G-Codes.md)"
+          },
+          {
+            "title": "Print-End Failure: Unhomed Axes & Must Home Axis First",
+            "text": "The stock end-of-print path and where it breaks:\n- Observed: the stock Sovol PRINT_END macro only clears PLR state (SAVE_VARIABLE was_interrupted, RUN_SHELL_COMMAND clear_plr, clear_last_file) - it never homes or parks, so the head stays where the print finished. (field-observed on an SV-07 running stock firmware, not vendor-published)\n- Observed: at print end the axes can be in an unhomed-but-at-physical-position state (PLR / SET_KINEMATIC_POSITION quirk), so the slicer end-gcode lift (G91 G1 Z+25) is rejected with 'Must home axis first', G28 Z then fails with 'Must home X and Y axes first', and the end script errors out - the printer looks frozen but is idle. (field-observed on an SV-07 running stock firmware, not vendor-published)\n- Klipper refuses any move before homing on purpose (to reduce the chance of driving the head into the bed or wall), and the FAQ states disabled motors must be homed again before movement - so an end-gcode that moves without homing first is structurally wrong on Klipper. [V 2026-10-26] [Klipper FAQ](https://raw.githubusercontent.com/Klipper3d/klipper/master/docs/FAQ.md)\n- Symptom signature in console history: 'Done printing file' -> PRINT_END -> silence -> a Z lift rejected with 'Must home axis first' -> printer idle, never homed. (field-observed on an SV-07 running stock firmware, not vendor-published)\n- Chosen fix (firmware stays stock): put G28 (or G28 X Y) plus a Z lift in the SLICER end-gcode, and treat 'check the end-gcode' as a mandatory step whenever adopting a new print profile. (field-observed on an SV-07 running stock firmware, not vendor-published)\n- Official guidance supports keeping start/end sequences explicit: Klipper's slicer doc recommends defining Start/End G-Code as Klipper macros (START_PRINT / END_PRINT) so the steps are tweakable without re-slicing. [V 2026-10-26] [Klipper slicers doc](https://raw.githubusercontent.com/Klipper3d/klipper/master/docs/Slicers.md)\n- Probing carries the same precondition as movement: after motors are disabled (M84 or M18) Klipper requires homing again before any movement, which is why mesh and probe work in a recovery sequence fails with 'Must home axis first' [V 2026-10-26] [Klipper FAQ](https://raw.githubusercontent.com/Klipper3d/klipper/master/docs/FAQ.md)"
+          },
+          {
+            "title": "Heater Faults: verify_heater Lockdown & the Ramp Test",
+            "text": "How the lockdown works and how to test a heater honestly:\n- Heater verification is automatically enabled for every configured heater; defaults are max_error 120, check_gain_time 20s for extruders (60s for heater_bed), hysteresis 5 and heating_gain 2, with temperature inspected once per second - [verify_heater] sections only tune these, they do not switch the check on. [V 2026-10-26] [Klipper Config Reference](https://raw.githubusercontent.com/Klipper3d/klipper/master/docs/Config_Reference.md)\n- The fault is raised by klippy's verify_heater as the exact message 'Heater <name> not heating at expected rate' which invokes printer shutdown (fault lockdown). [V 2026-10-26] [Klipper verify_heater source](https://raw.githubusercontent.com/Klipper3d/klipper/master/klippy/extras/verify_heater.py)\n- Recovery from a heater-fault lockdown: correct the underlying issue, then send FIRMWARE_RESTART - Klipper's own error guidance and config checks both state FIRMWARE_RESTART resets the firmware, reloads config and restarts host software, clearing the error state. [V 2026-10-26] [Klipper config checks](https://raw.githubusercontent.com/Klipper3d/klipper/master/docs/Config_checks.md)\n- Ramp test method (observed): set M104 S200 and poll extruder temperature and power every 5 seconds for ~60 seconds - a healthy hotend climbs roughly 2-3 C per second with PWM modulating down near target; a dead circuit shows PWM pinned at 1.0 with under 1 degree of rise. Always report the ramp curve, never a single reading. (field-observed on an SV-07 running stock firmware, not vendor-published)\n- Hardware checklist for 'not heating' faults: proper assembly of the heater cartridge, proper assembly of the thermistor, hotend cooler blowing air onto the heater block, and sufficient power for the extruder heater. [V 2026-10-26] [Klipper Discourse verify-heater thread](https://klipper.discourse.group/t/verify-heater-error-in-hot-end/10788)\n- Tuning discipline: only relax [verify_heater] thresholds (larger max_error / check_gain_time) AFTER confirming the hardware is healthy, then restore the official defaults - relaxed values can mask real faults. [V 2026-10-26] [Klipper reference (verify_heater tuning)](https://mellow.klipper.cn/en/docs/DebugDoc/reference_configuration/optimize_macros/verify_heater/)\n- Hot-idle hazard (observed): a nozzle held at print temperature for roughly an hour or more with no extrusion cooks filament in the zone - flag hot-idle whenever seen in temperature history. (field-observed on an SV-07 running stock firmware, not vendor-published)\n- idle_timeout's built-in idle g-code turns heaters off and then issues M84, and the default timeout is 600 seconds - a pause outlasting the idle timeout leaves heaters off and motors disabled, which is exactly the state that makes a naive resume fail [V 2026-10-26] [Klipper idle_timeout source](https://raw.githubusercontent.com/Klipper3d/klipper/master/klippy/extras/idle_timeout.py)\n\n\u26a0 Do not fight the lockdown: while the printer is shut down, attempts to turn heaters off (M104 S0 / TURN_OFF_HEATERS) are rejected with an error instead of acting - the only path out is FIRMWARE_RESTART (heaters come back with no active targets). (field-observed on an SV-07 running stock firmware, not vendor-published)"
+          }
+        ],
+        "examples": [
+          {
+            "title": "Scenario A \u2014 \u2018Error on G92 E: unable to parse\u2019 at print start",
+            "scenario": "A PrusaSlicer file prints fine on other machines. On this one it dies at start with a G92 parse error, and re-slicing produces the same failure.",
+            "outcome": "The slicer's file is not what is broken. The power-loss-recovery rewrite copies the file and rebuilds the extrusion origin with a sed expression that turns any line ending in a value-less ' E' into a bare 'G92 E' \u2014 and the PrusaSlicer config dump contains exactly such a line ('extrusion_axis = E'). Truncate the file at the '; prusaslicer_config = begin' marker before upload: everything after it is settings commentary, so the print is unaffected and the trigger line is gone."
+          },
+          {
+            "title": "Scenario B \u2014 the print ends, then everything is rejected",
+            "scenario": "The console shows 'Done printing file', then PRINT_END, then silence \u2014 and the end-gcode Z lift comes back as 'Must home axis first'. The machine looks frozen but is simply idle.",
+            "outcome": "The stock PRINT_END only clears power-loss-recovery state; it never homes or parks. At print end the axes can be unhomed-but-at-physical-position, and Klipper refuses any move before homing on purpose. The fix lives in the slicer: put G28 (or G28 X Y) plus the lift in the end-gcode, keep the firmware stock, and make 'check the end-gcode' a mandatory step whenever you adopt a new profile."
+          },
+          {
+            "title": "Scenario C \u2014 a heater that \u2018works\u2019 in the menus",
+            "scenario": "After a hotend rework the printer reports sensible temperatures, but a long heat-up ends in 'Heater extruder not heating at expected rate' and a shutdown.",
+            "outcome": "A single plausible reading proves nothing. Run the ramp test: set M104 S200 and poll temperature and heater power every 5 seconds for about a minute. A healthy hotend climbs roughly 2-3 degrees per second with PWM modulating down near target; a dead circuit shows power pinned at 1.0 with under a degree of rise. Report the curve, not one reading."
+          }
+        ],
+        "pitfalls": [
+          "MYTH: \u201cThe parse error means my slicer produced a corrupt file.\u201d The slicer's executable gcode is intact; the rewritten copy inside the power-loss-recovery folder is what failed. Re-slicing reproduces the trigger, not a defect.",
+          "MYTH: \u201cPRINT_END parks the head when the job is done.\u201d The stock macro only clears recovery state; the head stays wherever the last layer ended, and the console signature 'Done printing file' \u2192 PRINT_END \u2192 a rejected lift is the recognizable form of this failure.",
+          "\u26a0 Do not relax verify_heater thresholds (bigger max_error or check_gain_time) to silence nuisance faults before the hardware is confirmed healthy \u2014 relaxed values mask real faults. Verify first, tune second, restore defaults after.",
+          "MYTH: \u201cThe temperature graph looked fine, so the heater is fine.\u201d Heater verification samples once per second and accumulates shortfall against max_error; only a ramp curve over time shows the difference between a healthy heater and a dead one.",
+          "MYTH: \u201cTurning the heater off will clear the fault state.\u201d While the printer is shut down by a heater fault, heater-off commands are rejected with an error instead of acting \u2014 the only path out is fixing the cause and sending FIRMWARE_RESTART."
+        ],
+        "exercises": [
+          "Export a PrusaSlicer file, find the config-dump marker line, truncate the file at it, upload the truncated copy, and confirm via the file metadata endpoint that the uploaded byte size matches what you sent.",
+          "Rewrite a slicer end-gcode to home before lifting, run a deliberately short print, and confirm from the console history that no 'Must home axis first' appears.",
+          "Run the full ramp test (M104 S200, poll every 5 seconds for a minute) on a healthy hotend if you have access to one, and write down the curve shape you would expect from a dead heater circuit so you can recognize it later.",
+          "After adopting any new print profile, grep the log for ignored or unknown commands from the first minute of the print \u2014 that is where cross-printer gcode shows its silent degradation."
+        ]
+      },
+      "advanced": {
+        "label": "Advanced \ud83d\ude80 \u00b7 Edge cases, triage & recovery",
+        "tagline": "The pause-at-start wedge as a general failure class, the Moonraker file API contract and its silent-degradation traps, and the firmware, host and mechanical recovery paths when something is already broken.",
+        "goals": [
+          "Diagnose prints that start paused and prevent them with fresh pause state",
+          "Apply the upload contract and filename rules so files actually land and load",
+          "Degrade loudly: catch cross-printer gcode and meshless prints before a long job",
+          "Recover a mismatched MCU, a bricked host and a clogged hotend by documented paths",
+          "Run the maintenance cadence that keeps readjustment rare"
+        ],
+        "concepts": [
+          {
+            "title": "Case Study: Prints That START Paused",
+            "text": "The observed incident, then the general mechanism behind it:\n- Observed incident (sanitized): a gcode file that began execution in an already-paused state wedged the printer at print start and threw a heating-extruder error. (field-observed on an SV-07 running stock firmware, not vendor-published)\n- A pause triggered BEFORE the SD print begins (for example a false filament-runout trigger during initialization) leaves the next print starting in an already-paused state; Klipper collaborator Arksine diagnosed exactly this pattern - a runout pause 'with no subsequent resume before what appears to be a print start'. [V 2026-10-26] [Klipper issue 4940](https://github.com/Klipper3d/klipper/issues/4940)\n- Klipper's official command reference says of CLEAR_PAUSE: 'It is recommended to add this to your start gcode to make sure the paused state is fresh for each print'. [V 2026-10-26] [Klipper G-Codes reference](https://raw.githubusercontent.com/Klipper3d/klipper/master/docs/G-Codes.md)\n- During any pause long enough, the default [idle_timeout] fires: timeout 600 seconds, default g-code 'TURN_OFF_HEATERS' and 'M84' - heaters off AND steppers disabled, which erases homing state. [V 2026-10-26] [Klipper Config Reference](https://raw.githubusercontent.com/Klipper3d/klipper/master/docs/Config_Reference.md)\n- Documented real-world failure: a print paused over an hour (filament runout) has idle_timeout run TURN_OFF_HEATERS + M84 while the job is paused; homed_axes goes empty, and the next RESUME reheats, homes X/Y, then aborts with 'Must home axis first' - the job stays paused and cannot resume (nothing can safely re-home Z with a part on the bed). [V 2026-10-26] [Creality K2 Klipper issue 10](https://github.com/CrealityOfficial/K2_Series_Klipper/issues/10)\n- How a wedged heat-up becomes a heating error: verify_heater keeps sampling every second during the dwell; while the measured temp stays below (target minus hysteresis) an error counter grows by the shortfall each second and, once it exceeds max_error (default 120), Klipper raises 'Heater extruder not heating at expected rate' and shuts the printer down. [V 2026-10-26] [Klipper verify_heater source](https://raw.githubusercontent.com/Klipper3d/klipper/master/klippy/extras/verify_heater.py)\n- Signature to memorize: 'printer frozen at print start + heating-extruder error' is the pause-at-start / heater-verify interaction class - check pause_resume state and idle_timeout history before blaming the hotend. (field-observed on an SV-07 running stock firmware, not vendor-published)"
+          },
+          {
+            "title": "Moonraker API Quirks & File Upload Rules",
+            "text": "File API contract and the quirks that bite:\n- Moonraker upload contract: POST /server/files/upload as multipart/form-data; only 'gcodes' and 'config' roots are writable; an optional 'path' form argument targets a subfolder (created if missing); a supplied SHA256 'checksum' that does not match results in a 422 error - usable as an upload integrity gate. [V 2026-10-26] [Moonraker file-manager API](https://moonraker.readthedocs.io/en/stable/external_api/file_manager/)\n- Filename rule (documented failure): SDCARD_PRINT_FILE can fail with 'ascii codec can't decode' - the fix is to name gcode files with only letters, numbers, underscores and hyphens, because special characters break path handling in frontends and systems. [V 2026-10-26] [Klipper error FAQ](https://www.klipper.cn/en/docs/DebugDoc/faq/klipper-err-system/)\n- Observed upload rule: a space in the multipart filename makes Moonraker return 500 - always upload with a lowercase-hyphen name, then verify the file landed via /server/files/metadata (byte-size match). (field-observed on an SV-07 running stock firmware, not vendor-published)\n- Accepted print-file extensions: Moonraker's file manager treats .gcode, .g, .gco, .ufp and .nc as gcode (unzipping .ufp to .gcode), while Klipper's virtual_sdcard recognizes gcode, g and gco - keep uploads inside that set. [V 2026-10-26] [Moonraker file_manager source](https://github.com/Arksine/moonraker/blob/master/moonraker/components/file_manager/file_manager.py)\n- Old-build API quirk (owner-observed, version-dependent): JSON file-read and database-item API paths can 404 on older builds even while a raw GET of the same file's URL returns the content \u2014 verify the raw fetch before reporting data loss.\n- Camera triage (observed): the webcam is proxied through the main web interface, while a standalone webcam-port path may be dead \u2014 check BOTH paths before reporting the camera down, because either one alone can mislead.\n- Moonraker verifies an optional SHA256 checksum form argument after an upload and answers a mismatch with HTTP 422 - a checksum or byte-size check is the cheap way to prove a file landed intact [V 2026-10-26] [Moonraker file-manager API](https://moonraker.readthedocs.io/en/stable/external_api/file_manager/)\n- Moonraker's [webcam] configuration accepts relative stream_url and snapshot_url paths when the stream is served on the same host as Moonraker at port 80 - that is how a proxied webcam appears in the web UI, so a dead standalone camera URL does not by itself mean the camera is down [V 2026-10-26] [Moonraker configuration docs](https://raw.githubusercontent.com/Arksine/moonraker/master/docs/configuration.md)"
+          },
+          {
+            "title": "Safe Find-to-Print Workflow & Gcode Hygiene",
+            "text": "The gate discipline, end to end:\n- Pre-flight checklist before any print (fleet gate): target-printer profile confirmed in file header; end-gcode contains homing plus a lift; file truncated at '; prusaslicer_config = begin'; filename lowercase-hyphen with a valid extension; saved_variables PLR state sane; printer not left in a stale pause (CLEAR_PAUSE in start g-code). (field-observed on an SV-07 running stock firmware, not vendor-published)\n- Observed: files sliced for a different printer model show exactly that ignored-command pattern in klippy.log - check the slicer profile's target printer in the file header before committing to a long print, and require a Klipper-native mesh load (BED_MESH_PROFILE LOAD or BED_MESH_CALIBRATE in start g-code). (field-observed on an SV-07 running stock firmware, not vendor-published)\n- Cross-printer gcode degrades silently: Marlin-style M420 S1 (load stored mesh) is absent from Klipper's official command list, and Klipper answers unregistered commands with 'Unknown command:\"M420 S1\"' - no mesh loads, no error stops the print. [V 2026-10-26] [Klipper gcode source](https://raw.githubusercontent.com/Klipper3d/klipper/master/klippy/gcode.py)\n- Bed-mesh gotcha that bites new profiles: current Klipper no longer auto-loads the 'default' profile at startup - add BED_MESH_PROFILE LOAD=default to the START_PRINT macro or slicer start g-code (or a delayed_gcode), otherwise prints run meshless. [V 2026-10-26] [Klipper bed-mesh doc](https://raw.githubusercontent.com/Klipper3d/klipper/master/docs/Bed_Mesh.md)\n- Corrupt-file-on-storage class (observed): 'starts then dies, resume says not paused' means treat the gcode on storage as corrupt until proven otherwise - the log shows SDCARD_PRINT_FILE, virtual_sdcard OSError (for example Errno 5 Input/output error past the first kilobytes) and klippy restart cycles; fix is delete the copy and re-upload, and if a FRESH upload still throws I/O errors the storage medium itself is failing (check dmesg mmc/usb I/O errors) before blaming the slicer. (field-observed on an SV-07 running stock firmware, not vendor-published)\n- virtual_sdcard fails fast on bad files: an unreadable or missing file raises 'Unable to open file' and a listing failure raises 'Unable to get file list' - a file that cannot be opened is a file problem, not a pause problem. [V 2026-10-26] [Klipper virtual_sdcard source](https://raw.githubusercontent.com/Klipper3d/klipper/master/klippy/extras/virtual_sdcard.py)\n- The find-to-print gate discipline: search, rank the options, pick one, plan the slice, slice, upload, then fire \u2014 every arrow is a check you pass, not a habit you skip, and the pre-flight checklist in this guide is the gate that catches bad files before they cost a print."
+          },
+          {
+            "title": "Repair, Recovery & Maintenance Cadence",
+            "text": "Firmware and host recovery, mechanical repair, and the cadence that prevents the need:\n- 'MCU Protocol error' after a Klipper update means host/MCU version mismatch - the error lists every outdated MCU, and the fix is updating all of them (recompile and flash each MCU firmware). [V 2026-10-26] [Mainsail FAQ (MCU protocol error)](https://docs.mainsail.xyz/faq/klipper_errors/command-format-mismatch/)\n- SV-07 printer-board (mcu) reflash recipe: make menuconfig with STMicroelectronics STM32, processor STM32F103, bootloader offset 28KiB, serial communication on USART1 PA10/PA9; build, copy out/klipper.bin to an SD card renamed with a DIFFERENT name than any previous flash (the printer remembers used filenames and will skip them). [V 2026-10-26] [InsideSovolKlipperScreen update guide](https://torte71.github.io/InsideSovolKlipperScreen/updating_klipper.html)\n- The SV-07 MCU is picky about the flash SD card: 2GB-32GB, FAT32 only (never exFAT/NTFS), sector size exactly 4096 bytes, no other files on the card; insert it behind the front panel, power on, and if Klipper does not connect within about 5 minutes the flash failed - redo with a fresh filename. [V 2026-10-26] [InsideSovolKlipperScreen update guide](https://torte71.github.io/InsideSovolKlipperScreen/updating_klipper.html)\n- Host-side Klipper updates on the MKS Klipad50 need TWO builds: a 'Linux process' virtual MCU (make clean; make; sudo make flash) and the STM32 board build flashed by SD card - updating only one side leaves version mismatch. [V 2026-10-26] [InsideSovolKlipperScreen update guide](https://torte71.github.io/InsideSovolKlipperScreen/updating_klipper.html)\n- A bricked or boot-looping Klipad50 host can be recovered by booting a replacement Armbian or Debian image from a USB stick while driving the board's USB-C serial console from a PC - the community guide states it works whether or not the device still boots and instructs backing up printer.cfg first; never quote that guide's default login credentials in the module [V 2026-10-26] [SV07 host-recovery guide](https://github.com/vasyl83/SV07update)\n- Sovol's official repository SOVOL_KLIPAD50_SYSTEM (GPL-3.0) hosts the KLIPAD50 system image download and flash-to-eMMC notes - the official recovery source for the host. [V 2026-10-26] [Sovol KLIPAD50 system repo](https://github.com/Sovol3d/SOVOL_KLIPAD50_SYSTEM)\n- Loading new software is a separate tier: the documented upgrade is review Config_Changes.md, then git pull plus the install script on the host, and only then recompile/flash the MCU if MCU code changed [V 2026-10-26] [Klipper FAQ](https://raw.githubusercontent.com/Klipper3d/klipper/master/docs/FAQ.md)\n- Software update path: Moonraker's update_manager can update Klipper, Moonraker and front ends, but only on pristine git repos - repos modified on disk or cloned from unofficial sources are not supported [V 2026-10-26] [Moonraker configuration docs](https://raw.githubusercontent.com/Arksine/moonraker/master/docs/configuration.md)\n- Belt diagnosis without tools: pluck the belt like a guitar string - a deep bass tone is right, a higher tone means overtightened (overtight belts stress bearings and motors), a dull/low response means too loose; loose belts show up as layer shifts, ghosting and dimensional error. [V 2026-10-26] [Creality belt-tension guide](https://www.creality.com/blog/3d-printer-belt-tension)\n- Clog diagnosis: early signs are inconsistent extrusion, thin non-sticking lines, curling filament, and extruder clicking (the stepper skipping steps under excess load); the clog may live in the PTFE tube or heatsink, so changing the nozzle is not a universal fix. [V 2026-10-26] [Prusa clogged-nozzle article](https://help.prusa3d.com/article/clogged-nozzle-hotend-mk3-5-s-mk3s-mk2-5s_2008?product=mk3)\n- Three documented clog remedies: cold pull for partial clogs; heat-and-force (nozzle to 260C for PLA / 280C for PETG-ABS, wait, push through) when filament will not load; unload filament and raise the head 10-15cm before starting any of them. [V 2026-10-26] [Prusa clogged-nozzle article](https://help.prusa3d.com/article/clogged-nozzle-hotend-mk3-5-s-mk3s-mk2-5s_2008?product=mk3)\n- Cold pull essentials: melt fresh PLA through at about 270C, stop heating and keep pushing until the material solidifies (around 170C), let the nozzle cool (to roughly 85-100C), then pull the filament straight up and out to extract debris. [V 2026-10-26] [Prusa cold-pull article](https://help.prusa3d.com/article/cold-pull-mk3-s-mk2-5-s-mk3-5-s_2075)\n- Sovol's official wiki lists SV-07 replacement parts (hardened high-flow nozzles, all-metal hotend kit, hotend silicone socks) - the sanctioned parts source for mechanical swaps. [V 2026-10-26] [Sovol SV07 wiki](https://wiki.sovol3d.com/en/SV07)\n- Cadence: check belts, screws and lubrication every few prints, clean the printer weekly, and perform a full inspection and calibration once a month [V 2026-10-26] [sovol3d.com fix-3d-print-layers-shifting-common-issues-and-solutions](https://www.sovol3d.com/blogs/news/fix-3d-print-layers-shifting-common-issues-and-solutions)\n- Every 200-300 print hours: inspect belt tension and belt wear, and check that fasteners on the toolhead and motion system have not loosened [V 2026-10-26] [sovol.eu how-long-does-a-3d-printer-last](https://sovol.eu/blogs/new/how-long-does-a-3d-printer-last)\n- Every 500-1,000 print hours: consider a nozzle replacement if quality has drifted (earlier for abrasives), inspect fans for noise and airflow, and inspect the filament path and extruder gear for dust [V 2026-10-26] [sovol.eu how-long-does-a-3d-printer-last](https://sovol.eu/blogs/new/how-long-does-a-3d-printer-last)\n- Preventive cleaning: do cold pulls every 20-30 print hours and when switching filament types; check and replace aging nozzles and PTFE tubes to prevent clogs [V 2026-10-26] [Sovol hotend-clog post](https://www.sovol3d.com/blogs/news/how-to-fix-3d-printer-hotend-clog-step-by-step-guide)\n- Belt tension feel test: press the belt gently - floppy means too tight-free/loose, hard to press or high-pitched means too tight; aim for a firm, slight bounce [V 2026-10-26] [sovol3d.com fix-3d-print-layers-shifting-common-issues-and-solutions](https://www.sovol3d.com/blogs/news/fix-3d-print-layers-shifting-common-issues-and-solutions)\n- Observation rule (field-observed): a version string you read on a machine you can touch is an observation, not a factory spec \u2014 cite it as observed, never as what ships in the box.\n- Nozzle diameters: 0.4 mm included, plus 0.6 mm and 0.8 mm supported [V 2026-10-26] [Sovol SV07 product page (Wayback archive)](https://web.archive.org/web/20251224102634/https://sovol.eu/products/sovol-sv07-klipper-direct-drive-3d-printer-print-speed-250mm-s)\n- The SV07 motion system uses delrin V-slot wheels, not linear rails - the product spec table line 'Guide Rail: X+Y+Z linear rails' is contradicted by the independent review, which lists the V-slot wheels as a downgrade against the SV06's linear rails and rods [V 2026-10-26] [Clever Creations SV07 review](https://clevercreations.org/sovol-sv07-3d-printer-review-specs/)\n- Review-measured stock defaults are 8000 mm/s2 max acceleration with 3000 mm/s2 accel-to-decel; the reviewer hit missing Y steps at those values and recommends 5000 / 2000 - label as review-measured, no official SV07 acceleration figure exists [V 2026-10-26] [Clever Creations SV07 review](https://clevercreations.org/sovol-sv07-3d-printer-review-specs/)\n- Sovol's own posts disagree on nozzle life: the nozzle-replacement post says brass nozzles are swapped after about 500 print hours and sooner with abrasive filaments, while the hotend-clog post cites 900-1300 hours - ship the band with both sources and let the filament choice decide [V 2026-10-26] [Sovol hotend-clog post](https://www.sovol3d.com/blogs/news/how-to-fix-3d-printer-hotend-clog-step-by-step-guide)\n- Because the latest official SV07 firmware package (1.0.17) is dated 5 Oct 2023 on Sovol's own wiki and Klipper v0.12.0 was only published on 2023-11-10, stock SV07 images necessarily predate v0.12.0 and sit in the v0.11 era [V 2026-10-26] [Sovol SV07 wiki](https://wiki.sovol3d.com/en/SV07) [Klipper release page](https://www.klipper3d.org/Releases.html)"
+          }
+        ],
+        "examples": [
+          {
+            "title": "Scenario A \u2014 the printer that starts every print already paused",
+            "scenario": "Field-observed on an SV-07 running stock firmware (not vendor-published): a gcode file began execution in an already-paused state, wedged the machine at print start, and threw a heating-extruder error. Nothing in the file asked for a pause.",
+            "outcome": "The mechanism is documented, not mysterious. A pause triggered before the print begins (a false runout trigger during initialization is the classic case) leaves the next print starting paused; PAUSE calls inside the file then no-op with 'Print already paused' while start macros keep running, heat waits can stall, and verify_heater converts the stall into 'not heating at expected rate'. The maintainer-recommended prevention is a CLEAR_PAUSE in the start gcode so every print begins with fresh pause state \u2014 and when reading such an incident, check pause and idle history before blaming the hotend."
+          },
+          {
+            "title": "Scenario B \u2014 the camera is black but the printer prints",
+            "scenario": "A remote check shows no camera feed, and the report comes back 'camera down'. The print, meanwhile, is progressing normally.",
+            "outcome": "Camera paths fail independently: the webcam is proxied through the main web interface while a standalone webcam-port path may be dead. Check both paths before reporting the camera down \u2014 one working proxy hides a dead direct path, and vice versa."
+          },
+          {
+            "title": "Scenario C \u2014 the host that no longer boots after an update",
+            "scenario": "A Klipper update leaves the host board in a boot loop and the console shows an MCU protocol error listing outdated MCUs.",
+            "outcome": "Two separate recoveries apply. The version mismatch means every listed MCU needs its firmware updated \u2014 and on this host class that is two builds, the Linux-process virtual MCU and the STM32 board flashed by SD card, because updating only one side reproduces the mismatch. If the host itself no longer boots, the sanctioned image and eMMC flashing notes live in Sovol's official system repository, with a community guide covering USB-stick-over-serial recovery; back up printer.cfg first."
+          }
+        ],
+        "pitfalls": [
+          "MYTH: \u201cM600 handles filament changes out of the box on Klipper.\u201d M600 is not in Klipper's official command list \u2014 it ships only as an example macro in sample-macros.cfg that calls PAUSE, and a printer without that macro defined does nothing useful when a slicer emits M600.",
+          "MYTH: \u201cThe printer crashed \u2014 the interface froze.\u201d Pause and print-state reporting can disagree (a file reporting paused while the pause module reports not paused); that limbo cannot be resumed and needs a cancel plus restart, not a power cycle ritual.",
+          "\u26a0 A file that starts then dies while resume reports 'not paused' should be treated as corrupt on storage until proven otherwise \u2014 the log shows the print start followed by file-system input/output errors. Delete and re-upload; if a fresh upload still throws I/O errors, the storage medium itself is failing.",
+          "MYTH: \u201cupdate_manager will keep my hand-patched Klipper tree updated.\u201d It supports pristine git repositories only; modified or third-party clones lose the supported update path (a tweaked printer.cfg is fine \u2014 hand-edited code is not).",
+          "MYTH: \u201cA Marlin-style mesh-load command works on Klipper because it worked on my old printer.\u201d Unregistered commands are answered with an 'unknown command' message and the print continues \u2014 no mesh loads and no error stops the job, so cross-printer gcode degrades silently."
+        ],
+        "exercises": [
+          "Add CLEAR_PAUSE to your start gcode, then deliberately leave a stale pause active and start a short print \u2014 confirm it begins with fresh state instead of a silent no-op pause.",
+          "During a long pause, stretch the idle window with SET_IDLE_TIMEOUT, then restore the configured value after RESUME. Record what the default 600-second timeout would have done to heaters and steppers in the meantime.",
+          "The next time a camera blackout is reported, check both camera paths and write down exactly what each returned before anyone touches a config.",
+          "Take an MCU protocol error message and extract from it the list of MCUs it calls outdated, then write the two-build update sequence you would run to clear the mismatch."
+        ]
+      }
+    },
+    "glossary": [
+      {
+        "term": "Klipper",
+        "definition": "3D-printer firmware where the host does motion planning and the micro-controller executes steps; on this machine the host is the single-board computer and the MCU is the printer control board."
+      },
+      {
+        "term": "Moonraker",
+        "definition": "Python 3 web server that exposes APIs for Klipper; it talks to the Klippy host over a Unix domain socket and serves the front ends over HTTP."
+      },
+      {
+        "term": "Klippy",
+        "definition": "The Klipper host process; its log (usually under the printer data directory's logs folder) is where errors are readable in full."
+      },
+      {
+        "term": "Fluidd",
+        "definition": "Web front end served through Moonraker; it is the stock web interface shipped on this machine (Mainsail is the other main Moonraker-based front end)."
+      },
+      {
+        "term": "printer.cfg",
+        "definition": "Main Klipper configuration file living on the host; it can include other config files, which is how modular files like the power-loss-recovery include work."
+      },
+      {
+        "term": "Power-loss recovery (PLR)",
+        "definition": "Stock feature that rewrites the gcode into a resume copy (position restore, re-injected temperatures, rebuilt extrusion origin) so a print can continue after power loss \u2014 and the source of the G92 parse-error failure mode in this guide."
+      },
+      {
+        "term": "Bed mesh",
+        "definition": "Klipper's move-transformation layer built from probed bed points; BED_MESH_CALIBRATE probes the configured points, the mesh is immediately active, and it saves to a named profile."
+      },
+      {
+        "term": "Input shaping",
+        "definition": "Vibration compensation that requires tuning \u2014 by printed ringing test or accelerometer measurement \u2014 before it is enabled."
+      },
+      {
+        "term": "Pressure advance",
+        "definition": "Extrusion compensation tuned by printing a test object (Klipper's square tower) at speed and inspecting the corners."
+      },
+      {
+        "term": "verify_heater",
+        "definition": "Per-heater safety check, automatically enabled, that samples temperature about once per second and shuts the printer down with a 'not heating at expected rate' fault when the shortfall against max_error accumulates."
+      },
+      {
+        "term": "idle_timeout",
+        "definition": "Module that, after its default 600 seconds of inactivity, runs TURN_OFF_HEATERS and M84 \u2014 heaters off and steppers disabled, which erases homing state."
+      },
+      {
+        "term": "pause_resume",
+        "definition": "Module behind pause position capture and restore; it answers 'Print already paused' when PAUSE is called while paused and 'Print is not paused, resume aborted' when RESUME is called with no pause active."
+      },
+      {
+        "term": "SAVE_CONFIG",
+        "definition": "Klipper command that persists a calibration (Z offset, mesh, PID) by overwriting the main printer config file and restarting the host software."
+      },
+      {
+        "term": "FIRMWARE_RESTART",
+        "definition": "Restart command that reloads config, performs an internal reset and also clears micro-controller error state \u2014 the command that lifts a heater-fault lockdown. It does not load new software."
+      }
+    ],
+    "quiz": {
+      "beginner": [
+        {
+          "question": "What build volume does the SV-07's official spec table publish?",
+          "q": "What build volume does the SV-07's official spec table publish?",
+          "type": "multiple-choice",
+          "options": [
+            "250 x 250 x 250 mm",
+            "220 x 220 x 250 mm",
+            "220 x 220 x 220 mm",
+            "235 x 235 x 250 mm"
+          ],
+          "correct": 1,
+          "answer": 1,
+          "explanation": "Sovol's official spec table publishes the build volume as 220 x 220 x 250 mm.",
+          "explain": "Sovol's official spec table publishes the build volume as 220 x 220 x 250 mm."
+        },
+        {
+          "question": "What is the maximum nozzle temperature listed for the SV-07's all-metal high-flow hotend?",
+          "q": "What is the maximum nozzle temperature listed for the SV-07's all-metal high-flow hotend?",
+          "type": "multiple-choice",
+          "options": [
+            "Up to 250 \u00b0C",
+            "Up to 260 \u00b0C",
+            "Up to 280 \u00b0C",
+            "Up to 300 \u00b0C"
+          ],
+          "correct": 3,
+          "answer": 3,
+          "explanation": "The official product page lists the all-metal high-flow hotend at up to 300 \u00b0C; 260 \u00b0C appears elsewhere as the enclosure-recommendation threshold for higher temperatures, not the hotend limit.",
+          "explain": "The official product page lists the all-metal high-flow hotend at up to 300 \u00b0C; 260 \u00b0C appears elsewhere as the enclosure-recommendation threshold for higher temperatures, not the hotend limit."
+        },
+        {
+          "question": "Which web interface does the SV-07 ship with as its stock web UI?",
+          "q": "Which web interface does the SV-07 ship with as its stock web UI?",
+          "type": "multiple-choice",
+          "options": [
+            "KlipperScreen",
+            "OctoPrint",
+            "Mainsail",
+            "Fluidd"
+          ],
+          "correct": 3,
+          "answer": 3,
+          "explanation": "The official manual's print-from-WiFi step names the Fluidd interface; Mainsail is the other main Moonraker-based front end but is not what Sovol's own material names as stock.",
+          "explain": "The official manual's print-from-WiFi step names the Fluidd interface; Mainsail is the other main Moonraker-based front end but is not what Sovol's own material names as stock."
+        },
+        {
+          "question": "What type of extruder does the SV-07 use?",
+          "q": "What type of extruder does the SV-07 use?",
+          "type": "multiple-choice",
+          "options": [
+            "All-metal planetary dual-gear direct drive",
+            "Geared Bowden extruder",
+            "Direct drive with a plastic drive gear",
+            "Bowden single-gear"
+          ],
+          "correct": 0,
+          "answer": 0,
+          "explanation": "Sovol's official page lists an all-metal planetary dual-gear direct-drive extruder.",
+          "explain": "Sovol's official page lists an all-metal planetary dual-gear direct-drive extruder."
+        },
+        {
+          "question": "How many points does the SV-07's automatic bed leveling probe?",
+          "q": "How many points does the SV-07's automatic bed leveling probe?",
+          "type": "multiple-choice",
+          "options": [
+            "25 points",
+            "49 points",
+            "9 points",
+            "16 points"
+          ],
+          "correct": 0,
+          "answer": 0,
+          "explanation": "The official manual lists a 25-point automatic bed-leveling system.",
+          "explain": "The official manual lists a 25-point automatic bed-leveling system."
+        },
+        {
+          "question": "The SV-07's printer control board is a 4-layer STM32 silent mainboard with a TMC2209 stepper driver.",
+          "q": "The SV-07's printer control board is a 4-layer STM32 silent mainboard with a TMC2209 stepper driver.",
+          "type": "true-false",
+          "correct": true,
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "explanation": "Sovol's official spec listing describes the printer control board as a 4-layer STM32 silent mainboard with TMC2209 driver and Type-C connection \u2014 distinct from the host single-board computer that runs the Klipper host.",
+          "explain": "Sovol's official spec listing describes the printer control board as a 4-layer STM32 silent mainboard with TMC2209 driver and Type-C connection \u2014 distinct from the host single-board computer that runs the Klipper host."
+        },
+        {
+          "question": "Which command persists a calibration result (Z offset, mesh, PID) on Klipper?",
+          "q": "Which command persists a calibration result (Z offset, mesh, PID) on Klipper?",
+          "type": "multiple-choice",
+          "options": [
+            "FIRMWARE_RESTART",
+            "RESTART",
+            "M500",
+            "SAVE_CONFIG"
+          ],
+          "correct": 3,
+          "answer": 3,
+          "explanation": "SAVE_CONFIG overwrites the main printer config file and restarts the host software \u2014 that restart is what persists the calibration.",
+          "explain": "SAVE_CONFIG overwrites the main printer config file and restarts the host software \u2014 that restart is what persists the calibration."
+        },
+        {
+          "question": "Which touchscreen step sets the Z offset (paper test) on this machine?",
+          "q": "Which touchscreen step sets the Z offset (paper test) on this machine?",
+          "type": "multiple-choice",
+          "options": [
+            "Z Calibrate",
+            "Z Tilt",
+            "Bed Level",
+            "Bed Mesh"
+          ],
+          "correct": 0,
+          "answer": 0,
+          "explanation": "Z Calibrate moves the nozzle to bed center for the A4-paper test; Bed Level, Z Tilt and Bed Mesh are separate steps in the Machine Leveling flow.",
+          "explain": "Z Calibrate moves the nozzle to bed center for the A4-paper test; Bed Level, Z Tilt and Bed Mesh are separate steps in the Machine Leveling flow."
+        },
+        {
+          "question": "PID tuning is an item in the touchscreen's Machine Leveling menu.",
+          "q": "PID tuning is an item in the touchscreen's Machine Leveling menu.",
+          "type": "true-false",
+          "correct": false,
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "explanation": "PID_CALIBRATE is a Klipper console command run from the Fluidd console side, not a touchscreen menu item; it must be followed by SAVE_CONFIG.",
+          "explain": "PID_CALIBRATE is a Klipper console command run from the Fluidd console side, not a touchscreen menu item; it must be followed by SAVE_CONFIG."
+        },
+        {
+          "question": "What does FIRMWARE_RESTART do that RESTART does not?",
+          "q": "What does FIRMWARE_RESTART do that RESTART does not?",
+          "type": "multiple-choice",
+          "options": [
+            "Clears micro-controller error state",
+            "Restarts the web front end",
+            "Reflashes the MCU with new firmware",
+            "Reloads the bed mesh"
+          ],
+          "correct": 0,
+          "answer": 0,
+          "explanation": "RESTART reloads config and resets internals but leaves MCU error state; FIRMWARE_RESTART also clears that state \u2014 it is the command that lifts a heater-fault lockdown. Neither loads new software.",
+          "explain": "RESTART reloads config and resets internals but leaves MCU error state; FIRMWARE_RESTART also clears that state \u2014 it is the command that lifts a heater-fault lockdown. Neither loads new software."
+        },
+        {
+          "question": "In Klipper's host/MCU split, where do the printer's settings live?",
+          "q": "In Klipper's host/MCU split, where do the printer's settings live?",
+          "type": "multiple-choice",
+          "options": [
+            "In Moonraker's database",
+            "In the touchscreen's SD card",
+            "In printer.cfg on the host",
+            "In the MCU's firmware"
+          ],
+          "correct": 2,
+          "answer": 2,
+          "explanation": "Klipper splits host (the Linux single-board computer) and MCU (the printer control board); most printer settings live in printer.cfg stored on the host.",
+          "explain": "Klipper splits host (the Linux single-board computer) and MCU (the printer control board); most printer settings live in printer.cfg stored on the host."
+        },
+        {
+          "question": "What is Moonraker's role in this stack?",
+          "q": "What is Moonraker's role in this stack?",
+          "type": "multiple-choice",
+          "options": [
+            "The motion planner",
+            "The slicer integration",
+            "The display server for the touchscreen",
+            "A Python 3 web server exposing APIs for Klipper"
+          ],
+          "correct": 3,
+          "answer": 3,
+          "explanation": "Moonraker is a Python 3 based web server exposing APIs for Klipper; it communicates with the Klippy host over a Unix domain socket and front ends consume it over HTTP.",
+          "explain": "Moonraker is a Python 3 based web server exposing APIs for Klipper; it communicates with the Klippy host over a Unix domain socket and front ends consume it over HTTP."
+        }
+      ],
+      "intermediate": [
+        {
+          "question": "What actually produces \u2018Error on G92 E: unable to parse\u2019 at print start on this machine class?",
+          "q": "What actually produces \u2018Error on G92 E: unable to parse\u2019 at print start on this machine class?",
+          "type": "multiple-choice",
+          "options": [
+            "A filename with special characters",
+            "The PLR rewrite hitting the config-dump line that ends in a value-less E",
+            "A corrupt slicer project file",
+            "An overheating MCU during homing"
+          ],
+          "correct": 1,
+          "answer": 1,
+          "explanation": "Power-loss recovery rewrites the gcode into a resume copy and rebuilds the extrusion origin with a sed expression that turns any line whose last E carries no value into a bare G92 E \u2014 and a real exported PrusaSlicer config contains exactly such a line ('extrusion_axis = E'). The slicer's own file is intact; the rewritten copy in the PLR folder is what fails.",
+          "explain": "Power-loss recovery rewrites the gcode into a resume copy and rebuilds the extrusion origin with a sed expression that turns any line whose last E carries no value into a bare G92 E \u2014 and a real exported PrusaSlicer config contains exactly such a line ('extrusion_axis = E'). The slicer's own file is intact; the rewritten copy in the PLR folder is what fails."
+        },
+        {
+          "question": "What is the gcode-hygiene fix for that parse error?",
+          "q": "What is the gcode-hygiene fix for that parse error?",
+          "type": "multiple-choice",
+          "options": [
+            "Truncate the file at '; prusaslicer_config = begin' before upload",
+            "Re-slice at a lower temperature",
+            "Reflash the printer MCU",
+            "Rename the file with underscores only"
+          ],
+          "correct": 0,
+          "answer": 0,
+          "explanation": "Everything after the config-dump marker is settings commentary, so truncating there removes the PLR trigger line, shrinks the file, and cannot affect the print itself.",
+          "explain": "Everything after the config-dump marker is settings commentary, so truncating there removes the PLR trigger line, shrinks the file, and cannot affect the print itself."
+        },
+        {
+          "question": "When this error appears, the slicer's original gcode file is corrupt.",
+          "q": "When this error appears, the slicer's original gcode file is corrupt.",
+          "type": "true-false",
+          "correct": false,
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "explanation": "The slicer's executable gcode is not corrupt \u2014 the rewritten resume copy inside the PLR folder is. Re-slicing reproduces the trigger, not a defect.",
+          "explain": "The slicer's executable gcode is not corrupt \u2014 the rewritten resume copy inside the PLR folder is. Re-slicing reproduces the trigger, not a defect."
+        },
+        {
+          "question": "How do you clear a suspect persisted power_resume_z?",
+          "q": "How do you clear a suspect persisted power_resume_z?",
+          "type": "multiple-choice",
+          "options": [
+            "FIRMWARE_RESTART alone",
+            "Delete printer.cfg entirely",
+            "SAVE_VARIABLE VARIABLE=power_resume_z VALUE=0.0",
+            "Format the SD card"
+          ],
+          "correct": 2,
+          "answer": 2,
+          "explanation": "SAVE_VARIABLE VARIABLE=<name> VALUE=<value> is the official command for fixing persisted state; a power_resume_z wildly larger than the object height means corrupt PLR state that should be cleared before trusting any resume.",
+          "explain": "SAVE_VARIABLE VARIABLE=<name> VALUE=<value> is the official command for fixing persisted state; a power_resume_z wildly larger than the object height means corrupt PLR state that should be cleared before trusting any resume."
+        },
+        {
+          "question": "What does the stock PRINT_END macro actually do?",
+          "q": "What does the stock PRINT_END macro actually do?",
+          "type": "multiple-choice",
+          "options": [
+            "Only clears power-loss-recovery state \u2014 it never homes or parks",
+            "Parks the head at the back of the bed",
+            "Homes all axes and lifts Z",
+            "Runs a mesh refresh"
+          ],
+          "correct": 0,
+          "answer": 0,
+          "explanation": "The stock macro clears PLR state (saved interrupt flag, clear shell command, last file) and nothing else \u2014 the head stays where the print finished, which is why an unhomed-but-positioned state reaches the slicer's end-gcode lift.",
+          "explain": "The stock macro clears PLR state (saved interrupt flag, clear shell command, last file) and nothing else \u2014 the head stays where the print finished, which is why an unhomed-but-positioned state reaches the slicer's end-gcode lift."
+        },
+        {
+          "question": "A console shows 'Done printing file' \u2192 PRINT_END \u2192 'Must home axis first' on the Z lift. What is the correct fix?",
+          "q": "A console shows 'Done printing file' \u2192 PRINT_END \u2192 'Must home axis first' on the Z lift. What is the correct fix?",
+          "type": "multiple-choice",
+          "options": [
+            "Lower the lift height to Z+5",
+            "Reflash the MCU",
+            "Put G28 (or G28 X Y) plus the lift in the slicer end-gcode",
+            "Disable power-loss recovery"
+          ],
+          "correct": 2,
+          "answer": 2,
+          "explanation": "Klipper refuses any move before homing on purpose, and disabled motors must be homed again before movement. The chosen fix keeps firmware stock and puts homing plus the lift in the slicer's end-gcode \u2014 and makes checking end-gcode mandatory whenever adopting a new profile.",
+          "explain": "Klipper refuses any move before homing on purpose, and disabled motors must be homed again before movement. The chosen fix keeps firmware stock and puts homing plus the lift in the slicer's end-gcode \u2014 and makes checking end-gcode mandatory whenever adopting a new profile."
+        },
+        {
+          "question": "Which exact message does the heater verification fault raise?",
+          "q": "Which exact message does the heater verification fault raise?",
+          "type": "multiple-choice",
+          "options": [
+            "MCU shutdown: undervoltage",
+            "Thermistor runaway detected",
+            "Heater extruder not heating at expected rate",
+            "Heater exceeding max temperature"
+          ],
+          "correct": 2,
+          "answer": 2,
+          "explanation": "klippy's verify_heater raises 'Heater <name> not heating at expected rate', which invokes printer shutdown \u2014 the fault lockdown.",
+          "explain": "klippy's verify_heater raises 'Heater <name> not heating at expected rate', which invokes printer shutdown \u2014 the fault lockdown."
+        },
+        {
+          "question": "How do you recover from a heater-fault lockdown?",
+          "q": "How do you recover from a heater-fault lockdown?",
+          "type": "multiple-choice",
+          "options": [
+            "Send RESTART",
+            "Fix the underlying cause, then send FIRMWARE_RESTART",
+            "Send TURN_OFF_HEATERS",
+            "Send M104 S0 and wait"
+          ],
+          "correct": 1,
+          "answer": 1,
+          "explanation": "Klipper's own guidance: correct the issue, then FIRMWARE_RESTART, which resets the firmware, reloads config and restarts host software, clearing the error state. Heaters come back with no active targets.",
+          "explain": "Klipper's own guidance: correct the issue, then FIRMWARE_RESTART, which resets the firmware, reloads config and restarts host software, clearing the error state. Heaters come back with no active targets."
+        },
+        {
+          "question": "While the printer is shut down by a heater fault, sending M104 S0 turns the heaters off.",
+          "q": "While the printer is shut down by a heater fault, sending M104 S0 turns the heaters off.",
+          "type": "true-false",
+          "correct": false,
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "explanation": "Attempts to turn heaters off while shut down are rejected with an error instead of acting \u2014 do not fight the lockdown; the only path out is FIRMWARE_RESTART.",
+          "explain": "Attempts to turn heaters off while shut down are rejected with an error instead of acting \u2014 do not fight the lockdown; the only path out is FIRMWARE_RESTART."
+        },
+        {
+          "question": "In the ramp test, what does a healthy hotend look like at M104 S200 with 5-second polls?",
+          "q": "In the ramp test, what does a healthy hotend look like at M104 S200 with 5-second polls?",
+          "type": "multiple-choice",
+          "options": [
+            "An instant jump to target",
+            "A flat line that only moves after a minute",
+            "Under 1 \u00b0C of rise with power pinned at 1.0",
+            "Roughly 2-3 \u00b0C per second of climb with PWM modulating down near target"
+          ],
+          "correct": 3,
+          "answer": 3,
+          "explanation": "The fleet-verified method: set M104 S200 and poll temperature and power every 5 seconds for about a minute. A dead circuit shows power pinned at 1.0 with under a degree of rise \u2014 always report the ramp curve, never a single reading.",
+          "explain": "The fleet-verified method: set M104 S200 and poll temperature and power every 5 seconds for about a minute. A dead circuit shows power pinned at 1.0 with under a degree of rise \u2014 always report the ramp curve, never a single reading."
+        },
+        {
+          "question": "A part-cooling fan blowing on the hotend during heating can help trigger a heater fault.",
+          "q": "A part-cooling fan blowing on the hotend during heating can help trigger a heater fault.",
+          "type": "true-false",
+          "correct": true,
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "explanation": "Community-documented: a part-cooling fan blowing on the hotend during heating dropped the temperature enough to trigger 'not heating at expected rate' \u2014 heating during a stall is not guaranteed to be clean.",
+          "explain": "Community-documented: a part-cooling fan blowing on the hotend during heating dropped the temperature enough to trigger 'not heating at expected rate' \u2014 heating during a stall is not guaranteed to be clean."
+        },
+        {
+          "question": "After the default idle timeout fires, what runs?",
+          "q": "After the default idle timeout fires, what runs?",
+          "type": "multiple-choice",
+          "options": [
+            "TURN_OFF_HEATERS followed by M84",
+            "Nothing \u2014 the printer just pauses",
+            "A full home sequence",
+            "FIRMWARE_RESTART"
+          ],
+          "correct": 0,
+          "answer": 0,
+          "explanation": "The default idle_timeout is 600 seconds and its default g-code turns heaters off and disables steppers \u2014 which erases homing state and is why a post-timeout resume or end-gcode lift fails with a homing error.",
+          "explain": "The default idle_timeout is 600 seconds and its default g-code turns heaters off and disables steppers \u2014 which erases homing state and is why a post-timeout resume or end-gcode lift fails with a homing error."
+        }
+      ],
+      "advanced": [
+        {
+          "question": "A print starts in an already-paused state. What does Klipper's own command reference recommend as prevention?",
+          "q": "A print starts in an already-paused state. What does Klipper's own command reference recommend as prevention?",
+          "type": "multiple-choice",
+          "options": [
+            "Raise the idle timeout permanently",
+            "Disable the filament runout sensor",
+            "Add CLEAR_PAUSE to the start gcode",
+            "Reflash the MCU"
+          ],
+          "correct": 2,
+          "answer": 2,
+          "explanation": "Klipper's G-code reference states of CLEAR_PAUSE: it is recommended to add this to your start gcode to make sure the paused state is fresh for each print.",
+          "explain": "Klipper's G-code reference states of CLEAR_PAUSE: it is recommended to add this to your start gcode to make sure the paused state is fresh for each print."
+        },
+        {
+          "question": "In Klipper, M600 performs a filament-change pause out of the box.",
+          "q": "In Klipper, M600 performs a filament-change pause out of the box.",
+          "type": "true-false",
+          "correct": false,
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "explanation": "M600 is not in Klipper's official G-code list \u2014 it ships only as an example macro in sample-macros.cfg that requires the pause_resume section, and a slicer's M600 does nothing useful on a printer without that macro defined.",
+          "explain": "M600 is not in Klipper's official G-code list \u2014 it ships only as an example macro in sample-macros.cfg that requires the pause_resume section, and a slicer's M600 does nothing useful on a printer without that macro defined."
+        },
+        {
+          "question": "What does PAUSE answer when the printer is already paused?",
+          "q": "What does PAUSE answer when the printer is already paused?",
+          "type": "multiple-choice",
+          "options": [
+            "Must home axis first",
+            "Print is not paused, resume aborted",
+            "Unknown command: PAUSE",
+            "Print already paused"
+          ],
+          "correct": 3,
+          "answer": 3,
+          "explanation": "The pause_resume source confirms both wedge strings: PAUSE while already paused responds 'Print already paused' and returns; RESUME while not paused responds 'Print is not paused, resume aborted' and returns without restoring position or moving.",
+          "explain": "The pause_resume source confirms both wedge strings: PAUSE while already paused responds 'Print already paused' and returns; RESUME while not paused responds 'Print is not paused, resume aborted' and returns without restoring position or moving."
+        },
+        {
+          "question": "A pause ran past the default idle timeout. What does the next RESUME typically fail with?",
+          "q": "A pause ran past the default idle timeout. What does the next RESUME typically fail with?",
+          "type": "multiple-choice",
+          "options": [
+            "Unable to open file",
+            "Heater extruder not heating at expected rate",
+            "Print is not paused, resume aborted",
+            "Must home axis first"
+          ],
+          "correct": 3,
+          "answer": 3,
+          "explanation": "After 600 idle seconds the default timeout runs TURN_OFF_HEATERS and M84, homed axes go empty, and the resume attempt aborts asking for homing \u2014 with a part on the bed, safely re-homing Z is exactly what cannot be done blindly.",
+          "explain": "After 600 idle seconds the default timeout runs TURN_OFF_HEATERS and M84, homed axes go empty, and the resume attempt aborts asking for homing \u2014 with a part on the bed, safely re-homing Z is exactly what cannot be done blindly."
+        },
+        {
+          "question": "What does Moonraker return when an upload's filename contains a space, per fleet observation?",
+          "q": "What does Moonraker return when an upload's filename contains a space, per fleet observation?",
+          "type": "multiple-choice",
+          "options": [
+            "422 checksum error",
+            "A silent rename",
+            "500 error",
+            "404 not found"
+          ],
+          "correct": 2,
+          "answer": 2,
+          "explanation": "A space in the multipart filename makes Moonraker return 500 \u2014 upload with a lowercase-hyphen name instead, then verify the file landed via the metadata endpoint with a byte-size match. The 422 belongs to a different gate: a supplied SHA256 checksum that does not match.",
+          "explain": "A space in the multipart filename makes Moonraker return 500 \u2014 upload with a lowercase-hyphen name instead, then verify the file landed via the metadata endpoint with a byte-size match. The 422 belongs to a different gate: a supplied SHA256 checksum that does not match."
+        },
+        {
+          "question": "Which filename breaks SDCARD_PRINT_FILE with a character-decoding error?",
+          "q": "Which filename breaks SDCARD_PRINT_FILE with a character-decoding error?",
+          "type": "multiple-choice",
+          "options": [
+            "btv2.gcode",
+            "bracket_test_v2 .gcode",
+            "bracket-test-v2.gcode",
+            "bracket_test_v2.gcode"
+          ],
+          "correct": 1,
+          "answer": 1,
+          "explanation": "Special characters break path handling in frontends and systems; the documented fix is to name gcode files with only letters, numbers, underscores and hyphens.",
+          "explain": "Special characters break path handling in frontends and systems; the documented fix is to name gcode files with only letters, numbers, underscores and hyphens."
+        },
+        {
+          "question": "A file starts then dies, and resume reports the print is not paused. What is the first conclusion?",
+          "q": "A file starts then dies, and resume reports the print is not paused. What is the first conclusion?",
+          "type": "multiple-choice",
+          "options": [
+            "The slicer profile is wrong",
+            "The pause macro package is buggy",
+            "The heater is failing",
+            "Treat the gcode on storage as corrupt until proven otherwise"
+          ],
+          "correct": 3,
+          "answer": 3,
+          "explanation": "That signature shows the file-system read failing mid-stream (input/output errors in the log) \u2014 delete the copy and re-upload; if a fresh upload still throws I/O errors, the storage medium itself is failing.",
+          "explain": "That signature shows the file-system read failing mid-stream (input/output errors in the log) \u2014 delete the copy and re-upload; if a fresh upload still throws I/O errors, the storage medium itself is failing."
+        },
+        {
+          "question": "Current Klipper automatically loads the saved 'default' bed-mesh profile at startup.",
+          "q": "Current Klipper automatically loads the saved 'default' bed-mesh profile at startup.",
+          "type": "true-false",
+          "correct": false,
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "explanation": "Current Klipper no longer auto-loads the default profile \u2014 add BED_MESH_PROFILE LOAD=default to the start macro or slicer start g-code, or prints run meshless without any error.",
+          "explain": "Current Klipper no longer auto-loads the default profile \u2014 add BED_MESH_PROFILE LOAD=default to the start macro or slicer start g-code, or prints run meshless without any error."
+        },
+        {
+          "question": "What does an MCU Protocol error after a Klipper update mean?",
+          "q": "What does an MCU Protocol error after a Klipper update mean?",
+          "type": "multiple-choice",
+          "options": [
+            "A wrong serial baud rate",
+            "A dead thermistor",
+            "A loose USB cable",
+            "Host/MCU version mismatch \u2014 every listed outdated MCU must be updated"
+          ],
+          "correct": 3,
+          "answer": 3,
+          "explanation": "The error lists every outdated MCU, and the fix is updating all of them by recompiling and flashing each one.",
+          "explain": "The error lists every outdated MCU, and the fix is updating all of them by recompiling and flashing each one."
+        },
+        {
+          "question": "What are the flash-card constraints for reflashing the SV-07 printer board?",
+          "q": "What are the flash-card constraints for reflashing the SV-07 printer board?",
+          "type": "multiple-choice",
+          "options": [
+            "exFAT is fine on any card",
+            "NTFS with any sector size",
+            "FAT32 only, 2-32 GB, 4096-byte sectors, and a filename never used before",
+            "Any card, as long as the filename matches the previous flash"
+          ],
+          "correct": 2,
+          "answer": 2,
+          "explanation": "The MCU skips filenames it has already seen, so each flash needs a fresh filename; the card must be FAT32 with 4096-byte sectors and no other files on it \u2014 if Klipper does not connect within about 5 minutes, redo it with a new filename.",
+          "explain": "The MCU skips filenames it has already seen, so each flash needs a fresh filename; the card must be FAT32 with 4096-byte sectors and no other files on it \u2014 if Klipper does not connect within about 5 minutes, redo it with a new filename."
+        },
+        {
+          "question": "On this host class, a host-side Klipper update requires what?",
+          "q": "On this host class, a host-side Klipper update requires what?",
+          "type": "multiple-choice",
+          "options": [
+            "Only the board build",
+            "Only the host build",
+            "Both the Linux-process virtual MCU build and the STM32 board build",
+            "Just a git pull"
+          ],
+          "correct": 2,
+          "answer": 2,
+          "explanation": "Updating only one side of the host/board pair leaves a version mismatch \u2014 the virtual MCU build and the SD-card board flash must both be done.",
+          "explain": "Updating only one side of the host/board pair leaves a version mismatch \u2014 the virtual MCU build and the SD-card board flash must both be done."
+        },
+        {
+          "question": "A gcode file sliced for a different printer model will fail loudly in Klipper.",
+          "q": "A gcode file sliced for a different printer model will fail loudly in Klipper.",
+          "type": "true-false",
+          "correct": false,
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "explanation": "Unknown commands are answered with an 'unknown command' message and the print continues \u2014 no mesh loads and nothing stops, so cross-printer gcode degrades silently. Check the target-printer profile in the file header before committing to a long print.",
+          "explain": "Unknown commands are answered with an 'unknown command' message and the print continues \u2014 no mesh loads and nothing stops, so cross-printer gcode degrades silently. Check the target-printer profile in the file header before committing to a long print."
+        }
+      ]
+    }
+  }
+}
