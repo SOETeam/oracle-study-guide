@@ -105,14 +105,32 @@
         ]
       }
     },
-    "glossary": {
-      "Evidence ladder": "Six rungs from measured outcomes (top) to essays/stories (bottom) \u2014 the tool for grading any claim before believing it.",
-      "HLMI": "High-Level Machine Intelligence: machines outperforming humans at every task, better and cheaper. 50% odds by 2047 per a 2,778-researcher survey.",
-      "Exposed (jobs)": "Touched by AI \u2014 helped, changed, downgraded, or replaced \u2014 not a synonym for eliminated.",
-      "Quiet not-hiring": "Labor adjustment through reduced entry-level hiring rather than layoffs; the mechanism behind the young-worker decline.",
-      "Superforecaster": "A person with a verified long-run record of accurate probabilistic forecasts; in the FRI tournament they put AI extinction by 2100 near 4-in-1,000.",
-      "Capability vs diffusion": "Labs race while real-world adoption crawls; the gap between what AI can do and what it actually does anywhere you can point to."
-    },
+    "glossary": [
+      {
+        "term": "Evidence ladder",
+        "definition": "Six rungs from measured outcomes (top) to essays/stories (bottom) \u2014 the tool for grading any claim before believing it."
+      },
+      {
+        "term": "HLMI",
+        "definition": "High-Level Machine Intelligence: machines outperforming humans at every task, better and cheaper. 50% odds by 2047 per a 2,778-researcher survey."
+      },
+      {
+        "term": "Exposed (jobs)",
+        "definition": "Touched by AI \u2014 helped, changed, downgraded, or replaced \u2014 not a synonym for eliminated."
+      },
+      {
+        "term": "Quiet not-hiring",
+        "definition": "Labor adjustment through reduced entry-level hiring rather than layoffs; the mechanism behind the young-worker decline."
+      },
+      {
+        "term": "Superforecaster",
+        "definition": "A person with a verified long-run record of accurate probabilistic forecasts; in the FRI tournament they put AI extinction by 2100 near 4-in-1,000."
+      },
+      {
+        "term": "Capability vs diffusion",
+        "definition": "Labs race while real-world adoption crawls; the gap between what AI can do and what it actually does anywhere you can point to."
+      }
+    ],
     "quiz": {
       "beginner": [
         {
