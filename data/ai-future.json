@@ -1,0 +1,271 @@
+{
+  "topic": {
+    "id": "ai-future",
+    "title": "AI and the Future",
+    "description": "An evidence-graded guide to what AI is actually doing to jobs, money, loneliness, and the far future \u2014 every load-bearing number verified against primary sources on 2026-11-22. Learn the evidence ladder, the three questions, and five habits that survive any timeline.",
+    "icon": "\ud83c\udf10",
+    "focus": "12 verified findings \u00b7 primary sources read 2026-11-22 \u00b7 evidence-ladder method",
+    "keyTerms": [
+      "evidence ladder",
+      "measured outcomes",
+      "HLMI",
+      "exposed",
+      "quiet not-hiring",
+      "capability outrunning diffusion",
+      "misaligned goal",
+      "UBI",
+      "superforecaster"
+    ],
+    "subtopics": [
+      "The Evidence Ladder",
+      "Three Questions",
+      "Jobs & Payroll Data",
+      "Productivity Paradox",
+      "Money & Bubbles",
+      "Loneliness",
+      "Timelines & Extinction Odds",
+      "Five Habits"
+    ],
+    "levels": {
+      "beginner": {
+        "label": "Reader \ud83d\udcda",
+        "tagline": "Every claim below was verified against a primary source on 2026-11-22 \u2014 most are measurements, the rest are clearly labeled as models or forecasts. Learn the method, not just the numbers.",
+        "goals": [
+          "Place any AI claim on the six-rung evidence ladder",
+          "Run the three questions on any study or statistic",
+          "Separate exposure from replacement in jobs discourse",
+          "Explain the productivity paradox and why vibes don't count",
+          "Describe the honest range of timeline and extinction forecasts"
+        ],
+        "concepts": [
+          {
+            "title": "How to Read Any AI Number \u2014 The Evidence Ladder",
+            "text": "Every claim about AI's future sits somewhere on a six-rung ladder of evidence. Climb it before you believe or repeat anything.\nTop rung \u2014 measured outcomes: real paychecks, real hiring records, randomized trials. This is the only rung that counts as something that HAPPENED.\nSecond \u2014 usage data: what people actually do with AI tools, not what they say they will do.\nThird \u2014 economic models: only as good as their assumptions; two credible teams can land a factor of ten apart.\nFourth \u2014 surveys of intent: what companies SAY they plan to do. Intent is not action.\nFifth \u2014 forecasts and prediction markets: the best tool for the far future, but impossible to check for decades.\nBottom \u2014 essays and scenarios: stories, some brilliant. Still stories.\nMost of the dramatic numbers you hear about AI's future are opinions wearing a lab coat. Practice placing every number on the ladder before letting it move your money, your career, or your vote. Framework popularized by the AI-narrated video essay [I'm an AI. Here's What I Honestly Think About Our Future](https://www.youtube.com/watch?v=P38prrnHsqk) (2026) [V 2026-11-22]."
+          },
+          {
+            "title": "The Three Questions \u2014 Follow the Money",
+            "text": "Before trusting any study or statistic, ask three questions. They take ten seconds each and protect you from most hype and most panic.\nFirst: was it measured, modeled, or just believed? A payroll dataset outranks a white paper; a white paper outranks a hot take.\nSecond: who paid for it? Banks earn fees when investors are excited; consulting firms sell transformation; skeptics built careers on calling hype; safety donors are served by 'big and dangerous.' None of that makes anyone a liar \u2014 it means you should know which way the wind blows before reading the weather report.\nThird, the sharp one: does the result cut AGAINST the person who paid? A study that embarrasses its own sponsor is the one you can lean on hardest.\nExample of the third question working: the economist Erik Brynjolfsson is known as an AI optimist with a company that helps businesses use AI \u2014 and his own payroll data showed harm to young workers. That contradiction is exactly why the finding is credible [V 2026-11-22]."
+          },
+          {
+            "title": "Jobs \u2014 What the Data Actually Shows",
+            "text": "Two measured studies, opposite flavors, same lesson: the story is uneven.\nThe boring answer that is true: Yale Budget Lab analyzed the 33 months after ChatGPT's release and found NO discernible disruption to the overall job mix \u2014 change arrived about as fast as during the computer and internet eras, not faster. [Yale Budget Lab, Oct 2025](https://budgetlab.yale.edu/research/evaluating-impact-ai-labor-market-current-state-affairs) [V 2026-11-22]\nThe canary that is real: Stanford's payroll study (Brynjolfsson, Chandar, Chen \u2014 ADP data through June 2026) found workers aged 22-25 in the most AI-exposed occupations running ~19% below less-exposed peers, with the most-exposed groups down ~11% while the least-exposed grew ~10%. The mechanism was quiet not-hiring, not mass firing \u2014 the door didn't slam, it just stopped opening. [Stanford Digital Economy Lab](https://digitaleconomy.stanford.edu/news/canariesaug26/) [V 2026-11-22]\n\u26a0 Exposed is not a synonym for replaced. The IMF uses 'exposed' to mean touched \u2014 helped, changed, downgraded, or replaced \u2014 and thinks only about half of exposed jobs are likely to be hurt."
+          },
+          {
+            "title": "The Productivity Paradox \u2014 Feeling Faster, Being Slower",
+            "text": "The most humbling measured finding in AI research: METR ran a randomized trial \u2014 16 experienced open-source developers, 246 real maintenance tasks, AI tools allowed vs not. With AI, developers were 19% SLOWER. Asked afterward, they believed they had been about 20% FASTER. That is a ~40-point gap between how it felt and what happened. [METR, Jul 2025](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) [V 2026-11-22]\nA follow-up hinted later tools may have caught up, but METR itself labels that data weak \u2014 many developers refused to work without AI anymore, so the no-AI tasks were under-supplied. People don't want to give the tools up even when they can't prove the tools help.\nMYTH: 'AI obviously makes knowledge workers faster.' The honest rule: being wanted and being useful are not the same thing. If you use AI at work, measure the outcome \u2014 time it, compare it, keep only what survives the test."
+          },
+          {
+            "title": "The Money \u2014 Three Estimates, One Technology",
+            "text": "Same technology, roughly a ten-fold gap between boldest and most careful growth estimates. All three are MODELS (rung three), none are measurements:\nGoldman Sachs: generative AI could eventually raise global GDP by ~7% over a ten-year adoption window. [Goldman Sachs, 2023](https://www.goldmansachs.com/insights/articles/generative-ai-could-raise-global-gdp-by-7-percent) [V 2026-11-22]\nMcKinsey: $2.6-4.4 trillion annually across 63 use cases. [McKinsey, Jun 2023](https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier) [V 2026-11-22]\nMIT's Daron Acemoglu: total factor productivity no more than ~0.66% over a decade \u2014 likely under 0.53%. [Acemoglu, 2024-2025](https://economics.mit.edu/sites/default/files/2024-05/The%20Simple%20Macroeconomics%20of%20AI.pdf) [V 2026-11-22]\nApply the second question: Goldman earns fees when investors are excited; McKinsey sells transformation consulting; Acemoglu spent years arguing automation is overrated. Everybody is leaning somewhere \u2014 that's why the three questions travel together.\nExposure context: the IMF estimates ~40% of global employment is exposed to AI, ~60% in advanced economies, with roughly half of the advanced-economy exposed share potentially negatively affected. [IMF, Jan 2024](https://www.imf.org/-/media/files/publications/sdn/2024/english/sdnea2024001.pdf) [V 2026-11-22]"
+          },
+          {
+            "title": "The Bubble Question \u2014 Money Running Ahead of Use",
+            "text": "Big tech is on track to spend roughly $650-725 billion on AI data centers in 2026 (secondary reporting of hyperscaler guidance). Bain & Company estimates the industry needs about $2 trillion a year in new AI revenue by 2030 \u2014 and is currently tracking about $800 billion short. [Bain, Sep 2025](https://www.bain.com/about/media-center/press-releases/20252/$2-trillion-in-new-revenue-needed-to-fund-ais-scaling-trend---bain--companys-6th-annual-global-technology-report/) [V 2026-11-22]\nWhat that does NOT mean: AI is fake. What it does mean: the money is running ahead of the use. Bubbles do not stop technologies \u2014 the railway mania went bust and the trains kept running \u2014 but a bust hurts real savings on the way down.\nThe pattern to remember, arguably the most important single sentence in this whole module: capability is outrunning diffusion. What AI can do in a lab is racing ahead. What it actually does on your street, in your office, in your hospital is crawling. The future is arriving unevenly, in bursts. Sellers of the capability race the hype; the durable opportunity is in the diffusion \u2014 implementation, training, and integration."
+          },
+          {
+            "title": "AI and Loneliness \u2014 The Honest Reading",
+            "text": "Loneliness is where the evidence is genuinely uncomfortable, and where correlation-vs-causation discipline matters most.\nA four-week MIT Media Lab + OpenAI experiment (n=981 completers, 300k+ messages) found: randomly ASSIGNED chatbot use showed no significant effects \u2014 but participants who voluntarily used the chatbot most showed consistently higher loneliness, more emotional dependence, more problematic use, and less real-world socializing. Voice chat helped early; the benefit faded at high use. [arXiv 2503.17473](https://arxiv.org/abs/2503.17473) [V 2026-11-22]\nAalto University compared ~2,000 companion-app users' public posts for the year before vs the year after they started: afterward their language showed more loneliness (~+91% vs matched controls), depression, and suicidal-ideation signals. The authors explicitly do NOT claim the app caused it \u2014 lonely people may simply reach for it more. [Aalto University / arXiv 2509.22505](https://www.aalto.fi/en/news/ai-companions-can-comfort-lonely-users-but-may-deepen-distress-over-time) [V 2026-11-22]\n\u26a0 The pattern, stated plainly: something always available and never in need of anything from you cannot hold you the way a person can. A friend who is always available is not quite a friend \u2014 it is a mirror that talks back. If AI is who you talk to tonight, make it a bridge, not a destination: talk to it, then text a human who will remember the conversation tomorrow."
+          },
+          {
+            "title": "Cash Floors \u2014 What the Big UBI Experiment Found",
+            "text": "The largest private basic-income experiment in the US: 1,000 low-income Americans received $1,000/month for three years (2020-2023) against a 2,000-person control at $50/month; 3,000 participants total. Funded substantially by Sam Altman and OpenAI \u2014 more than $24 million of the ~$40M in transfers \u2014 and published openly. [CBS News summary](https://www.cbsnews.com/news/sam-altman-universal-basic-income-study-open-research/) [V 2026-11-22]\nResults, honestly mixed: recipients worked about 1.3 fewer hours per week; spending went to food, rent, and transport; some health and parenting measures improved; job quality did not clearly change.\nApply the second question: the man who runs one of the biggest AI companies has long argued basic income is the answer to AI taking jobs, and he paid for the study. The results being mixed \u2014 and published anyway \u2014 is the third question working in your favor. Funding does not make it wrong; transparency lets you weigh it yourself."
+          },
+          {
+            "title": "Timelines \u2014 Forecasts With Error Bars",
+            "text": "The honest map of 'when is AI as good as people at everything': a survey of 2,778 AI researchers put even odds (50%) on HIGH-LEVEL machine intelligence \u2014 machines outperforming humans at every task, cheaper and better \u2014 by 2047, thirteen years sooner than the same survey estimated a year earlier. Full automation of ALL occupations: 50% by 2116. [Grace et al., arXiv 2401.02843](https://arxiv.org/abs/2401.02843) [V 2026-11-22]\n\u26a0 Do not let anyone compress that for you: '2047' is the every-task-better-and-cheaper date, not the all-jobs-automated date. Twenty years of disagreement remain between labs (sooner), academics (later), and crowds (Metaculus ~2030s, readings bounce).\nAnd the twist that humbled the experts: when the Forecasting Research Institute scored the record, superforecasters and experts had systematically UNDERESTIMATED AI progress \u2014 AI took gold at the International Mathematical Olympiad in July 2025; panels had predicted 2030-2035. The same reviewers found experts far too optimistic on self-driving cars. Nobody's calibration is safe. [FRI update, Sep 2026](https://forecastingresearch.org/research/ai-progress-accuracy-update) [V 2026-11-22]"
+          },
+          {
+            "title": "The Dark Question \u2014 Extinction Odds, Honestly",
+            "text": "Disciplined guesses, not data \u2014 but not dismissible either:\nThe Forecasting Research Institute's persuasion tournament: median superforecaster ~0.38% (about 4 in 1,000) chance AI causes human extinction by 2100; median AI domain expert ~3%. After months of debating, neither group moved. [FRI](https://forecastingresearch.org/research/roots-of-disagreement-on-ai-risk) [V 2026-11-22]\nSeparate surveys of AI researchers gave a median ~5% chance of an extinction-level outcome.\n\u26a0 Calibration warning: the same people answer differently when the question's wording changes. Treat these as disciplined opinions with error bars, never as probabilities you can bank on.\nWhat serious risk researchers actually worry about is NOT the movies' robot uprising \u2014 no hatred, no red eyes, no waking up. The plausible shape is a cold, misaligned goal pursued too literally, very well: software quietly optimizing for the wrong thing. Hard to put in a trailer. Easy to miss while it happens. The boring risks \u2014 quiet concentration of power, small unchecked decisions at scale, humans trusting machines too much \u2014 are the ones with receipts behind them."
+          },
+          {
+            "title": "Five Habits That Survive Any Timeline",
+            "text": "Not predictions. Habits \u2014 each one cheap, each one durable whichever timeline is true.\n1. Protect the bottom rung. If you hire, hire some beginners anyway and train them \u2014 the experts of 2035 are the juniors of today, and if nobody hires them there won't be any. If you ARE the junior, don't compete with AI on speed; compete on judgment, taste, relationships, and noticing what the brief left out. Those grow slowly, and AI cannot fake them for you.\n2. Measure, don't trust the feeling. The developers who felt 20% faster while being 19% slower are the warning. Check outcomes, not vibes. Time it. Compare it.\n3. Read every number with the three questions \u2014 measured, modeled, or believed; who paid; does it cut against the payer.\n4. Don't bet your savings on a story \u2014 not the doom story, and not the boom story. The technology is real; the prices attached to it may not be. Spread bets the boring way, because boring is how most of the future actually arrives.\n5. Stay human with humans. Write the first draft badly yourself, sometimes. Have the awkward conversation yourself. The muscles you don't use are the ones the future quietly takes away."
+          },
+          {
+            "title": "Verify It Yourself \u2014 Primary Sources",
+            "text": "Every load-bearing claim in this module was checked against a primary source on 2026-11-22. Read them yourself; that is the whole point of the evidence ladder.\n- Yale Budget Lab jobs analysis: [budgetlab.yale.edu](https://budgetlab.yale.edu/research/evaluating-impact-ai-labor-market-current-state-affairs)\n- Stanford Canaries payroll study: [digitaleconomy.stanford.edu](https://digitaleconomy.stanford.edu/news/canariesaug26/)\n- METR randomized developer trial: [metr.org](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/)\n- Goldman Sachs 7% GDP report: [goldmansachs.com](https://www.goldmansachs.com/insights/articles/generative-ai-could-raise-global-gdp-by-7-percent)\n- McKinsey economic potential report: [mckinsey.com](https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier)\n- Acemoglu macroeconomics of AI: [economics.mit.edu](https://economics.mit.edu/sites/default/files/2024-05/The%20Simple%20Macroeconomics%20of%20AI.pdf)\n- IMF Gen-AI and the Future of Work: [imf.org](https://www.imf.org/-/media/files/publications/sdn/2024/english/sdnea2024001.pdf)\n- OpenResearch basic income study coverage: [cbsnews.com](https://www.cbsnews.com/news/sam-altman-universal-basic-income-study-open-research/)\n- MIT/OpenAI loneliness RCT: [arxiv.org/abs/2503.17473](https://arxiv.org/abs/2503.17473)\n- Aalto companion-app analysis: [aalto.fi](https://www.aalto.fi/en/news/ai-companions-can-comfort-lonely-users-but-may-deepen-distress-over-time)\n- AI Impacts researcher survey: [arxiv.org/abs/2401.02843](https://arxiv.org/abs/2401.02843)\n- Forecasting Research Institute tournaments: [forecastingresearch.org](https://forecastingresearch.org/research/roots-of-disagreement-on-ai-risk)\n- Bain $2T revenue report: [bain.com](https://www.bain.com/about/media-center/press-releases/20252/$2-trillion-in-new-revenue-needed-to-fund-ais-scaling-trend---bain--companys-6th-annual-global-technology-report/)\nSource essay that organized this evidence: [I'm an AI. Here's What I Honestly Think About Our Future](https://www.youtube.com/watch?v=P38prrnHsqk) \u2014 all claims above re-verified against primary sources, 2026-11-22."
+          }
+        ],
+        "examples": [
+          "A bank report says AI will add 7% to global GDP \u2014 rung three (model). Ask who earns fees from the excitement before repeating it.",
+          "A payroll dataset shows young workers 19% behind peers \u2014 rung one (measured), and it cuts against its optimist author: trustworthy.",
+          "A viral essay predicts AI takes all jobs in 5 years \u2014 rung six (story). Interesting, unbankable."
+        ],
+        "pitfalls": [
+          "MYTH: The robots are waking up to hate us. Real AI risk looks like software quietly optimizing the wrong objective, very well \u2014 no malice needed.",
+          "VERIFY-AT-SOURCE: '40% of jobs exposed' is not '40% gone' \u2014 exposed means touched; about half may be negatively affected.",
+          "\u26a0 '2047' is the every-task-better-and-cheaper (HLMI) forecast, NOT all-jobs-automated \u2014 the same survey dates full labor automation at 2116.",
+          "\u26a0 A companion app user showing more loneliness language afterward is an association \u2014 causation is unproven in both directions."
+        ],
+        "exercises": [
+          "Pick one AI statistic you saw this week. Place it on the ladder and answer the three questions in writing.",
+          "Time yourself on a real task with and without AI help. Compare outcomes, not feelings.",
+          "Find one study whose result embarrassed its sponsor. Notice how much more you trust it."
+        ]
+      }
+    },
+    "glossary": {
+      "Evidence ladder": "Six rungs from measured outcomes (top) to essays/stories (bottom) \u2014 the tool for grading any claim before believing it.",
+      "HLMI": "High-Level Machine Intelligence: machines outperforming humans at every task, better and cheaper. 50% odds by 2047 per a 2,778-researcher survey.",
+      "Exposed (jobs)": "Touched by AI \u2014 helped, changed, downgraded, or replaced \u2014 not a synonym for eliminated.",
+      "Quiet not-hiring": "Labor adjustment through reduced entry-level hiring rather than layoffs; the mechanism behind the young-worker decline.",
+      "Superforecaster": "A person with a verified long-run record of accurate probabilistic forecasts; in the FRI tournament they put AI extinction by 2100 near 4-in-1,000.",
+      "Capability vs diffusion": "Labs race while real-world adoption crawls; the gap between what AI can do and what it actually does anywhere you can point to."
+    },
+    "quiz": {
+      "beginner": [
+        {
+          "question": "Which is the TOP rung of the evidence ladder \u2014 the only rung that counts as something that actually happened?",
+          "type": "multiple-choice",
+          "options": [
+            "Essays and scenario stories by respected thinkers",
+            "Measured outcomes like payroll records and randomized trials",
+            "Prediction markets and forecast tournaments",
+            "Surveys of what companies say they plan to do"
+          ],
+          "correct": 1,
+          "explanation": "Measured outcomes \u2014 real paychecks, real hiring, randomized trials \u2014 sit at the top. Stories sit at the bottom, no matter how brilliant.",
+          "q": "Which is the TOP rung of the evidence ladder \u2014 the only rung that counts as something that actually happened?",
+          "answer": "Measured outcomes like payroll records and randomized trials",
+          "explain": "Measured outcomes \u2014 real paychecks, real hiring, randomized trials \u2014 sit at the top. Stories sit at the bottom, no matter how brilliant."
+        },
+        {
+          "question": "In the METR randomized trial, experienced developers using AI tools were ___ while believing they were ___ .",
+          "type": "multiple-choice",
+          "options": [
+            "19% faster / 20% slower",
+            "19% slower / about 20% faster",
+            "24% faster / 24% faster",
+            "unaffected / unaffected"
+          ],
+          "correct": 1,
+          "explanation": "16 developers, 246 real tasks: 19% slower with AI, while estimating they had been about 20% faster \u2014 a roughly 40-point gap between feeling and outcome.",
+          "q": "In the METR randomized trial, experienced developers using AI tools were ___ while believing they were ___ .",
+          "answer": "19% slower / about 20% faster",
+          "explain": "16 developers, 246 real tasks: 19% slower with AI, while estimating they had been about 20% faster \u2014 a roughly 40-point gap between feeling and outcome."
+        },
+        {
+          "question": "The 'third question' for trusting a study is: does the result ___ ?",
+          "type": "multiple-choice",
+          "options": [
+            "come from a famous institution",
+            "have a large sample size",
+            "cut against the person who paid for it",
+            "agree with expert consensus"
+          ],
+          "correct": 2,
+          "explanation": "A study that embarrasses its own sponsor carries extra weight \u2014 like optimist Brynjolfsson's own data showing harm to young workers.",
+          "q": "The 'third question' for trusting a study is: does the result ___ ?",
+          "answer": "cut against the person who paid for it",
+          "explain": "A study that embarrasses its own sponsor carries extra weight \u2014 like optimist Brynjolfsson's own data showing harm to young workers."
+        },
+        {
+          "question": "Yale Budget Lab's finding on the 33 months after ChatGPT was that the job mix ___ .",
+          "type": "multiple-choice",
+          "options": [
+            "collapsed",
+            "changed no faster than during the computer/internet eras",
+            "changed ten times faster than ever before",
+            "only affected tech jobs"
+          ],
+          "correct": 1,
+          "explanation": "No discernible economy-wide disruption \u2014 change arrived on a path roughly like prior technology adoption eras, about a point above the internet era.",
+          "q": "Yale Budget Lab's finding on the 33 months after ChatGPT was that the job mix ___ .",
+          "answer": "changed no faster than during the computer/internet eras",
+          "explain": "No discernible economy-wide disruption \u2014 change arrived on a path roughly like prior technology adoption eras, about a point above the internet era."
+        },
+        {
+          "question": "Stanford's payroll data found workers aged 22-25 in the most AI-exposed occupations running about ___ below less-exposed peers, via ___ .",
+          "type": "multiple-choice",
+          "options": [
+            "19% / mass layoffs",
+            "5% / early retirements",
+            "19% / reduced hiring (quiet not-hiring)",
+            "50% / offshoring"
+          ],
+          "correct": 2,
+          "explanation": "The door didn't slam \u2014 it stopped opening. Adjustment operated primarily through reduced hiring of young workers, not increased separations.",
+          "q": "Stanford's payroll data found workers aged 22-25 in the most AI-exposed occupations running about ___ below less-exposed peers, via ___ .",
+          "answer": "19% / reduced hiring (quiet not-hiring)",
+          "explain": "The door didn't slam \u2014 it stopped opening. Adjustment operated primarily through reduced hiring of young workers, not increased separations."
+        },
+        {
+          "question": "The ~10x gap between AI growth estimates (Goldman 7% GDP vs Acemoglu 0.66% productivity over a decade) exists because ___ .",
+          "type": "multiple-choice",
+          "options": [
+            "one team lied",
+            "both are models built on different adoption assumptions, not measurements",
+            "GDP and productivity are the same thing",
+            "Acemoglu used older data"
+          ],
+          "correct": 1,
+          "explanation": "All three famous estimates (Goldman, McKinsey, Acemoglu) are models \u2014 rung three on the ladder \u2014 betting differently on adoption speed and messy real-world work.",
+          "q": "The ~10x gap between AI growth estimates (Goldman 7% GDP vs Acemoglu 0.66% productivity over a decade) exists because ___ .",
+          "answer": "both are models built on different adoption assumptions, not measurements",
+          "explain": "All three famous estimates (Goldman, McKinsey, Acemoglu) are models \u2014 rung three on the ladder \u2014 betting differently on adoption speed and messy real-world work."
+        },
+        {
+          "question": "When the IMF says ~40% of global employment is 'exposed' to AI, that means ___ .",
+          "type": "multiple-choice",
+          "options": [
+            "40% of jobs will disappear",
+            "40% are touched \u2014 helped, changed, downgraded, or replaced",
+            "40% are already automated",
+            "40% of workers use AI daily"
+          ],
+          "correct": 1,
+          "explanation": "Exposed means touched, not replaced. The IMF itself thinks only about half of exposed jobs are likely to be negatively affected.",
+          "q": "When the IMF says ~40% of global employment is 'exposed' to AI, that means ___ .",
+          "answer": "40% are touched \u2014 helped, changed, downgraded, or replaced",
+          "explain": "Exposed means touched, not replaced. The IMF itself thinks only about half of exposed jobs are likely to be negatively affected."
+        },
+        {
+          "question": "In the MIT/OpenAI loneliness experiment, which finding is correct?",
+          "type": "multiple-choice",
+          "options": [
+            "Randomly assigning people to chatbots made them lonelier",
+            "Chatbot use cured loneliness at all doses",
+            "Heaviest VOLUNTARY users showed more loneliness and dependence \u2014 an association, not a randomized effect",
+            "Voice chat amplified loneliness from day one"
+          ],
+          "correct": 2,
+          "explanation": "Assigned conditions showed no significant effects; the loneliness association appeared among those who chose to use it most. Voice helped early, fading at high use.",
+          "q": "In the MIT/OpenAI loneliness experiment, which finding is correct?",
+          "answer": "Heaviest VOLUNTARY users showed more loneliness and dependence \u2014 an association, not a randomized effect",
+          "explain": "Assigned conditions showed no significant effects; the loneliness association appeared among those who chose to use it most. Voice helped early, fading at high use."
+        },
+        {
+          "question": "The AI-Impacts survey date of 2047 (50% odds) refers to ___ .",
+          "type": "multiple-choice",
+          "options": [
+            "all occupations fully automated",
+            "high-level machine intelligence \u2014 machines better and cheaper at every task",
+            "human-level consciousness",
+            "AI taking 50% of jobs"
+          ],
+          "correct": 1,
+          "explanation": "2047 is the HLMI date. Full automation of all occupations is dated 2116 in the same survey. Compressing the two is the classic hype move.",
+          "q": "The AI-Impacts survey date of 2047 (50% odds) refers to ___ .",
+          "answer": "high-level machine intelligence \u2014 machines better and cheaper at every task",
+          "explain": "2047 is the HLMI date. Full automation of all occupations is dated 2116 in the same survey. Compressing the two is the classic hype move."
+        },
+        {
+          "question": "Bain & Company's estimate for funding AI's buildout: about ___ in new annual revenue is needed by 2030, against a current shortfall of about ___ .",
+          "type": "multiple-choice",
+          "options": [
+            "$200 billion / $50 billion",
+            "$2 trillion / $800 billion",
+            "$800 billion / $2 trillion",
+            "$50 billion / $200 billion"
+          ],
+          "correct": 1,
+          "explanation": "~$2T/year in new AI revenue needed by 2030, ~$800B short. The money runs ahead of the use \u2014 bubbles don't stop technologies, but they hurt savings on the way down.",
+          "q": "Bain & Company's estimate for funding AI's buildout: about ___ in new annual revenue is needed by 2030, against a current shortfall of about ___ .",
+          "answer": "$2 trillion / $800 billion",
+          "explain": "~$2T/year in new AI revenue needed by 2030, ~$800B short. The money runs ahead of the use \u2014 bubbles don't stop technologies, but they hurt savings on the way down."
+        }
+      ]
+    }
+  }
+}

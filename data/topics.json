@@ -254,6 +254,21 @@
         "Safe Find-to-Print Workflow & Gcode Hygiene",
         "Repair, Recovery & Maintenance Cadence"
       ]
+    },
+    {
+      "id": "ai-future",
+      "name": "AI & The Future",
+      "icon": "\ud83c\udf10",
+      "description": "Evidence-graded guide to AI impact: jobs, money, loneliness, forecasts - verified 2026-11-22",
+      "subtopics": [
+        "Evidence Ladder",
+        "Three Questions",
+        "Jobs",
+        "Money",
+        "Loneliness",
+        "Timelines",
+        "Five Habits"
+      ]
     }
   ]
 }
